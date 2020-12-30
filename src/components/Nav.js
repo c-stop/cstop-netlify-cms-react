@@ -1,100 +1,66 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { slide as Menu } from 'react-burger-menu'
-
+import { Link } from 'react-router-dom'
 import Logo from './Logo'
-import logo from '../img/logos/cStopFullColor.png'
-
-import NavLink from './NavLink'
 import './Nav.sass'
 
 export default function Nav({ handlePopupOpen }) {
   const [state, setState] = useState({ active: false, navBarActiveClass: '' })
+
   return (
-    <nav className="navigation w-nav">
-      {/* <div className="Nav--Container container">
-        <Link to="/">
+    <nav className="navigation">
+      <div className={`navigation-wrap`}>
+        <Link to="/" aria-current="page">
           <Logo />
         </Link>
-        <NavLink to="/" exact>
-          Home
-        </NavLink>
-        <NavLink to="/about/" exact>
-          About
-        </NavLink>
-        <NavLink to="/blog/" exact>
-          Blog
-        </NavLink>
-        <NavLink to="/contact/" exact>
-          Contact
-        </NavLink>
-      </div> */}
 
-      <div className={`navigation-wrap `}>
-        <Link
-          to="/"
-          aria-current="page"
-          className="logo-link w-nav-brand w--current"
-        >
-        <Logo />
-        </Link>
         <div id="navMenu" className={`navbar-menu ${state.navBarActiveClass}`}>
           <nav
             role="navigation"
-            className={`navigation-items w-nav-menu ${state.navBarActiveClass}`}
+            className={`navigation-items ${state.navBarActiveClass}`}
           >
-            <Link
-              to="/"
-              aria-current="page"
-              className="navigation-item w-nav-link"
-            >
+            <Link to="/" aria-current="page" className="navigation-item">
               Home
             </Link>
-            <Link to="/services" className="navigation-item w-nav-link">
+            <Link to="/services" className="navigation-item">
               Services
             </Link>
-            <Link to="/about" className="navigation-item w-nav-link">
+            <Link to="/about" className="navigation-item">
               About
             </Link>
-            <Link to="/contact" className="navigation-item w-nav-link">
+            <Link to="/contact" className="navigation-item">
               Contact
             </Link>
           </nav>
         </div>
 
-        <Link
-          id="navQuoteButton"
-          to="/quote"
-          className="button cc-contact-us w-inline-block"
-        >
+        <Link id="navQuoteButton" to="/quote" className="button">
           <div className="text-block">Talk to a Specialist</div>
         </Link>
       </div>
 
+      
+      {/* Mobile Nav */}
       <Menu
         right
         className="navigation-mobile"
         customBurgerIcon={
-          <img src="img/menu-icon_1menu-icon.png" alt="Menu Icon" />
+          <img src="images/menu-icon_1menu-icon.png" alt="Menu Icon" />
         }
       >
-        <Link
-          id="navQuoteButton"
-          to="/quote"
-          className="button cc-contact-us w-inline-block"
-        >
+        <Link id="navQuoteButton" to="/quote" className="button">
           <div className="text-block">Talk to a Specialist</div>
         </Link>
-        <Link to="/" aria-current="page" className="navigation-item w-nav-link">
+        <Link to="/" aria-current="page" className="navigation-item">
           Home
         </Link>
-        <Link to="/services" className="navigation-item w-nav-link">
+        <Link to="/services" className="navigation-item">
           Services
         </Link>
-        <Link to="/about" className="navigation-item w-nav-link">
+        <Link to="/about" className="navigation-item">
           About
         </Link>
-        <Link to="/contact" className="navigation-item w-nav-link">
+        <Link to="/contact" className="navigation-item">
           Contact
         </Link>
       </Menu>

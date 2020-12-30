@@ -1,0 +1,336 @@
+@import './animations.css'
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap)
+@import url(https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap)
+
+$primary: #0984d2
+$primaryLight: #6fadff
+$primaryOrange: #fd8d00
+$primaryBlue: #0984d2
+$secondary: #212121
+$lightGrey: #f5f5f5
+$midGrey: #cacaca
+$darkGrey: #272727
+$danger: #ff3d3d
+$borderRadius: 30px
+$font-primary: 'Rubik', sans-serif
+$font-system: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Canterell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif 
+
+.w-layout-grid
+  display: -ms-grid
+  display: grid
+  grid-auto-columns: 1fr
+  -ms-grid-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr
+  -ms-grid-rows: auto auto
+  grid-template-rows: auto auto
+  grid-row-gap: 16px
+  grid-column-gap: 16px
+
+html
+  box-sizing: border-box
+  font-size: 62.5%
+  min-height: 100%
+  background: $lightGrey
+
+body
+  font-family: #{$font-system}
+  min-height: 100%
+  position: relative
+  background: white
+  color: #{$secondary}
+  font-size: 1.6em
+  font-weight: 400
+  letter-spacing: 0.01em
+  line-height: 1.6
+  -webkit-font-smoothing: antialiased
+
+a
+  display: block
+  -webkit-transition: opacity 200ms ease
+  transition: opacity 200ms ease
+  color: #{$primary}
+  text-decoration: underline
+
+a span
+  height: 1px
+  width: 1px
+  position: absolute
+  overflow: hidden
+  top: -10px
+
+a:hover
+  color: #32343a
+
+a:active
+  color: #43464d
+
+strong
+  font-weight: 600
+
+p
+  margin-top: 0
+  margin-bottom: 1em
+
+h1
+  margin-top: 20px
+  margin-bottom: 15px
+  font-size: 44px
+  line-height: 62px
+  font-weight: 400
+
+h2
+  margin-top: 10px
+  margin-bottom: 10px
+  font-size: 36px
+  line-height: 50px
+  font-weight: 400
+
+h3
+  margin-top: 10px
+  margin-bottom: 10px
+  font-size: 30px
+  line-height: 46px
+  font-weight: 400
+
+h4
+  margin-top: 10px
+  margin-bottom: 10px
+  font-size: 24px
+  line-height: 38px
+  font-weight: 400
+
+h5
+  margin-top: 10px
+  margin-bottom: 10px
+  font-size: 20px
+  line-height: 34px
+  font-weight: 500
+
+h6
+  margin-top: 10px
+  margin-bottom: 10px
+  font-size: 16px
+  line-height: 28px
+  font-weight: 500
+
+ul
+  margin-top: 20px
+  margin-bottom: 10px
+  padding-left: 40px
+  list-style-type: disc
+
+li
+  margin-bottom: 10px
+
+label
+  margin-bottom: 10px
+  font-size: 12px
+  line-height: 20px
+  font-weight: 500
+  letter-spacing: 1px
+  text-transform: uppercase
+
+figure
+  margin-top: 25px
+  padding-bottom: 20px
+
+figcaption
+  margin-top: 5px
+  opacity: 0.6
+  font-size: 14px
+  line-height: 26px
+  text-align: center
+
+.divider
+  height: 1px
+  background-color: #eee
+
+.styleguide-content-wrap
+  text-align: center
+
+.section
+  overflow: visible
+  margin-right: 30px
+  margin-left: 30px
+
+.styleguide-block
+  display: block
+  margin-top: 80px
+  margin-bottom: 80px
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  text-align: left
+
+.paragraph-tiny
+  font-size: 12px
+  line-height: 20px
+
+.paragraph-bigger
+  margin-bottom: 10px
+  opacity: 1
+  font-size: 20px
+  line-height: 34px
+  font-weight: 600
+
+  .cc-bigger-light
+    opacity: 0.6
+
+  .cc-bigger-white-light
+    opacity: 1
+    color: #000
+    font-weight: 700
+
+pre
+  background: #{$lightGrey}
+  line-height: 1.45
+  font-size: 85%
+  border-radius: 3px
+  padding: 16px
+
+code
+  font-size: 85%
+  padding: 0.15em 0
+  background: #{$lightGrey}
+  border-radius: 3px
+
+code:before,
+code:after
+  letter-spacing: -0.2em
+  content: '\00a0'
+
+pre code
+  font-size: inherit
+
+pre code:before,
+pre code:after
+  display: none
+
+blockquote
+  margin-top: 25px
+  margin-bottom: 25px
+  padding: 15px 30px
+  border-left: 5px solid #{$primary}
+  font-size: 20px
+  line-height: 34px
+
+/* Utility Classes */
+.light
+  background-color: #{$lightGrey}
+
+.white
+  background-color: white
+
+.dark
+  background-color: #{$primary}
+  color: white
+
+  & h1,
+
+  & h2,
+
+  & h3,
+
+  & h4,
+
+  & h5,
+
+  & h6
+    color: white
+
+.relative
+  position: relative
+
+.absolute
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+.taCenter
+  text-align: center
+
+.taLeft
+  text-align: left
+
+.taRight
+  text-align: right
+
+/* Layout */
+
+.section
+  width: 100%
+  padding: 7.5rem 0
+
+  &.thick
+    padding: 10rem 0
+
+  &.thin
+    padding: 3.5rem 0
+
+  &.noPadding
+    padding: 0
+
+.container
+  width: 100%
+  max-width: 1140px
+  overflow: hidden
+  margin: 0 auto
+
+  &.skinny
+    max-width: 888px
+
+  &.skinnier
+    max-width: 555px
+
+/* Buttons */
+
+.Button
+  background: #{$primary}
+  color: white
+  text-transform: uppercase
+  text-decoration: none
+  font-weight: 700
+  letter-spacing: 0.05em
+  font-size: 1.4rem
+  display: inline-block
+  padding: 1.25rem 3rem
+  border: none
+  transition: all 0.2s ease
+  cursor: pointer
+  border-radius: #{$borderRadius}
+
+  &:hover
+    background-color: #{$primaryBlue}
+    color: #fff
+
+  &:focus
+    background: #{$primaryLight}
+    outline: none
+
+  &[disabled]
+    opacity: 0.4
+    pointer-events: none
+    cursor: progress
+
+  &.Button--inverted
+    background: white
+    border-color: white
+    color: #{$primary}
+
+  &.Button--inverted:hover,
+
+  &.Button--inverted:focus
+    background: transparent
+    border-color: currentColor
+    color: white
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)),
+    linear-gradient(-32deg,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0) 50%,rgba(255, 255, 255, 0))

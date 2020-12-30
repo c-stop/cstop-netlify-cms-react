@@ -12,6 +12,15 @@
 .Nav .Logo
   margin-right: 3rem
 
+.logo-link
+	z-index: 1
+
+	:hover
+		opacity: 0.8
+
+	:active
+		opacity: 0.7
+
 .menu
 	position: static
 	left: 0%
@@ -108,8 +117,9 @@
 	flex: 0 0 auto
 
 	.navigation-item
-		padding-top: 9px
-		padding-bottom: 9px
+		text-decoration: none
+		padding: 20px
+		color: #222222
 		opacity: 0.6
 		font-size: 14px
 		line-height: 20px
@@ -137,6 +147,7 @@
 		color: #32343a
 
 @media screen and (max-width: 991px)
+
 	.menu-icon
 		display: block
 
@@ -233,6 +244,9 @@
 
 	.navigation-items
 		background-color: #fff
+
+// @media screen and (max-width: 767px)
+
 
 @media screen and (max-width: 479px)
 	.menu
