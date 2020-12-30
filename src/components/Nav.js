@@ -34,12 +34,12 @@ export default function Nav({ handlePopupOpen }) {
           </nav>
         </div>
 
-        <Link id="navQuoteButton" to="/quote" className="button">
+        <Link id="navQuoteButton" to="/quote" className="Button">
           <div className="text-block">Talk to a Specialist</div>
         </Link>
       </div>
 
-      
+
       {/* Mobile Nav */}
       <Menu
         right
@@ -48,7 +48,7 @@ export default function Nav({ handlePopupOpen }) {
           <img src="images/menu-icon_1menu-icon.png" alt="Menu Icon" />
         }
       >
-        <Link id="navQuoteButton" to="/quote" className="button">
+        <Link id="navQuoteButton" to="/quote" className="Button">
           <div className="text-block">Talk to a Specialist</div>
         </Link>
         <Link to="/" aria-current="page" className="navigation-item">
