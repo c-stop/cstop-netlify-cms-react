@@ -102,6 +102,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
           - {label: Subtitle, name: subtitle, widget: markdown}
+          - {label: Carousel Title, name: carouselTitle, widget: string }
           - {label: Body, name: body, widget: markdown, required: false}
           - label: "Meta"
             required: false
@@ -192,7 +193,9 @@ collections: # A list of collections the CMS should be able to edit
             widget: object
             fields:
               - {label: Image, name: image, widget: image, required: false}
-              - {label: Twitter Site Account, name: twitterSiteAccount, widget: string, required: false}
-              - {label: Twitter Creator Account, name: twitterCreatorAccount, widget: string, required: false}
+              - {label: Twitter Account, name: twitterSiteAccount, widget: string, required: false}
+              - {label: Facebook Account, name: facebookSiteAccount, widget: string, required: false}
+              - {label: Instagram Account, name: instagramSiteAccount, widget: string, required: false}
+              - {label: LinkedIn Account, name: linkedInSiteAccount, widget: string, required: false }
           - {label: Header Meta / Scripts, name: headerScripts, widget: text, required: false}
           - {label: Enable Service Worker Pre-Cache, name: enableServiceWorker, widget: boolean, required: false}

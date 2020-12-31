@@ -5,8 +5,10 @@ siteDescription: >-
   Netlify CMS and React.
 socialMediaCard:
   image: /images/logos/favicon.png
-  twitterCreatorAccount: '@cstop'
+  facebookSiteAccount: '@cstop'
   twitterSiteAccount: ''
+  instagramSiteAccount: ''
+  linkedInSiteAccount: ''
 headerScripts: |-
   <!-- Add your analytics scripts / verification meta here -->
 enableServiceWorker: false
