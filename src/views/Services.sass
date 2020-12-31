@@ -1,0 +1,33 @@
+.our-services-grid
+    display: grid
+    margin-bottom: 120px
+    grid-column-gap: 80px
+    grid-row-gap: 60px
+    -ms-grid-rows: auto 60px auto
+    grid-template-areas: ". . ." ". . ."
+    -ms-grid-columns: 1fr 80px 1fr 80px 1fr
+    grid-template-columns: 1fr 1fr 1fr
+
+.service-icon
+	margin-bottom: 30px
+
+@media screen and (max-width: 991px)
+    .our-services-grid
+        width: 80%
+        margin-right: auto
+        margin-left: auto
+        grid-template-areas: ". ." ". ." ". ."
+        -ms-grid-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr
+        -ms-grid-rows: auto auto auto
+        grid-template-rows: auto auto auto
+        text-align: center
+
+@media screen and (max-width: 767px)
+    .our-services-grid
+        grid-row-gap: 60px
+        grid-template-areas: "." "." "." "." "." "."
+        -ms-grid-columns: 1fr
+        grid-template-columns: 1fr
+        -ms-grid-rows: auto 60px auto 60px auto 60px auto 60px auto 60px auto
+        grid-template-rows: auto auto auto auto auto auto
