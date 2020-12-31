@@ -12,7 +12,16 @@ import './Home.sass'
 
 export default ({ fields }) => {
   console.log(fields)
-  const { title, subtitle, carouselTitle, featuredImage, body, featuredVideo } = fields
+  const {
+    title,
+    subtitle,
+    carouselTitle,
+    buttonText,
+    buttonLinkTo,
+    featuredImage,
+    body,
+    featuredVideo,
+  } = fields
 
   AOS.init()
 
@@ -31,7 +40,7 @@ export default ({ fields }) => {
   return (
     <main className="Home">
       {/* Import starts here */}
-      <div className="intro-header" >
+      <div className="intro-header">
         {/* <VideoHeader
           large
           title={title}
@@ -70,8 +79,11 @@ export default ({ fields }) => {
               <h3>{subtitle}</h3>
               <br />
             </div>
-            <Link to="/about" className="Button Jumbo-button inline-block">
-              <div>Learn More</div>
+            <Link
+              to={buttonLinkTo}
+              className="Button Jumbo-button inline-block"
+            >
+              <div>{buttonText}</div>
             </Link>
           </div>
         </div>
@@ -94,7 +106,7 @@ export default ({ fields }) => {
           </div>
         </div>
       </div>
-      
+
       {/* Example here 
 
       <PageHeader

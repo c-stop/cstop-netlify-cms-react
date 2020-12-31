@@ -102,6 +102,8 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
           - {label: Subtitle, name: subtitle, widget: markdown}
+          - {label: Button Text, name: buttonText, widget: string}
+          - {label: Button Links to, name: buttonLinkTo, widget: string}
           - {label: Carousel Title, name: carouselTitle, widget: string }
           - {label: Body, name: body, widget: markdown, required: false}
           - label: "Meta"
