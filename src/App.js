@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment, useState } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Helmet from 'react-helmet'
 
@@ -18,11 +18,12 @@ import data from './data.json'
 import { slugify } from './util/url'
 import { documentHasTerm, getCollectionTerms } from './util/collection'
 import Services from './views/Services'
+import QuotePage from './components/Quote'
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
   <Route
     {...props}
-    render={routeProps => (
+    render={(routeProps) => (
       <Fragment>
         <Meta {...props} />
         <Component {...routeProps} {...props} />
@@ -33,36 +34,36 @@ const RouteWithMeta = ({ component: Component, ...props }) => (
 
 class App extends Component {
   state = {
-    data
+    data,
   }
-
   getDocument = (collection, name) =>
     this.state.data[collection] &&
-    this.state.data[collection].filter(page => page.name === name)[0]
+    this.state.data[collection].filter((page) => page.name === name)[0]
 
-  getDocuments = collection => this.state.data[collection] || []
+  getDocuments = (collection) => this.state.data[collection] || []
 
-  render () {
+  render() {
     const globalSettings = this.getDocument('settings', 'global')
     const {
       siteTitle,
       siteUrl,
       siteDescription,
       socialMediaCard,
-      headerScripts
+      headerScripts,
     } = globalSettings
 
     const posts = this.getDocuments('posts').filter(
-      post => post.status !== 'Draft'
+      (post) => post.status !== 'Draft'
     )
     const categoriesFromPosts = getCollectionTerms(posts, 'categories')
     const postCategories = this.getDocuments('postCategories').filter(
-      category => categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
+      (category) =>
+        categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
     )
 
     return (
       <Router>
-        <div className='React-Wrap'>
+        <div className="React-Wrap">
           <ScrollToTop />
           <ServiceWorkerNotifications reloadOnUpdate />
           {/* <GithubCorner url='https://github.com/Jinksi/netlify-cms-react-starter' /> */}
@@ -89,33 +90,35 @@ class App extends Component {
 
           <Switch>
             <RouteWithMeta
-              path='/'
+              path="/"
               exact
               component={Home}
               description={siteDescription}
               fields={this.getDocument('pages', 'home')}
             />
-            <RouteWithMeta 
-              path='/services/'
+            <RouteWithMeta
+              path="/services/"
               exact
               component={Services}
               fields={this.getDocument('pages', 'services')}
             />
             <RouteWithMeta
-              path='/about/'
+              path="/about/"
               exact
               component={About}
               fields={this.getDocument('pages', 'about')}
             />
             <RouteWithMeta
-              path='/contact/'
+              path="/contact/"
               exact
               component={Contact}
               fields={this.getDocument('pages', 'contact')}
               siteTitle={siteTitle}
             />
+            <Route path="/quote/" exact component={QuotePage} />
+
             <RouteWithMeta
-              path='/blog/'
+              path="/blog/"
               exact
               component={Blog}
               fields={this.getDocument('pages', 'blog')}
@@ -140,10 +143,10 @@ class App extends Component {
               )
             })}
 
-            {postCategories.map(postCategory => {
+            {postCategories.map((postCategory) => {
               const slug = slugify(postCategory.title)
               const path = slugify(`/blog/category/${slug}`)
-              const categoryPosts = posts.filter(post =>
+              const categoryPosts = posts.filter((post) =>
                 documentHasTerm(post, 'categories', slug)
               )
               return (
