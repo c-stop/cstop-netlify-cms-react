@@ -17,6 +17,7 @@ import ServiceWorkerNotifications from './components/ServiceWorkerNotifications'
 import data from './data.json'
 import { slugify } from './util/url'
 import { documentHasTerm, getCollectionTerms } from './util/collection'
+import Services from './views/Services'
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
   <Route
@@ -97,7 +98,7 @@ class App extends Component {
             <RouteWithMeta 
               path='/services/'
               exact
-              component={Home}
+              component={Services}
               fields={this.getDocument('pages', 'services')}
             />
             <RouteWithMeta

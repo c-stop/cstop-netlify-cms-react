@@ -3,7 +3,9 @@ backend:
   repo: DerekEtman/cstop-netlify-cms-react
   branch: master # Branch to update (optional; defaults to master)
 
-display_url: https://c-stop.service # This url will display in the top-right of the CMS
+local_backend: true
+
+display_url: https://c-stop.services # This url will display in the top-right of the CMS
 media_folder: "public/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
@@ -56,10 +58,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Services Page"
         name: "Service"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-
-          - {label: Title, name: title, widget: string}
-
+          - {label: Title, name: title, widget: string, required: false}
           - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: Subheading, widget: text}, {label: Linkto, name: linkto, widget: text}]}
 
           - {label: Motto, name: motto, widget: object, fields: [{label: MottoQuestion, name: mottoQuestion, widget: string}, {label: MottoAnswer, name: mottoAnswer, widget: text}]}
@@ -103,7 +102,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
           - {label: Subtitle, name: subtitle, widget: markdown}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Body, name: body, widget: markdown, required: false}
           - label: "Meta"
             required: false
             name: "meta"

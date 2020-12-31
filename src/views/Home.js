@@ -11,7 +11,8 @@ import VideoHeader from '../components/VideoHeader'
 import './Home.sass'
 
 export default ({ fields }) => {
-  const { title, subtitle, featuredImage, body, featuredVideo } = fields
+  console.log(fields)
+  const { title, subtitle, carouselTitle, featuredImage, body, featuredVideo } = fields
 
   AOS.init()
 
@@ -81,7 +82,7 @@ export default ({ fields }) => {
             className="label cc-light subsection"
             style={{ textTransform: 'uppercase', color: 'white' }}
           >
-            <h4>Clients we've kept healthy...</h4>
+            <h4>{carouselTitle}</h4>
 
             <div className="subsection-client">
               <Slider {...settings}>
