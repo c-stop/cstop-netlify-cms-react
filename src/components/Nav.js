@@ -5,7 +5,7 @@ import Logo from './Logo'
 import './Nav.sass'
 
 export default function Nav({ handlePopupOpen }) {
-  const [state, setState] = useState({ active: false, navBarActiveClass: '' })
+  const [state] = useState({ active: false, navBarActiveClass: '' })
 
   return (
     <nav className="navigation">

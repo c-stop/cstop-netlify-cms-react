@@ -54,27 +54,29 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
               - {label: Noindex, name: noindex, widget: boolean, required: false}
 
-      - file: "content/pages/services/index.md"
+      - file: "content/pages/services.md"
         label: "Services Page"
         name: "Service"
         fields:
           - {label: Title, name: title, widget: string, required: false}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: Subheading, widget: text}, {label: Linkto, name: linkto, widget: text}]}
+          - {label: Subtitle, name: subTitle, widget: string , required: false }
+          - {label: Featured Image, name: featuredImage, widget: image }
+          - label: "Section 1"
+            name: "section1"
+            widget: "object"
+            fields:
+            - {label: Section 1 Title, name: section1Title, widget: string}
+            - {label: Section 1 Body, name: section1Body, widget: markdown}
 
-          - {label: Motto, name: motto, widget: object, fields: [{label: MottoQuestion, name: mottoQuestion, widget: string}, {label: MottoAnswer, name: mottoAnswer, widget: text}]}
-
-          - {label: aboutSection, name: aboutSection, widget: object, fields: 
-            [{label: Label, name: label, widget: string}, 
-            {label: Heading, name: heading, widget: text}, 
-            {label: Description, name: description, widget: text}, 
-            {label: LinkTo, name: linkTo, widget: text}, 
-            {label: Image1, name: image1, widget: object, 
-            fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: text}]}]}
-
-          - {label: TeamSection, name: teamSection, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Heading, name: heading, widget: text}, {label: Description, name: description, widget: text}, {label: LinkTo, name: linkTo, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: text}]}]}
-
-          - {label: BlogSection, name: blogSection, widget: object, fields: [{label: Label, name: label, widget: string}, {label: Heading, name: heading, widget: text}]}
-  
+          - label: "Meta"
+            required: false
+            name: "meta"
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string, required: false}
+              - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
+              - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
+              - {label: Noindex, name: noindex, widget: boolean, required: false}
 
       - file: "content/pages/about.md"
         label: "About Page"

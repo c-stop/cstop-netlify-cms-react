@@ -1,14 +1,29 @@
-import React from "react"
+import React from 'react'
+import PageHeader from '../components/PageHeader'
 
+export default ({ fields }) => {
+  const { title, subTitle, featuredImage, section1Title, section1Body} = fields
 
-export default({fields}) => {
-    const { body, title, subtitle, featuredImage, address, phone, email } = fields
+  return (
+    <div className="Service" >
+      <PageHeader
+        title={title}
+        subtitle={subTitle}
+        backgroundImage={featuredImage}
+      />
 
-    return(
-        <div>
-            Services
+      <div class="container">
+        <div class="about-story-wrap">
+          <div class="heading-jumbo-small">
+            {section1Title}
+          </div>
+
+          <p class="paragraph-dark">
+           {section1Body}
+          </p>
         </div>
-
-    )
-
+        <div class="divider"></div>
+      </div>
+    </div>
+  )
 }

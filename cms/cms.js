@@ -7,6 +7,7 @@ import About from '../src/views/About'
 import Contact from '../src/views/Contact'
 import Blog from '../src/views/Blog'
 import SinglePost from '../src/views/SinglePost'
+import Services from '../src/views/Services'
 
 console.log('React version', React.version)
 
@@ -26,6 +27,9 @@ const posts = getDocuments('posts')
 // Preview Templates
 CMS.registerPreviewTemplate('home-page', ({ entry }) => (
   <Home fields={entry.toJS().data} />
+))
+CMS.registerPreviewTemplate('services-page', ({entry}) => (
+  <Services fields={entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('about-page', ({ entry }) => (
   <About fields={entry.toJS().data} />

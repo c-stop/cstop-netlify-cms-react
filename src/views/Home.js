@@ -5,22 +5,19 @@ import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
-import Content from '../components/Content'
-import PageHeader from '../components/PageHeader'
-import VideoHeader from '../components/VideoHeader'
 import './Home.sass'
 
 export default ({ fields }) => {
   console.log(fields)
   const {
-    title,
+    // title,
     subtitle,
     carouselTitle,
     buttonText,
     buttonLinkTo,
-    featuredImage,
-    body,
-    featuredVideo,
+    // featuredImage,
+    // body,
+    // featuredVideo,
   } = fields
 
   AOS.init()
