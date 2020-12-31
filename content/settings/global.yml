@@ -1,11 +1,11 @@
-siteTitle: Netlify CMS + React Starter
-siteUrl: 'https://netlify-cms-react-starter.netlify.com'
+siteTitle: 'C-Stop: Covid-19 Compliance for Production'
+siteUrl: 'https://c-stop.netlify.app/'
 siteDescription: >-
   A starter project for creating lightning-fast, offline-first websites with
   Netlify CMS and React.
 socialMediaCard:
-  image: /images/uploads/card-og.png
-  twitterCreatorAccount: '@Jinksi'
+  image: /images/logos/favicon.png
+  twitterCreatorAccount: '@cstop'
   twitterSiteAccount: ''
 headerScripts: |-
   <!-- Add your analytics scripts / verification meta here -->

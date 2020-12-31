@@ -94,6 +94,12 @@ class App extends Component {
               description={siteDescription}
               fields={this.getDocument('pages', 'home')}
             />
+            <RouteWithMeta 
+              path='/services/'
+              exact
+              component={Home}
+              fields={this.getDocument('pages', 'services')}
+            />
             <RouteWithMeta
               path='/about/'
               exact

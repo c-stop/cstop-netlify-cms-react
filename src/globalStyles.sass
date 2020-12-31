@@ -50,6 +50,10 @@ img
   vertical-align: middle
   display: inline-block
 
+.inline-block
+  max-width: 100%
+  display: inline-block
+
 a
   display: block
   -webkit-transition: opacity 200ms ease
@@ -156,8 +160,18 @@ figcaption
 
 .section
   overflow: visible
-  margin-right: 30px
-  margin-left: 30px
+  // margin-right: 30px
+  // margin-left: 30px
+
+.subsection
+  margin: 2% auto
+  width: 98%
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+
+.subsection-client
+  max-width: 100px
 
 .styleguide-block
   display: block
@@ -296,6 +310,48 @@ blockquote
   &.skinnier
     max-width: 555px
 
+.heading-jumbo
+// .heading-jumbo
+  margin-top: 10px
+  margin-bottom: 10px
+  color: #000
+  font-size: 64px
+  line-height: 80px
+  font-weight: 700
+  text-transform: none
+  text-shadow: none
+
+  .cc-white-heading-jumbo
+    color: #fff
+
+  .about_heading
+    color: #fff
+    font-size: 60px
+
+	-small
+    margin-top: 10px
+    margin-bottom: 15px
+    font-size: 36px
+    line-height: 50px
+    font-weight: 400
+    text-transform: none
+
+.heading-jumbo-small
+  margin-top: 10px
+  margin-bottom: 15px
+  font-size: 36px
+  line-height: 50px
+  font-weight: 400
+  text-transform: none
+
+.heading-jumbo-tiny
+  margin-top: 10px
+  margin-bottom: 10px
+  font-size: 18px
+  line-height: 32px
+  font-weight: 500
+  text-transform: uppercase
+
 /* Buttons */
 
 .Button
@@ -339,6 +395,15 @@ blockquote
     color: white
     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0)),
     linear-gradient(-32deg,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0) 50%,rgba(255, 255, 255, 0))
+
+.Jumbo-button
+  padding: 16px 35px
+  background-color: #fd8d00
+  font-size: 14px
+  line-height: 26px
+
+  &:hover
+    background-color: #336aff
 
 /* Social Icons */
 // .social-icons
