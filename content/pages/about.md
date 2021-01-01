@@ -12,18 +12,10 @@ section1: |-
   between them.
 
 section2: |-
-  ## This is a Container component
-
-  A sem vel nec sodales mi vivamus senectus sed potenti a parturient nascetur
-  tincidunt nisi pulvinar rhoncus a. Risus imperdiet taciti suspendisse facilisi
-  a per metus cubilia varius a nostra adipiscing amet ultrices quisque ac mi a.
-  Dictumst a ultrices mi a dignissim ad fermentum eget a nam et a blandit
-  scelerisque. Taciti lorem tempor quam vestibulum dis habitasse vestibulum diam
-  vel est ut proin dis auctor. Suscipit scelerisque orci magna interdum vel
-  bibendum duis netus a consectetur dui magnis ac aliquet sem posuere tincidunt
-  vestibulum.
-
-  The image below will have a `srcset` attribute generated:
-
-  ![Tim Marshall](/images/uploads/tim-marshall-155597.jpg)
+  Thoroughly trained in infection prevention and control through the
+  World Health Organization course for COVID-19 Virus + C19CO + OSHA
+  30 and more. Keeping our sets safe takes pre-planning,
+  collaborating, organizational skills, insightful conversations,
+  compassion, strength, knowledge, presentation materials and more. We
+  need to anticipate, be proactive, and solution oriented.
 ---
