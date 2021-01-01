@@ -1,18 +1,15 @@
 ---
-title: About page title
+title: Setting New Covid-19 Standards
 featuredImage: /images/uploads/tim-marshall-155597.jpg
 section1: |-
-  ## Lorem Ipsum
-
-  Netlify CMS works with both `.md` and `.json`.
-
-  ![Image test](/images/uploads/isabella juskova.jpg)
-
-  [Link test](/images/uploads/isabella juskova.jpg)
-
-  ### Embed Test
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Js00yn142ic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  The COVID compliance team (CCT) is not production, nor is it craft
+  services, or locations. The COVID compliance officer (CCO) or team member
+  is not one person with a certificate. The CCO or CCT should not be
+  medical personnel or set medics without a production background either.
+  In our experience, the most successful teams have been a collaboration of
+  veteran union set-medics, coupled with experienced Producers/Production
+  Managers with multiple COVID compliance courses/completion certificates
+  between them.
 
 section2: |-
   ## This is a Container component
