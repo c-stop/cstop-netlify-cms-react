@@ -18,7 +18,7 @@ export default function ClientLogos() {
 		variableWidth: true,
 		cssEase: "linear",
 		slidesToShow: 3,
-		slidesToScroll: 3,
+		slidesToScroll: 1,
 		rows: 2,
 		adaptiveHeight: true,
 	};

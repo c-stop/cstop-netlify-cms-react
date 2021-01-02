@@ -87,6 +87,13 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Subtitle, name: subtitle, widget: markdown}
           - {label: Section 1, name: section1, widget: markdown}
           - {label: Section 2, name: section2, widget: markdown}
+          - label: "Team Members"
+            name: "teamMembers"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Employee Title, name: employeeTitle, widget: string }
+              - {label: Employee Picture, name: employeePicture, widget: image}
           - label: "Meta"
             required: false
             name: "meta"
@@ -96,6 +103,8 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
               - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
               - {label: Noindex, name: noindex, widget: boolean, required: false}
+
+          
 
       - file: "content/pages/home.md"
         label: "Home Page"

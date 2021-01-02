@@ -1,17 +1,24 @@
 import React from 'react'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
-
-import PageHeader from '../components/PageHeader'
-import LazyImage from '../components/LazyImage'
-import Content from '../components/Content.js'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css'
 import ClientLogos from '../components/ClientLogos'
-import Cta from "../components/Cta"
+import Content from '../components/Content.js'
+import Cta from '../components/Cta'
+import PageHeader from '../components/PageHeader'
+import TeamMemberCard from '../components/TeamMemberCard'
 import './About.sass'
 
+
 export default ({ fields }) => {
-  const { title, subtitle, featuredImage, section1, section2 } = fields
+  const {
+    title,
+    subtitle,
+    featuredImage,
+    section1,
+    section2,
+    teamMembers,
+  } = fields
 
   const settings = {
     dots: true,
@@ -55,45 +62,9 @@ export default ({ fields }) => {
             </h2>
           </div>
           <div className="w-layout-grid team-members">
-            <div>
-              <div className="team-pic">
-                <LazyImage
-                  className="team-pic-src"
-                  src={featuredImage}
-                  alt="Kia Kiso"
-                />
-              </div>
-              <div className="team-member-title-wrap">
-                <div className="team-member-name">Pepper Humphrey</div>
-                <div className="paragraph-light">CEO</div>
-              </div>
-            </div>
-            <div>
-              <div className="team-pic">
-                <LazyImage
-                  className="team-pic-src"
-                  src={featuredImage}
-                  alt="Kia Kiso"
-                />
-              </div>
-              <div className="team-member-title-wrap">
-                <div className="team-member-name">Kia Kiso</div>
-                {/* <div className="paragraph-light">CEO</div> */}
-              </div>
-            </div>
-            <div>
-              <div className="team-pic">
-                <LazyImage
-                  className="team-pic-src"
-                  src={featuredImage}
-                  alt="Kia Kiso"
-                />
-              </div>
-              <div className="team-member-title-wrap">
-                <div className="team-member-name">Pepper Humphrey</div>
-                <div className="paragraph-light">CEO</div>
-              </div>
-            </div>
+            {teamMembers.map((employee) => {
+              return <TeamMemberCard fields={employee} />
+            })}
           </div>
         </div>
       </div>
@@ -108,29 +79,14 @@ export default ({ fields }) => {
 
         <div className="w-container">
           <Slider {...settings}>
-            <div>
-              {/* <img src={cStopPerson} alt="PlaceHolder " /> */}
-            </div>
-            <div>
-              {/* <img src={placeHolder} alt="PlaceHolder" /> */}
-            </div>
-            <div>
-              {/* <img src={cStopPerson} alt="PlaceHolder" /> */}
-            </div>
+            {/* <div><img src={cStopPerson} alt="PlaceHolder " /></div> */}
+
           </Slider>
         </div>
       </div>
       <div className="section Cta">
         <Cta />
       </div>
-      {/* 
-      <div className='section'>
-        <div className='container'>
-          <Content source={section2} />
-          <p>The image below is a {'<LazyImage />'}</p>
-          <LazyImage src={featuredImage} alt='LazyImage' />
-        </div>
-      </div> */}
     </div>
   )
 }
