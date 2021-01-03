@@ -14,6 +14,8 @@ section1: |-
 clientImages:
   - companyName: Test Client
     image: /images/uploads/unsplash4.jpg
+  - companyName: test company 2
+    image: /images/uploads/cstop_apple.jpg
 section2: |-
   Thoroughly trained in infection prevention and control through the
   World Health Organization course for COVID-19 Virus + C19CO + OSHA

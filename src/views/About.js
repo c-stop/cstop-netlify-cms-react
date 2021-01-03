@@ -22,10 +22,8 @@ export default ({ fields }) => {
     clientImages
   } = fields
 
-  console.log(fields)
-  
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
