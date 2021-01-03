@@ -84,7 +84,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Section 1, name: section1, widget: markdown}
           - {label: Section 2, name: section2, widget: markdown}
           - label: "Team Members"
@@ -94,6 +94,14 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Name, name: name, widget: string}
               - {label: Employee Title, name: employeeTitle, widget: string }
               - {label: Employee Picture, name: employeePicture, widget: image}
+          - label: "Image Gallery"
+            name: "imageGallery"
+            widget: "list"
+            minimize_collapsed: true
+            fields:
+              - {label: Description, name: description, widget: string}
+              - {label: Image, name: image, widget: image}
+              - {label: Featured?, name: featured, widget: boolean, required: false }
           - label: "Meta"
             required: false
             name: "meta"

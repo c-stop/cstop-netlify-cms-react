@@ -25,4 +25,10 @@ teamMembers:
   - name: Kia Kiso
     employeePicture: /images/uploads/kia_kiso.jpg
     employeeTitle: "  "
+imageGallery:
+  - description: Test, Not featured
+    image: /images/uploads/isabella juskova.jpg
+  - description: Test, featured
+    featured: true
+    image: /images/uploads/tim-marshall-155597.jpg
 ---

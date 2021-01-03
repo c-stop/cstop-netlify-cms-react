@@ -5,10 +5,10 @@ import 'slick-carousel/slick/slick.css'
 import ClientLogos from '../components/ClientLogos'
 import Content from '../components/Content.js'
 import Cta from '../components/Cta'
+import LazyImage from '../components/LazyImage'
 import PageHeader from '../components/PageHeader'
 import TeamMemberCard from '../components/TeamMemberCard'
 import './About.sass'
-
 
 export default ({ fields }) => {
   const {
@@ -18,6 +18,7 @@ export default ({ fields }) => {
     section1,
     section2,
     teamMembers,
+    imageGallery,
   } = fields
 
   const settings = {
@@ -45,7 +46,7 @@ export default ({ fields }) => {
         </div>
       </div>
 
-      <ClientLogos />
+      {/* <ClientLogos />6 */}
 
       <div className="section">
         <div className="about-content">
@@ -80,7 +81,16 @@ export default ({ fields }) => {
         <div className="w-container">
           <Slider {...settings}>
             {/* <div><img src={cStopPerson} alt="PlaceHolder " /></div> */}
-
+            {imageGallery.map(({image, description} = image) => {
+              console.log(image, description)
+              return (
+                <LazyImage
+                  className="image-gallery-src"
+                  src={image}
+                  alt={description}
+                />
+              )
+            })}
           </Slider>
         </div>
       </div>
