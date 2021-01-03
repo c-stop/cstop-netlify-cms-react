@@ -19,6 +19,7 @@ export default ({ fields }) => {
     section2,
     teamMembers,
     imageGallery,
+    clientImages
   } = fields
 
   const settings = {
@@ -46,7 +47,7 @@ export default ({ fields }) => {
         </div>
       </div>
 
-      {/* <ClientLogos />6 */}
+      <ClientLogos clients={clientImages}/>
 
       <div className="section">
         <div className="about-content">
@@ -81,8 +82,7 @@ export default ({ fields }) => {
         <div className="w-container">
           <Slider {...settings}>
             {/* <div><img src={cStopPerson} alt="PlaceHolder " /></div> */}
-            {imageGallery.map(({image, description} = image) => {
-              console.log(image, description)
+            {imageGallery.map(({image, description}) => {
               return (
                 <LazyImage
                   className="image-gallery-src"

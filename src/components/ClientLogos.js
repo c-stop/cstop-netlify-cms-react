@@ -5,8 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import "./ClientLogos.sass"
 
-export default function ClientLogos() {
+export default function ClientLogos({fields}) {
 
+	console.log(fields)
 
 	const settings = {
 		infinite: true,
