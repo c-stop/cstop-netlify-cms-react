@@ -1,10 +1,11 @@
 ---
 title: Contact us
-subtitle: ''
-featuredImage: '/images/uploads/mark-chang-74-3.jpg'
+featuredImage: /images/uploads/sean-horsburgh-cxyq5_64lam-unsplash.jpg
+subtitle: Test Subtitle
 address: 404 James St, Burleigh Heads QLD 4220
 phone: 0987 123 456
-email: example@example.com
+email: solutions@c-stop.services
+workHours: 24 hours/ 7 days a week
 ---
 
 # Example contact form

@@ -1,0 +1,124 @@
+.Contact
+  .Contact--Details
+    margin-top: 3rem
+
+  &--Details--Item
+    display: flex
+    padding: 2rem 0
+    border-top: 1px solid var(--lightGrey)
+    font-weight: 500
+    text-decoration: none
+    color: inherit
+    transition: color 0.2s ease-in-out
+
+  &--Details--Item:hover,
+
+  &--Details--Item:focus
+    color: var(--primary)
+
+  &--Details--Item svg
+    margin-right: 1.5rem
+    color: var(--primary)
+
+.contact_header
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	height: 120px
+	margin-bottom: 20px
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+	-webkit-box-align: center
+	-webkit-align-items: center
+	-ms-flex-align: center
+	align-items: center
+	// background-color: #f4f4f4
+	background-position: center
+	background-size: cover
+	background-attachment: fixed
+	color: #fff 
+
+
+
+.contact-form-grid
+	margin-top: 100px
+  display: grid
+	margin-bottom: 100px
+	-webkit-box-align: start
+	-webkit-align-items: start
+	-ms-flex-align: start
+	align-items: start
+	grid-column-gap: 80px
+	grid-row-gap: 30px
+	grid-template-areas: ". ."
+	-ms-grid-columns: 2.5fr 80px 1fr
+	grid-template-columns: 2.5fr 1fr
+	-ms-grid-rows: auto
+	grid-template-rows: auto
+
+.contact-form-wrap
+	padding: 45px 50px 50px
+	border-style: solid
+	border-width: 1px
+	border-color: #eee
+  
+.get-in-touch-form
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-webkit-flex-direction: column
+	-ms-flex-direction: column
+	flex-direction: column  
+
+.w-form-done
+  display: none
+  padding: 20px
+  text-align: center
+  background-color: #dddddd
+
+
+.details-wrap
+	margin-bottom: 30px
+  
+@media (min-width: 750px)
+  .Contact--Section1--Container
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+  .contact-form-wrap
+		padding: 30px
+  // >* &
+  //   width: calc(50% - 2rem)
+
+@media (min-width: 991px)
+	.contact_header.cc-subpage
+		overflow: hidden
+		background-position: 50% 20%
+
+  .contact-form-grid
+		width: 80%
+		margin-right: auto
+		margin-left: auto
+		grid-row-gap: 50px
+		grid-template-areas: "." "."
+		-ms-grid-columns: 1fr
+		grid-template-columns: 1fr
+		-ms-grid-rows: auto 50px auto
+		grid-template-rows: auto auto
+		text-align: center
+  .get-in-touch-form
+		text-align: left
+
+@media (min-width: 479px)
+	.contact_header.cc-subpage
+		background-position: 50% 50%
+		background-size: auto 100%
+  .contact-form-grid
+		width: 100%
