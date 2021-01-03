@@ -132,8 +132,17 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Subtitle, name: subtitle, widget: markdown}
           - {label: Button Text, name: buttonText, widget: string}
           - {label: Button Links to, name: buttonLinkTo, widget: string}
-          - {label: Carousel Title, name: carouselTitle, widget: string }
-          - {label: Body, name: body, widget: markdown, required: false}
+          - label: "Featured Clients"
+            name: featuredClients
+            widget: object
+            fields:
+            - {label: Featured Client Title, name: carouselTitle, widget: string }
+            - label: "Featured Clients Logos"
+              name: featuredClientsLogos
+              widget: list
+              fields:
+                - {label: Company Name, name: companyName, widget: string}
+                - {label: Company Logo, name: company Logo, widget: image, description: test description}
           - label: "Meta"
             required: false
             name: "meta"
