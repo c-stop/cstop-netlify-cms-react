@@ -11,6 +11,9 @@ section1: |-
   veteran union set-medics, coupled with experienced Producers/Production
   Managers with multiple COVID compliance courses/completion certificates
   between them.
+clientImages:
+  - companyName: Test Client
+    image: /images/uploads/unsplash4.jpg
 section2: |-
   Thoroughly trained in infection prevention and control through the
   World Health Organization course for COVID-19 Virus + C19CO + OSHA

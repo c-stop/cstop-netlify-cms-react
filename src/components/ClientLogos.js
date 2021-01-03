@@ -7,7 +7,7 @@ import "./ClientLogos.sass"
 
 export default function ClientLogos({fields}) {
 
-	console.log(fields)
+	// console.log(fields)
 
 	const settings = {
 		infinite: true,

@@ -22,6 +22,8 @@ export default ({ fields }) => {
     clientImages
   } = fields
 
+  console.log(fields)
+  
   const settings = {
     dots: true,
     infinite: true,
@@ -47,7 +49,7 @@ export default ({ fields }) => {
         </div>
       </div>
 
-      <ClientLogos clients={clientImages}/>
+      <ClientLogos data={clientImages}/>
 
       <div className="section">
         <div className="about-content">
