@@ -93,4 +93,3 @@ section2:
 
         Our RT-PCR tests are processed at a privately-owned, high complexity, HIPAA compliant, CLIA-certified laboratory. All results are returned per LA County and CDC guidelines. Both our Rapid PCR and Antigen tests have been validated and granted their Emergency Use Authorization by the FDA.
       serviceIconImage: /images/uploads/artboard-1.png
----
