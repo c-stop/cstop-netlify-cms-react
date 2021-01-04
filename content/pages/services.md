@@ -2,7 +2,7 @@
 templateKey: services-page
 path: /services
 title: Valuable Services
-subTitle: Great coffee with a conscience
+subTitle: "Protecting you and your families from Covid-19 "
 featuredImage: /images/uploads/ng-32703.jpg
 section1:
   section1Title: The Three Essential Elements Covid Compliance

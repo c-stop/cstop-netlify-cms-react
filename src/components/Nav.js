@@ -45,14 +45,12 @@ export default function Nav({ handlePopupOpen }) {
       <Menu
         right
         className="navigation-mobile"
-        width="60"
+        width={"70%"}
         customBurgerIcon={
           <img src="images/menu-icon_1menu-icon.png" alt="Menu Icon" />
         }
       >
-        <Link id="navQuoteButton" to="/quote" className="Button">
-          <div className="text-block">Talk to a Specialist</div>
-        </Link>
+
         <Link to="/" aria-current="page" className="navigation-item">
           Home
         </Link>
@@ -64,6 +62,9 @@ export default function Nav({ handlePopupOpen }) {
         </Link>
         <Link to="/contact" className="navigation-item">
           Contact
+        </Link>
+        <Link id="navQuoteButton" to="/quote" className="navigation-item">
+          Talk to a Specialist
         </Link>
       </Menu>
     </nav>
