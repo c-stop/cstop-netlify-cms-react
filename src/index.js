@@ -5,6 +5,7 @@ import './globalStyles.sass'
 import App from './App'
 import registerServiceWorker, { unregister } from './registerServiceWorker'
 import data from './data.json'
+require("dotenv").config();
 
 const rootEl = document.getElementById('root')
 render(<App />, rootEl)

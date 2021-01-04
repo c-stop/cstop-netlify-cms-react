@@ -3,6 +3,7 @@ import { slide as Menu } from 'react-burger-menu'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 import './Nav.sass'
+import Spinner from "./Spinner"
 
 export default function Nav({ handlePopupOpen }) {
   const [state] = useState({ active: false, navBarActiveClass: '' })
@@ -44,10 +45,12 @@ export default function Nav({ handlePopupOpen }) {
       <Menu
         right
         className="navigation-mobile"
+        width="60"
         customBurgerIcon={
           <img src="images/menu-icon_1menu-icon.png" alt="Menu Icon" />
         }
       >
+        <Spinner />
         <Link id="navQuoteButton" to="/quote" className="Button">
           <div className="text-block">Talk to a Specialist</div>
         </Link>

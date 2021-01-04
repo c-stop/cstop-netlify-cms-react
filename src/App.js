@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer'
+import FormsPage from './components/JotFormRouter'
 import Meta from './components/Meta'
 import Nav from './components/Nav'
 import QuotePage from './components/Quote'
@@ -115,6 +116,7 @@ class App extends Component {
               siteTitle={siteTitle}
             />
             <Route path="/quote/" exact component={QuotePage} />
+            <Route path="/forms" component={FormsPage} />
 
             <RouteWithMeta
               path="/blog/"

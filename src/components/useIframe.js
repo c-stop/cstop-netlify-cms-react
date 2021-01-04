@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function QuotePage() {
-
-	
+export default function UseIframe(props) {
+    const {id, title} = props;
+    // console.log("id: ", id)
 
 	let iframe = () => {
-		var ifr = document.getElementById("JotFormIFrame-203017250998154");
+		var ifr = document.getElementById(`JotFormIFrame-${id}`);
 
 		if (window.location.href && window.location.href.indexOf("?") > -1) {
 			var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
@@ -100,19 +100,17 @@ export default function QuotePage() {
 	}
 
 	return (
-		<div style={{ alignSelf: "center" }} >
 			<iframe
-				id="JotFormIFrame-203017250998154"
-				title="Client Estimate Request Form"
-				onLoad={window.parent.scrollTo(0,0)}
+				id={`JotFormIFrame-${id}`}
+				title={title}
+				onLoad={window.parent.scrollTo(0, 0)}
 				allowTransparency="true"
 				allowFullScreen="false"
 				allow="geolocation; microphone; camera"
-				src="https://form.jotform.com/203017250998154"
+				src={`https://form.jotform.com/${id}`}
 				frameBorder="0"
 				style={{ minWidth: "100%", minHeight: "100vh", border: "none" }}
 				scrolling="no"
 			></iframe>
-		</div>
 	);
 }

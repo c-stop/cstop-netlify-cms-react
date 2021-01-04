@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick.css'
 import './Home.sass'
 
 export default ({ fields }) => {
-  console.log(fields)
+
   const {
     // title,
     subtitle,
