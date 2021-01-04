@@ -8,7 +8,6 @@ import 'slick-carousel/slick/slick.css'
 import './Home.sass'
 
 export default ({ fields }) => {
-
   const {
     // title,
     subtitle,
@@ -37,6 +36,9 @@ export default ({ fields }) => {
   return (
     <main className="Home">
       {/* Import starts here */}
+      <video muted loop autoPlay id="myVideo">
+        <source src="/images/Film-set.mp4" type="video/mp4" />
+      </video>
       <div className="intro-header">
         {/* <VideoHeader
           large
@@ -44,10 +46,6 @@ export default ({ fields }) => {
           subtitle={subtitle}
           backgroundVideo={featuredVideo}
         /> */}
-
-        <video muted loop autoPlay id="myVideo">
-          <source src="/images/Film-set.mp4" type="video/mp4" />
-        </video>
 
         <div className="intro-content cc-homepage">
           <div data-aos="fade-up" data-aos-delay="150">
