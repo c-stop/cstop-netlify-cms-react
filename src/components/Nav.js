@@ -50,7 +50,6 @@ export default function Nav({ handlePopupOpen }) {
           <img src="images/menu-icon_1menu-icon.png" alt="Menu Icon" />
         }
       >
-        <Spinner />
         <Link id="navQuoteButton" to="/quote" className="Button">
           <div className="text-block">Talk to a Specialist</div>
         </Link>

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import Spinner from "./Spinner"
 
 export default function QuotePage() {
 
-	
+	const [loading, setLoading] = useState(true)
 
 	let iframe = () => {
 		var ifr = document.getElementById("JotFormIFrame-203017250998154");
@@ -99,12 +100,17 @@ export default function QuotePage() {
 		window.attachEvent("onmessage", handleIFrameMessage);
 	}
 
+	const hideSpinner = () => {
+		setLoading(false)
+	}
+
 	return (
 		<div style={{ alignSelf: "center" }} >
+			{loading? (<Spinner />) : null}
 			<iframe
 				id="JotFormIFrame-203017250998154"
 				title="Client Estimate Request Form"
-				onLoad={window.parent.scrollTo(0,0)}
+				onLoad={window.parent.scrollTo(0,0), hideSpinner}
 				allowTransparency="true"
 				allowFullScreen="false"
 				allow="geolocation; microphone; camera"

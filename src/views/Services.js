@@ -7,6 +7,7 @@ export default ({ fields }) => {
 
   const  {section1Title, section1Body} = section1
 
+  console.log(fields)
   return (
     <div className="Service">
       <PageHeader

@@ -11,13 +11,17 @@ export default ({ fields }) => {
   const {
     // title,
     subtitle,
-    carouselTitle,
     buttonText,
     buttonLinkTo,
     // featuredImage,
     // body,
     // featuredVideo,
+    featuredClients,
   } = fields
+
+  const { carouselTitle, featuredClientsLogos } = featuredClients
+
+  console.log(fields)
 
   AOS.init()
 
@@ -93,9 +97,9 @@ export default ({ fields }) => {
 
             <div className="subsection-client">
               <Slider {...settings}>
-                <h4>Apple</h4>
-                <h4>Toyota</h4>
-                <h4>Zenni</h4>
+                {featuredClientsLogos.map((image) => {
+                  return <img src={image.companyLogo} alt={image.companyName} />
+                })}
               </Slider>
             </div>
           </div>
