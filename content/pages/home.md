@@ -8,7 +8,11 @@ featuredClients:
   carouselTitle: Clients we've kept healthy....
   featuredClientsLogos:
     - companyName: Apple
-      companyLogo: /images/uploads/cstop_apple.jpg
+      companyLogo: /images/uploads/apple-logo.png
+    - companyLogo: /images/uploads/1820-logo.png
+      companyName: 1820 Productions
+    - companyName: Toyota
+      companyLogo: /images/uploads/toyota-logo.png
 meta:
   title: ""
 ---

@@ -3,6 +3,7 @@ import 'aos/dist/aos.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
+import LazyImage from '../components/LazyImage'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 import './Home.sass'
@@ -21,20 +22,20 @@ export default ({ fields }) => {
 
   const { carouselTitle, featuredClientsLogos } = featuredClients
 
-  console.log(fields)
-
   AOS.init()
 
   const settings = {
+    fade: true,
     infinite: true,
-    slidesToShow: 1,
     autoplay: true,
     speed: 1500,
     autoplaySpeed: 4500,
     cssEase: 'linear',
     dots: false,
     arrows: false,
-    vertical: true,
+    // vertical: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   }
 
   return (
@@ -43,14 +44,8 @@ export default ({ fields }) => {
       <video muted loop autoPlay id="myVideo">
         <source src="/images/Film-set.mp4" type="video/mp4" />
       </video>
-      <div className="intro-header">
-        {/* <VideoHeader
-          large
-          title={title}
-          subtitle={subtitle}
-          backgroundVideo={featuredVideo}
-        /> */}
 
+      <div className="intro-header">
         <div className="intro-content cc-homepage">
           <div data-aos="fade-up" data-aos-delay="150">
             <div className="heading-jumbo intro-logo">
@@ -98,7 +93,13 @@ export default ({ fields }) => {
             <div className="subsection-client">
               <Slider {...settings}>
                 {featuredClientsLogos.map((image) => {
-                  return <img src={image.companyLogo} alt={image.companyName} />
+                  return (
+                    <img
+                      id={image.companyName}
+                      src={image.companyLogo}
+                      alt={image.companyName}
+                    />
+                  )
                 })}
               </Slider>
             </div>
