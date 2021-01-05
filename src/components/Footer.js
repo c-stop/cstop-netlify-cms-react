@@ -37,7 +37,7 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
 
       <Link to="/" className="webflow-link">
         <img
-          src="images/logos/favicon-256x256.png"
+          src="images/logos/android-chrome-512x512.png"
           width="100"
           alt=""
           className="webflow-logo-tiny"
