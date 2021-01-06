@@ -38,7 +38,7 @@ export default ({ fields }) => {
               <div className="paragraph-light">
                 We welcome your inquiries. Reach out to us directly
                 <a
-                  href="mailto:dereketman@gmail.com"
+                  href="mailto:solutions@cstop.com"
                   target="_blank"
                   rel="noreferrer"
                 >
