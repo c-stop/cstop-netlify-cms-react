@@ -5,6 +5,7 @@ import PageHeader from '../components/PageHeader'
 import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
 import Content from '../components/Content'
 import './Contact.sass'
+import { Link } from 'react-router-dom'
 
 export default ({ fields }) => {
   const {
@@ -16,7 +17,11 @@ export default ({ fields }) => {
     phone,
     email,
     workHours,
+    applySection,
   } = fields
+
+  const { applyTitle, applySubtitle, applyBody, applyButton } = applySection
+
   return (
     <div className="Contact">
       <PageHeader
@@ -109,62 +114,19 @@ export default ({ fields }) => {
 
           <div id="w-node-509be705858e-184c63d4" className="contact-form-wrap">
             <div className="contact-form-heading-wrap">
-              <h2 className="contact-heading">Join The Team </h2>
-              <div className="paragraph-light">
-                We welcome your inquiries. Reach out to us directly
-              </div>
+              <h2 className="contact-heading">{applyTitle}</h2>
+              <div className="paragraph-light">{applySubtitle}</div>
             </div>
 
             <div className="contact-form w-form">
-              <Content source={body} />
-              <button className="Button"> Link to Job form</button>
+              <Content source={applyBody} />
+              <Link to="/apply" className="Button contact-apply-button">
+                {applyButton}
+              </Link>
             </div>
           </div>
         </div>
       </div>
-
-      <div className="section">
-        <div className="container">{/* <Jobs /> */}</div>
-      </div>
-
-      {/*  Starter example */}
-      {/* 
-      <div className="section Contact--Section1">
-        <div className="container Contact--Section1--Container">
-          <div>
-            <Content source={body} />
-
-            <div className="Contact--Details">
-              {address && (
-                <a
-                  className="Contact--Details--Item"
-                  href={`https://www.google.com.au/maps/search/${encodeURI(
-                    address
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MapPin /> {address}
-                </a>
-              )}
-              {phone && (
-                <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                  <Smartphone /> {phone}
-                </a>
-              )}
-              {email && (
-                <a className="Contact--Details--Item" href={`mailto:${email}`}>
-                  <Mail /> {email}
-                </a>
-              )}
-            </div>
-          </div>
-
-          <div>
-            <EnquiryFormSimpleAjax name="Simple Form Ajax" />
-          </div>
-        </div>
-      </div> */}
     </div>
   )
 }

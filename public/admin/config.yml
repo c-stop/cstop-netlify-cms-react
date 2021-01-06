@@ -27,10 +27,16 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Featured Image, name: featuredImage, widget: image}
           - {label: Subtitle, name: subtitle, widget: markdown}
           - {label: Body, name: body, widget: markdown}
-          - {label: Address, name: address, widget: text}
-          - {label: Phone, name: phone, widget: string}
           - {label: Email Address, name: email, widget: string}
           - {label: Hours of Operation , name: workHours , widget: markdown}
+          - label: "Apply To C-stop"
+            name: "applySection"
+            widget: "object"
+            fields:
+              - {label: Title, name: applyTitle, widget: string}
+              - {label: Subtitle, name: applySubtitle, widget: string}
+              - {label: Body, name: applyBody, widget: markdown}
+              - {label: Button Text, name: applyButton, widget: text }
           - label: "Meta"
             required: false
             name: "meta"
