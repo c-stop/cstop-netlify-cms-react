@@ -19,17 +19,18 @@ export default ({ fields }) => {
     section2,
     teamMembers,
     imageGallery,
-    clientImages
+    clientImages,
   } = fields
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
+    swipeToSlide: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 6000,
+    lazyLoad: true,
     cssEase: 'linear',
   }
 
@@ -47,7 +48,7 @@ export default ({ fields }) => {
         </div>
       </div>
 
-      <ClientLogos data={clientImages}/>
+      <ClientLogos data={clientImages} />
 
       <div className="section">
         <div className="about-content">
@@ -79,12 +80,12 @@ export default ({ fields }) => {
           </h2>
         </div>
 
-        <div className="w-container">
+        <div>
           <Slider {...settings}>
             {/* <div><img src={cStopPerson} alt="PlaceHolder " /></div> */}
-            {imageGallery.map(({image, description}) => {
+            {imageGallery.map(({ image, description }) => {
               return (
-                <LazyImage
+                <img
                   className="image-gallery-src"
                   src={image}
                   alt={description}

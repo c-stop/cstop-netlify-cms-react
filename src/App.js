@@ -116,8 +116,9 @@ class App extends Component {
               siteTitle={siteTitle}
             />
             <Route path="/quote/" exact component={QuotePage} />
-            <Route path="/forms" component={FormsPage} />
 
+            <Route path="/forms/" component={FormsPage} />
+            <Route path="/apply/" component={} />
             <RouteWithMeta
               path="/blog/"
               exact

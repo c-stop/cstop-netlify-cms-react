@@ -53,17 +53,20 @@
 	align-items: start
 	grid-column-gap: 80px
 	grid-row-gap: 30px
-	grid-template-areas: ". ."
-	-ms-grid-columns: 2.5fr 80px 1fr
-	grid-template-columns: 2.5fr 1fr
+	grid-template-areas: "a a" "b c "
+	-ms-grid-columns: 1fr 80px 1fr
+	grid-template-columns: 1fr 1fr
 	-ms-grid-rows: auto
-	grid-template-rows: auto
+	grid-template-rows: ". ."
 
 .contact-form-wrap
 	padding: 45px 50px 50px
 	border-style: solid
 	border-width: 1px
 	border-color: #eee
+	
+.contact-info
+	grid-area: a
   
 .get-in-touch-form
 	display: -webkit-box
@@ -75,6 +78,24 @@
 	-webkit-flex-direction: column
 	-ms-flex-direction: column
 	flex-direction: column  
+.status-message
+	padding: 9px 30px
+	background-color: #202020
+	color: #fff
+	font-size: 14px
+	line-height: 26px
+	text-align: center
+
+	.cc-success-message
+		background-color: #12b878
+
+	.cc-error-message
+		background-color: #db4b68
+
+	.cc-no-data
+		display: block
+		width: 70%
+		margin: 100px auto
 
 .w-form-done
   display: none
@@ -91,6 +112,10 @@
     display: flex
     justify-content: space-between
     align-items: flex-start
+
+//   .status-message.cc-no-data
+// 	width: 80%
+// 	max-width: 470px
 
   .contact-form-wrap
 		padding: 30px

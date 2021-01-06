@@ -7,7 +7,16 @@ import Content from '../components/Content'
 import './Contact.sass'
 
 export default ({ fields }) => {
-  const { body, title, subtitle, featuredImage, address, phone, email, workHours } = fields
+  const {
+    body,
+    title,
+    subtitle,
+    featuredImage,
+    address,
+    phone,
+    email,
+    workHours,
+  } = fields
   return (
     <div className="Contact">
       <PageHeader
@@ -18,6 +27,26 @@ export default ({ fields }) => {
 
       <div className="container">
         <div className="w-layout-grid contact-form-grid">
+          <div id="w-node-509be70585a6-184c63d4" className="contact-info">
+            <div className="details-wrap">
+              <div className="label">Our offices </div>
+              <div className="paragraph-light">
+                We welcome your inquiries. Reach out to us directly
+                <a
+                  href="mailto:dereketman@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {email}
+                </a>
+              </div>
+            </div>
+            <div className="details-wrap">
+              <div className="label">WORKING HOURS</div>
+              <div className="paragraph-light">{workHours}</div>
+            </div>
+          </div>
+
           <div id="w-node-509be705858e-184c63d4" className="contact-form-wrap">
             <div className="contact-form-heading-wrap">
               <h2 className="contact-heading">Contact us</h2>
@@ -25,6 +54,7 @@ export default ({ fields }) => {
                 We welcome your inquiries. Reach out to us directly
               </div>
             </div>
+
             <div className="contact-form w-form">
               <form
                 data-name="Get In Touch Form"
@@ -68,31 +98,26 @@ export default ({ fields }) => {
                   className="Button"
                 />
               </form>
-              <div className="status-message cc-success-message w-form-done">
+              {/* <div className="status-message cc-success-message w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
               <div className="status-message cc-error-message w-form-fail">
                 <div>Oops! Something went wrong while submitting the form.</div>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div id="w-node-509be70585a6-184c63d4">
-            <div className="details-wrap">
-              <div className="label">Our offices </div>
+
+          <div id="w-node-509be705858e-184c63d4" className="contact-form-wrap">
+            <div className="contact-form-heading-wrap">
+              <h2 className="contact-heading">Join The Team </h2>
               <div className="paragraph-light">
                 We welcome your inquiries. Reach out to us directly
-                <a
-                  href="mailto:dereketman@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {email}
-                </a>
               </div>
             </div>
-            <div className="details-wrap">
-              <div className="label">WORKING HOURS</div>
-              <div className="paragraph-light">{workHours}</div>
+
+            <div className="contact-form w-form">
+              <Content source={body} />
+              <button className="Button"> Link to Job form</button>
             </div>
           </div>
         </div>

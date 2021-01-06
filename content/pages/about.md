@@ -12,10 +12,25 @@ section1: |-
   Managers with multiple COVID compliance courses/completion certificates
   between them.
 clientImages:
-  - companyName: Test Client
-    image: /images/uploads/unsplash4.jpg
-  - companyName: test company 2
-    image: /images/uploads/cstop_apple.jpg
+  - companyName: Apple
+    featured: true
+    image: /images/uploads/apple-logo.png
+  - companyName: 1820 Productions
+    featured: true
+    image: /images/uploads/1820-logo.png
+  - companyName: Toyota
+    image: /images/uploads/toyota-logo.png
+    featured: true
+  - companyName: Beats Audio
+    image: /images/uploads/beats-logo.png
+  - companyName: Puma
+    image: /images/uploads/puma-logo.png
+  - companyName: NFL
+    image: /images/uploads/nfl-logo.png
+  - companyName: Domino's Pizza
+    image: /images/uploads/dominos-logo.png
+  - companyName: Pinterest
+    image: /images/uploads/pinterest-logo.png
 section2: |-
   Thoroughly trained in infection prevention and control through the
   World Health Organization course for COVID-19 Virus + C19CO + OSHA
