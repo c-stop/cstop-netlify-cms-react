@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer'
+import JobPage from './components/JobPage'
 import FormsPage from './components/JotFormRouter'
 import Meta from './components/Meta'
 import Nav from './components/Nav'
@@ -66,11 +67,12 @@ class App extends Component {
         <div className="React-Wrap">
           <ScrollToTop />
           <ServiceWorkerNotifications reloadOnUpdate />
-          {/* <GithubCorner url='https://github.com/Jinksi/netlify-cms-react-starter' /> */}
+
           <Helmet
             defaultTitle={siteTitle}
             titleTemplate={`${siteTitle} | %s`}
           />
+
           <Meta
             headerScripts={headerScripts}
             absoluteImageUrl={
@@ -117,8 +119,10 @@ class App extends Component {
             />
             <Route path="/quote/" exact component={QuotePage} />
 
-            <Route path="/forms/" component={FormsPage} />
-            <Route path="/apply/" component={} />
+            <Route path="/forms/" exact component={FormsPage} />
+            
+            <Route path="/apply/" exact component={JobPage} />
+
             <RouteWithMeta
               path="/blog/"
               exact
