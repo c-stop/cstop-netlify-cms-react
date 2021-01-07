@@ -34,7 +34,13 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           use: [
             { loader: 'css-loader', options: { importLoaders: 1 } },
-            'sass-loader',
+            {
+              loader: "sass-loader",
+              options: {
+                // Prefer `dart-sass`
+                implementation: require("node-sass"),
+              },
+            },
             'postcss-loader',
           ],
         }),
