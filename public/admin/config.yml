@@ -78,6 +78,12 @@ collections: # A list of collections the CMS should be able to edit
             - {label: Section 1 Title, name: section1Title, widget: string}
             - {label: Section 1 Body, name: section1Body, widget: markdown}
 
+          - label: "Services Section"
+            name: "serviceSection"
+            widget: "object"
+            fields:
+              - {label: Service Background Image, name: serviceBackground, widget: image }
+
           - label: "Meta"
             required: false
             name: "meta"

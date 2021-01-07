@@ -3,11 +3,14 @@ import PageHeader from '../components/PageHeader'
 import "./Services.sass"
 
 export default ({ fields }) => {
-  const { title, subTitle, featuredImage, section1 } = fields
+  const { title, subTitle, featuredImage, section1, serviceSection} = fields
+
+  const {serviceBackground} = serviceSection
 
   const  {section1Title, section1Body} = section1
 
   console.log(fields)
+
   return (
     <div className="Service">
       <PageHeader
@@ -24,8 +27,8 @@ export default ({ fields }) => {
         <div class="divider" />
       </div>
 
-      <div class="section">
-        <div class="container">
+      <div class="section service-container" style={{backgroundImage:`URL(${serviceBackground})`}}>
+        <div class="container ">
           <div class="section-heading-wrap">
             <div class="label">KEEPING YOU SAFE</div>
             <h2>Valuable Services</h2>

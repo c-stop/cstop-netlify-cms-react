@@ -18,4 +18,6 @@ section1:
     the face of the company they represent and therefore must be
     culpable and professional in our collective and vigorous fight
     against infectious diseases especially COVID-19.
+serviceSection:
+  serviceBackground: /images/uploads/image-7-.jpeg
 ---
