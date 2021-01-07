@@ -95,7 +95,7 @@ export default ({ fields }) => {
           </Slider>
         </div>
       </div>
-      <div className="section Cta">
+      <div className="Cta">
         <Cta />
       </div>
     </div>
