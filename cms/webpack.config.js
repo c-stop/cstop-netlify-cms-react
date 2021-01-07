@@ -34,6 +34,7 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           use: [
             { loader: 'css-loader', options: { importLoaders: 1 } },
+            'sass-loader',
             'postcss-loader',
           ],
         }),
