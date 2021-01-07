@@ -1,6 +1,4 @@
 import React from 'react'
-import BackgroundImage from './BackgroundImage'
-import LazyImage from './LazyImage'
 import './TeamMemberCard.sass'
 
 export default ({ fields }) => {

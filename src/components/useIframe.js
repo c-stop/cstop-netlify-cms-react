@@ -104,8 +104,12 @@ export default function UseIframe(props) {
   }
 
   const hideSpinner = () => {
-	setLoading(false)
-}
+    setLoading(false)
+  }
+  const handleOnLoad = ()  => {
+		window.parent.scrollTo(0,0)
+		hideSpinner()
+	}
 
   return (
     <>
@@ -114,7 +118,7 @@ export default function UseIframe(props) {
       <iframe
         id={`JotFormIFrame-${id}`}
         title={title}
-        onLoad={window.parent.scrollTo(0, 0), hideSpinner}
+        onLoad={handleOnLoad}
         allowTransparency="true"
         allowFullScreen="false"
         allow="geolocation; microphone; camera"

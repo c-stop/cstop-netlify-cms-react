@@ -1,20 +1,15 @@
 import React from 'react'
-import { MapPin, Smartphone, Mail } from 'react-feather'
-
-import PageHeader from '../components/PageHeader'
-import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
-import Content from '../components/Content'
-import './Contact.sass'
 import { Link } from 'react-router-dom'
+import Content from '../components/Content'
+import PageHeader from '../components/PageHeader'
+import './Contact.sass'
+
 
 export default ({ fields }) => {
   const {
-    body,
     title,
     subtitle,
     featuredImage,
-    address,
-    phone,
     email,
     workHours,
     applySection,
@@ -40,7 +35,7 @@ export default ({ fields }) => {
                 <a
                   href="mailto:solutions@cstop.com"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   {email}
                 </a>

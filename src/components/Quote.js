@@ -3,7 +3,7 @@ import Spinner from "./Spinner"
 
 export default function QuotePage({fields}) {
 
-	const {formNumber} = fields
+	// const {formNumber} = fields
 
 	const [loading, setLoading] = useState(true)
 
@@ -106,13 +106,18 @@ export default function QuotePage({fields}) {
 		setLoading(false)
 	}
 
+	const handleOnLoad = ()  => {
+		window.parent.scrollTo(0,0)
+		hideSpinner()
+	}
+
 	return (
 		<div style={{ alignSelf: "center" }} >
 			{loading? (<Spinner />) : null}
 			<iframe
 				id="JotFormIFrame-203017250998154"
 				title="Client Estimate Request Form"
-				onLoad={window.parent.scrollTo(0,0), hideSpinner}
+				onLoad={handleOnLoad}
 				allowTransparency="true"
 				allowFullScreen="false"
 				allow="geolocation; microphone; camera"
