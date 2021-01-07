@@ -31,27 +31,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use:[
-            'style-loader',
+        use:  [
             { loader: 'css-loader', options: { importLoaders: 1 } },
+            'sass-loader',
             'postcss-loader',
           ],
       },
-      {
-        test: /\.sass$/,
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: "sass-loader",
-              options: {
-                // Prefer `dart-sass`
-                implementation: require("node-sass"),
-              },
-            },         
-          ],
-        }),
-      },
-
     ],
   },
   plugins: [
