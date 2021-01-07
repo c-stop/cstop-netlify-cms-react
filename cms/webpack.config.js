@@ -31,18 +31,24 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use:  [
+        use: [
           'style-loader',
-            { loader: 'css-loader', options: { importLoaders: 1 } },
-            'postcss-loader',
-          ],
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'postcss-loader',
+        ],
       },
       {
         test: /\.sass$/,
-        use:  [
+        use: [
           'style-loader',
           'css-loader',
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              // Prefer `dart-sass`
+              implementation: require('node-sass'),
+            },
+          },
           'postcss-loader',
         ],
       },
