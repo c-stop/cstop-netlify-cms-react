@@ -3,7 +3,7 @@ const path = require('path')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const production = process.env.NODE_ENV === 'development'
+const production = process.env.NODE_ENV === 'production'
 const mode = production ? 'production' : 'development'
 console.log(`Building CMS in ${mode} mode`)
 
@@ -35,8 +35,9 @@ module.exports = {
         use: 
         [
           MiniCssExtractPlugin.loader,
-          'css-loader',
-          // { loader: 'css-loader', options: {importLoaders: 1 } },
+          // 'css-loader',
+          { loader: 'css-loader', options: {importLoaders: 2 } },
+          'sass-loader',
           'postcss-loader',
         ],
       },
@@ -44,7 +45,7 @@ module.exports = {
         test: /\.sass$/,
           use: [
             MiniCssExtractPlugin.loader,
-            'css-loader',
+            { loader: 'css-loader', options: {importLoaders: 1 } },
             {
               loader: 'sass-loader',
               options: {
@@ -52,6 +53,7 @@ module.exports = {
                 implementation: require('node-sass'),
               },
             },
+            
           ],
       },
       {
