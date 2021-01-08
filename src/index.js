@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-snapshot'
+import { render } from 'react-dom'
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.sass'
 import App from './App'
