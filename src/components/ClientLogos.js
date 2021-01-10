@@ -10,26 +10,29 @@ export default function ClientLogos({ data }) {
   const settings = {
     className: 'center',
     dots: true,
-    centerMode: true,
+    // centerMode: true,
     infinite: true,
-    centerPadding: '20px',
+    // centerPadding: '20px',
     slidesToShow: 1,
     speed: 500,
-    rows: 2,
-    slidesPerRow: 2,
+    rows: 3,
+    // slides:3,
+    slidesPerRow: 1,
+    width: "100%"
   }
 
   return (
-    <div>
+    <>
       <div className="section-heading-wrap">
         <h2 className="heading-jumbo-small">OUR CLIENTS</h2>
       </div>
 
-      <div style={{ width: '80%', margin: "auto" }}>
+      {/* <div style={{ width: '80%', margin: 'auto' }}> */}
         <Slider {...settings}>
           {data.map((client) => {
             return (
-              <div>
+              
+              <div className="logo-wrapper">
                 <LazyImage
                   className="client-logo-img"
                   src={client.image}
@@ -39,8 +42,8 @@ export default function ClientLogos({ data }) {
             )
           })}
         </Slider>
-      </div>
+      {/* </div> */}
       {/* <div className="divider"></div> */}
-    </div>
+    </>
   )
 }

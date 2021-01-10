@@ -13,9 +13,17 @@
 	grid-template-areas: ". . ." ". . ."
 	-ms-grid-columns: 1fr 30px 1fr 30px 1fr
 	grid-template-columns: 1fr 1fr 1fr
+
 .image-gallery-src
 	width: 50%
 	margin: auto
+
+.about-client-container
+	// height: 100vh
+	padding: 4rem
+	width: 100%
+	background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #ffc277, #fd8d00) no-repeat 0 0
+
 @media screen and ( max-width: 991px  )
 	.team-members
 		grid-template-areas: ". ." ". ." ". ."
@@ -34,7 +42,6 @@
 	.team-member-name
 		font-size: 1rem
 		line-height: 28px
-
 
 @media screen and ( max-width: 501px  )
 	.team-members

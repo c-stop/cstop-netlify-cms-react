@@ -32,6 +32,15 @@ export default ({ fields }) => {
     lazyLoad: true,
     cssEase: 'linear',
   }
+  const root = document.documentElement
+
+  document.addEventListener('mousemove', (evt) => {
+    let x = evt.clientX / window.innerWidth;
+    let y = evt.clientY / window.innerHeight;
+
+    root.style.setProperty('--mouse-x', x)
+    root.style.setProperty('--mouse-y', y)
+  })
 
   return (
     <div className="About">
@@ -41,13 +50,14 @@ export default ({ fields }) => {
         backgroundImage={featuredImage}
       />
 
-      <div className="container">
+      <div className=" about-client-container " >
         <div className="story-wrap">
           <Content source={section1} className="paragraph-dark" />
         </div>
-      </div>
 
-      <ClientLogos data={clientImages} />
+        <ClientLogos data={clientImages} />
+        
+      </div>
 
       <div className="section">
         <div className="about-content">
@@ -82,7 +92,7 @@ export default ({ fields }) => {
         <div>
           <Slider {...settings}>
             {/* <div><img src={cStopPerson} alt="PlaceHolder " /></div> */}
-            {imageGallery.map(({ image, description }) => {
+            {/* {imageGallery.map(({ image, description }) => {
               return (
                 <img
                   className="image-gallery-src"
@@ -90,7 +100,7 @@ export default ({ fields }) => {
                   alt={description}
                 />
               )
-            })}
+            })} */}
           </Slider>
         </div>
       </div>
