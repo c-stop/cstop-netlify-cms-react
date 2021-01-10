@@ -9,16 +9,14 @@ import LazyImage from './LazyImage'
 export default function ClientLogos({ data }) {
   const settings = {
     className: 'center',
-    dots: true,
-    // centerMode: true,
+    lazyLoad: true,
+    centerMode: true,
     infinite: true,
-    // centerPadding: '20px',
-    slidesToShow: 1,
+    dots: true,
+    infinite: true,
     speed: 500,
-    rows: 3,
-    // slides:3,
+    rows: 2,
     slidesPerRow: 1,
-    width: "100%"
   }
 
   return (
@@ -28,20 +26,25 @@ export default function ClientLogos({ data }) {
       </div>
 
       {/* <div style={{ width: '80%', margin: 'auto' }}> */}
-        <Slider {...settings}>
-          {data.map((client) => {
-            return (
-              
-              <div className="logo-wrapper">
-                <LazyImage
+      <Slider {...settings}>
+        {data.map((client) => {
+          return (
+            <div className="logo-wrapper">
+              <img
+                className="client-logo-img"
+                id={client.companyName}
+                src={client.image}
+                alt={client.companyName}
+              />
+              {/* <LazyImage
                   className="client-logo-img"
                   src={client.image}
                   alt={client.companyName}
-                />
-              </div>
-            )
-          })}
-        </Slider>
+                /> */}
+            </div>
+          )
+        })}
+      </Slider>
       {/* </div> */}
       {/* <div className="divider"></div> */}
     </>
