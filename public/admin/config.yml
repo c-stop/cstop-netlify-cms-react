@@ -120,6 +120,8 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Name, name: name, widget: string}
               - {label: Employee Title, name: employeeTitle, widget: string }
               - {label: Employee Picture, name: employeePicture, widget: image}
+              - {label: Quote, name: employeeQuote, widget: markdown}
+              
           - label: "Image Gallery"
             name: "imageGallery"
             widget: "list"

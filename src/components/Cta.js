@@ -20,7 +20,7 @@ export default function Cta() {
 							</div>
 						</div>
 						<Link to="/quote" className="Button">
-							<div>Request a quote</div>
+							<div>Ask Our Team</div>
 						</Link>
 					</div>
 				</div>

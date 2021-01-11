@@ -35,7 +35,7 @@ export default function Nav({ handlePopupOpen }) {
         </div>
 
         <Link id="navQuoteButton" to="/quote" className="Button">
-          <div className="text-block">Talk to a Specialist</div>
+          <div className="text-block">Request an Estimate</div>
         </Link>
       </div>
 

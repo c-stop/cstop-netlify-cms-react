@@ -35,8 +35,8 @@ export default ({ fields }) => {
   const root = document.documentElement
 
   document.addEventListener('mousemove', (evt) => {
-    let x = evt.clientX / window.innerWidth;
-    let y = evt.clientY / window.innerHeight;
+    let x = evt.clientX / window.innerWidth
+    let y = evt.clientY / window.innerHeight
 
     root.style.setProperty('--mouse-x', x)
     root.style.setProperty('--mouse-y', y)
@@ -50,13 +50,12 @@ export default ({ fields }) => {
         backgroundImage={featuredImage}
       />
 
-      <div className=" about-client-container " >
+      <div className=" about-client-container ">
         <div className="story-wrap">
           <Content source={section1} className="paragraph-dark" />
         </div>
 
         <ClientLogos data={clientImages} />
-        
       </div>
 
       <div className="section">
@@ -65,19 +64,17 @@ export default ({ fields }) => {
         </div>
       </div>
 
-      <div className="section">
-        <div className="container">
-          <div className="section-heading-wrap">
-            <h2>
-              Our world-class team
-              <br />
-            </h2>
-          </div>
-          <div className="w-layout-grid team-members">
-            {teamMembers.map((employee) => {
-              return <TeamMemberCard fields={employee} />
-            })}
-          </div>
+      <div className="container">
+        <div className="section-heading-wrap">
+          <h2>
+            Our world-class team
+            <br />
+          </h2>
+        </div>
+        <div className="w-layout-grid team-members">
+          {teamMembers.map((employee) => {
+            return <TeamMemberCard fields={employee} />
+          })}
         </div>
       </div>
 

@@ -43,6 +43,8 @@
     "react-markdown": "4.2.2",
     "react-router-dom": "^5.0.1",
     "react-slick": "^0.27.13",
+    "react-tiger-transition": "^4.1.2",
+    "react-transition-group": "^4.4.1",
     "slick-carousel": "^1.8.1",
     "style-loader": "^2.0.0"
   },
@@ -70,8 +72,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "reactSnap":{
-    "include":["/"]
+  "reactSnap": {
+    "include": [
+      "/"
+    ]
   },
   "browserslist": {
     "production": [
