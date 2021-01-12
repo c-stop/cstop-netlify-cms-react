@@ -4,7 +4,6 @@ import Content from '../components/Content'
 import PageHeader from '../components/PageHeader'
 import './Contact.sass'
 
-
 export default ({ fields }) => {
   const {
     title,
@@ -27,31 +26,18 @@ export default ({ fields }) => {
 
       <div className="container">
         <div className="w-layout-grid contact-form-grid">
-          <div id="w-node-509be70585a6-184c63d4" className="contact-info">
-            <div className="details-wrap">
-              <div className="label">Our offices </div>
+          <div id="w-node-509be705858e-184c63d4" className="contact-form-wrap">
+            <div className="contact-form-heading-wrap">
+              <h2 className="contact-heading">Contact us</h2>
               <div className="paragraph-light">
-                We welcome your inquiries. Reach out to us directly
+                We welcome your inquiries, fill out the form below or reach out to us directly.
                 <a
-                  href="mailto:solutions@cstop.com"
+                  href="mailto:solutions@c-stop.services"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {email}
                 </a>
-              </div>
-            </div>
-            <div className="details-wrap">
-              <div className="label">WORKING HOURS</div>
-              <div className="paragraph-light">{workHours}</div>
-            </div>
-          </div>
-
-          <div id="w-node-509be705858e-184c63d4" className="contact-form-wrap">
-            <div className="contact-form-heading-wrap">
-              <h2 className="contact-heading">Contact us</h2>
-              <div className="paragraph-light">
-                We welcome your inquiries. Reach out to us directly
               </div>
             </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import PageHeader from '../components/PageHeader'
-import Content from "../components/Content"
+import Content from '../components/Content'
 import './Services.sass'
 
 export default ({ fields }) => {
@@ -37,7 +37,7 @@ export default ({ fields }) => {
 
       <div
         class="section service-container"
-        style={{ backgroundImage: `URL(${serviceBackground})` }}
+        // style={{ backgroundImage: `URL(${serviceBackground})` }}
       >
         <div class="container ">
           <div class="section-heading-wrap">
@@ -227,16 +227,11 @@ export default ({ fields }) => {
           </div>
         </div>
 
-        <div  style={{backgroundColor: "black"}}>
-          <div class="section-heading-wrap">
-            <h2>{belowServicesTitle}</h2>
-          </div>
-          <Content src={belowServicesBody} />
+        <div class="container story-wrap">
+          <h2 class="heading-jumbo-small">{belowServicesTitle}</h2>
+          <Content src={belowServicesBody} className="paragraph-dark"/>
           <a className="Button">Talk to a Specialist</a>
-          
         </div>
-
-
       </div>
     </div>
   )

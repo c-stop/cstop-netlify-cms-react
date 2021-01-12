@@ -21,6 +21,8 @@ export default ({ fields }) => {
     clientImages,
   } = fields
 
+  console.log(fields)
+
   const settings = {
     dots: true,
     infinite: true,

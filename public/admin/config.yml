@@ -25,10 +25,9 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: markdown}
-          - {label: Body, name: body, widget: markdown}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Email Address, name: email, widget: string}
-          - {label: Hours of Operation , name: workHours , widget: markdown}
+          - {label: Hours of Operation , name: workHours , widget: markdown, required: false}
           - label: "Apply To C-stop"
             name: "applySection"
             widget: "object"
@@ -89,7 +88,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Service Background Image, name: serviceBackground, widget: image, required: false }
               - {label: Section Title, name: section2Title , widget: text}
-              - {label: Section subTitle, name: section2Subtitle, widget: string}
+              - {label: Section subTitle, name: section2Subtitle, widget: string, required: false}
               - {label: Section Body , name: section2Body , widget: markdown}
 
               - label: "Small Sections"
@@ -98,7 +97,7 @@ collections: # A list of collections the CMS should be able to edit
                 collapsed: true
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - {label: Body, name: body, widget: markdown}
+                  - {label: Body, name: body, widget: markdown, required: false}
                   
               - {label: Below Services Title, name: belowServicesTitle, widget: string}
               - {label: Below Services Body, name: belowServicesBody, widget: markdown}

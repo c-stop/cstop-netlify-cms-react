@@ -46,20 +46,22 @@ export default ({ fields }) => {
 
       <div className="intro-header">
         <div className="intro-content cc-homepage">
-          <div data-aos="fade-up" data-aos-delay="150">
-            <div className="heading-jumbo intro-logo">
-              <img
-                alt="Logo Of Cstop"
-                className="logoImage"
-                src="images/logos/cStopIconColor.png"
-              />
-              <img
-                alt="Cstop- orange and blue text logo"
-                className="logoText"
-                style={{ paddingLeft: '20px' }}
-                src="images/logos/cStopFullColorTextNew.svg"
-              />
-            </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            className="heading-jumbo intro-logo"
+          >
+            <img
+              alt="Logo Of Cstop"
+              className="logoImage"
+              src="images/logos/cStopIconColor.png"
+            />
+            <img
+              alt="Cstop- orange and blue text logo"
+              className="logoText"
+              style={{ paddingLeft: '20px' }}
+              src="images/logos/cStopFullColorTextNew.svg"
+            />
           </div>
 
           <div
@@ -69,13 +71,10 @@ export default ({ fields }) => {
             style={{ overflow: 'hidden' }}
           >
             <div className="paragraph-bigger cc-bigger-white-light">
-              <h4>{subtitle}</h4>
+              <h5 className="intro-subtitle">{subtitle}</h5>
               <br />
             </div>
-            <Link
-              to={buttonLinkTo}
-              className="Button Jumbo-button inline-block"
-            >
+            <Link to={buttonLinkTo} className="Button inline-block">
               <div>{buttonText}</div>
             </Link>
           </div>
@@ -111,23 +110,6 @@ export default ({ fields }) => {
           </div>
         </div>
       </div>
-
-      {/* Example here 
-
-      <PageHeader
-        large
-        title={title}
-        subtitle={subtitle}
-        backgroundImage={featuredImage}
-      />
-
-      <div className="section">
-        <div className="container">
-          <Content source={body} />
-        </div>
-      </div> 
-      
-      */}
     </main>
   )
 }

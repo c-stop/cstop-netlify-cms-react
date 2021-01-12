@@ -6,7 +6,10 @@ import 'slick-carousel/slick/slick.css'
 import './ClientLogos.sass'
 import LazyImage from './LazyImage'
 
+import uniqueId from "lodash/uniqueId"
+
 export default function ClientLogos({ data }) {
+
   const settings = {
     className: 'center',
     lazyLoad: true,
@@ -32,7 +35,7 @@ export default function ClientLogos({ data }) {
             <div className="logo-wrapper">
               <img
                 className="client-logo-img"
-                id={client.companyName}
+                id={uniqueId(`${client.companyName}`)}
                 src={client.image}
                 alt={client.companyName}
               />
