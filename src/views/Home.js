@@ -69,7 +69,7 @@ export default ({ fields }) => {
             style={{ overflow: 'hidden' }}
           >
             <div className="paragraph-bigger cc-bigger-white-light">
-              <h3>{subtitle}</h3>
+              <h4>{subtitle}</h4>
               <br />
             </div>
             <Link

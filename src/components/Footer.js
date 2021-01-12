@@ -14,7 +14,7 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
 
     <div className="footer-container">
       <a
-        className="image-5"
+        className="footer-social-icon"
         href="https://www.linkedin.com/company/c-stop/"
       >
         <img
@@ -23,9 +23,9 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
           alt="Link to CStop Linked in"
         />
       </a>
-
+      {/* image-4  */}
       <a
-        className="image-4"
+        className="footer-social-icon"
         href="https://www.facebook.com/C-Stop-Health-Safety-Services-105283481304458/"
       >
         <img
