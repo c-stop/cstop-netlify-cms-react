@@ -41,6 +41,7 @@ collections: # A list of collections the CMS should be able to edit
             required: false
             name: "meta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: Title, name: title, widget: string, required: false}
               - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
@@ -58,6 +59,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Meta"
             required: false
             name: "meta"
+            collapsed: true
             widget: "object"
             fields:
               - {label: Title, name: title, widget: string, required: false}
@@ -72,23 +74,41 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string, required: false}
           - {label: Subtitle, name: subTitle, widget: string , required: false }
           - {label: Featured Image, name: featuredImage, widget: image }
-          - label: "Section 1"
+          - label: "Services"
             name: "section1"
             widget: "object"
+            collapsed: true
             fields:
-            - {label: Section 1 Title, name: section1Title, widget: string}
-            - {label: Section 1 Body, name: section1Body, widget: markdown}
+            - {label: Section Title, name: section1Title, widget: string}
+            - {label: Section Body, name: section1Body, widget: markdown}
 
-          - label: "Services Section"
-            name: "serviceSection"
+          - label: "Valuable Services"
+            name: "section2"
             widget: "object"
+            collapsed: true
             fields:
-              - {label: Service Background Image, name: serviceBackground, widget: image }
+              - {label: Service Background Image, name: serviceBackground, widget: image, required: false }
+              - {label: Section Title, name: section2Title , widget: text}
+              - {label: Section subTitle, name: section2Subtitle, widget: string}
+              - {label: Section Body , name: section2Body , widget: markdown}
+
+              - label: "Small Sections"
+                name: "smallSections"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Body, name: body, widget: markdown}
+                  
+              - {label: Below Services Title, name: belowServicesTitle, widget: string}
+              - {label: Below Services Body, name: belowServicesBody, widget: markdown}
+              
 
           - label: "Meta"
             required: false
             name: "meta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: Title, name: title, widget: string, required: false}
               - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
@@ -131,6 +151,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Image, name: image, widget: image}
               - {label: Featured?, name: featured, widget: boolean, required: false }
           - label: "Meta"
+            collapsed: true
             required: false
             name: "meta"
             widget: "object"
@@ -163,6 +184,7 @@ collections: # A list of collections the CMS should be able to edit
                 - {label: Company Name, name: companyName, widget: string}
                 - {label: Company Logo, name: companyLogo, widget: image, description: test description}
           - label: "Meta"
+            collapsed: true
             required: false
             name: "meta"
             widget: "object"

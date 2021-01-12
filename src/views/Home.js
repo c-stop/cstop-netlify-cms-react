@@ -80,7 +80,13 @@ export default ({ fields }) => {
             </Link>
           </div>
         </div>
-        <div className="intro-subsection">
+        <div
+          className="intro-subsection"
+          data-aos="fade-up"
+          data-aos-delay="250"
+          data-aos-anchor="top-top"
+          className="intro-text"
+        >
           <div className="divider"></div>
 
           <div

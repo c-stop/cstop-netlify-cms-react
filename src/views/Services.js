@@ -1,13 +1,21 @@
 import React from 'react'
 import PageHeader from '../components/PageHeader'
-import "./Services.sass"
+import Content from "../components/Content"
+import './Services.sass'
 
 export default ({ fields }) => {
-  const { title, subTitle, featuredImage, section1, serviceSection} = fields
+  const { title, subTitle, featuredImage, section1, serviceSection } = fields
 
-  const {serviceBackground} = serviceSection
+  const {
+    serviceBackground,
+    belowServicesTitle,
+    section2Body,
+    section2Subtitle,
+    belowServicesBody,
+    section2Title,
+  } = serviceSection
 
-  const  {section1Title, section1Body} = section1
+  const { section1Title, section1Body } = section1
 
   console.log(fields)
 
@@ -27,11 +35,14 @@ export default ({ fields }) => {
         <div class="divider" />
       </div>
 
-      <div class="section service-container" style={{backgroundImage:`URL(${serviceBackground})`}}>
+      <div
+        class="section service-container"
+        style={{ backgroundImage: `URL(${serviceBackground})` }}
+      >
         <div class="container ">
           <div class="section-heading-wrap">
-            <div class="label">KEEPING YOU SAFE</div>
-            <h2>Valuable Services</h2>
+            <div class="label">{section2Subtitle}</div>
+            <h2>{section2Title}</h2>
           </div>
 
           <div class="our-services-grid">
@@ -76,7 +87,7 @@ export default ({ fields }) => {
               </div>
             </div>
 
-            <div >
+            <div>
               <img
                 src="images/Icon-3.svg"
                 width="50"
@@ -215,6 +226,17 @@ export default ({ fields }) => {
             </div>
           </div>
         </div>
+
+        <div  style={{backgroundColor: "black"}}>
+          <div class="section-heading-wrap">
+            <h2>{belowServicesTitle}</h2>
+          </div>
+          <Content src={belowServicesBody} />
+          <a className="Button">Talk to a Specialist</a>
+          
+        </div>
+
+
       </div>
     </div>
   )

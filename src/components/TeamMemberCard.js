@@ -4,7 +4,6 @@ import './TeamMemberCard.sass'
 export default ({ fields }) => {
   const { name, employeeTitle, employeePicture, employeeQuote } = fields
 
-  console.log(employeePicture)
 
   return (
     <div>
