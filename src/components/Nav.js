@@ -1,5 +1,4 @@
-import { test } from 'gray-matter'
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
@@ -8,22 +7,23 @@ import './Nav.sass'
 export default function Nav({ handlePopupOpen }) {
   const [state] = useState({ active: false, navBarActiveClass: '' })
 
-  const MenuContext = React.createContext()
+  // const MenuContext = React.createContext()
+
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const menuProvider = (props) => {
-    return (
-      <MenuContext.Provider
-        value={{
-          isMenuOpen: menuOpen,
-          toggleMenu: setMenuOpen(!menuOpen),
-          stateChangeHandler: (newState) => setMenuOpen(newState.isOpen),
-        }}
-      >
-        {props.children}
-      </MenuContext.Provider>
-    )
-  }
+  // const menuProvider = (props) => {
+  //   return (
+  //     <MenuContext.Provider
+  //       value={{
+  //         isMenuOpen: menuOpen,
+  //         toggleMenu: setMenuOpen(!menuOpen),
+  //         stateChangeHandler: (newState) => setMenuOpen(newState.isOpen),
+  //       }}
+  //     >
+  //       {props.children}
+  //     </MenuContext.Provider>
+  //   )
+  // }
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
