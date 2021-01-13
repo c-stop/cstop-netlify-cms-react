@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import { test } from 'gray-matter'
+import React, { useState, useContext } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
@@ -7,6 +8,27 @@ import './Nav.sass'
 export default function Nav({ handlePopupOpen }) {
   const [state] = useState({ active: false, navBarActiveClass: '' })
 
+  const MenuContext = React.createContext()
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const menuProvider = (props) => {
+    return (
+      <MenuContext.Provider
+        value={{
+          isMenuOpen: menuOpen,
+          toggleMenu: setMenuOpen(!menuOpen),
+          stateChangeHandler: (newState) => setMenuOpen(newState.isOpen),
+        }}
+      >
+        {props.children}
+      </MenuContext.Provider>
+    )
+  }
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+    console.log(menuOpen)
+  }
   return (
     <nav className="navigation">
       <div className={`navigation-wrap`}>
@@ -39,18 +61,21 @@ export default function Nav({ handlePopupOpen }) {
         </Link>
       </div>
 
-
       {/* Mobile Nav */}
       <Menu
         right
         className="navigation-mobile"
-        width={"70%"}
-        customBurgerIcon={
-          <img src="images/menu-icon_1menu-icon.png" alt="Menu Icon" />
-        }
+        width={'70%'}
+        isOpen={menuOpen}
+        pageWrapId={'page-wrap'}
+        // onClick={toggleMenu}
       >
-
-        <Link to="/" aria-current="page" className="navigation-item">
+        <Link
+          to="/"
+          aria-current="page"
+          className="navigation-item"
+          onClick={toggleMenu}
+        >
           Home
         </Link>
         <Link to="/services" className="navigation-item">

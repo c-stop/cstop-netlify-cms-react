@@ -4,19 +4,36 @@
 	display: -webkit-flex
 	display: -ms-flexbox
 	display: flex
+
+	flex-flow: column
+
 	padding-top: 110px
 	padding-bottom: 120px
+
 	-webkit-box-pack: center
 	-webkit-justify-content: center
 	-ms-flex-pack: center
 	justify-content: center
 	text-align: center
 	background-image: url(/images/elect_fogger.png)
-	background-size: 100%    
+	background-repeat: no-repeat
+	background-size: cover
 
+	& a
+		width: 50%
+		align-self: center
 .cta-text
 	width: 70%
 	margin-right: auto
 	margin-bottom: 35px
 	margin-left: auto
-
+// @media screen and (max-width: 500px)
+@media screen and (max-width: 500px)
+	.cta-wrap
+		background-position: 30%
+		background-size: cover
+		& a
+			width: 90%
+	.cta-text
+		width: 100%
+		padding: 10px

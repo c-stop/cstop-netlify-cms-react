@@ -39,7 +39,7 @@ export default ({ fields }) => {
   }
 
   return (
-    <main className="Home">
+    <main className="Home" >
       {/* Import starts here */}
       <video muted loop autoPlay id="myVideo">
         <source src="/images/Film-set.mp4" type="video/mp4" />
@@ -102,6 +102,7 @@ export default ({ fields }) => {
                       id={uniqueId(`ft_${image.companyName}_`)}
                       src={image.companyLogo}
                       alt={image.companyName}
+                      key={uniqueId(`ft_${image.companyName}_`)}
                     />
                   )
                 })}

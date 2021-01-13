@@ -92,7 +92,7 @@ class App extends Component {
 
           <Nav />
 
-          <Switch>
+          <Switch >
             <RouteWithMeta
               path="/"
               exact
