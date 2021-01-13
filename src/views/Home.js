@@ -6,6 +6,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 import './Home.sass'
+import uniqueId from "lodash/uniqueId"
 
 export default ({ fields }) => {
   const {
@@ -80,11 +81,10 @@ export default ({ fields }) => {
           </div>
         </div>
         <div
-          className="intro-subsection"
+          className="intro-subsection intro-text"
           data-aos="fade-up"
           data-aos-delay="250"
           data-aos-anchor="top-top"
-          className="intro-text"
         >
           <div className="divider"></div>
 
@@ -99,7 +99,7 @@ export default ({ fields }) => {
                 {featuredClientsLogos.map((image) => {
                   return (
                     <img
-                      id={image.companyName}
+                      id={uniqueId(`ft_${image.companyName}_`)}
                       src={image.companyLogo}
                       alt={image.companyName}
                     />

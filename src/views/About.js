@@ -17,7 +17,7 @@ export default ({ fields }) => {
     section1,
     section2,
     teamMembers,
-    imageGallery,
+    // imageGallery,
     clientImages,
   } = fields
 

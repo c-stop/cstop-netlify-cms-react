@@ -1,12 +1,11 @@
+import uniqueId from "lodash/uniqueId"
 import React from 'react'
-
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 import './ClientLogos.sass'
-import LazyImage from './LazyImage'
 
-import uniqueId from "lodash/uniqueId"
+
 
 export default function ClientLogos({ data }) {
 
@@ -16,7 +15,6 @@ export default function ClientLogos({ data }) {
     centerMode: true,
     infinite: true,
     dots: true,
-    infinite: true,
     speed: 500,
     rows: 2,
     slidesPerRow: 1,

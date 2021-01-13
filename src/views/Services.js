@@ -37,12 +37,13 @@ export default ({ fields }) => {
 
       <div
         class="section service-container"
-        // style={{ backgroundImage: `URL(${serviceBackground})` }}
+        style={{ backgroundImage: `URL(${serviceBackground})` }}
       >
         <div class="container ">
           <div class="section-heading-wrap">
             <div class="label">{section2Subtitle}</div>
             <h2>{section2Title}</h2>
+            {section2Body}
           </div>
 
           <div class="our-services-grid">
@@ -230,7 +231,7 @@ export default ({ fields }) => {
         <div class="container story-wrap">
           <h2 class="heading-jumbo-small">{belowServicesTitle}</h2>
           <Content src={belowServicesBody} className="paragraph-dark"/>
-          <a className="Button">Talk to a Specialist</a>
+          <a href="mailto:solutions@c-stop.services" className="Button">Talk to a Specialist</a>
         </div>
       </div>
     </div>

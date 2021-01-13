@@ -10,7 +10,7 @@ export default ({ fields }) => {
     subtitle,
     featuredImage,
     email,
-    workHours,
+    // workHours,
     applySection,
   } = fields
 
