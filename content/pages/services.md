@@ -46,4 +46,47 @@ serviceSection:
   belowServicesBody: We understand each project’s needs can vastly differ. Reach
     out to us and let’s see what we can put together. Staying ahead of COVID-19
     begins with the right plan. We can help.
+section2:
+  section2Title: Valuable Services
+  section2Subtitle: HIGHLY TRAINED AND EXPERIENCED
+  section2Body: Proper training is vital for success when maintaining compliance
+    on set. Our teams are experienced industry professionals, outfitted and
+    trained in essential safety equipment, and highly educated and certified in
+    safe set practices. Because of our strong production background, we
+    communicate and work well with studio executives, producers, production
+    managers, production coordinators, location scouts, AD's, and staff. We are
+    here to assist in any way needed including sourcing companies for testing
+    during pre-production. We look forward to giving your crew and talent peace
+    of mind (even a mask or two).
+  belowServicesTitle: DON’T SEE WHAT YOU NEED?
+  belowServicesBody: We understand each project’s needs can vastly differ. Reach
+    out to us and let’s see what we can put together. Staying ahead of COVID-19
+    begins with the right plan. We can help.
+  smallSections:
+    - title: Medical Gear & PPE
+      body: |-
+        Our on-set medic personnel comes with fully loaded kits:
+
+        * AED
+        * Oxygen system with multiple tanks
+        * Spinal immobilization and all splints
+        * full trauma bag
+        * full burn kit
+        * full diagnostics
+        * and more.
+    - title: All PPE products as needed
+      body: |-
+        * KN95 Masks
+        * Face Shields
+        * Goggles
+        * and more
+    - title: Sanitizing & Disinfecting
+      body: |-
+        * Small cleaning & disinfecting teams
+        * Eco-friendly cleaning partnerships for larger jobs and locations
+        * Electrostatic Foggers (backpack) perfect for large areas and spaces
+        * And more.
+    - title: Project Specific Teams
+    - title: On Site Displays & Systems
+    - title: Production Support
 ---

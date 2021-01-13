@@ -57,7 +57,7 @@ export default ({ fields }) => {
           <Content source={section1} className="paragraph-dark" />
         </div>
 
-        <ClientLogos data={clientImages} />
+        {/* <ClientLogos data={clientImages} /> */}
       </div>
 
       <div className="section">
