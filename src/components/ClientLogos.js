@@ -1,8 +1,6 @@
 import uniqueId from "lodash/uniqueId"
 import React from 'react'
 import Slider from 'react-slick'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
 import './ClientLogos.sass'
 
 
@@ -10,14 +8,11 @@ import './ClientLogos.sass'
 export default function ClientLogos({ data }) {
 
   const settings = {
-    className: 'center',
     lazyLoad: true,
     centerMode: true,
     infinite: true,
     dots: true,
     speed: 500,
-    rows: 2,
-    slidesPerRow: 1,
   }
 
   return (
@@ -28,12 +23,13 @@ export default function ClientLogos({ data }) {
 
       {/* <div style={{ width: '80%', margin: 'auto' }}> */}
       <Slider {...settings}>
-        {data.map((client) => {
+        {data.map((client, index, array) => {
           return (
-            <div className="logo-wrapper">
+            <div className="logo-wrapper" key={uniqueId(`${client.companyName}_${index}`)}>
+              {console.log('here is the array', array)}
               <img
                 className="client-logo-img"
-                id={uniqueId(`${client.companyName}`)}
+                id={uniqueId(`${client.companyName}_inner_${index }`)}
                 src={client.image}
                 alt={client.companyName}
               />

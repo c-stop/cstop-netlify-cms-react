@@ -1,7 +1,6 @@
 import React from "react";
 import sammMedia from "../../img/clients/cstop_sammMedia.jpg";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
+
 import Slider from "react-slick";
 
 export default function Testimonials() {

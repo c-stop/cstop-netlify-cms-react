@@ -1,4 +1,5 @@
 import React from 'react'
+import Content from "./Content"
 import './TeamMemberCard.sass'
 
 export default ({ fields }) => {
@@ -11,18 +12,8 @@ export default ({ fields }) => {
         className="team-card-wrapper"
         style={{ backgroundImage: `url(${ employeePicture })`}}
       >
-
-        {/* {employeePicture && (
-        <BackgroundImage src={employeePicture} opacity={0.4} />
-      )} */}
-        {/* <LazyImage
-          className="team-pic-src" 
-          src={employeePicture}
-          alt={`${name}, ${employeeTitle}`}
-        /> */}
-
         <div className="team-member-title-wrap" >
-          <div className="team-member-quote">"   {employeeQuote}"</div>
+          <Content className="team-member-quote" source={employeeQuote} />   
           <div className="paragraph-light">{employeeTitle}</div>
           <div className="team-member-name">{name}</div>
         </div>
