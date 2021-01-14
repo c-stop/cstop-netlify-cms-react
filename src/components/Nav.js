@@ -13,7 +13,7 @@ export default function Nav({ handlePopupOpen }) {
 
   // const menuProvider = (props) => {
   //   return (
-  //     <MenuContext.Provider
+  //     <MenuContext.Provider:
   //       value={{
   //         isMenuOpen: menuOpen,
   //         toggleMenu: setMenuOpen(!menuOpen),
@@ -27,7 +27,7 @@ export default function Nav({ handlePopupOpen }) {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
-    console.log(menuOpen)
+    console.log('in menue open', menuOpen)
   }
   return (
     <nav className="navigation">
@@ -68,26 +68,43 @@ export default function Nav({ handlePopupOpen }) {
         width={'70%'}
         isOpen={menuOpen}
         pageWrapId={'page-wrap'}
-        // onClick={toggleMenu}
+        onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
       >
         <Link
           to="/"
           aria-current="page"
           className="navigation-item"
-          onClick={toggleMenu}
+          onClick={() => toggleMenu()}
         >
           Home
         </Link>
-        <Link to="/services" className="navigation-item">
+        <Link
+          to="/services"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
           Services
         </Link>
-        <Link to="/about" className="navigation-item">
+        <Link
+          to="/about"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
           About
         </Link>
-        <Link to="/contact" className="navigation-item">
+        <Link
+          to="/contact"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
           Contact
         </Link>
-        <Link id="navQuoteButton" to="/quote" className="navigation-item">
+        <Link
+          id="navQuoteButton"
+          to="/quote"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
           Talk to a Specialist
         </Link>
       </Menu>
