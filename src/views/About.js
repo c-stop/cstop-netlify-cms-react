@@ -1,3 +1,4 @@
+import { uniqueId } from 'lodash'
 import React from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
@@ -16,6 +17,7 @@ export default ({ fields }) => {
     featuredImage,
     section1,
     section2,
+    section2Title,
     teamMembers,
     // imageGallery,
     // clientImages,
@@ -62,7 +64,8 @@ export default ({ fields }) => {
 
       <div className="section">
         <div className="about-content">
-          <p className="paragraph-smaller">{section2}</p>
+          <p div className="heading-jumbo-small">{section2Title}</p>
+          <Content className="paragraph-smaller" source={section2}/>
         </div>
       </div>
 
@@ -75,7 +78,7 @@ export default ({ fields }) => {
         </div>
         <div className="w-layout-grid team-members">
           {teamMembers.map((employee) => {
-            return <TeamMemberCard fields={employee} />
+            return <TeamMemberCard key={uniqueId(`ab_`)} fields={employee} />
           })}
         </div>
       </div>

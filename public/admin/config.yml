@@ -130,8 +130,16 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Company Name, name: companyName, widget: string}
               - {label: Featured Client, name: featured, widget: boolean, required: false}
               - {label: Image, name: image, widget: image}
-
+          - {label: Section 2 Title, name: section2Title, widget: string}
           - {label: Section 2, name: section2, widget: markdown}
+
+          - label: "Testimonials"
+            name: "clientTestimonials"
+            widget: "list"
+            fields:
+              - {label: Client Company, name: clientCompany, widget: string}
+              - {label: Client Name, name: clientName, widget: string}
+              - {label: Client Testimonial, name: clientTestimonial, widget: markdown}
           - label: "Team Members"
             name: "teamMembers"
             widget: "list"

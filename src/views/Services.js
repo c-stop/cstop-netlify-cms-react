@@ -36,9 +36,8 @@ export default ({ fields }) => {
       <div className="container">
         <div className="story-wrap">
           <div className="heading-jumbo-small">{section1Title}</div>
-          <p className="paragraph-dark">{section1Body}</p>
+          <Content className="paragraph-dark" source={section1Body} />
         </div>
-        <div className="divider" />
       </div>
 
       <div
@@ -49,7 +48,7 @@ export default ({ fields }) => {
           <div className="section-heading-wrap">
             <div className="label">{section2Subtitle}</div>
             <h2>{section2Title}</h2>
-            {section2Body}
+            <Content source={section2Body} />
           </div>
 
           <div className="our-services-grid">
@@ -63,7 +62,7 @@ export default ({ fields }) => {
                     className="service-icon"
                   />
                   <div className="paragraph-bigger">{card.title}</div>
-                  <div className="paragraph-light">{card.body}</div>
+                  <Content className="paragraph-light" source={card.body} />
                 </div>
               )
             })}
