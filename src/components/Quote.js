@@ -8,7 +8,7 @@ export default function QuotePage({fields}) {
 	const [loading, setLoading] = useState(true)
 
 	let iframe = () => {
-		var ifr = document.getElementById("JotFormIFrame-203017250998154");
+		var ifr = document.getElementById("JotFormIFrame-203625589099166");
 
 		if (window.location.href && window.location.href.indexOf("?") > -1) {
 			var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
@@ -43,7 +43,7 @@ export default function QuotePage({fields}) {
 				iframe.scrollIntoView();
 				break;
 			case "setHeight":
-				iframe.style.height = args[1] + "px";
+				iframe.style.height = args[1] +  "px";
 				break;
 			case "collapseErrorPage":
 				if (iframe.clientHeight > window.innerHeight) {
@@ -112,19 +112,19 @@ export default function QuotePage({fields}) {
 	}
 
 	return (
-		<div style={{ alignSelf: "center" }} >
+		<div >
 			{loading? (<Spinner />) : null}
 			<iframe
-				id="JotFormIFrame-203017250998154"
+				id="JotFormIFrame-203625589099166"
 				title="Client Estimate Request Form"
 				onLoad={handleOnLoad}
 				allowTransparency="true"
 				allowFullScreen="false"
 				allow="geolocation; microphone; camera"
-				src="https://form.jotform.com/203017250998154"
+				src="https://form.jotform.com/203625589099166"
 				frameBorder="0"
-				style={{ minWidth: "100%", minHeight: "100vh", border: "none" }}
-				scrolling="no"
+				style={{ minWidth: "100%", minHeight: "100vh",margin: "2rem  0", border: "none" }}
+				scrolling="yes"
 			></iframe>
 		</div>
 	);
