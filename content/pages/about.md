@@ -1,6 +1,6 @@
 ---
 title: Setting New Covid-19 Standards
-featuredImage: /images/uploads/tim-marshall-155597.jpg
+featuredImage: /images/uploads/image-7-.jpeg
 subtitle: "Family owned and operated by a Local 80 On-Set Medic, LA County: EMT,
   NREMT and an award-winning Producer/Production Manager"
 section1: Our combined credentials, 25+ years of on-set experience, and top tier

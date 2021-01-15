@@ -48,7 +48,7 @@ export default ({ fields }) => {
     <div className="About">
       <PageHeader
         title={title}
-        subtitle={section1 }
+        subtitle={section1}
         backgroundImage={featuredImage}
         className="about-header"
       />
@@ -63,19 +63,22 @@ export default ({ fields }) => {
 
       <div className="section">
         <div className="about-content">
-          <p div className="heading-jumbo-small">
-            {section2Title}
-          </p>
+          <p className="heading-jumbo-small">{section2Title}</p>
           <Content className="paragraph-smaller" source={section2} />
         </div>
 
         <div className="testimonial-container">
-          <div className="label cc-light">Hear it from our clients</div>
-          <div className="heading-jumbo-small" style={{ marginBottom: '2rem' }}>
-            Testimonials <br />
+          <div className="section-heading-wrap">
+            <div className="label cc-light">Hear it from our clients</div>
+            <div
+              className="heading-jumbo-small"
+              style={{ marginBottom: '2rem' }}
+            >
+              Testimonials <br />
+            </div>
           </div>
-          {clientTestimonials.map((testimonial) => {
-            return <Testimonials {...testimonial} />
+          {clientTestimonials.map((testimonial,index) => {
+            return <Testimonials {...testimonial} key={`${testimonial.clientCompany}_${index}`}/>
           })}
         </div>
       </div>
