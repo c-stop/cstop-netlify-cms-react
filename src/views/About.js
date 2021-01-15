@@ -6,18 +6,18 @@ import Content from '../components/Content.js'
 import Cta from '../components/Cta'
 import PageHeader from '../components/PageHeader'
 import TeamMemberCard from '../components/TeamMemberCard'
+import Testimonials from '../components/Testimonials'
 import './About.sass'
 
 export default ({ fields }) => {
   const {
     title,
-    subtitle,
     featuredImage,
     section1,
     section2,
     section2Title,
     teamMembers,
-    // imageGallery,
+    clientTestimonials,
     clientImages,
   } = fields
 
@@ -48,22 +48,35 @@ export default ({ fields }) => {
     <div className="About">
       <PageHeader
         title={title}
-        subtitle={subtitle}
+        subtitle={section1 }
         backgroundImage={featuredImage}
+        className="about-header"
       />
 
       <div className=" about-client-container ">
-        <div className="story-wrap">
+        {/* <div className="story-wrap">
           <Content source={section1} className="paragraph-dark" />
-        </div>
+        </div> */}
 
         <ClientLogos data={clientImages} />
       </div>
 
       <div className="section">
         <div className="about-content">
-          <p div className="heading-jumbo-small">{section2Title}</p>
-          <Content className="paragraph-smaller" source={section2}/>
+          <p div className="heading-jumbo-small">
+            {section2Title}
+          </p>
+          <Content className="paragraph-smaller" source={section2} />
+        </div>
+
+        <div className="testimonial-container">
+          <div className="label cc-light">Hear it from our clients</div>
+          <div className="heading-jumbo-small" style={{ marginBottom: '2rem' }}>
+            Testimonials <br />
+          </div>
+          {clientTestimonials.map((testimonial) => {
+            return <Testimonials {...testimonial} />
+          })}
         </div>
       </div>
 

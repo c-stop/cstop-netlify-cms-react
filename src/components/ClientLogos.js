@@ -1,19 +1,16 @@
-import uniqueId from "lodash/uniqueId"
+import uniqueId from 'lodash/uniqueId'
 import React from 'react'
-import Slider from 'react-slick'
 import './ClientLogos.sass'
-
-
+import LazyImage from './LazyImage'
 
 export default function ClientLogos({ data }) {
-
-  const settings = {
-    lazyLoad: true,
-    centerMode: true,
-    infinite: true,
-    dots: true,
-    speed: 500,
-  }
+  // const settings = {
+  //   lazyLoad: true,
+  //   centerMode: true,
+  //   infinite: true,
+  //   dots: true,
+  //   speed: 500,
+  // }
 
   return (
     <>
@@ -21,29 +18,25 @@ export default function ClientLogos({ data }) {
         <h2 className="heading-jumbo-small">OUR CLIENTS</h2>
       </div>
 
-      {/* <div style={{ width: '80%', margin: 'auto' }}> */}
-      <Slider {...settings}>
+      <div className="client-logo-grid">
         {data.map((client, index, array) => {
           return (
-            <div className="logo-wrapper" key={uniqueId(`${client.companyName}_${index}`)}>
-              {console.log('here is the array', array)}
-              <img
+            <div
+              className="logo-wrapper"
+              key={uniqueId(`${client.companyName}_${index}`)}
+            >
+              <LazyImage
                 className="client-logo-img"
-                id={uniqueId(`${client.companyName}_inner_${index }`)}
+                id={uniqueId(`${client.companyName}_inner_${index}`)}
                 src={client.image}
                 alt={client.companyName}
+                width="100px"
+                height="100px"
               />
-              {/* <LazyImage
-                  className="client-logo-img"
-                  src={client.image}
-                  alt={client.companyName}
-                /> */}
             </div>
           )
         })}
-      </Slider>
-      {/* </div> */}
-      {/* <div className="divider"></div> */}
+      </div>
     </>
   )
 }

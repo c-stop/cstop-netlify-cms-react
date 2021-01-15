@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import './Home.sass'
 import uniqueId from "lodash/uniqueId"
+import LazyImage from '../components/LazyImage'
 
 export default ({ fields }) => {
   const {
@@ -96,7 +97,7 @@ export default ({ fields }) => {
               <Slider {...settings}>
                 {featuredClientsLogos.map((image) => {
                   return (
-                    <img
+                    <LazyImage
                       id={uniqueId(`ft_${image.companyName}_`)}
                       src={image.companyLogo}
                       alt={image.companyName}

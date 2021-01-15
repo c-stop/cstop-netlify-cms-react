@@ -1,6 +1,12 @@
 .About
 	// background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #f6d365 0%, #fda085 100%) no-repeat 0 0
 
+.about-header 
+	background-color: grey
+	height: 100vh
+
+	.PageHeader--Subtitle
+		padding-top: 3rem
 .about-content
 	width: 80%
 	max-width: 1140px
@@ -28,6 +34,13 @@
 	// background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #f6d365 0%, #fda085 100%) no-repeat 0 0
 
 @media screen and ( max-width: 991px  )
+	.about-header 
+		padding-left: 4rem
+		padding-right: 4rem 
+		padding-top: 8rem
+
+		.PageHeader--Title 
+			font-size: 5.5rem
 	.team-members
 		grid-template-areas: ". ." ". ." ". ."
 		-ms-grid-columns: 1fr 1fr
@@ -47,6 +60,11 @@
 		line-height: 28px
 
 @media screen and ( max-width: 501px  )
+	.about-header
+		height: fit-content
+		padding-top: 4rem
+		.PageHeader--Title
+			font-size: 4.5rem
 	.team-members
 		grid-template-areas: "." "." "." "." "." "."
 		-ms-grid-columns: 1fr

@@ -33,6 +33,18 @@ clientImages:
     image: /images/uploads/dominos-logo.png
   - companyName: Pinterest
     image: /images/uploads/pinterest-logo.png
+  - image: /images/uploads/aag-logo.png
+    companyName: AAG
+  - image: /images/uploads/calvinklein-logo.png
+    companyName: Calvin Klein
+  - image: /images/uploads/boyinthecastle_logo.jpeg
+    companyName: Boy in the Castle
+  - image: /images/uploads/cbcf-logo.png
+    companyName: Congressional Black Caucus Foundation
+  - image: /images/uploads/coverage-insurance-inc-logo.png
+    companyName: Coverage Insurance Solutions
+  - image: /images/uploads/parkpictures-logo.jpg
+    companyName: Park Pictures
 section2Title: Compliance done right
 section2: "We are trailblazers. Our action plans, techniques, and methodologies
   not only follow the protocols and guidelines that prevent the transmission of
