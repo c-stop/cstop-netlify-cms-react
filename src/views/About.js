@@ -97,7 +97,7 @@ export default ({ fields }) => {
         </div>
       </div>
 
-      <div className="section-3">
+      {/* <div className="section-3">
         <div className="section-heading-wrap">
           <h2>
             See Us In Action
@@ -107,8 +107,8 @@ export default ({ fields }) => {
 
         <div>
           <Slider {...settings}>
-            {/* <div><img src={cStopPerson} alt="PlaceHolder " /></div> */}
-            {/* {imageGallery.map(({ image, description }) => {
+            <div><img src={cStopPerson} alt="PlaceHolder " /></div>
+            {imageGallery.map(({ image, description }) => {
               return (
                 <img
                   className="image-gallery-src"
@@ -116,10 +116,11 @@ export default ({ fields }) => {
                   alt={description}
                 />
               )
-            })} */}
+            })}
           </Slider>
         </div>
-      </div>
+      </div> */}
+      
       <div className="Cta">
         <Cta />
       </div>
