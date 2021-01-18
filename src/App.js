@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer'
+import JobPage from './components/JobPage'
 import FormsPage from './components/JotFormRouter'
 import Meta from './components/Meta'
 import Nav from './components/Nav'
@@ -18,6 +19,13 @@ import Home from './views/Home'
 import NoMatch from './views/NoMatch'
 import Services from './views/Services'
 import SinglePost from './views/SinglePost'
+
+// import "react-tiger-transition/styles/main.min.css";
+// glide({
+//   name:"glide-right",
+//   direction:"right"
+// });
+
 
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
@@ -66,11 +74,12 @@ class App extends Component {
         <div className="React-Wrap">
           <ScrollToTop />
           <ServiceWorkerNotifications reloadOnUpdate />
-          {/* <GithubCorner url='https://github.com/Jinksi/netlify-cms-react-starter' /> */}
+
           <Helmet
             defaultTitle={siteTitle}
             titleTemplate={`${siteTitle} | %s`}
           />
+
           <Meta
             headerScripts={headerScripts}
             absoluteImageUrl={
@@ -88,7 +97,7 @@ class App extends Component {
 
           <Nav />
 
-          <Switch>
+          <Switch >
             <RouteWithMeta
               path="/"
               exact
@@ -116,7 +125,10 @@ class App extends Component {
               siteTitle={siteTitle}
             />
             <Route path="/quote/" exact component={QuotePage} />
-            <Route path="/forms" component={FormsPage} />
+
+            <Route path="/forms/" exact component={FormsPage} />
+            
+            <Route path="/apply/" exact component={JobPage} />
 
             <RouteWithMeta
               path="/blog/"

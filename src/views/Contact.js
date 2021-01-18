@@ -1,13 +1,21 @@
 import React from 'react'
-import { MapPin, Smartphone, Mail } from 'react-feather'
-
-import PageHeader from '../components/PageHeader'
-import EnquiryFormSimpleAjax from '../components/EnquiryFormSimpleAjax'
+import { Link } from 'react-router-dom'
 import Content from '../components/Content'
+import PageHeader from '../components/PageHeader'
 import './Contact.sass'
 
 export default ({ fields }) => {
-  const { body, title, subtitle, featuredImage, address, phone, email, workHours } = fields
+  const {
+    title,
+    subtitle,
+    featuredImage,
+    email,
+    // workHours,
+    applySection,
+  } = fields
+
+  const { applyTitle, applySubtitle, applyBody, applyButton } = applySection
+
   return (
     <div className="Contact">
       <PageHeader
@@ -22,9 +30,17 @@ export default ({ fields }) => {
             <div className="contact-form-heading-wrap">
               <h2 className="contact-heading">Contact us</h2>
               <div className="paragraph-light">
-                We welcome your inquiries. Reach out to us directly
+                We welcome your inquiries, fill out the form below or reach out to us directly.
+                <a
+                  href="mailto:solutions@c-stop.services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {email}
+                </a>
               </div>
             </div>
+
             <div className="contact-form w-form">
               <form
                 data-name="Get In Touch Form"
@@ -68,78 +84,30 @@ export default ({ fields }) => {
                   className="Button"
                 />
               </form>
-              <div className="status-message cc-success-message w-form-done">
+              {/* <div className="status-message cc-success-message w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
               <div className="status-message cc-error-message w-form-fail">
                 <div>Oops! Something went wrong while submitting the form.</div>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div id="w-node-509be70585a6-184c63d4">
-            <div className="details-wrap">
-              <div className="label">Our offices </div>
-              <div className="paragraph-light">
-                We welcome your inquiries. Reach out to us directly
-                <a
-                  href="mailto:dereketman@gmail.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {email}
-                </a>
-              </div>
+
+          <div id="w-node-509be705858e-184c63d4" className="contact-form-wrap">
+            <div className="contact-form-heading-wrap">
+              <h2 className="contact-heading">{applyTitle}</h2>
+              <div className="paragraph-light">{applySubtitle}</div>
             </div>
-            <div className="details-wrap">
-              <div className="label">WORKING HOURS</div>
-              <div className="paragraph-light">{workHours}</div>
+
+            <div className="contact-form w-form">
+              <Content source={applyBody} />
+              <Link to="/apply" className="Button contact-apply-button">
+                {applyButton}
+              </Link>
             </div>
           </div>
         </div>
       </div>
-
-      <div className="section">
-        <div className="container">{/* <Jobs /> */}</div>
-      </div>
-
-      {/*  Starter example */}
-      {/* 
-      <div className="section Contact--Section1">
-        <div className="container Contact--Section1--Container">
-          <div>
-            <Content source={body} />
-
-            <div className="Contact--Details">
-              {address && (
-                <a
-                  className="Contact--Details--Item"
-                  href={`https://www.google.com.au/maps/search/${encodeURI(
-                    address
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MapPin /> {address}
-                </a>
-              )}
-              {phone && (
-                <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                  <Smartphone /> {phone}
-                </a>
-              )}
-              {email && (
-                <a className="Contact--Details--Item" href={`mailto:${email}`}>
-                  <Mail /> {email}
-                </a>
-              )}
-            </div>
-          </div>
-
-          <div>
-            <EnquiryFormSimpleAjax name="Simple Form Ajax" />
-          </div>
-        </div>
-      </div> */}
     </div>
   )
 }

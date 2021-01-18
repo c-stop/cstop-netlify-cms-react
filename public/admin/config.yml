@@ -6,6 +6,8 @@ backend:
 local_backend: true
 
 display_url: https://c-stop.services # This url will display in the top-right of the CMS
+logo_url: "https://img1.wsimg.com/isteam/ip/ed5636f7-286d-4b3d-a73f-e498eaca3946/C-Stop_TM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25"
+
 media_folder: "public/images/uploads" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
@@ -19,19 +21,26 @@ collections: # A list of collections the CMS should be able to edit
       - file: "content/pages/contact.md"
         label: "Contact Page"
         name: "contact-page"
+        description: "Description of a contact description"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: markdown}
-          - {label: Body, name: body, widget: markdown}
-          - {label: Address, name: address, widget: text}
-          - {label: Phone, name: phone, widget: string}
+          - {label: Subtitle, name: subtitle, widget: string}
           - {label: Email Address, name: email, widget: string}
-          - {label: Hours of Operation , name: workHours , widget: markdown}
+          - {label: Hours of Operation , name: workHours , widget: markdown, required: false}
+          - label: "Apply To C-stop"
+            name: "applySection"
+            widget: "object"
+            fields:
+              - {label: Title, name: applyTitle, widget: string}
+              - {label: Subtitle, name: applySubtitle, widget: string}
+              - {label: Body, name: applyBody, widget: markdown}
+              - {label: Button Text, name: applyButton, widget: text }
           - label: "Meta"
             required: false
             name: "meta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: Title, name: title, widget: string, required: false}
               - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
@@ -41,6 +50,7 @@ collections: # A list of collections the CMS should be able to edit
       - file: "content/pages/blog.md"
         label: "Blog Page"
         name: "blog-page"
+        hidden:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
@@ -48,6 +58,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: "Meta"
             required: false
             name: "meta"
+            collapsed: true
             widget: "object"
             fields:
               - {label: Title, name: title, widget: string, required: false}
@@ -62,17 +73,41 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string, required: false}
           - {label: Subtitle, name: subTitle, widget: string , required: false }
           - {label: Featured Image, name: featuredImage, widget: image }
-          - label: "Section 1"
+          - label: "Services"
             name: "section1"
             widget: "object"
+            collapsed: true
             fields:
-            - {label: Section 1 Title, name: section1Title, widget: string}
-            - {label: Section 1 Body, name: section1Body, widget: markdown}
+            - {label: Section Title, name: section1Title, widget: string}
+            - {label: Section Body, name: section1Body, widget: markdown}
+
+          - label: "Valuable Services"
+            name: "section2"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: Service Background Image, name: serviceBackground, widget: image, required: false }
+              - {label: Section Title, name: section2Title , widget: text}
+              - {label: Section subTitle, name: section2Subtitle, widget: string, required: false}
+              - {label: Section Body , name: section2Body , widget: markdown}
+
+              - label: "Small Sections"
+                name: "smallSections"
+                widget: "list"
+                collapsed: true
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Body, name: body, widget: markdown, required: false}
+                  
+              - {label: Below Services Title, name: belowServicesTitle, widget: string}
+              - {label: Below Services Body, name: belowServicesBody, widget: markdown}
+              
 
           - label: "Meta"
             required: false
             name: "meta"
             widget: "object"
+            collapsed: true
             fields:
               - {label: Title, name: title, widget: string, required: false}
               - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
@@ -83,27 +118,69 @@ collections: # A list of collections the CMS should be able to edit
         label: "About Page"
         name: "about-page"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Section 1, name: section1, widget: markdown}
-          - label: "Clients"
-            name: "clientImages"
-            widget: "list"
-            minimized_collapsed: true
+          - label: "Page Header"
+            name: "aboutPageHeader"
+            widget: "object"
             fields:
-              - {label: Company Name, name: companyName, widget: string}
-              - {label: Featured Client, name: featured, widget: boolean, required: false}
-              - {label: Image, name: image, widget: image}
+            - {label: Title, name: title, widget: string}
+            - {label: Featured Image, name: featuredImage, widget: image}
+            - {label: Subtitle, name: subtitle, widget: string}
+            - {label: Section 1, name: section1, widget: markdown}
 
-          - {label: Section 2, name: section2, widget: markdown}
-          - label: "Team Members"
-            name: "teamMembers"
-            widget: "list"
+
+          - label: "Clients Section"
+            name: "clientsSection"
+            collapsed: true
+            widget: "object"
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Employee Title, name: employeeTitle, widget: string }
-              - {label: Employee Picture, name: employeePicture, widget: image}
+            - label: "Clients"
+              name: "clientImages"
+              widget: "list"
+              minimized_collapsed: true
+              fields:
+                - {label: Company Name, name: companyName, widget: string}
+                - {label: Featured Client, name: featured, widget: boolean, required: false}
+                - {label: Image, name: image, widget: image}
+
+
+          - label: "Section 2"
+            name: "section2Container"
+            collapsed: true
+            widget: "object"
+            fields:
+            - {label: Section 2 Title, name: section2Title, widget: string}
+            - {label: Section 2, name: section2, widget: markdown}
+
+
+          - label: "Testimonial Section"
+            name: "testimonialSection"
+            collapsed: true
+            widget: "object"
+            fields:
+              - {label: Testimonial Title, name: testimonialTitle, widget: string }
+              - {label: Testimonial Subtitle, name: testimonialSubtitle, widget: string}
+              - label: "Testimonials"
+                name: "clientTestimonials"
+                widget: "list"
+                fields:
+                  - {label: Client Company, name: clientCompany, widget: string}
+                  - {label: Client Name, name: clientName, widget: string}
+                  - {label: Client Testimonial, name: clientTestimonial, widget: markdown}
+
+          - label: "Team Member Section"
+            name: "teamMemberSection"
+            collapsed: true
+            widget: "object"
+            fields:
+            - label: "Team Members"
+              name: "teamMembers"
+              widget: "list"
+              fields:
+                - {label: Name, name: name, widget: string}
+                - {label: Employee Title, name: employeeTitle, widget: string }
+                - {label: Employee Picture, name: employeePicture, widget: image}
+                - {label: Quote, name: employeeQuote, widget: markdown}
+              
           - label: "Image Gallery"
             name: "imageGallery"
             widget: "list"
@@ -112,7 +189,9 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Description, name: description, widget: string}
               - {label: Image, name: image, widget: image}
               - {label: Featured?, name: featured, widget: boolean, required: false }
+
           - label: "Meta"
+            collapsed: true
             required: false
             name: "meta"
             widget: "object"
@@ -143,8 +222,9 @@ collections: # A list of collections the CMS should be able to edit
               widget: list
               fields:
                 - {label: Company Name, name: companyName, widget: string}
-                - {label: Company Logo, name: company Logo, widget: image, description: test description}
+                - {label: Company Logo, name: companyLogo, widget: image, description: test description}
           - label: "Meta"
+            collapsed: true
             required: false
             name: "meta"
             widget: "object"

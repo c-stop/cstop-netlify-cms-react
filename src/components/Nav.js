@@ -3,11 +3,32 @@ import { slide as Menu } from 'react-burger-menu'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 import './Nav.sass'
-import Spinner from "./Spinner"
 
 export default function Nav({ handlePopupOpen }) {
   const [state] = useState({ active: false, navBarActiveClass: '' })
 
+  // const MenuContext = React.createContext()
+
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  // const menuProvider = (props) => {
+  //   return (
+  //     <MenuContext.Provider:
+  //       value={{
+  //         isMenuOpen: menuOpen,
+  //         toggleMenu: setMenuOpen(!menuOpen),
+  //         stateChangeHandler: (newState) => setMenuOpen(newState.isOpen),
+  //       }}
+  //     >
+  //       {props.children}
+  //     </MenuContext.Provider>
+  //   )
+  // }
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+    console.log('in menue open', menuOpen)
+  }
   return (
     <nav className="navigation">
       <div className={`navigation-wrap`}>
@@ -36,35 +57,55 @@ export default function Nav({ handlePopupOpen }) {
         </div>
 
         <Link id="navQuoteButton" to="/quote" className="Button">
-          <div className="text-block">Talk to a Specialist</div>
+          <div className="text-block">Request an Estimate</div>
         </Link>
       </div>
-
 
       {/* Mobile Nav */}
       <Menu
         right
         className="navigation-mobile"
-        width="60"
-        customBurgerIcon={
-          <img src="images/menu-icon_1menu-icon.png" alt="Menu Icon" />
-        }
+        width={'70%'}
+        isOpen={menuOpen}
+        pageWrapId={'page-wrap'}
+        onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
       >
-        <Spinner />
-        <Link id="navQuoteButton" to="/quote" className="Button">
-          <div className="text-block">Talk to a Specialist</div>
-        </Link>
-        <Link to="/" aria-current="page" className="navigation-item">
+        <Link
+          to="/"
+          aria-current="page"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
           Home
         </Link>
-        <Link to="/services" className="navigation-item">
+        <Link
+          to="/services"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
           Services
         </Link>
-        <Link to="/about" className="navigation-item">
+        <Link
+          to="/about"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
           About
         </Link>
-        <Link to="/contact" className="navigation-item">
+        <Link
+          to="/contact"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
           Contact
+        </Link>
+        <Link
+          id="navQuoteButton"
+          to="/quote"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
+          Talk to a Specialist
         </Link>
       </Menu>
     </nav>

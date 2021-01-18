@@ -3,67 +3,65 @@ import 'aos/dist/aos.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
 import './Home.sass'
+import uniqueId from "lodash/uniqueId"
+import LazyImage from '../components/LazyImage'
 
 export default ({ fields }) => {
-
   const {
     // title,
     subtitle,
-    carouselTitle,
     buttonText,
     buttonLinkTo,
     // featuredImage,
     // body,
     // featuredVideo,
+    featuredClients,
   } = fields
+
+  const { carouselTitle, featuredClientsLogos } = featuredClients
 
   AOS.init()
 
   const settings = {
+    fade: true,
     infinite: true,
-    slidesToShow: 1,
     autoplay: true,
     speed: 1500,
     autoplaySpeed: 4500,
     cssEase: 'linear',
     dots: false,
     arrows: false,
-    vertical: true,
+    // vertical: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   }
 
   return (
-    <main className="Home">
+    <main className="Home" >
       {/* Import starts here */}
+      <video muted loop autoPlay id="myVideo">
+        <source src="/images/Film-set.mp4" type="video/mp4" />
+      </video>
+
       <div className="intro-header">
-        {/* <VideoHeader
-          large
-          title={title}
-          subtitle={subtitle}
-          backgroundVideo={featuredVideo}
-        /> */}
-
-        <video muted loop autoPlay id="myVideo">
-          <source src="/images/Film-set.mp4" type="video/mp4" />
-        </video>
-
         <div className="intro-content cc-homepage">
-          <div data-aos="fade-up" data-aos-delay="150">
-            <div className="heading-jumbo intro-logo">
-              <img
-                alt="Logo Of Cstop"
-                className="logoImage"
-                src="images/logos/cStopIconColor.png"
-              />
-              <img
-                alt="Cstop- orange and blue text logo"
-                className="logoText"
-                style={{ paddingLeft: '20px' }}
-                src="images/logos/cStopFullColorTextNew.svg"
-              />
-            </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            className="heading-jumbo intro-logo"
+          >
+            <img
+              alt="Logo Of Cstop"
+              className="logoImage"
+              src="images/logos/cStopIconColor.png"
+            />
+            <img
+              alt="Cstop- orange and blue text logo"
+              className="logoText"
+              style={{ paddingLeft: '20px' }}
+              src="images/logos/cStopFullColorTextNew.svg"
+            />
           </div>
 
           <div
@@ -73,18 +71,20 @@ export default ({ fields }) => {
             style={{ overflow: 'hidden' }}
           >
             <div className="paragraph-bigger cc-bigger-white-light">
-              <h3>{subtitle}</h3>
+              <h5 className="intro-subtitle">{subtitle}</h5>
               <br />
             </div>
-            <Link
-              to={buttonLinkTo}
-              className="Button Jumbo-button inline-block"
-            >
+            <Link to={buttonLinkTo} className="Button inline-block">
               <div>{buttonText}</div>
             </Link>
           </div>
         </div>
-        <div className="intro-subsection">
+        <div
+          className="intro-subsection intro-text"
+          data-aos="fade-up"
+          data-aos-delay="250"
+          data-aos-anchor="top-top"
+        >
           <div className="divider"></div>
 
           <div
@@ -95,31 +95,21 @@ export default ({ fields }) => {
 
             <div className="subsection-client">
               <Slider {...settings}>
-                <h4>Apple</h4>
-                <h4>Toyota</h4>
-                <h4>Zenni</h4>
+                {featuredClientsLogos.map((image) => {
+                  return (
+                    <LazyImage
+                      id={uniqueId(`ft_${image.companyName}_`)}
+                      src={image.companyLogo}
+                      alt={image.companyName}
+                      key={uniqueId(`ft_${image.companyName}_`)}
+                    />
+                  )
+                })}
               </Slider>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Example here 
-
-      <PageHeader
-        large
-        title={title}
-        subtitle={subtitle}
-        backgroundImage={featuredImage}
-      />
-
-      <div className="section">
-        <div className="container">
-          <Content source={body} />
-        </div>
-      </div> 
-      
-      */}
     </main>
   )
 }

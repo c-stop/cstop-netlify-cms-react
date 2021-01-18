@@ -1,7 +1,7 @@
 // This webpack config is used to compile the JS for the CMS
 const path = require('path')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const production = process.env.NODE_ENV === 'production'
 const mode = production ? 'production' : 'development'
@@ -15,6 +15,7 @@ module.exports = {
   },
   mode,
   stats: { warnings: false, children: false },
+  plugins: [new MiniCssExtractPlugin({ filename: 'cms.bundle.css'})],
   module: {
     rules: [
       {
@@ -31,18 +32,37 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
+        use: 
+        [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: {importLoaders: 2 } },
+          'sass-loader',
+          'postcss-loader',
+        ],
+      },
+      {
+        test: /\.sass$/,
           use: [
-            { loader: 'css-loader', options: { importLoaders: 1 } },
-            'postcss-loader',
+            MiniCssExtractPlugin.loader,
+            { loader: 'css-loader', options: {importLoaders: 1 } },
+            {
+              loader: 'sass-loader',
+              options: {
+                // Prefer `dart-sass`
+                implementation: require('node-sass'),
+              },
+            },
+            
           ],
-        }),
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|woff(2)?|ttf|eot)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
       },
     ],
-  },
-  plugins: [
-    new ExtractTextPlugin({
-      filename: 'cms.bundle.css',
-    }),
-  ],
+  }
 }

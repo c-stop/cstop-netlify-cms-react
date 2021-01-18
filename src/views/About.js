@@ -1,77 +1,112 @@
+import { uniqueId } from 'lodash'
 import React from 'react'
-import Slider from 'react-slick'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
+// import Slider from 'react-slick'
 import ClientLogos from '../components/ClientLogos'
 import Content from '../components/Content.js'
 import Cta from '../components/Cta'
-import LazyImage from '../components/LazyImage'
 import PageHeader from '../components/PageHeader'
 import TeamMemberCard from '../components/TeamMemberCard'
+import Testimonials from '../components/Testimonials'
 import './About.sass'
 
 export default ({ fields }) => {
   const {
-    title,
-    subtitle,
-    featuredImage,
-    section1,
-    section2,
-    teamMembers,
-    imageGallery,
-    clientImages
+    aboutPageHeader,
+    clientsSection,
+    section2Container,
+    teamMemberSection,
+    testimonialSection,
   } = fields
+  const {  subtitle, title } = aboutPageHeader
+  const { clientImages } = clientsSection
+  const { section2, section2Title } = section2Container
+  const { teamMembers } = teamMemberSection
+  const {
+    clientTestimonials,
+    testimonialSubtitle,
+    testimonialTitle,
+  } = testimonialSection
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 500,
-    autoplaySpeed: 6000,
-    cssEase: 'linear',
-  }
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   swipeToSlide: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 500,
+  //   lazyLoad: true,
+  //   cssEase: 'linear',
+  // }
+
+  const root = document.documentElement
+
+  document.addEventListener('mousemove', (evt) => {
+    let x = evt.clientX / window.innerWidth
+    let y = evt.clientY / window.innerHeight
+
+    root.style.setProperty('--mouse-x', x)
+    root.style.setProperty('--mouse-y', y)
+  })
 
   return (
     <div className="About">
       <PageHeader
         title={title}
         subtitle={subtitle}
-        backgroundImage={featuredImage}
+        backgroundImage={aboutPageHeader.featuredImage}
+        className="about-header"
       />
 
-      <div className="container">
-        <div className="story-wrap">
-          <Content source={section1} className="paragraph-dark" />
-        </div>
+      <div className="snap about-client-container ">
+        <ClientLogos data={clientImages} />
       </div>
 
-      <ClientLogos data={clientImages}/>
-
-      <div className="section">
+      <div className="snap section">
         <div className="about-content">
-          <p className="paragraph-smaller">{section2}</p>
+          <p className="heading-jumbo-small">{section2Title}</p>
+          <Content className="paragraph-smaller" source={section2} />
         </div>
-      </div>
 
-      <div className="section">
-        <div className="container">
+        <div className="testimonial-container">
           <div className="section-heading-wrap">
-            <h2>
-              Our world-class team
-              <br />
-            </h2>
+            <div className="label cc-light">{testimonialSubtitle}</div>
+            <div
+              className="heading-jumbo-small"
+              style={{ marginBottom: '2rem' }}
+            >
+              {testimonialTitle} <br />
+            </div>
           </div>
-          <div className="w-layout-grid team-members">
-            {teamMembers.map((employee) => {
-              return <TeamMemberCard fields={employee} />
-            })}
-          </div>
+          {clientTestimonials.map((testimonial, index) => {
+            return (
+              <>
+              <Testimonials
+                {...testimonial}
+                id={`ct_${index}`}
+                key={`${testimonial.clientCompany}_${index}`}
+              />
+              </>
+            )
+          })}
         </div>
       </div>
 
-      <div className="section-3">
+      <div className="snap container">
+        <div className="section-heading-wrap">
+          <h2>
+            Our world-class team
+            <br />
+          </h2>
+        </div>
+        <div className="w-layout-grid team-members">
+          {teamMembers.map((employee) => {
+            return <TeamMemberCard key={uniqueId(`ab_`)} fields={employee} />
+          })}
+        </div>
+      </div>
+
+      {/* <div className="section-3">
         <div className="section-heading-wrap">
           <h2>
             See Us In Action
@@ -79,12 +114,12 @@ export default ({ fields }) => {
           </h2>
         </div>
 
-        <div className="w-container">
+        <div>
           <Slider {...settings}>
-            {/* <div><img src={cStopPerson} alt="PlaceHolder " /></div> */}
-            {imageGallery.map(({image, description}) => {
+            <div><img src={cStopPerson} alt="PlaceHolder " /></div>
+            {imageGallery.map(({ image, description }) => {
               return (
-                <LazyImage
+                <img
                   className="image-gallery-src"
                   src={image}
                   alt={description}
@@ -93,8 +128,9 @@ export default ({ fields }) => {
             })}
           </Slider>
         </div>
-      </div>
-      <div className="section Cta">
+      </div> */}
+
+      <div className="snap Cta">
         <Cta />
       </div>
     </div>
