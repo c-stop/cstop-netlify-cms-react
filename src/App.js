@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Helmet from 'react-helmet'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer'
 import JobPage from './components/JobPage'
 import FormsPage from './components/JotFormRouter'
@@ -19,7 +19,6 @@ import Home from './views/Home'
 import NoMatch from './views/NoMatch'
 import Services from './views/Services'
 import SinglePost from './views/SinglePost'
-import { glide, Screen } from 'react-tiger-transition'
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
   <Route

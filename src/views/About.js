@@ -17,7 +17,7 @@ export default ({ fields }) => {
     teamMemberSection,
     testimonialSection,
   } = fields
-  const { subtitle, section1, title } = aboutPageHeader
+  const { section1, title } = aboutPageHeader
   const { clientImages } = clientsSection
   const { section2, section2Title } = section2Container
   const { teamMembers } = teamMemberSection
