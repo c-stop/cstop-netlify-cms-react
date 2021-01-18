@@ -21,6 +21,11 @@ import Services from './views/Services'
 import SinglePost from './views/SinglePost'
 
 // import "react-tiger-transition/styles/main.min.css";
+// glide({
+//   name:"glide-right",
+//   direction:"right"
+// });
+
 
 
 const RouteWithMeta = ({ component: Component, ...props }) => (

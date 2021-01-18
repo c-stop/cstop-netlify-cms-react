@@ -80,11 +80,13 @@ export default ({ fields }) => {
           </div>
           {clientTestimonials.map((testimonial, index) => {
             return (
+              <>
               <Testimonials
                 {...testimonial}
                 id={`ct_${index}`}
                 key={`${testimonial.clientCompany}_${index}`}
               />
+              </>
             )
           })}
         </div>
