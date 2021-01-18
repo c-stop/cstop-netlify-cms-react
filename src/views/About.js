@@ -17,7 +17,7 @@ export default ({ fields }) => {
     teamMemberSection,
     testimonialSection,
   } = fields
-  const {  subtitle, title } = aboutPageHeader
+  const { section1, title } = aboutPageHeader
   const { clientImages } = clientsSection
   const { section2, section2Title } = section2Container
   const { teamMembers } = teamMemberSection
@@ -53,13 +53,23 @@ export default ({ fields }) => {
     <div className="About">
       <PageHeader
         title={title}
-        subtitle={subtitle}
+        subtitle={section1}
         backgroundImage={aboutPageHeader.featuredImage}
         className="about-header"
       />
 
-      <div className="snap about-client-container ">
-        <ClientLogos data={clientImages} />
+      <div className="snap container">
+        <div className="section-heading-wrap">
+          <h2>
+            Our world-class team
+            <br />
+          </h2>
+        </div>
+        <div className="w-layout-grid team-members">
+          {teamMembers.map((employee) => {
+            return <TeamMemberCard key={uniqueId(`ab_`)} fields={employee} />
+          })}
+        </div>
       </div>
 
       <div className="snap section">
@@ -80,30 +90,21 @@ export default ({ fields }) => {
           </div>
           {clientTestimonials.map((testimonial, index) => {
             return (
-              <Testimonials
-                {...testimonial}
-                id={`ct_${index}`}
-                key={`${testimonial.clientCompany}_${index}`}
-              />
+              <>
+                <Testimonials
+                  {...testimonial}
+                  id={`ct_${index}`}
+                  key={`${testimonial.clientCompany}_${index}`}
+                />
+              </>
             )
           })}
         </div>
       </div>
 
-      <div className="snap container">
-        <div className="section-heading-wrap">
-          <h2>
-            Our world-class team
-            <br />
-          </h2>
-        </div>
-        <div className="w-layout-grid team-members">
-          {teamMembers.map((employee) => {
-            return <TeamMemberCard key={uniqueId(`ab_`)} fields={employee} />
-          })}
-        </div>
+      <div className="snap about-client-container ">
+        <ClientLogos data={clientImages} />
       </div>
-
       {/* <div className="section-3">
         <div className="section-heading-wrap">
           <h2>

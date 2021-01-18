@@ -4,7 +4,8 @@
     margin: 1rem
     &:hover
         background: #02002405
-        background: linear-gradient(355deg,#02002415 4%, rgba(9,9,121,0) 56%)
+        cursor: pointer
+        // background: linear-gradient(355deg,#02002415 4%, rgba(9,9,121,0) 56%)
 
     .block-quote
         height: 120px
@@ -12,18 +13,27 @@
         white-space: pre-wrap
         text-overflow: ellipsis
         padding-left: 3rem
-    .open
+    @media screen and ( max-width: 500px )
         flex-direction: column
         
-        &:hover
-            background: none
-        .testimonial-heading
-            width: 100%
-            justify-content: space-between
-            flex-direction: row
-        .block-quote
-            overflow: visible
-            height: fit-content
+
+.open
+    flex-direction: column
+    
+    &:hover
+        background: none
+    .testimonial-heading
+        width: 100%
+        justify-content: space-between
+        flex-direction: row-reverse
+        // @media screen and ( max-width: 500px )
+            // flex-direction: row-reverse
+            
+    .block-quote
+        overflow: visible
+        height: fit-content
+
+    
 
 .testimonial-heading
     width: 20rem
@@ -31,6 +41,11 @@
     margin-right: 1rem
     display: flex
     flex-flow: column
+    @media screen and ( max-width: 500px )
+        flex-direction: row-reverse
+        width: 100%
+        justify-content: space-between
+        
 .client-company
     opacity: .7
 

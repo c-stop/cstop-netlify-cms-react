@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Content from './Content'
 import './Testimonials.sass'
 
@@ -8,15 +8,16 @@ export default function Testimonials({
   clientTestimonial,
   id
 }) {
-  console.log(id)
+  const [drawerOpen, setDrawerOpen] = useState(false)
+    // document.querySelector(`#${id}`).addEventListener('click', function(){
+      // document.querySelector(`#testimonial-item`).classList.add('open')
+    // })
+
   const handleClick = (e) =>{
     e.preventDefault()
-    console.log("pihng")
-    // document.querySelector(`.testimonial-item`).classlist.add('open')
-    // document.querySelector(`.testimonial-item`).addEventListener('click', function(){
-    //   // document.querySelector(`#testimonial-item`).classList.add('open')
+    console.log(`Handling click`)
+    setDrawerOpen(!drawerOpen)
 
-    // })
   }
 
   // const showCard = (e) => {
@@ -24,15 +25,16 @@ export default function Testimonials({
   //   return
   // }
 
+  const testimonialState = drawerOpen ? 'open' : '';
 
   return (
-    <div className="testimonial-item open" id={`2`} onClick={handleClick}>
+    <div className={`testimonial-item ${testimonialState}`}  id={id} onClick={handleClick}>
       <div className="testimonial-heading">
         <h5 className="label cc-light client-company">{clientCompany}</h5>
         <h4 className="heading">{clientName}</h4>
       </div>
       <blockquote className="block-quote">
-        <Content source={clientTestimonial} />
+        <Content source={	clientTestimonial} />
       </blockquote>
     </div>
   )

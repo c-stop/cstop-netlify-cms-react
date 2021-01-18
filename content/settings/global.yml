@@ -1,14 +1,11 @@
-siteTitle: 'C-Stop: Covid-19 Compliance for Production'
-siteUrl: 'https://c-stop.netlify.app/'
-siteDescription: >-
-  A starter project for creating lightning-fast, offline-first websites with
-  Netlify CMS and React.
+siteTitle: "C-Stop: Covid-19 Compliance for Production"
+siteUrl: https://c-stop.netlify.app/
+siteDescription: Providing Covid-19 compliance protection for any project
 socialMediaCard:
   image: /images/logos/favicon.png
-  facebookSiteAccount: '@cstop'
-  twitterSiteAccount: ''
-  instagramSiteAccount: ''
-  linkedInSiteAccount: ''
-headerScripts: |-
-  <!-- Add your analytics scripts / verification meta here -->
+  facebookSiteAccount: "@cstop"
+  twitterSiteAccount: ""
+  instagramSiteAccount: ""
+  linkedInSiteAccount: ""
+headerScripts: <!-- Add your analytics scripts / verification meta here -->
 enableServiceWorker: false
