@@ -1,7 +1,11 @@
 .About
 	// background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #f6d365 0%, #fda085 100%) no-repeat 0 0
+	scroll-snap-type: repeat(300px)
 
-.about-header 
+.snap
+	scroll-snap-align: start
+
+.about-header
 	background-color: grey
 	height: 100vh
 
@@ -16,6 +20,7 @@
 	// padding-top: 7rem
 
 .testimonial-container
+	// background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
 	width: 80%
 	margin: 0 auto
 
@@ -40,12 +45,12 @@
 	// background: transparent radial-gradient(at calc(var(--mouse-x, 0) * 100%) calc(var(--mouse-y, 0) * 100%), #f6d365 0%, #fda085 100%) no-repeat 0 0
 
 @media screen and ( max-width: 991px  )
-	.about-header 
+	.about-header
 		padding-left: 4rem
-		padding-right: 4rem 
+		padding-right: 4rem
 		padding-top: 8rem
 
-		.PageHeader--Title 
+		.PageHeader--Title
 			font-size: 5.5rem
 	.team-members
 		grid-template-areas: ". ." ". ." ". ."

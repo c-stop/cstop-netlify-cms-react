@@ -118,36 +118,68 @@ collections: # A list of collections the CMS should be able to edit
         label: "About Page"
         name: "about-page"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Featured Image, name: featuredImage, widget: image}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Section 1, name: section1, widget: markdown}
-          - label: "Clients"
-            name: "clientImages"
-            widget: "list"
-            minimized_collapsed: true
+          - label: "Page Header"
+            name: "aboutPageHeader"
+            widget: "object"
             fields:
-              - {label: Company Name, name: companyName, widget: string}
-              - {label: Featured Client, name: featured, widget: boolean, required: false}
-              - {label: Image, name: image, widget: image}
-          - {label: Section 2 Title, name: section2Title, widget: string}
-          - {label: Section 2, name: section2, widget: markdown}
+            - {label: Title, name: title, widget: string}
+            - {label: Featured Image, name: featuredImage, widget: image}
+            - {label: Subtitle, name: subtitle, widget: string}
+            - {label: Section 1, name: section1, widget: markdown}
 
-          - label: "Testimonials"
-            name: "clientTestimonials"
-            widget: "list"
+
+          - label: "Clients Section"
+            name: "clientsSection"
+            collapsed: true
+            widget: "object"
             fields:
-              - {label: Client Company, name: clientCompany, widget: string}
-              - {label: Client Name, name: clientName, widget: string}
-              - {label: Client Testimonial, name: clientTestimonial, widget: markdown}
-          - label: "Team Members"
-            name: "teamMembers"
-            widget: "list"
+            - label: "Clients"
+              name: "clientImages"
+              widget: "list"
+              minimized_collapsed: true
+              fields:
+                - {label: Company Name, name: companyName, widget: string}
+                - {label: Featured Client, name: featured, widget: boolean, required: false}
+                - {label: Image, name: image, widget: image}
+
+
+          - label: "Section 2"
+            name: "section2Container"
+            collapsed: true
+            widget: "object"
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Employee Title, name: employeeTitle, widget: string }
-              - {label: Employee Picture, name: employeePicture, widget: image}
-              - {label: Quote, name: employeeQuote, widget: markdown}
+            - {label: Section 2 Title, name: section2Title, widget: string}
+            - {label: Section 2, name: section2, widget: markdown}
+
+
+          - label: "Testimonial Section"
+            name: "testimonialSection"
+            collapsed: true
+            widget: "object"
+            fields:
+              - {label: Testimonial Title, name: testimonialTitle, widget: string }
+              - {label: Testimonial Subtitle, name: testimonialSubtitle, widget: string}
+              - label: "Testimonials"
+                name: "clientTestimonials"
+                widget: "list"
+                fields:
+                  - {label: Client Company, name: clientCompany, widget: string}
+                  - {label: Client Name, name: clientName, widget: string}
+                  - {label: Client Testimonial, name: clientTestimonial, widget: markdown}
+
+          - label: "Team Member Section"
+            name: "teamMemberSection"
+            collapsed: true
+            widget: "object"
+            fields:
+            - label: "Team Members"
+              name: "teamMembers"
+              widget: "list"
+              fields:
+                - {label: Name, name: name, widget: string}
+                - {label: Employee Title, name: employeeTitle, widget: string }
+                - {label: Employee Picture, name: employeePicture, widget: image}
+                - {label: Quote, name: employeeQuote, widget: markdown}
               
           - label: "Image Gallery"
             name: "imageGallery"
@@ -157,6 +189,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Description, name: description, widget: string}
               - {label: Image, name: image, widget: image}
               - {label: Featured?, name: featured, widget: boolean, required: false }
+
           - label: "Meta"
             collapsed: true
             required: false

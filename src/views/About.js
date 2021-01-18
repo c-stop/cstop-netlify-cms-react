@@ -1,6 +1,6 @@
 import { uniqueId } from 'lodash'
 import React from 'react'
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 import ClientLogos from '../components/ClientLogos'
 import Content from '../components/Content.js'
 import Cta from '../components/Cta'
@@ -11,29 +11,34 @@ import './About.sass'
 
 export default ({ fields }) => {
   const {
-    title,
-    featuredImage,
-    section1,
-    section2,
-    section2Title,
-    teamMembers,
-    clientTestimonials,
-    clientImages,
+    aboutPageHeader,
+    clientsSection,
+    section2Container,
+    teamMemberSection,
+    testimonialSection,
   } = fields
+  const {  subtitle, title } = aboutPageHeader
+  const { clientImages } = clientsSection
+  const { section2, section2Title } = section2Container
+  const { teamMembers } = teamMemberSection
+  const {
+    clientTestimonials,
+    testimonialSubtitle,
+    testimonialTitle,
+  } = testimonialSection
 
-  console.log(fields)
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   swipeToSlide: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 500,
+  //   lazyLoad: true,
+  //   cssEase: 'linear',
+  // }
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    swipeToSlide: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 500,
-    lazyLoad: true,
-    cssEase: 'linear',
-  }
   const root = document.documentElement
 
   document.addEventListener('mousemove', (evt) => {
@@ -48,20 +53,16 @@ export default ({ fields }) => {
     <div className="About">
       <PageHeader
         title={title}
-        subtitle={section1}
-        backgroundImage={featuredImage}
+        subtitle={subtitle}
+        backgroundImage={aboutPageHeader.featuredImage}
         className="about-header"
       />
 
-      <div className=" about-client-container ">
-        {/* <div className="story-wrap">
-          <Content source={section1} className="paragraph-dark" />
-        </div> */}
-
+      <div className="snap about-client-container ">
         <ClientLogos data={clientImages} />
       </div>
 
-      <div className="section">
+      <div className="snap section">
         <div className="about-content">
           <p className="heading-jumbo-small">{section2Title}</p>
           <Content className="paragraph-smaller" source={section2} />
@@ -69,21 +70,27 @@ export default ({ fields }) => {
 
         <div className="testimonial-container">
           <div className="section-heading-wrap">
-            <div className="label cc-light">Hear it from our clients</div>
+            <div className="label cc-light">{testimonialSubtitle}</div>
             <div
               className="heading-jumbo-small"
               style={{ marginBottom: '2rem' }}
             >
-              Testimonials <br />
+              {testimonialTitle} <br />
             </div>
           </div>
-          {clientTestimonials.map((testimonial,index) => {
-            return <Testimonials {...testimonial} key={`${testimonial.clientCompany}_${index}`}/>
+          {clientTestimonials.map((testimonial, index) => {
+            return (
+              <Testimonials
+                {...testimonial}
+                id={`ct_${index}`}
+                key={`${testimonial.clientCompany}_${index}`}
+              />
+            )
           })}
         </div>
       </div>
 
-      <div className="container">
+      <div className="snap container">
         <div className="section-heading-wrap">
           <h2>
             Our world-class team
@@ -120,8 +127,8 @@ export default ({ fields }) => {
           </Slider>
         </div>
       </div> */}
-      
-      <div className="Cta">
+
+      <div className="snap Cta">
         <Cta />
       </div>
     </div>
