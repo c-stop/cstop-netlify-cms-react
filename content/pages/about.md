@@ -1,7 +1,7 @@
 ---
 aboutPageHeader:
   title: Setting New Covid-19 Standards
-  featuredImage: /images/uploads/virus-protection-smaller.png
+  featuredImage: /images/uploads/shutterstock_1715308603.jpg
   subtitle: "Family owned and operated by a Local 80 On-Set Medic, LA County: EMT,
     NREMT and an award-winning Producer/Production Manager"
   section1: Our combined credentials, 25+ years of on-set experience, and top tier
