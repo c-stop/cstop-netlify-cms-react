@@ -71,6 +71,14 @@ export default function Nav({ handlePopupOpen }) {
         onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
       >
         <Link
+          id="navQuoteButton"
+          to="/quote"
+          className="navigation-item"
+          onClick={() => toggleMenu()}
+        >
+          Talk to a Specialist
+        </Link>
+        <Link
           to="/"
           aria-current="page"
           className="navigation-item"
@@ -98,14 +106,6 @@ export default function Nav({ handlePopupOpen }) {
           onClick={() => toggleMenu()}
         >
           Contact
-        </Link>
-        <Link
-          id="navQuoteButton"
-          to="/quote"
-          className="navigation-item"
-          onClick={() => toggleMenu()}
-        >
-          Talk to a Specialist
         </Link>
       </Menu>
     </nav>
