@@ -10,10 +10,7 @@ aboutPageHeader:
     COVID-19 Compliance Teams (CCT) come from a collaboration of veteran union
     set-medics, coupled with experienced Producers/Production Managers, with
     multiple COVID-19 compliance courses and completion certificates between
-    them. We are a one-stop-shop for safe, healthy, and COVID-19 compliant film
-    sets, locations, vehicles, and offices. Our approach closely follows the
-    guidance and recommendations published by the CDC, OSHA, DGA, SAG•AFTRA,
-    TASK FORCE, AICP, IATSE, Local 80, and more.
+    them.
 clientsSection:
   clientImages:
     - companyName: Apple
