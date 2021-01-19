@@ -50,6 +50,27 @@ section2:
     out to us and let’s see what we can put together. Staying ahead of COVID-19
     begins with the right plan. We can help.
   smallSections:
+    - title: Project Specific Teams
+      body: >-
+        **Cater your job with a custom team including:** 
+
+
+        **On Set Union Medics** • Union Life Guards • Union Safety Divers • Dive Masters • Marine Coordinators • **Trained in Hyperbaric Medicine** • Multiple course completion certifications: Covid Compliance officers (C19CO) • Health & Safety Supervisors • Safety Monitors • Screeners • Covid-19 Compliance Officers (CCO) • Covid-19 Compliance Directors • On-Call Nurses & Doctors
+    - title: Production Support
+      body: >-
+        **Start strong with our systems, stay strong with our support:**
+
+
+        Because of our strong production background, we communicate and work well with studio executives, producers, production managers, production coordinators, location scouts, AD's, and staff. We are here to assist in any way needed, including sourcing companies for testing during pre-production.
+
+
+        OSHA Accident Investigation Reports • **County of Los Angeles Public Health Protocol checklist •** General Safety Guidelines for all crew & talent (including extras) • **Safe Way Forward protocols** • Model Injury and Illness Prevention Program for Employers with Seasonal or Intermittent Workers (including IIPP contact lists & logs)
+    - title: On Site Displays & Systems
+      body: >-
+        **Maintain the "bubble" with the C-Stop system:**
+
+
+        Implement and maintain set protocols • Morning crew check-in stations (including paperwork and reports) • **open & discrete lines of communication with production, clients & studio executives** • daily action plans designed for each unique production • PODs • Zones • Laminated signage • privacy folders • marking equipment • color coded wrist bands and more.
     - title: Medical Gear & PPE
       body: >-
         **Our on set medic personnel come with fully loaded kits including:** 
@@ -68,25 +89,4 @@ section2:
 
 
         Small cleaning & disinfecting teams • Eco friendly cleaning partnerships for larger jobs and locations • Electrostatic Foggers (backpack) perfect for large areas and spaces • **Victory Electrostatic foggers (handheld) perfect for vans, trucks, vehicles, small areas & surfaces**, EPA products and more.
-    - title: Project Specific Teams
-      body: >-
-        **Cater your job with a custom team including:** 
-
-
-        **On Set Union Medics** • Union Life Guards • Union Safety Divers • Dive Masters • Marine Coordinators • **Trained in Hyperbaric Medicine** • Multiple course completion certifications: Covid Compliance officers (C19CO) • Health & Safety Supervisors • Safety Monitors • Screeners • Covid-19 Compliance Officers (CCO) • Covid-19 Compliance Directors • On-Call Nurses & Doctors
-    - title: On Site Displays & Systems
-      body: >-
-        **Maintain the "bubble" with the C-Stop system:**
-
-
-        Implement and maintain set protocols • Morning crew check-in stations (including paperwork and reports) • **open & discrete lines of communication with production, clients & studio executives** • daily action plans designed for each unique production • PODs • Zones • Laminated signage • privacy folders • marking equipment • color coded wrist bands and more.
-    - title: Production Support
-      body: >-
-        **Start strong with our systems, stay strong with our support:**
-
-
-        Because of our strong production background, we communicate and work well with studio executives, producers, production managers, production coordinators, location scouts, AD's, and staff. We are here to assist in any way needed, including sourcing companies for testing during pre-production.
-
-
-        OSHA Accident Investigation Reports • **County of Los Angeles Public Health Protocol checklist •** General Safety Guidelines for all crew & talent (including extras) • **Safe Way Forward protocols** • Model Injury and Illness Prevention Program for Employers with Seasonal or Intermittent Workers (including IIPP contact lists & logs)
 ---
