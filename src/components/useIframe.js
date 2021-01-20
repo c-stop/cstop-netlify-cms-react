@@ -125,7 +125,7 @@ export default function UseIframe(props) {
         src={`https://form.jotform.com/${id}`}
         frameBorder="0"
         style={{ minWidth: '100%', minHeight: '100vh', border: 'none' }}
-        scrolling="no"
+        scrolling="yes"
       />
     </>
   )
