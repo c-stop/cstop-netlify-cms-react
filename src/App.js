@@ -19,6 +19,9 @@ import Home from './views/Home'
 import NoMatch from './views/NoMatch'
 import Services from './views/Services'
 import SinglePost from './views/SinglePost'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
   <Route
@@ -30,7 +33,7 @@ const RouteWithMeta = ({ component: Component, ...props }) => (
       </Fragment>
     )}
   />
-  )
+)
 
 class App extends Component {
   state = {
@@ -61,123 +64,118 @@ class App extends Component {
         categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
     )
 
-    document.getElementById("root").style.height = "100vh";
-    
+    document.getElementById('root').style.height = '100vh'
+
     return (
       <Router>
-          <div className="React-Wrap">
-            <ScrollToTop />
-            <ServiceWorkerNotifications reloadOnUpdate />
+        <div className="React-Wrap">
+          <ScrollToTop />
+          <ServiceWorkerNotifications reloadOnUpdate />
 
-            <Helmet
-              defaultTitle={siteTitle}
-              titleTemplate={`${siteTitle} | %s`}
+          <Helmet
+            defaultTitle={siteTitle}
+            titleTemplate={`${siteTitle} | %s`}
+          />
+
+          <Meta
+            headerScripts={headerScripts}
+            absoluteImageUrl={
+              socialMediaCard &&
+              socialMediaCard.image &&
+              siteUrl + socialMediaCard.image
+            }
+            twitterCreatorAccount={
+              socialMediaCard && socialMediaCard.twitterCreatorAccount
+            }
+            twitterSiteAccount={
+              socialMediaCard && socialMediaCard.twitterSiteAccount
+            }
+          />
+
+          <Nav />
+
+          <Switch>
+            <RouteWithMeta
+              path="/"
+              exact
+              component={Home}
+              description={siteDescription}
+              fields={this.getDocument('pages', 'home')}
+            />
+            <RouteWithMeta
+              path="/services/"
+              exact
+              component={Services}
+              fields={this.getDocument('pages', 'services')}
+            />
+            <RouteWithMeta
+              path="/about/"
+              exact
+              component={About}
+              fields={this.getDocument('pages', 'about')}
+            />
+            <RouteWithMeta
+              path="/contact/"
+              exact
+              component={Contact}
+              fields={this.getDocument('pages', 'contact')}
+              siteTitle={siteTitle}
+            />
+            <Route path="/quote/" exact component={QuotePage} />
+
+            <Route path="/forms/" exact component={FormsPage} />
+
+            <Route path="/apply/" exact component={JobPage} />
+
+            <RouteWithMeta
+              path="/blog/"
+              exact
+              component={Blog}
+              fields={this.getDocument('pages', 'blog')}
+              posts={posts}
+              postCategories={postCategories}
             />
 
-            <Meta
-              headerScripts={headerScripts}
-              absoluteImageUrl={
-                socialMediaCard &&
-                socialMediaCard.image &&
-                siteUrl + socialMediaCard.image
-              }
-              twitterCreatorAccount={
-                socialMediaCard && socialMediaCard.twitterCreatorAccount
-              }
-              twitterSiteAccount={
-                socialMediaCard && socialMediaCard.twitterSiteAccount
-              }
-            />
+            {posts.map((post, index) => {
+              const path = slugify(`/blog/${post.title}`)
+              const nextPost = posts[index - 1]
+              const prevPost = posts[index + 1]
+              return (
+                <RouteWithMeta
+                  key={path}
+                  path={path}
+                  exact
+                  component={SinglePost}
+                  fields={post}
+                  nextPostURL={nextPost && slugify(`/blog/${nextPost.title}/`)}
+                  prevPostURL={prevPost && slugify(`/blog/${prevPost.title}/`)}
+                />
+              )
+            })}
 
-            <Nav />
+            {postCategories.map((postCategory) => {
+              const slug = slugify(postCategory.title)
+              const path = slugify(`/blog/category/${slug}`)
+              const categoryPosts = posts.filter((post) =>
+                documentHasTerm(post, 'categories', slug)
+              )
+              return (
+                <RouteWithMeta
+                  key={path}
+                  path={path}
+                  exact
+                  component={Blog}
+                  fields={this.getDocument('pages', 'blog')}
+                  posts={categoryPosts}
+                  postCategories={postCategories}
+                />
+              )
+            })}
 
-            <Switch>
-              <RouteWithMeta
-                path="/"
-                exact
-                component={Home}
-                description={siteDescription}
-                fields={this.getDocument('pages', 'home')}
-
-              />
-              <RouteWithMeta
-                path="/services/"
-                exact
-                component={Services}
-                fields={this.getDocument('pages', 'services')}
-              />
-              <RouteWithMeta
-                path="/about/"
-                exact
-                component={About}
-                fields={this.getDocument('pages', 'about')}
-              />
-              <RouteWithMeta
-                path="/contact/"
-                exact
-                component={Contact}
-                fields={this.getDocument('pages', 'contact')}
-                siteTitle={siteTitle}
-              />
-              <Route path="/quote/" exact component={QuotePage} />
-
-              <Route path="/forms/" exact component={FormsPage} />
-
-              <Route path="/apply/" exact component={JobPage} />
-
-              <RouteWithMeta
-                path="/blog/"
-                exact
-                component={Blog}
-                fields={this.getDocument('pages', 'blog')}
-                posts={posts}
-                postCategories={postCategories}
-              />
-
-              {posts.map((post, index) => {
-                const path = slugify(`/blog/${post.title}`)
-                const nextPost = posts[index - 1]
-                const prevPost = posts[index + 1]
-                return (
-                  <RouteWithMeta
-                    key={path}
-                    path={path}
-                    exact
-                    component={SinglePost}
-                    fields={post}
-                    nextPostURL={
-                      nextPost && slugify(`/blog/${nextPost.title}/`)
-                    }
-                    prevPostURL={
-                      prevPost && slugify(`/blog/${prevPost.title}/`)
-                    }
-                  />
-                )
-              })}
-
-              {postCategories.map((postCategory) => {
-                const slug = slugify(postCategory.title)
-                const path = slugify(`/blog/category/${slug}`)
-                const categoryPosts = posts.filter((post) =>
-                  documentHasTerm(post, 'categories', slug)
-                )
-                return (
-                  <RouteWithMeta
-                    key={path}
-                    path={path}
-                    exact
-                    component={Blog}
-                    fields={this.getDocument('pages', 'blog')}
-                    posts={categoryPosts}
-                    postCategories={postCategories}
-                  />
-                )
-              })}
-
-              <Route render={() => <NoMatch siteUrl={siteUrl} />} />
-            </Switch>
-            <Footer />
-          </div>
+            <Route render={() => <NoMatch siteUrl={siteUrl} />} />
+          </Switch>
+          <Footer />
+        </div>
       </Router>
     )
   }

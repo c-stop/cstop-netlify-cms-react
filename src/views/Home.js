@@ -1,5 +1,3 @@
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
@@ -21,7 +19,7 @@ export default ({ fields }) => {
 
   const { carouselTitle, featuredClientsLogos } = featuredClients
 
-  AOS.init()
+
 
   const settings = {
     fade: true,
