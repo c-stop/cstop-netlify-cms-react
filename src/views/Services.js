@@ -31,6 +31,8 @@ export default ({ fields }) => {
         title={title}
         subtitle={subTitle}
         backgroundImage={featuredImage}
+        className="service-header"
+        opacity="0.8"
       />
 
       <div className="container">
