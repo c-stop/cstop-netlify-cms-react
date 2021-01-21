@@ -56,34 +56,40 @@ section2:
 
 
         **On Set Union Medics** • Union Life Guards • Union Safety Divers • Dive Masters • Marine Coordinators • **Trained in Hyperbaric Medicine** • Multiple course completion certifications: Covid Compliance officers (C19CO) • Health & Safety Supervisors • Safety Monitors • Screeners • Covid-19 Compliance Officers (CCO) • Covid-19 Compliance Directors • On-Call Nurses & Doctors
+      serviceIconImage: /images/uploads/artboard-1.png
     - title: Production Support
       body: >-
         **Start strong with our systems, stay strong with our support:**
 
 
         OSHA Accident Investigation Reports • **County of Los Angeles Public Health Protocol checklist •** General Safety Guidelines for all crew & talent (including extras) • **Safe Way Forward protocols** • Model Injury and Illness Prevention Program for Employers with Seasonal or Intermittent Workers (including IIPP contact lists & logs)
+      serviceIconImage: /images/uploads/artboard-1.png
     - title: On Site Displays & Systems
       body: >-
         **Maintain the "bubble" with the C-Stop system:**
 
 
         Implement and maintain set protocols • Morning crew check-in stations (including paperwork and reports) • **open & discrete lines of communication with production, clients & studio executives** • daily action plans designed for each unique production • PODs • Zones • Laminated signage • privacy folders • marking equipment • color coded wrist bands and more.
+      serviceIconImage: /images/uploads/artboard-1.png
     - title: Medical Gear & PPE
       body: >-
         **Our on set medic personnel come with fully loaded kits including:** 
 
 
         AED • Oxygen system with multiple tanks • Spinal immobilization and all splints • full trauma bag • full burn kit • full diagnostics • over-the-counter • Infrared thermometers • Pulse Oximeters and more.
+      serviceIconImage: /images/uploads/artboard-1.png
     - title: All PPE products as needed
       body: >-
         **We provide all PPE products as needed for crew, client and
         talent. Including but not limited to:**
 
          KN95 face masks • face shields • goggles • 3 ply face masks • nitrile gloves • gowns • hand sanitizer • disinfectant wipes • coveralls and more.
+      serviceIconImage: /images/uploads/artboard-1.png
     - title: Sanitizing & Disinfecting
       body: >-
         **We offer a wide range of sanitation packages including:** 
 
 
         Small cleaning & disinfecting teams • Eco friendly cleaning partnerships for larger jobs and locations • Electrostatic Foggers (backpack) perfect for large areas and spaces • **Victory Electrostatic foggers (handheld) perfect for vans, trucks, vehicles, small areas & surfaces**, EPA products and more.
+      serviceIconImage: /images/uploads/artboard-1.png
 ---

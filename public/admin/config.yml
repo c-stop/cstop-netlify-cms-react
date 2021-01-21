@@ -97,6 +97,7 @@ collections: # A list of collections the CMS should be able to edit
                 collapsed: true
                 fields:
                   - {label: Title, name: title, widget: string}
+                  - {label: Icon Image, name: serviceIconImage, widget: image, required: false}
                   - {label: Body, name: body, widget: markdown, required: false}
                   
               - {label: Below Services Title, name: belowServicesTitle, widget: string}
