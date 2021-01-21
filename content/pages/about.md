@@ -46,7 +46,7 @@ clientsSection:
       companyName: Park Pictures
 section2Container:
   section2Title: Compliance done right
-  section2: "We are trailblazers. Our action plans, techniques, and methodologies
+  section2: We are trailblazers. Our action plans, techniques, and methodologies
     not only follow the protocols and guidelines that prevent the transmission
     of infectious diseases including COVID-19, but hold us to a higher standard
     that keeps your set safe beyond expectations. Our world-class team works
@@ -54,10 +54,10 @@ section2Container:
     wrap, which has provided us with an invaluable understanding and practical
     application of safety standards on set. We pass this knowledge on by
     consulting and crafting unique compliance packages to fit any project’s
-    needs. Want a second opinion? Here are a few satisfied customers:"
+    needs.
 testimonialSection:
   testimonialTitle: Testimonials
-  testimonialSubtitle: Hear it from our clients
+  testimonialSubtitle: "Want a second opinion? Here are a few satisfied customers:"
   clientTestimonials:
     - clientCompany: SAMM Media
       clientName: André de la Cruz
