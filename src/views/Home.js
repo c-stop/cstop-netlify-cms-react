@@ -30,14 +30,12 @@ export default ({ fields }) => {
     cssEase: 'linear',
     dots: false,
     arrows: false,
-    // vertical: true,
     slidesToShow: 1,
     slidesToScroll: 1,
   }
 
   return (
     <main className="Home" >
-      {/* Import starts here */}
       <video muted loop autoPlay id="myVideo">
         <source src="/images/Film-set.mp4" type="video/mp4" />
       </video>
