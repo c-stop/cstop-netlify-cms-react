@@ -56,6 +56,7 @@ section2:
 
 
         **On Set Union Medics** • Union Life Guards • Union Safety Divers • Dive Masters • Marine Coordinators • **Trained in Hyperbaric Medicine** • Multiple course completion certifications: Covid Compliance officers (C19CO) • Health & Safety Supervisors • Safety Monitors • Screeners • Covid-19 Compliance Officers (CCO) • Covid-19 Compliance Directors • On-Call Nurses & Doctors
+      serviceIconImage: /images/uploads/vs_airfiltration.png
     - title: Production Support
       body: >-
         **Start strong with our systems, stay strong with our support:**

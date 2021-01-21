@@ -3,6 +3,7 @@ import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import './Services.sass'
 import { uniqueId } from 'lodash'
+import LazyImage from '../components/LazyImage'
 
 export default ({ fields }) => {
   const { title, subTitle, featuredImage, section1, section2 } = fields
@@ -55,12 +56,17 @@ export default ({ fields }) => {
 
           <div className="our-services-grid">
             {smallSections.map((card) => {
+              console.log(card)
               return (
                 <div key={uniqueId(`sv_`)}>
                   <img
-                    src="images/Icon-1.svg"
-                    width="50"
-                    alt=""
+                    src={
+                      card.serviceIconImage
+                        ? card.serviceIconImage
+                        : 'images/Icon-1.svg'
+                    }
+                    width="100"
+                    alt={`Badge looking icon with ${card.title} written on it`}
                     className="service-icon"
                   />
                   <div className="paragraph-bigger">{card.title}</div>
