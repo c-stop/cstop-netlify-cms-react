@@ -106,7 +106,12 @@ export default ({ fields }) => {
         <ClientLogos data={clientImages} />
       </div>
 
-      <div className="snap Cta" data-aos="fade-down" data-aos-delay="200" data-aos-anchor-placement="center-bottom">
+      <div
+        className="snap Cta"
+        data-aos="fade-down"
+        data-aos-delay="200"
+        data-aos-anchor-placement="center-bottom"
+      >
         <Cta />
       </div>
     </div>

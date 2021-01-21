@@ -45,6 +45,7 @@ export default ({ fields }) => {
       <div
         className="section service-container"
         style={{ backgroundImage: { backgroundImage } }}
+        data-aos="fade-up"
       >
         <div className="container ">
           <div className="section-heading-wrap">
