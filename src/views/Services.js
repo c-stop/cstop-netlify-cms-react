@@ -1,9 +1,8 @@
-import React from 'react'
-import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
-import './Services.sass'
 import { uniqueId } from 'lodash'
-import LazyImage from '../components/LazyImage'
+import React from 'react'
+import Content from '../components/Content'
+import PageHeader from '../components/PageHeader'
+import './Services.sass'
 
 export default ({ fields }) => {
   const { title, subTitle, featuredImage, section1, section2 } = fields
