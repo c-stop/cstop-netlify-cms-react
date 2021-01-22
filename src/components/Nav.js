@@ -27,7 +27,6 @@ export default function Nav({ handlePopupOpen }) {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
-    console.log('in menue open', menuOpen)
   }
   return (
     <nav className="navigation">

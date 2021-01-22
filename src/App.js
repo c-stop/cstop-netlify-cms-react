@@ -90,6 +90,9 @@ class App extends Component {
             twitterSiteAccount={
               socialMediaCard && socialMediaCard.twitterSiteAccount
             }
+            linkedInSiteAccount={
+              socialMediaCard && socialMediaCard.linkedInSiteAccount
+            }
           />
 
           <Nav />
@@ -174,7 +177,7 @@ class App extends Component {
 
             <Route render={() => <NoMatch siteUrl={siteUrl} />} />
           </Switch>
-          <Footer />
+          <Footer globalSettings={globalSettings} />
         </div>
       </Router>
     )

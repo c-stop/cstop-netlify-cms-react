@@ -8,6 +8,7 @@ import './Footer.sass'
 
 export default ({ globalSettings, socialSettings, navLinks }) => (
   <footer className="Footer">
+    {console.log(globalSettings)}
 
     <div className="footer-container">
       <a
@@ -17,10 +18,11 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
         <img
           src="images/logos/LinkedIn_logo_initials.png"
           loading="lazy"
+          width="200"
           alt="Link to CStop Linked in"
         />
       </a>
-      {/* image-4  */}
+
       <a
         className="footer-social-icon"
         href="https://www.facebook.com/C-Stop-Health-Safety-Services-105283481304458/"
@@ -28,6 +30,7 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
         <img
           src="images/logos/f_logo_RGB-Blue_72.png"
           loading="lazy"
+          width="200"
           alt="Link to CStop Facebook"
         />
       </a>
