@@ -22,6 +22,7 @@ export default ({ fields }) => {
         title={title}
         subtitle={subtitle}
         backgroundImage={featuredImage}
+        opacity="0.6"
       />
 
       <div className="container">

@@ -56,7 +56,6 @@ export default ({ fields }) => {
 
           <div className="our-services-grid">
             {smallSections.map((card) => {
-              console.log(card)
               return (
                 <div key={uniqueId(`sv_`)} className="service-card" >
                   <img

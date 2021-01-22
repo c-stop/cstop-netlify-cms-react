@@ -1,9 +1,9 @@
+import uniqueId from "lodash/uniqueId"
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
-import './Home.sass'
-import uniqueId from "lodash/uniqueId"
 import LazyImage from '../components/LazyImage'
+import './Home.sass'
 
 export default ({ fields }) => {
   const {
