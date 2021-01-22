@@ -52,17 +52,10 @@ section2:
   smallSections:
     - title: Project Specific Teams
       body: >-
-        **Cater your job with a custom team including:** 
+        **Protect your job with a custom team including:** 
 
 
         **On Set Union Medics** • Union Life Guards • Union Safety Divers • Dive Masters • Marine Coordinators • **Trained in Hyperbaric Medicine** • Multiple course completion certifications: Covid Compliance officers (C19CO) • Health & Safety Supervisors • Safety Monitors • Screeners • Covid-19 Compliance Officers (CCO) • Covid-19 Compliance Directors • On-Call Nurses & Doctors
-      serviceIconImage: /images/uploads/artboard-1.png
-    - title: Production Support
-      body: >-
-        **Start strong with our systems, stay strong with our support:**
-
-
-        OSHA Accident Investigation Reports • **County of Los Angeles Public Health Protocol checklist •** General Safety Guidelines for all crew & talent (including extras) • **Safe Way Forward protocols** • Model Injury and Illness Prevention Program for Employers with Seasonal or Intermittent Workers (including IIPP contact lists & logs)
       serviceIconImage: /images/uploads/artboard-1.png
     - title: On Site Displays & Systems
       body: >-
@@ -70,6 +63,13 @@ section2:
 
 
         Implement and maintain set protocols • Morning crew check-in stations (including paperwork and reports) • **open & discrete lines of communication with production, clients & studio executives** • daily action plans designed for each unique production • PODs • Zones • Laminated signage • privacy folders • marking equipment • color coded wrist bands and more.
+      serviceIconImage: /images/uploads/artboard-1.png
+    - title: Production Support
+      body: >-
+        **Start strong with our systems, stay strong with our support:**
+
+
+        OSHA Accident Investigation Reports • **County of Los Angeles Public Health Protocol checklist •** General Safety Guidelines for all crew & talent (including extras) • **Safe Way Forward protocols** • Model Injury and Illness Prevention Program for Employers with Seasonal or Intermittent Workers (including IIPP contact lists & logs)
       serviceIconImage: /images/uploads/artboard-1.png
     - title: Medical Gear & PPE
       body: >-
