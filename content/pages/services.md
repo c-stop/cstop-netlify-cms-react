@@ -6,7 +6,7 @@ subTitle: C-Stop serves as a one-stop shop for safe, healthy, and COVID-19
   compliant film sets, locations, vehicles, and offices.
 featuredImage: /images/uploads/blue-image-background.png
 section1:
-  section1Title: "Protecting you and your families from Covid-19 "
+  section1Title: "Protecting your workers and families from Covid-19 "
   section1Body: >-
     Our production experience makes us front runners for collaborating,
     developing, implementing new procedures, and/or working closely with
