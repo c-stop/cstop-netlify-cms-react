@@ -178,6 +178,10 @@ teamMemberSection:
       employeeTitle: COVID-19 Compliance Officer
       employeeQuote: COVID-19 Compliance Officer
       employeePicture: /images/uploads/1549480668925.jpg
+    - name: Patrick Clements
+      employeeTitle: Executive Assistant
+      employeePicture: /images/uploads/commercial-headshot.jpg
+      employeeQuote: Executive Assistant
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
