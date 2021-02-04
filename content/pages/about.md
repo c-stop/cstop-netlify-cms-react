@@ -179,9 +179,9 @@ teamMemberSection:
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/1549480668925.jpg
     - name: Patrick Clements
-      employeeTitle: Executive Assistant
+      employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
-      employeeQuote: Executive Assistant
+      employeeQuote: Executive Assistant, CCO
     - name: Ian Menzies
       employeeTitle: Administrative Coordinator, CCO
       employeeQuote: Administrative Coordinator, CCO
