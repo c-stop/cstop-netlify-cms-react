@@ -46,8 +46,9 @@ section2:
     Proper training is vital for success when maintaining compliance on set. Our teams are experienced industry professionals, outfitted and trained in essential safety equipment, and highly educated and certified in safe set practices.  Because of our strong production background, we communicate and work well with studio executives, producers, production managers, production coordinators, location scouts, AD's, and staff.  We are here to assist in any way needed, including sourcing companies for testing during pre-production.  We look forward to giving your crew and talent peace of mind (even a mask or two).
   belowServicesTitle: DON’T SEE WHAT YOU NEED?
   belowServicesBody: We understand each project’s needs can vastly differ. Reach
-    out to us and let’s see what we can put together. Staying ahead of COVID-19
-    begins with the right plan. We can help.
+    out to us for custom and innovative health & safety strategies. Staying
+    ahead of pathogens, including COVID-19, begins with the right action plan.
+    We can help.
   smallSections:
     - title: Project Specific Teams
       body: >-
