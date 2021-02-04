@@ -158,6 +158,10 @@ teamMemberSection:
       employeeTitle: CEO
       employeePicture: /images/uploads/pepper-book-photo.jpg
       employeeQuote: Pepper Humphrey
+    - name: Josh Humphrey
+      employeeTitle: Co-Founder, Medic EMT, CCO
+      employeeQuote: Co-Founder, Medic EMT, CCO
+      employeePicture: /images/uploads/josh-h.jpeg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
