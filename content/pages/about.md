@@ -174,6 +174,10 @@ teamMemberSection:
       employeeTitle: Project Manager, CCO
       employeePicture: /images/uploads/img_8382.jpg
       employeeQuote: Project Manager, CCO
+    - name: Josh Saathoff
+      employeeTitle: COVID-19 Compliance Officer
+      employeeQuote: COVID-19 Compliance Officer
+      employeePicture: /images/uploads/1549480668925.jpg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
