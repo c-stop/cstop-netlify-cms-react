@@ -159,8 +159,8 @@ teamMemberSection:
       employeePicture: /images/uploads/pepper-book-photo.jpg
       employeeQuote: Co-Founder, CEO, H&S Director, CCO
     - name: Josh Humphrey
-      employeeTitle: Co-Founder, Medic EMT, CCO
-      employeeQuote: Co-Founder, Medic EMT, CCO
+      employeeTitle: Co-Founder, Field Operations, Medic, CCO
+      employeeQuote: Co-Founder, Field Operations, Medic, CCO
       employeePicture: /images/uploads/josh-h.jpeg
     - name: Kia Kiso
       employeeTitle: H&S Supervisor, CCO
