@@ -176,10 +176,7 @@ teamMemberSection:
       employeeQuote: Project Manager, CCO
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
-      employeeQuote: |-
-        
-
-        > Project Manager, CCO
+      employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/1549480668925.jpg
     - name: Patrick Clements
       employeeTitle: Executive Assistant
