@@ -182,6 +182,10 @@ teamMemberSection:
       employeeTitle: Executive Assistant
       employeePicture: /images/uploads/commercial-headshot.jpg
       employeeQuote: Executive Assistant
+    - name: Ian Menzies
+      employeeTitle: Administrative Coordinator, CCO
+      employeeQuote: Administrative Coordinator, CCO
+      employeePicture: /images/uploads/ian.jpeg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
