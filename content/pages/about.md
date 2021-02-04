@@ -166,6 +166,10 @@ teamMemberSection:
       employeeTitle: H&S Supervisor, CCO
       employeeQuote: H&S Supervisor, CCO
       employeePicture: /images/uploads/kia-kiso.jpeg
+    - name: Ariel Lazarus
+      employeeTitle: Project Manager, CCO
+      employeeQuote: Project Manager, CCO
+      employeePicture: /images/uploads/ariel-l.jpeg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
