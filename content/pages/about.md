@@ -175,8 +175,11 @@ teamMemberSection:
       employeePicture: /images/uploads/img_8382.jpg
       employeeQuote: Project Manager, CCO
     - name: Josh Saathoff
-      employeeTitle: COVID-19 Compliance Officer
-      employeeQuote: COVID-19 Compliance Officer
+      employeeTitle: Project Manager, CCO
+      employeeQuote: |-
+        
+
+        > Project Manager, CCO
       employeePicture: /images/uploads/1549480668925.jpg
     - name: Patrick Clements
       employeeTitle: Executive Assistant
