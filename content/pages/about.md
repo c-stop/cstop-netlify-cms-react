@@ -162,6 +162,10 @@ teamMemberSection:
       employeeTitle: Co-Founder, Medic EMT, CCO
       employeeQuote: Co-Founder, Medic EMT, CCO
       employeePicture: /images/uploads/josh-h.jpeg
+    - name: Kia Kiso
+      employeeTitle: H&S Supervisor, CCO
+      employeeQuote: H&S Supervisor, CCO
+      employeePicture: /images/uploads/kia-kiso.jpeg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
