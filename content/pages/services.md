@@ -2,8 +2,7 @@
 templateKey: services-page
 path: /services
 title: Valuable Services
-subTitle: C-Stop serves as a one-stop shop for safe, healthy, and COVID-19
-  compliant film sets, locations, vehicles, and offices.
+subTitle: Protecting your workers and families from pathogens including Covid-19
 featuredImage: /images/uploads/blue-image-background.png
 section1:
   section1Title: "Protecting your workers and families from Covid-19 "
@@ -19,7 +18,7 @@ section1:
     Our services closely follow the guidance and recommendations published by the CDC, OSHA, DGA, SAG•AFTRA, TASK FORCE, AICP, IATSE, Local 80, and more.
 
 
-    We welcome you to join us in crafting the perfect COVID-19 Compliance Package for your next project!
+    We love to be of service and look forward to producing the perfect Safety Compliance Package for your next project!
 serviceSection:
   serviceBackground: /images/uploads/image-7-.jpeg
   section2Title: Valuable Services
@@ -71,7 +70,7 @@ section2:
 
         OSHA Accident Investigation Reports • **County of Los Angeles Public Health Protocol checklist •** General Safety Guidelines for all crew & talent (including extras) • **Safe Way Forward protocols** • Model Injury and Illness Prevention Program for Employers with Seasonal or Intermittent Workers (including IIPP contact lists & logs)
       serviceIconImage: /images/uploads/artboard-1.png
-    - title: Medical Gear & PPE
+    - title: Medical Gear
       body: >-
         **Our on set medic personnel come with fully loaded kits including:** 
 
@@ -90,6 +89,6 @@ section2:
         **We offer a wide range of sanitation packages including:** 
 
 
-        Small cleaning & disinfecting teams • Eco friendly cleaning partnerships for larger jobs and locations • Electrostatic Foggers (backpack) perfect for large areas and spaces • **Victory Electrostatic foggers (handheld) perfect for vans, trucks, vehicles, small areas & surfaces**, EPA products and more.
+        Small and large cleaning & disinfecting teams • Eco friendly cleaning partnerships for excessively vast locations • Electrostatic Foggers (backpack) perfect for large areas and spaces • Victory Electrostatic foggers (handheld) perfect for vans, trucks, vehicles, small areas & surfaces, air scrubbers, UV towers, EPA cleaning products and more.
       serviceIconImage: /images/uploads/artboard-1.png
 ---
