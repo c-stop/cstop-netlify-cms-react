@@ -170,6 +170,10 @@ teamMemberSection:
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/ariel-l.jpeg
+    - name: Elle West
+      employeeTitle: Project Manager, CCO
+      employeePicture: /images/uploads/img_8382.jpg
+      employeeQuote: Project Manager, CCO
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
