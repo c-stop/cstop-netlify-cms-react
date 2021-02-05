@@ -224,7 +224,7 @@ collections: # A list of collections the CMS should be able to edit
               widget: list
               fields:
                 - {label: Company Name, name: companyName, widget: string}
-                - {label: Company Logo, name: companyLogo, widget: image, description: test description}
+                - {label: Company Logo, name: companyLogo, widget: image, }
           - label: "Meta"
             collapsed: true
             required: false
