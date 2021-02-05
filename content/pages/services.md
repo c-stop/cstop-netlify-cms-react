@@ -43,7 +43,7 @@ section2:
     #### HIGHLY TRAINED AND EXPERIENCED
 
 
-    Proper training is vital for success when maintaining compliance on set. Our teams are experienced industry professionals, outfitted and trained in essential safety equipment, and highly educated and certified in safe set practices.  Because of our strong production background, we communicate and work well with studio executives, producers, production managers, production coordinators, location scouts, AD's, and staff.  We are here to assist in any way needed, including sourcing companies for testing during pre-production.  We look forward to giving your crew and talent peace of mind (even a mask or two).
+    Proper training is vital for success when maintaining compliance on set. Our teams are experienced industry professionals, outfitted and trained in essential safety equipment, and highly educated and certified in safe set practices.  Because of our strong production background, we communicate and work well with studio executives, producers, production managers, production coordinators, location scouts, AD's, and staff.  We look forward to giving you, your clients, staff, crew and talent peace of mind (and also a mask or two).  We look forward to giving your crew and talent peace of mind (even a mask or two).
   belowServicesTitle: DON’T SEE WHAT YOU NEED?
   belowServicesBody: We understand each project’s needs can vastly differ. Reach
     out to us for custom and innovative health & safety strategies. Staying
@@ -71,12 +71,12 @@ section2:
 
         OSHA Accident Investigation Reports • **County of Los Angeles Public Health Protocol checklist •** General Safety Guidelines for all crew & talent (including extras) • **Safe Way Forward protocols** • Model Injury and Illness Prevention Program for Employers with Seasonal or Intermittent Workers (including IIPP contact lists & logs)
       serviceIconImage: /images/uploads/artboard-1.png
-    - title: Medical Gear
+    - title: Sanitizing & Disinfecting
       body: >-
-        **Our on set medic personnel come with fully loaded kits including:** 
+        **We offer a wide range of sanitation packages including:** 
 
 
-        AED • Oxygen system with multiple tanks • Spinal immobilization and all splints • full trauma bag • full burn kit • full diagnostics • over-the-counter • Infrared thermometers • Pulse Oximeters and more.
+        Small and large cleaning & disinfecting teams • Eco friendly cleaning partnerships for excessively vast locations • Electrostatic Foggers (backpack) perfect for large areas and spaces • Victory Electrostatic foggers (handheld) perfect for vans, trucks, vehicles, small areas & surfaces, air scrubbers, UV towers, EPA cleaning products and more.
       serviceIconImage: /images/uploads/artboard-1.png
     - title: All PPE products as needed
       body: >-
@@ -85,11 +85,11 @@ section2:
 
          KN95 face masks • face shields • goggles • 3 ply face masks • nitrile gloves • gowns • hand sanitizer • disinfectant wipes • coveralls and more.
       serviceIconImage: /images/uploads/artboard-1.png
-    - title: Sanitizing & Disinfecting
+    - title: Testing
       body: >-
-        **We offer a wide range of sanitation packages including:** 
+        **On-site RT-PCR CLIA-Certified Lab Tests & Rapid Antigen Tests:**
 
 
-        Small and large cleaning & disinfecting teams • Eco friendly cleaning partnerships for excessively vast locations • Electrostatic Foggers (backpack) perfect for large areas and spaces • Victory Electrostatic foggers (handheld) perfect for vans, trucks, vehicles, small areas & surfaces, air scrubbers, UV towers, EPA cleaning products and more.
+        Our RT-PCR tests are processed at a privately-owned, high complexity, HIPAA compliant, CLIA-certified laboratory. All results are returned per LA County and CDC guidelines. Both our Rapid PCR and Antigen tests have been validated and granted their Emergency Use Authorization by the FDA.
       serviceIconImage: /images/uploads/artboard-1.png
 ---

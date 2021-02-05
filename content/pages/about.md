@@ -155,33 +155,41 @@ testimonialSection:
 teamMemberSection:
   teamMembers:
     - name: Pepper Humphrey
-      employeeTitle: CEO
+      employeeTitle: Co-Founder, CEO, H&S Director, CCO
       employeePicture: /images/uploads/pepper-book-photo.jpg
-      employeeQuote: Pepper Humphrey
+      employeeQuote: Co-Founder, CEO, H&S Director, CCO
     - name: Josh Humphrey
-      employeeTitle: Co-Founder, Medic EMT, CCO
-      employeeQuote: Co-Founder, Medic EMT, CCO
+      employeeTitle: Co-Founder, Field Operations, Medic, CCO
+      employeeQuote: Co-Founder, Field Operations, Medic, CCO
       employeePicture: /images/uploads/josh-h.jpeg
     - name: Kia Kiso
-      employeeTitle: H&S Supervisor, CCO
-      employeeQuote: H&S Supervisor, CCO
+      employeeTitle: H&S Supervisor, CCO, Partner
+      employeeQuote: H&S Supervisor, CCO, Partner
       employeePicture: /images/uploads/kia-kiso.jpeg
     - name: Ariel Lazarus
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/ariel-l.jpeg
     - name: Elle West
-      employeeTitle: Project Manager, CCO
+      employeeTitle: Project Manager, CCO, Partner
       employeePicture: /images/uploads/img_8382.jpg
-      employeeQuote: Project Manager, CCO
+      employeeQuote: Project Manager, CCO, Partner
     - name: Josh Saathoff
-      employeeTitle: COVID-19 Compliance Officer
-      employeeQuote: COVID-19 Compliance Officer
+      employeeTitle: Project Manager, CCO
+      employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/1549480668925.jpg
     - name: Patrick Clements
-      employeeTitle: Executive Assistant
+      employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
-      employeeQuote: Executive Assistant
+      employeeQuote: Executive Assistant, CCO
+    - name: Ian Menzies
+      employeeTitle: Administrative Coordinator, CCO
+      employeeQuote: Administrative Coordinator, CCO
+      employeePicture: /images/uploads/ian.jpeg
+    - name: Lori May
+      employeeTitle: Medic, CCO, HSS
+      employeePicture: /images/uploads/unknown.jpeg
+      employeeQuote: Medic, CCO, HSS
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
