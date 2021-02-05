@@ -163,17 +163,17 @@ teamMemberSection:
       employeeQuote: Co-Founder, Field Operations, Medic, CCO
       employeePicture: /images/uploads/josh-h.jpeg
     - name: Kia Kiso
-      employeeTitle: H&S Supervisor, CCO
-      employeeQuote: H&S Supervisor, CCO
+      employeeTitle: H&S Supervisor, CCO, Partner
+      employeeQuote: H&S Supervisor, CCO, Partner
       employeePicture: /images/uploads/kia-kiso.jpeg
     - name: Ariel Lazarus
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/ariel-l.jpeg
     - name: Elle West
-      employeeTitle: Project Manager, CCO
+      employeeTitle: Project Manager, CCO, Partner
       employeePicture: /images/uploads/img_8382.jpg
-      employeeQuote: Project Manager, CCO
+      employeeQuote: Project Manager, CCO, Partner
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
