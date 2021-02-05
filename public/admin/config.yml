@@ -211,6 +211,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
           - {label: Subtitle, name: subtitle, widget: markdown}
+          - {label: Paragraph, name: paragraph, widget: markdown, required: false}
           - {label: Button Text, name: buttonText, widget: string}
           - {label: Button Links to, name: buttonLinkTo, widget: string}
           - label: "Featured Clients"

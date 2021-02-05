@@ -9,6 +9,7 @@ export default ({ fields }) => {
   const {
     // title,
     subtitle,
+    paragraph,
     buttonText,
     buttonLinkTo,
     // featuredImage,
@@ -68,6 +69,7 @@ export default ({ fields }) => {
           >
             <div className="paragraph-bigger cc-bigger-white-light">
               <h5 className="intro-subtitle">{subtitle}</h5>
+              <p className="intro-paragraph">{paragraph}</p>
               <br />
             </div>
             <Link to={buttonLinkTo} className="Button inline-block">

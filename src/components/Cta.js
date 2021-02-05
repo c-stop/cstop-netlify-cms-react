@@ -14,7 +14,7 @@ export default function Cta() {
             </div>
             <div className="paragraph-bigger cc-bigger-light">
               With our informed leaders and trained Covid-19 teams, You can
-              minimize the risk of br/inging an infection home.
+              minimize the risk of bringing an infection home.
               <br />
             </div>
           </div>
