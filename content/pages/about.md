@@ -186,6 +186,10 @@ teamMemberSection:
       employeeTitle: Administrative Coordinator, CCO
       employeeQuote: Administrative Coordinator, CCO
       employeePicture: /images/uploads/ian.jpeg
+    - name: Lori May
+      employeeTitle: Medic, CCO, HSS
+      employeePicture: /images/uploads/unknown.jpeg
+      employeeQuote: Medic, CCO, HSS
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
