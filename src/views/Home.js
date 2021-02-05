@@ -2,6 +2,7 @@ import uniqueId from "lodash/uniqueId"
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
+import Content from "../components/Content"
 import LazyImage from '../components/LazyImage'
 import './Home.sass'
 
@@ -68,8 +69,8 @@ export default ({ fields }) => {
             style={{ overflow: 'hidden' }}
           >
             <div className="paragraph-bigger cc-bigger-white-light">
-              <h5 className="intro-subtitle">{subtitle}</h5>
-              <p className="intro-paragraph">{paragraph}</p>
+              <h5 className="intro-subtitle"><Content source={subtitle} /></h5>
+              <p className="intro-paragraph"><Content source={paragraph} /></p>
               <br />
             </div>
             <Link to={buttonLinkTo} className="Button inline-block">
