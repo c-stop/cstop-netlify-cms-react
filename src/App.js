@@ -68,7 +68,7 @@ class App extends Component {
 
     return (
       <Router>
-        <div className="React-Wrap">
+        <div className="react-wrap">
           <ScrollToTop />
           <ServiceWorkerNotifications reloadOnUpdate />
 

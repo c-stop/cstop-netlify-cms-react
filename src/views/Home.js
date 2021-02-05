@@ -38,7 +38,7 @@ export default ({ fields }) => {
 
   return (
     <main className="Home" >
-      <video muted loop autoPlay id="myVideo">
+      <video playsinline muted loop autoPlay id="myVideo">
         <source src="/images/Film-set.mp4" type="video/mp4" />
       </video>
 
@@ -68,9 +68,9 @@ export default ({ fields }) => {
             className="intro-text"
             style={{ overflow: 'hidden' }}
           >
-            <div className="paragraph-bigger cc-bigger-white-light">
-              <h5 className="intro-subtitle"><Content source={subtitle} /></h5>
-              <p className="intro-paragraph"><Content source={paragraph} /></p>
+            <div className="cc-bigger-white-light">
+              <h5><Content source={subtitle} className="intro-subtitle"/></h5>
+              <p ><Content source={paragraph} className="intro-paragraph"/></p>
               <br />
             </div>
             <Link to={buttonLinkTo} className="Button inline-block">

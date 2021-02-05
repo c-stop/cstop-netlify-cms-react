@@ -1,31 +1,48 @@
+.Home
+	flex-grow: 1
+	
 .intro-header
-	display: -webkit-box
-	display: -webkit-flex
-	display: -ms-flexbox
-	display: flex
-	flex-flow: column
-	height: 99vh
-	-webkit-box-pack: center
-	-webkit-justify-content: center
-	-ms-flex-pack: center
-	justify-content: center
-	-webkit-box-align: center
-	-webkit-align-items: center
-	-ms-flex-align: center
-	align-items: center
-	background-position: 50%
-	background-size: cover
-	background-attachment: fixed
-	color: black
+	// display: -webkit-box
+	// display: -webkit-flex
+	// display: -ms-flexbox
+	// display: flex
+	// flex-flow: column
+	// height: 99vh
+	// -webkit-box-pack: center
+	// -webkit-justify-content: center
+	// -ms-flex-pack: center
+	// justify-content: center
+	// -webkit-box-align: center
+	// -webkit-align-items: center
+	// -ms-flex-align: center
+	// align-items: center
+	// background-position: 50%
+	// background-size: cover
+	// background-attachment: fixed
+	// color: black
 
-#myVideo
-  position: absolute
-  right: 0
-  bottom: 0
-  min-width: 100%
-  min-height: 100%
-  z-index: 0
-  filter: brightness(40%)
+	position: relative
+	height: 100vh
+	text-align: center
+	
+
+// #myVideo
+//   position: absolute
+//   right: 0
+//   bottom: 0
+//   min-width: 100%
+//   min-height: 100%
+//   z-index: 0
+//   filter: brightness(40%)
+
+video
+	object-fit: cover
+	width: 100vw
+	height: 100vh
+	position: fixed
+	top: 0
+	left: 0
+	filter: brightness(40%)
 
 .intro-logo
 	width: 55%
@@ -49,7 +66,8 @@
 	margin-left: auto
 	padding: 2rem
 	color: white
-
+.intro-paragraph
+	text-align: justify
 .intro-subsection
 	width: 80%
 	z-index: 1
