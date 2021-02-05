@@ -71,12 +71,12 @@ section2:
 
         OSHA Accident Investigation Reports • **County of Los Angeles Public Health Protocol checklist •** General Safety Guidelines for all crew & talent (including extras) • **Safe Way Forward protocols** • Model Injury and Illness Prevention Program for Employers with Seasonal or Intermittent Workers (including IIPP contact lists & logs)
       serviceIconImage: /images/uploads/artboard-1.png
-    - title: Testing
+    - title: Sanitizing & Disinfecting
       body: >-
-        **On-site RT-PCR CLIA-Certified Lab Tests & Rapid Antigen Tests:**
+        **We offer a wide range of sanitation packages including:** 
 
 
-        Our RT-PCR tests are processed at a privately-owned, high complexity, HIPAA compliant, CLIA-certified laboratory. All results are returned per LA County and CDC guidelines. Both our Rapid PCR and Antigen tests have been validated and granted their Emergency Use Authorization by the FDA.
+        Small and large cleaning & disinfecting teams • Eco friendly cleaning partnerships for excessively vast locations • Electrostatic Foggers (backpack) perfect for large areas and spaces • Victory Electrostatic foggers (handheld) perfect for vans, trucks, vehicles, small areas & surfaces, air scrubbers, UV towers, EPA cleaning products and more.
       serviceIconImage: /images/uploads/artboard-1.png
     - title: All PPE products as needed
       body: >-
@@ -85,11 +85,11 @@ section2:
 
          KN95 face masks • face shields • goggles • 3 ply face masks • nitrile gloves • gowns • hand sanitizer • disinfectant wipes • coveralls and more.
       serviceIconImage: /images/uploads/artboard-1.png
-    - title: Sanitizing & Disinfecting
+    - title: Testing
       body: >-
-        **We offer a wide range of sanitation packages including:** 
+        **On-site RT-PCR CLIA-Certified Lab Tests & Rapid Antigen Tests:**
 
 
-        Small and large cleaning & disinfecting teams • Eco friendly cleaning partnerships for excessively vast locations • Electrostatic Foggers (backpack) perfect for large areas and spaces • Victory Electrostatic foggers (handheld) perfect for vans, trucks, vehicles, small areas & surfaces, air scrubbers, UV towers, EPA cleaning products and more.
+        Our RT-PCR tests are processed at a privately-owned, high complexity, HIPAA compliant, CLIA-certified laboratory. All results are returned per LA County and CDC guidelines. Both our Rapid PCR and Antigen tests have been validated and granted their Emergency Use Authorization by the FDA.
       serviceIconImage: /images/uploads/artboard-1.png
 ---
