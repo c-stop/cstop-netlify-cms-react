@@ -27,8 +27,8 @@ export default ({ fields }) => {
     fade: true,
     infinite: true,
     autoplay: true,
-    speed: 1500,
-    autoplaySpeed: 4500,
+    speed: 500,
+    autoplaySpeed: 3500,
     cssEase: 'linear',
     dots: false,
     arrows: false,
@@ -90,7 +90,7 @@ export default ({ fields }) => {
             className="label cc-light subsection"
             style={{ textTransform: 'uppercase', color: 'white' }}
           >
-            <h4>{carouselTitle}</h4>
+            <h4 style={{alignSelf:"center"}}>{carouselTitle}</h4>
 
             <div className="subsection-client">
               <Slider {...settings}>
