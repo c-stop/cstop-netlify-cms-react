@@ -2,6 +2,7 @@ import uniqueId from "lodash/uniqueId"
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
+import Content from "../components/Content"
 import LazyImage from '../components/LazyImage'
 import './Home.sass'
 
@@ -26,8 +27,8 @@ export default ({ fields }) => {
     fade: true,
     infinite: true,
     autoplay: true,
-    speed: 1500,
-    autoplaySpeed: 4500,
+    speed: 500,
+    autoplaySpeed: 3500,
     cssEase: 'linear',
     dots: false,
     arrows: false,
@@ -37,7 +38,7 @@ export default ({ fields }) => {
 
   return (
     <main className="Home" >
-      <video muted loop autoPlay id="myVideo">
+      <video playsinline muted loop autoPlay id="myVideo">
         <source src="/images/Film-set.mp4" type="video/mp4" />
       </video>
 
@@ -67,9 +68,9 @@ export default ({ fields }) => {
             className="intro-text"
             style={{ overflow: 'hidden' }}
           >
-            <div className="paragraph-bigger cc-bigger-white-light">
-              <h5 className="intro-subtitle">{subtitle}</h5>
-              <p className="intro-paragraph">{paragraph}</p>
+            <div className="cc-bigger-white-light">
+              <h5><Content source={subtitle} className="intro-subtitle"/></h5>
+              <p ><Content source={paragraph} className="intro-paragraph"/></p>
               <br />
             </div>
             <Link to={buttonLinkTo} className="Button inline-block">
@@ -89,7 +90,7 @@ export default ({ fields }) => {
             className="label cc-light subsection"
             style={{ textTransform: 'uppercase', color: 'white' }}
           >
-            <h4>{carouselTitle}</h4>
+            <h4 style={{alignSelf:"center"}}>{carouselTitle}</h4>
 
             <div className="subsection-client">
               <Slider {...settings}>
