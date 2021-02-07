@@ -1,7 +1,7 @@
 import React from 'react'
-// import linkedin from "images/logos/LinkedIn_logo_initials.png";
-// import facebook from "images/logos/f_logo_RGB-Blue_72.png";
-// import logo from "images/logos/favicon-256x256.png";
+import linkedin from "../components/FooterImages/LinkedIn_logo_initials.png";
+import facebook from "../components/FooterImages/f_logo_RGB-Blue_72.png";
+import logo from "../components/FooterImages/android-chrome-512x512.png";
 import { Link } from 'react-router-dom'
 
 import './Footer.sass'
@@ -16,7 +16,7 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
         href="https://www.linkedin.com/company/c-stop/"
       >
         <img
-          src="images/logos/LinkedIn_logo_initials.png"
+          src={linkedin}
           loading="lazy"
           width="200"
           alt="Link to CStop Linked in"
@@ -28,7 +28,7 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
         href="https://www.facebook.com/C-Stop-Health-Safety-Services-105283481304458/"
       >
         <img
-          src="images/logos/f_logo_RGB-Blue_72.png"
+          src={facebook}
           loading="lazy"
           width="200"
           alt="Link to CStop Facebook"
@@ -37,7 +37,7 @@ export default ({ globalSettings, socialSettings, navLinks }) => (
 
       <Link to="/" className="webflow-link">
         <img
-          src="images/logos/android-chrome-512x512.png"
+          src={logo}
           width="100"
           alt=""
           className="webflow-logo-tiny"
