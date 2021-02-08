@@ -4,7 +4,6 @@ import Spinner from './Spinner'
 export default function UseIframe(props) {
   const { id, title } = props
   const [loading, setLoading] = useState(true)
-  // console.log("id: ", id)
 
   let iframe = () => {
     var ifr = document.getElementById(`JotFormIFrame-${id}`)
@@ -124,7 +123,6 @@ export default function UseIframe(props) {
         src={`https://form.jotform.com/${id}`}
         frameBorder={"0"}
         style={{ minWidth: '99vw', minHeight: '100vh', overflow:"hidden" }}
-        // scrolling={true}
       />
     </>
   )
