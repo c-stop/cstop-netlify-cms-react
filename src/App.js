@@ -1,7 +1,6 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import axios from 'axios'
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer'
@@ -36,13 +35,9 @@ const RouteWithMeta = ({ component: Component, ...props }) => (
   />
 )
 
-
 function App() {
-  
-  const [formList, setFormList] = useState([])
-  let apiKey = process.env.REACT_APP_JOTFORM_API_READ
-
-  const getDocument = (collection, name) => data[collection] && data[collection].filter((page) => page.name === name)[0]
+  const getDocument = (collection, name) =>
+    data[collection] && data[collection].filter((page) => page.name === name)[0]
 
   const getDocuments = (collection) => data[collection] || []
 
@@ -65,22 +60,6 @@ function App() {
   )
 
   document.getElementById('root').style.height = '100vh'
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`https://api.jotform.com/user/forms?apiKey=${apiKey}`)
-  //     .then((resp) => {
-  //       let form = resp.data.content
-  //       // console.log("Response", form);
-  //       setFormList(form)
-  //       // console.log("State: ", formList);
-  //     })
-  //     .then()
-  //     .catch((err) => console.log(err))
-
-  //   // eslint-disable-next-line
-  // }, [])
-
 
   return (
     <Router>

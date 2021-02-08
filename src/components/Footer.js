@@ -8,8 +8,6 @@ import './Footer.sass'
 
 export default ({ globalSettings, socialSettings, navLinks }) => (
   <footer className="Footer">
-    {/* {console.log(globalSettings)} */}
-
     <div className="footer-container">
       <a
         className="footer-social-icon"

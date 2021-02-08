@@ -18,6 +18,8 @@ export default function FormsPage(props, { match }) {
       })
       .then()
       .catch((err) => console.log(err))
+
+    // eslint-disable-next-line
   }, [])
   let apiKey = process.env.REACT_APP_JOTFORM_API_READ
 
