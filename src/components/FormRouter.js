@@ -13,13 +13,11 @@ export default function FormsPage(props, { match }) {
     Axios.get(`https://api.jotform.com/user/forms?apiKey=${apiKey}`)
       .then((resp) => {
         let form = resp.data.content
-        console.log(resp)
+        // console.log(resp)
         setFormList(form)
       })
       .then()
       .catch((err) => console.log(err))
-
-    // eslint-disable-next-line
   }, [])
   let apiKey = process.env.REACT_APP_JOTFORM_API_READ
 
@@ -63,8 +61,6 @@ export default function FormsPage(props, { match }) {
               Submit
             </button>
           </span>
-
-          {/* {FormArray} */}
         </div>
       </Route>
     </div>

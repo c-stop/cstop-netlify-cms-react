@@ -114,18 +114,17 @@ export default function UseIframe(props) {
   return (
     <>
       {loading ? <Spinner /> : null}
-
       <iframe
         id={`JotFormIFrame-${id}`}
         title={title}
         onLoad={handleOnLoad}
-        allowTransparency="true"
-        allowFullScreen="false"
-        allow="geolocation; microphone; camera"
+        allowTransparency={true}
+        allowFullScreen={true}
+        allow={"geolocation; microphone; camera"}
         src={`https://form.jotform.com/${id}`}
-        frameBorder="0"
-        style={{ minWidth: '100%', minHeight: '100vh', border: 'none' }}
-        scrolling="yes"
+        frameBorder={"0"}
+        style={{ minWidth: '99vw', minHeight: '100vh', overflow:"hidden" }}
+        // scrolling={true}
       />
     </>
   )

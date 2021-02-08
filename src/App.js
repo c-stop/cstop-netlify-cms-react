@@ -1,9 +1,12 @@
-import React, { Component, Fragment, useEffect, useState } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import axios from 'axios'
+import React, { Fragment, useEffect, useState } from 'react'
 import Helmet from 'react-helmet'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer'
-import JobPage from './components/JobPage'
 import FormsPage from './components/FormRouter'
+import JobPage from './components/JobPage'
 import Meta from './components/Meta'
 import Nav from './components/Nav'
 import QuotePage from './components/Quote'
@@ -19,9 +22,6 @@ import Home from './views/Home'
 import NoMatch from './views/NoMatch'
 import Services from './views/Services'
 import SinglePost from './views/SinglePost'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import axios from 'axios'
 AOS.init()
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
@@ -36,184 +36,171 @@ const RouteWithMeta = ({ component: Component, ...props }) => (
   />
 )
 
-const FormRoute = () => {
+
+function App() {
+  
   const [formList, setFormList] = useState([])
-
-  useEffect(() => {
-    axios
-      .get(`https://api.jotform.com/user/forms?apiKey=${apiKey}`)
-      .then((resp) => {
-        let form = resp.data.content
-        // console.log("Response", form);
-        setFormList(form)
-        // console.log("State: ", formList);
-      })
-      .then()
-      .catch((err) => console.log(err))
-
-    // eslint-disable-next-line
-  }, [])
   let apiKey = process.env.REACT_APP_JOTFORM_API_READ
 
-  return formList
-}
+  const getDocument = (collection, name) => data[collection] && data[collection].filter((page) => page.name === name)[0]
 
-class App extends Component {
-  state = {
-    data,
-  }
-  getDocument = (collection, name) =>
-    this.state.data[collection] &&
-    this.state.data[collection].filter((page) => page.name === name)[0]
+  const getDocuments = (collection) => data[collection] || []
 
-  getDocuments = (collection) => this.state.data[collection] || []
+  const globalSettings = getDocument('settings', 'global')
 
-  render() {
-    const globalSettings = this.getDocument('settings', 'global')
-    const {
-      siteTitle,
-      siteUrl,
-      siteDescription,
-      socialMediaCard,
-      headerScripts,
-    } = globalSettings
+  const {
+    siteTitle,
+    siteUrl,
+    siteDescription,
+    socialMediaCard,
+    headerScripts,
+  } = globalSettings
 
-    const posts = this.getDocuments('posts').filter(
-      (post) => post.status !== 'Draft'
-    )
-    const categoriesFromPosts = getCollectionTerms(posts, 'categories')
-    const postCategories = this.getDocuments('postCategories').filter(
-      (category) =>
-        categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
-    )
+  const posts = getDocuments('posts').filter((post) => post.status !== 'Draft')
 
-    document.getElementById('root').style.height = '100vh'
+  const categoriesFromPosts = getCollectionTerms(posts, 'categories')
 
-    return (
-      <Router>
-        <div className="react-wrap">
-          <ScrollToTop />
-          <ServiceWorkerNotifications reloadOnUpdate />
+  const postCategories = getDocuments('postCategories').filter(
+    (category) => categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
+  )
 
-          <Helmet
-            defaultTitle={siteTitle}
-            titleTemplate={`${siteTitle} | %s`}
+  document.getElementById('root').style.height = '100vh'
+
+  // useEffect(() => {
+  //   axios
+  //     .get(`https://api.jotform.com/user/forms?apiKey=${apiKey}`)
+  //     .then((resp) => {
+  //       let form = resp.data.content
+  //       // console.log("Response", form);
+  //       setFormList(form)
+  //       // console.log("State: ", formList);
+  //     })
+  //     .then()
+  //     .catch((err) => console.log(err))
+
+  //   // eslint-disable-next-line
+  // }, [])
+
+
+  return (
+    <Router>
+      <div className="react-wrap">
+        <ScrollToTop />
+        <ServiceWorkerNotifications reloadOnUpdate />
+
+        <Helmet defaultTitle={siteTitle} titleTemplate={`${siteTitle} | %s`} />
+
+        <Meta
+          headerScripts={headerScripts}
+          absoluteImageUrl={
+            socialMediaCard &&
+            socialMediaCard.image &&
+            siteUrl + socialMediaCard.image
+          }
+          twitterCreatorAccount={
+            socialMediaCard && socialMediaCard.twitterCreatorAccount
+          }
+          twitterSiteAccount={
+            socialMediaCard && socialMediaCard.twitterSiteAccount
+          }
+          linkedInSiteAccount={
+            socialMediaCard && socialMediaCard.linkedInSiteAccount
+          }
+        />
+
+        <Nav />
+
+        <Switch>
+          <RouteWithMeta
+            path="/"
+            exact
+            component={Home}
+            description={siteDescription}
+            fields={getDocument('pages', 'home')}
+          />
+          <RouteWithMeta
+            path="/services/"
+            exact
+            component={Services}
+            fields={getDocument('pages', 'services')}
+          />
+          <RouteWithMeta
+            path="/about/"
+            exact
+            component={About}
+            fields={getDocument('pages', 'about')}
+          />
+          <RouteWithMeta
+            path="/contact/"
+            exact
+            component={Contact}
+            fields={getDocument('pages', 'contact')}
+            siteTitle={siteTitle}
           />
 
-          <Meta
-            headerScripts={headerScripts}
-            absoluteImageUrl={
-              socialMediaCard &&
-              socialMediaCard.image &&
-              siteUrl + socialMediaCard.image
-            }
-            twitterCreatorAccount={
-              socialMediaCard && socialMediaCard.twitterCreatorAccount
-            }
-            twitterSiteAccount={
-              socialMediaCard && socialMediaCard.twitterSiteAccount
-            }
-            linkedInSiteAccount={
-              socialMediaCard && socialMediaCard.linkedInSiteAccount
-            }
+          <Route path="/quote/" exact component={QuotePage} />
+
+          <Route path="/forms/" component={FormsPage} />
+
+          {/* <Route
+            path={`/forms/:id`}
+            exact
+            render={(props) => {
+              return <FormsPage {...props} data={formList} />
+            }}
+          /> */}
+
+          <Route path="/apply/" exact component={JobPage} />
+
+          <RouteWithMeta
+            path="/blog/"
+            exact
+            component={Blog}
+            fields={getDocument('pages', 'blog')}
+            posts={posts}
+            postCategories={postCategories}
           />
 
-          <Nav />
+          {posts.map((post, index) => {
+            const path = slugify(`/blog/${post.title}`)
+            const nextPost = posts[index - 1]
+            const prevPost = posts[index + 1]
+            return (
+              <RouteWithMeta
+                key={path}
+                path={path}
+                exact
+                component={SinglePost}
+                fields={post}
+                nextPostURL={nextPost && slugify(`/blog/${nextPost.title}/`)}
+                prevPostURL={prevPost && slugify(`/blog/${prevPost.title}/`)}
+              />
+            )
+          })}
 
-          <Switch>
-            <RouteWithMeta
-              path="/"
-              exact
-              component={Home}
-              description={siteDescription}
-              fields={this.getDocument('pages', 'home')}
-            />
-            <RouteWithMeta
-              path="/services/"
-              exact
-              component={Services}
-              fields={this.getDocument('pages', 'services')}
-            />
-            <RouteWithMeta
-              path="/about/"
-              exact
-              component={About}
-              fields={this.getDocument('pages', 'about')}
-            />
-            <RouteWithMeta
-              path="/contact/"
-              exact
-              component={Contact}
-              fields={this.getDocument('pages', 'contact')}
-              siteTitle={siteTitle}
-            />
-
-            <Route path="/quote/" exact component={QuotePage} />
-
-            <Route path="/forms/" exact component={FormsPage} />
-
-            <Route
-              path={`/forms/:id`}
-              exact
-              render={(props) => {
-                return <FormsPage {...props} data={FormRoute} />
-              }}
-            />
-
-            <Route path="/apply/" exact component={JobPage} />
-
-            <RouteWithMeta
-              path="/blog/"
-              exact
-              component={Blog}
-              fields={this.getDocument('pages', 'blog')}
-              posts={posts}
-              postCategories={postCategories}
-            />
-
-            {posts.map((post, index) => {
-              const path = slugify(`/blog/${post.title}`)
-              const nextPost = posts[index - 1]
-              const prevPost = posts[index + 1]
-              return (
-                <RouteWithMeta
-                  key={path}
-                  path={path}
-                  exact
-                  component={SinglePost}
-                  fields={post}
-                  nextPostURL={nextPost && slugify(`/blog/${nextPost.title}/`)}
-                  prevPostURL={prevPost && slugify(`/blog/${prevPost.title}/`)}
-                />
-              )
-            })}
-
-            {postCategories.map((postCategory) => {
-              const slug = slugify(postCategory.title)
-              const path = slugify(`/blog/category/${slug}`)
-              const categoryPosts = posts.filter((post) =>
-                documentHasTerm(post, 'categories', slug)
-              )
-              return (
-                <RouteWithMeta
-                  key={path}
-                  path={path}
-                  exact
-                  component={Blog}
-                  fields={this.getDocument('pages', 'blog')}
-                  posts={categoryPosts}
-                  postCategories={postCategories}
-                />
-              )
-            })}
-
-            <Route render={() => <NoMatch siteUrl={siteUrl} />} />
-          </Switch>
-          <Footer globalSettings={globalSettings} />
-        </div>
-      </Router>
-    )
-  }
+          {postCategories.map((postCategory) => {
+            const slug = slugify(postCategory.title)
+            const path = slugify(`/blog/category/${slug}`)
+            const categoryPosts = posts.filter((post) =>
+              documentHasTerm(post, 'categories', slug)
+            )
+            return (
+              <RouteWithMeta
+                key={path}
+                path={path}
+                exact
+                component={Blog}
+                fields={getDocument('pages', 'blog')}
+                posts={categoryPosts}
+                postCategories={postCategories}
+              />
+            )
+          })}
+          <Route render={() => <NoMatch siteUrl={siteUrl} />} />
+        </Switch>
+        <Footer globalSettings={globalSettings} />
+      </div>
+    </Router>
+  )
 }
-
 export default App
