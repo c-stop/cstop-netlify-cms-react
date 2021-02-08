@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment, useEffect, useState } from 'react'
 import Helmet from 'react-helmet'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Footer from './components/Footer'
 import JobPage from './components/JobPage'
-import FormsPage from './components/JotFormRouter'
+import FormsPage from './components/FormRouter'
 import Meta from './components/Meta'
 import Nav from './components/Nav'
 import QuotePage from './components/Quote'
@@ -21,6 +21,7 @@ import Services from './views/Services'
 import SinglePost from './views/SinglePost'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import axios from 'axios'
 AOS.init()
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
@@ -34,6 +35,28 @@ const RouteWithMeta = ({ component: Component, ...props }) => (
     )}
   />
 )
+
+const FormRoute = () => {
+  const [formList, setFormList] = useState([])
+
+  useEffect(() => {
+    axios
+      .get(`https://api.jotform.com/user/forms?apiKey=${apiKey}`)
+      .then((resp) => {
+        let form = resp.data.content
+        // console.log("Response", form);
+        setFormList(form)
+        // console.log("State: ", formList);
+      })
+      .then()
+      .catch((err) => console.log(err))
+
+    // eslint-disable-next-line
+  }, [])
+  let apiKey = process.env.REACT_APP_JOTFORM_API_READ
+
+  return formList
+}
 
 class App extends Component {
   state = {
@@ -124,9 +147,18 @@ class App extends Component {
               fields={this.getDocument('pages', 'contact')}
               siteTitle={siteTitle}
             />
+
             <Route path="/quote/" exact component={QuotePage} />
 
             <Route path="/forms/" exact component={FormsPage} />
+
+            <Route
+              path={`/forms/:id`}
+              exact
+              render={(props) => {
+                return <FormsPage {...props} data={FormRoute} />
+              }}
+            />
 
             <Route path="/apply/" exact component={JobPage} />
 
