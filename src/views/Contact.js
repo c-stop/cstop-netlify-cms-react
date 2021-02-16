@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Content from '../components/Content'
+import Cta from '../components/Cta'
 import PageHeader from '../components/PageHeader'
 import './Contact.sass'
 
@@ -108,6 +109,7 @@ export default ({ fields }) => {
             </div>
           </div>
         </div>
+        <Cta />
       </div>
     </div>
   )
