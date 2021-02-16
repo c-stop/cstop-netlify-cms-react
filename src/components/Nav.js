@@ -75,7 +75,7 @@ export default function Nav({ handlePopupOpen }) {
           className="navigation-item"
           onClick={() => toggleMenu()}
         >
-          Talk to a Specialist
+          Request an Estimate
         </Link>
         <Link
           to="/"
