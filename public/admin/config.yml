@@ -44,8 +44,8 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Title, name: ctaTitle, widget: string, default: "Minimize the risk of Covid-19 on your projects" , required: false}
               - {label: Body, name: ctaBody, widget: markdown, required: false}
-              - {label: Button Text, name: ctaButtonText, widget: string}
-              - {label: Background Image, name: ctaBackgroundImage, widget: image, required: false }
+              - {label: Button Text, name: ctaButtonText, widget: string, required: false}
+              # - {label: Background Image, name: ctaBackgroundImage, widget: image, required: false }
 
           - label: "Meta"
             required: false
@@ -211,7 +211,7 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Title, name: ctaTitle, widget: string, default: "Minimize the risk of Covid-19 on your projects" , required: false}
               - {label: Body, name: ctaBody, widget: markdown, required: false}
               - {label: Button Text, name: ctaButtonText, widget: string, default: "Request an estimate", required: false}
-              - {label: Background Image, name: ctaBackgroundImage, widget: image, required: false }
+              # - {label: Background Image, name: ctaBackgroundImage, widget: image, required: false }
 
           - label: "Meta"
             collapsed: true
