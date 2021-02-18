@@ -13,9 +13,12 @@ export default ({ fields }) => {
     email,
     // workHours,
     applySection,
-  } = fields
+    contactCallToAction,
+  } = fields;
 
-  const { applyTitle, applySubtitle, applyBody, applyButton } = applySection
+  const { applyTitle, applySubtitle, applyBody, applyButton } = applySection;
+  const {ctaTitle, ctaBody, ctaButtonText, ctaBackgroundImage} = contactCallToAction?? "";
+  
 
   return (
     <div className="Contact">
@@ -109,7 +112,9 @@ export default ({ fields }) => {
             </div>
           </div>
         </div>
-        <Cta />
+
+        <Cta title={ctaTitle} body={ctaBody} buttonText={ctaButtonText} backgroundImage={ctaBackgroundImage} />
+
       </div>
     </div>
   )

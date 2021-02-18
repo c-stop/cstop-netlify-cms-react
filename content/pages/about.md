@@ -196,4 +196,9 @@ imageGallery:
   - description: Test, featured
     featured: true
     image: /images/uploads/tim-marshall-155597.jpg
+aboutCallToAction:
+  ctaBackgroundImage: /images/uploads/card-og.png
+  ctaTitle: Minimize the risk of Covid-19 on your projects TEST TITLE
+  ctaBody: With our informed leaders and trained Covid-19 teams, You can minimize the risk of bringing an infection home.
+  ctaButtonText: Ask Our Team
 ---
