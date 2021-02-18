@@ -6,7 +6,7 @@ import './Cta.sass'
 
 export default function Cta(props) {
   const {title,body,buttonText, backgroundImage} = props;
-  console.log(props)
+  // console.log(props)
 
 
   const titleTemp = "Minimize the risk of Covid-19 on your projects";

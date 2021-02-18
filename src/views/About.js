@@ -10,7 +10,7 @@ import Testimonials from '../components/Testimonials'
 import './About.sass'
 
 export default ({ fields }) => {
-  console.log(fields)
+  // console.log(fields)
   const {
     aboutPageHeader,
     clientsSection,
