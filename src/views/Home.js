@@ -86,9 +86,10 @@ export default ({ fields }) => {
         >
           <div className="divider"></div>
 
-          <div
+          <a
             className="label cc-light subsection"
-            style={{ textTransform: 'uppercase', color: 'white' }}
+            style={{ textTransform: 'uppercase', color: 'white' , textDecoration:"none" }}
+            href="/about/clients"
           >
             <h4 style={{alignSelf:"center"}}>{carouselTitle}</h4>
 
@@ -106,7 +107,7 @@ export default ({ fields }) => {
                 })}
               </Slider>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </main>
