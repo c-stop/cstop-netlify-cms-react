@@ -49,7 +49,7 @@
 
 .team-card-wrapper
 	width: 100%
-	height: 500px
+	height: 250px
 	background-color: #f4f4f4
 	background-position: center
 	background-size: auto 100%
@@ -58,10 +58,25 @@
 	overflow: hidden
 	background-blend-mode: darken
 
+	&:nth-child(1)
+		height: 500px
+		grid-area: big1
+	&:nth-child(2)
+		height: 500px
+		grid-area: big2
+		
+
 .team-pic-src
 	width: 100%
 
 @media screen and ( max-width: 991px  )
+	.team-card-wrapper:nth-child(1)
+		height: 250px
+		grid-area: initial
+	.team-card-wrapper:nth-child(2)
+		height: 250px
+		grid-area: initial
+
 	.team-member-title-wrap
 		margin-bottom: 30px
 

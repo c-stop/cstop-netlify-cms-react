@@ -10,12 +10,14 @@ import Testimonials from '../components/Testimonials'
 import './About.sass'
 
 export default ({ fields }) => {
+  // console.log(fields)
   const {
     aboutPageHeader,
     clientsSection,
     section2Container,
     teamMemberSection,
     testimonialSection,
+    aboutCallToAction,
   } = fields
   const { section1, title } = aboutPageHeader
   const { clientImages } = clientsSection
@@ -26,6 +28,8 @@ export default ({ fields }) => {
     testimonialSubtitle,
     testimonialTitle,
   } = testimonialSection
+
+  const { ctaTitle, ctaBody, ctaButtonText, ctaBackgroundImage} = aboutCallToAction?? "";
 
   const root = document.documentElement
 
@@ -112,7 +116,7 @@ export default ({ fields }) => {
         data-aos-delay="200"
         data-aos-anchor-placement="center-bottom"
       >
-        <Cta />
+        <Cta title={ctaTitle} body={ctaBody} buttonText={ctaButtonText} backgroundImage={ctaBackgroundImage}/>
       </div>
     </div>
   )
