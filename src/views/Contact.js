@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Content from '../components/Content'
+import Cta from '../components/Cta'
 import PageHeader from '../components/PageHeader'
 import './Contact.sass'
 
@@ -12,9 +13,12 @@ export default ({ fields }) => {
     email,
     // workHours,
     applySection,
-  } = fields
+    contactCallToAction,
+  } = fields;
 
-  const { applyTitle, applySubtitle, applyBody, applyButton } = applySection
+  const { applyTitle, applySubtitle, applyBody, applyButton } = applySection;
+  const {ctaTitle, ctaBody, ctaButtonText, ctaBackgroundImage} = contactCallToAction?? "";
+  
 
   return (
     <div className="Contact">
@@ -108,6 +112,9 @@ export default ({ fields }) => {
             </div>
           </div>
         </div>
+
+        <Cta title={ctaTitle} body={ctaBody} buttonText={ctaButtonText} backgroundImage={ctaBackgroundImage} />
+
       </div>
     </div>
   )

@@ -186,10 +186,19 @@ teamMemberSection:
       employeeTitle: Administrative Coordinator, CCO
       employeeQuote: Administrative Coordinator, CCO
       employeePicture: /images/uploads/ian.jpeg
+    - name: Lori May
+      employeeTitle: Medic, CCO, HSS
+      employeePicture: /images/uploads/unknown.jpeg
+      employeeQuote: Medic, CCO, HSS
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
   - description: Test, featured
     featured: true
     image: /images/uploads/tim-marshall-155597.jpg
+aboutCallToAction:
+  ctaBackgroundImage: /images/uploads/card-og.png
+  ctaTitle: Minimize the risk of Covid-19 on your projects
+  ctaBody: With our informed leaders and trained Covid-19 teams, You can minimize the risk of bringing an infection home.
+  ctaButtonText: Ask Our Team
 ---
