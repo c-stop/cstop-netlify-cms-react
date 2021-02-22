@@ -4,7 +4,7 @@ import { Route, useRouteMatch } from 'react-router-dom'
 import Form from './FormPage'
 import './FormRouter.sass'
 
-export default function FormsPage(props, { match }) {
+export default (props, { match })  => {
   const [formList, setFormList] = useState([])
   const [findForm, setFindForm] = useState()
   const { url } = useRouteMatch()

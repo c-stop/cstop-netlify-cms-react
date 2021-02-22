@@ -16,6 +16,7 @@ import { documentHasTerm, getCollectionTerms } from './util/collection'
 import { slugify } from './util/url'
 import About from './views/About'
 import Blog from './views/Blog'
+import Clients from './views/Clients'
 import Contact from './views/Contact'
 import Home from './views/Home'
 import NoMatch from './views/NoMatch'
@@ -108,6 +109,12 @@ function App() {
             exact
             component={About}
             fields={getDocument('pages', 'about')}
+          />
+          <RouteWithMeta
+            path="/about/clients"
+            exact
+            component={Clients}
+            fields={getDocument('pages', 'clients')}
           />
           <RouteWithMeta
             path="/contact/"

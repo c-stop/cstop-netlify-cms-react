@@ -24,6 +24,14 @@ featuredClients:
       companyName: 1820 Productions
     - companyName: Toyota
       companyLogo: /images/uploads/toyota-logo.png
+    - companyLogo: /images/uploads/beats-logo.png
+      companyName: Beats Audio
+    - companyLogo: /images/uploads/calvinklein-logo.png
+      companyName: Calvin Klein
+    - companyLogo: /images/uploads/puma-logo.png
+      companyName: Puma
+    - companyLogo: /images/uploads/boyinthecastle_logo.jpeg
+      companyName: Boy In The Castle
 meta:
   title: ""
 ---

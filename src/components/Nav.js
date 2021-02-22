@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import { Link } from 'react-router-dom'
@@ -46,9 +47,25 @@ export default function Nav({ handlePopupOpen }) {
             <Link to="/services" className="navigation-item">
               Services
             </Link>
-            <Link to="/about" className="navigation-item">
-              About
-            </Link>
+
+            <div className="subnav">
+                <FontAwesomeIcon  icon={["fas", "coffee"]}/>
+              <Link to="/about" className="navigation-item">
+                About
+              </Link>
+              <div className="subnav-content">
+                <Link to="/about" className="subnav-item navigation-item">
+                  About C-Stop
+                </Link>
+                {/* <Link
+                  to="/about/clients"
+                  className="subnav-item navigation-item"
+                >
+                  Clients
+                </Link> */}
+              </div>
+            </div>
+
             <Link to="/contact" className="navigation-item">
               Contact
             </Link>
@@ -92,13 +109,21 @@ export default function Nav({ handlePopupOpen }) {
         >
           Services
         </Link>
+
         <Link
           to="/about"
           className="navigation-item"
           onClick={() => toggleMenu()}
         >
-          About
+          About <i className="fa fa-caret-down" />
         </Link>
+        {/* <Link to="/about" className="subnav-item navigation-item">
+          About C-Stop
+        </Link>
+        <Link to="/about/clients" className="subnav-item navigation-item">
+          Clients
+        </Link> */}
+
         <Link
           to="/contact"
           className="navigation-item"
