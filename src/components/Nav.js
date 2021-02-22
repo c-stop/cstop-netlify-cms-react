@@ -57,12 +57,12 @@ export default function Nav({ handlePopupOpen }) {
                 <Link to="/about" className="subnav-item navigation-item">
                   About C-Stop
                 </Link>
-                <Link
+                {/* <Link
                   to="/about/clients"
                   className="subnav-item navigation-item"
                 >
                   Clients
-                </Link>
+                </Link> */}
               </div>
             </div>
 
@@ -117,12 +117,12 @@ export default function Nav({ handlePopupOpen }) {
         >
           About <i className="fa fa-caret-down" />
         </Link>
-        <Link to="/about" className="subnav-item navigation-item">
+        {/* <Link to="/about" className="subnav-item navigation-item">
           About C-Stop
         </Link>
         <Link to="/about/clients" className="subnav-item navigation-item">
           Clients
-        </Link>
+        </Link> */}
 
         <Link
           to="/contact"

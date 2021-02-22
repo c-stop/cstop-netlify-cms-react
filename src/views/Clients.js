@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
+import PageHeader from '../components/PageHeader'
 
-
-export default() => {
-
-    return(
-        <div>
-        <p>Hey Cllients</p>
-        </div>
-    )
+export default ({ fields }) => {
+  return (
+    <div className="Clients">
+        <PageHeader />
+      <p>Hey Cllients</p>
+    </div>
+  )
 }
