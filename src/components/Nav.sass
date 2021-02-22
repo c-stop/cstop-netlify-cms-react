@@ -136,6 +136,30 @@
 	opacity: 0.9
 	color: #fd8d00
 
+.subnav
+	overflow: hidden
+
+	i
+		width: 100%
+		color: black
+		border: 1px solid green
+	&:hover .subnav-content
+		display: block
+		
+
+.subnav-content
+	display: none
+	position: absolute
+	min-width: fit-content
+	z-index: 1
+	background-color: white
+
+.subnav-content.content
+
+.subnav-item
+	text-decoration: none
+	margin-right: 1rem
+
 @media screen and (max-width: 991px)
 
 	.menu-icon

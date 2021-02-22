@@ -24,16 +24,24 @@ export default ({ fields }) => {
 
 
   const settings = {
-    fade: true,
     infinite: true,
     autoplay: true,
-    speed: 500,
+    speed: 1000,
     autoplaySpeed: 3500,
     cssEase: 'linear',
     dots: false,
     arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
   }
 
   return (
@@ -91,9 +99,9 @@ export default ({ fields }) => {
             style={{ textTransform: 'uppercase', color: 'white' , textDecoration:"none" }}
             href="/about/clients"
           >
-            <h4 style={{alignSelf:"center"}}>{carouselTitle}</h4>
+            <h4 style={{alignSelf:"flex-start"}}>{carouselTitle}</h4>
 
-            <div className="subsection-client">
+            <div className="subsection-client-logos">
               <Slider {...settings}>
                 {featuredClientsLogos.map((image) => {
                   return (
@@ -102,6 +110,8 @@ export default ({ fields }) => {
                       src={image.companyLogo}
                       alt={image.companyName}
                       key={uniqueId(`ft_${image.companyName}_`)}
+                      className="intro-client-logo"
+
                     />
                   )
                 })}
