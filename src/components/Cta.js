@@ -5,7 +5,7 @@ import Content from './Content';
 import './Cta.sass'
 
 export default function Cta(props) {
-  const {title,body,buttonText, backgroundImage} = props;
+  const {title,body,buttonText} = props;
   // console.log(props)
 
 
