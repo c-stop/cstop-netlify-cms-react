@@ -1,11 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import BackgroundImage from './BackgroundImage';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Content from './Content';
-import './Cta.sass'
+import './Cta.sass';
 
 export default function Cta(props) {
-  const {title,body,buttonText, backgroundImage} = props;
+  const {title,body,buttonText} = props;
   // console.log(props)
 
 
@@ -16,7 +15,7 @@ export default function Cta(props) {
   return (
     <>
       <div className="container">
-        <div className="cta-wrap" style={{backgroundImage: `${backgroundImage}`}} >
+        <div className="cta-wrap" >
           {/* {backgroundImage && <BackgroundImage src={backgroundImage} opacity="0.5" />} */}
           <div className="cta-text">
             <div className="heading-jumbo-small">
