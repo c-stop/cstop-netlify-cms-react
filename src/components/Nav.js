@@ -49,7 +49,7 @@ export default function Nav({ handlePopupOpen }) {
             </Link>
 
             <div className="subnav">
-                <FontAwesomeIcon  icon={["fas", "coffee"]}/>
+                {/* <FontAwesomeIcon  icon={["coffee"]}/> */}
               <Link to="/about" className="navigation-item">
                 About
               </Link>
@@ -115,7 +115,7 @@ export default function Nav({ handlePopupOpen }) {
           className="navigation-item"
           onClick={() => toggleMenu()}
         >
-          About <i className="fa fa-caret-down" />
+          About 
         </Link>
         {/* <Link to="/about" className="subnav-item navigation-item">
           About C-Stop
