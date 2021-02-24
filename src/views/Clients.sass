@@ -1,15 +1,36 @@
 .Clients
     margin: 0 auto
-    height: 80vh
+    min-height: 90vh
 
 .clients-nav-buttons
     width: 100%
     display: flex
     flex-flow: row nowrap
-    
+
 .tabLink
+    color: #222222
     font-family: Open Sans, sans-serif
     text-decoration: none
     text-transform: uppercase
     cursor: pointer
+    opacity: 0.6
     margin: .5rem 1rem
+
+.selected
+    border-bottom: 3px solid #fd8d00
+    font-weight: bold
+
+.client-logo-grid
+    display: grid
+    align-items: center
+    justify-content: center
+    margin-top: 4rem
+    column-gap: 10px
+    row-gap: 15px
+
+.client-logo
+    max-height: 200px
+    width: auto
+    place-self: center
+    margin-bottom: 0
+    padding: 10px

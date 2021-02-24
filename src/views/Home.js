@@ -111,7 +111,6 @@ export default ({ fields }) => {
                       alt={image.companyName}
                       key={uniqueId(`ft_${image.companyName}_`)}
                       className="intro-client-logo"
-
                     />
                   )
                 })}

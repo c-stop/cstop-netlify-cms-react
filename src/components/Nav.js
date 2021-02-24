@@ -8,23 +8,7 @@ import './Nav.sass'
 export default function Nav({ handlePopupOpen }) {
   const [state] = useState({ active: false, navBarActiveClass: '' })
 
-  // const MenuContext = React.createContext()
-
   const [menuOpen, setMenuOpen] = useState(false)
-
-  // const menuProvider = (props) => {
-  //   return (
-  //     <MenuContext.Provider:
-  //       value={{
-  //         isMenuOpen: menuOpen,
-  //         toggleMenu: setMenuOpen(!menuOpen),
-  //         stateChangeHandler: (newState) => setMenuOpen(newState.isOpen),
-  //       }}
-  //     >
-  //       {props.children}
-  //     </MenuContext.Provider>
-  //   )
-  // }
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
@@ -49,7 +33,6 @@ export default function Nav({ handlePopupOpen }) {
             </Link>
 
             <div className="subnav">
-                {/* <FontAwesomeIcon  icon={["coffee"]}/> */}
               <Link to="/about" className="navigation-item">
                 About
               </Link>
@@ -57,12 +40,12 @@ export default function Nav({ handlePopupOpen }) {
                 <Link to="/about" className="subnav-item navigation-item">
                   About C-Stop
                 </Link>
-                {/* <Link
+                <Link
                   to="/about/clients"
                   className="subnav-item navigation-item"
                 >
                   Clients
-                </Link> */}
+                </Link>
               </div>
             </div>
 
@@ -115,14 +98,14 @@ export default function Nav({ handlePopupOpen }) {
           className="navigation-item"
           onClick={() => toggleMenu()}
         >
-          About 
+          About
         </Link>
-        {/* <Link to="/about" className="subnav-item navigation-item">
+        <Link to="/about" className="subnav-item navigation-item">
           About C-Stop
         </Link>
         <Link to="/about/clients" className="subnav-item navigation-item">
           Clients
-        </Link> */}
+        </Link>
 
         <Link
           to="/contact"

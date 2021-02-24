@@ -9,15 +9,20 @@ brandLogos:
   - brandLogo: /images/uploads/dominos-logo.png
     brandName: Dominos Pizza
 productionCompanyLogos:
-  - productionCompanyLogo: /images/uploads/1820-logo.png
-    productionCompanyName: 1820 Productions
-  - productionCompanyLogo: /images/uploads/boyinthecastle_logo.jpeg
-    productionCompanyName: Boy In The Castle
-  - productionCompanyLogo: /images/uploads/parkpictures-logo.jpg
-    productionCompanyName: Park Pictures
+  - brandLogo: /images/uploads/1820-logo.png
+    brandName: 1820 Productions
+  - brandLogo: /images/uploads/boyinthecastle_logo.jpeg
+    brandName: Boy In The Castle
+  - brandLogo: /images/uploads/parkpictures-logo.jpg
+    brandName: Park Pictures
 industryLogos:
-  - industryLeaderLogo: /images/uploads/cbcf-logo.png
-    industryLeaderName: CBC Foundation
-  - industryLeaderLogo: /images/uploads/coverage-insurance-inc-logo.png
-    industryLeaderName: Coverage Insurance
+  - brandLogo: /images/uploads/cbcf-logo.png
+    brandName: CBC Foundation
+  - brandLogo: /images/uploads/coverage-insurance-inc-logo.png
+    brandName: Coverage Insurance
+healthLogos:
+  - brandLogo: /images/uploads/cbcf-logo.png
+    brandName: CBC Foundation
+  - brandLogo: /images/uploads/coverage-insurance-inc-logo.png
+    brandName: Coverage Insurance
 ---

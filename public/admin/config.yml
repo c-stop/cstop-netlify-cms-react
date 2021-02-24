@@ -241,22 +241,22 @@ collections: # A list of collections the CMS should be able to edit
             collapsed: true
             widget: list
             fields:
-              - {label: Company Name, name: productionCompanyName, widget: string}
-              - {label: Company Logo, name: productionCompanyLogo, widget: image}
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
           - label: "Industry Leaders and Unions"
             name: industryLogos
             collapsed: true
             widget: list
             fields:
-              - {label: Company Name, name: industryLeaderName, widget: string}
-              - {label: Company Logo, name: industryLeaderLogo, widget: image}
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
           - label: "Health Organization"
             name: healthLogos
             collapsed: true
             widget: list
             fields:
-              - {label: Company Name, name: healthName, widget: string}
-              - {label: Company Logo, name: healthLogo, widget: image}
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
 
 
       - file: "content/pages/home.md"
