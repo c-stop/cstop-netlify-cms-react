@@ -60,7 +60,10 @@ export default function Nav({ handlePopupOpen }) {
         </Link>
       </div>
 
+      {/*            */}
       {/* Mobile Nav */}
+      {/*            */}
+
       <Menu
         right
         className="navigation-mobile"
@@ -93,20 +96,32 @@ export default function Nav({ handlePopupOpen }) {
           Services
         </Link>
 
-        <Link
-          to="/about"
-          className="navigation-item"
-          onClick={() => toggleMenu()}
-        >
-          About
-        </Link>
-        <Link to="/about" className="subnav-item navigation-item">
-          About C-Stop
-        </Link>
-        <Link to="/about/clients" className="subnav-item navigation-item">
-          Clients
-        </Link>
+        {/* <div className="subnav"> */}
+          <Link
+            to="/about"
+            className="navigation-item"
+            onClick={() => toggleMenu()}
+          >
+            About
+          </Link>
 
+          {/* <div className="subnav-content"> */}
+            <Link
+              to="/about"
+              className="subnav-item navigation-item"
+              onClick={() => toggleMenu()}
+            >
+              About C-Stop
+            </Link>
+            <Link
+              to="/about/clients"
+              className="subnav-item navigation-item"
+              onClick={() => toggleMenu()}
+            >
+              Clients
+            </Link>
+          {/* </div> */}
+        {/* </div> */}
         <Link
           to="/contact"
           className="navigation-item"
