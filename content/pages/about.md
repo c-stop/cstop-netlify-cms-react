@@ -172,7 +172,7 @@ teamMemberSection:
       employeePicture: /images/uploads/ariel-l.jpeg
     - name: Elle West
       employeeTitle: Project Manager, CCO, Partner
-      employeePicture: /images/uploads/img_8382.jpg
+      employeePicture: /images/uploads/dfeb008c-072d-483c-b020-39c486828a7f.jpg
       employeeQuote: Project Manager, CCO, Partner
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
