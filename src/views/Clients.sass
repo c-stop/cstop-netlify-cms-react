@@ -1,0 +1,60 @@
+.Clients
+    margin: 0 auto
+    min-height: 90vh
+
+.clients-nav-buttons
+    width: 90%
+    display: flex
+    flex-flow: row wrap
+    margin: 0 auto
+
+.client-nav-button
+    color: #222222
+    font-family: Open Sans, sans-serif
+    text-decoration: none
+    text-transform: uppercase
+    cursor: pointer
+    opacity: 0.6
+    margin: .5rem 1rem
+    white-space: nowrap
+
+.selected
+    border-bottom: 3px solid #fd8d00
+    font-weight: bold
+
+.client-logo-grid
+    display: grid
+    align-items: center
+    justify-content: center
+    margin-top: 4rem
+    column-gap: 10px
+    row-gap: 15px
+    animation: anim
+
+.client-logo
+    max-height: 200px
+    width: auto
+    place-self: center
+    margin-bottom: 0
+    padding: 10px
+
+@media screen and (max-width: 479px)
+
+    .clients-nav-buttons
+        flex-wrap: wrap
+        width: 90%
+        margin: 0 auto
+
+@keyframes anim
+    0%
+        display: none
+        opacity: 0
+
+    1%
+        display: block
+        opacity: 0
+        transform: scale(0)
+
+    100%
+        opacity: 1
+        transform: scale(1)

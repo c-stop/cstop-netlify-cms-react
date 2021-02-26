@@ -225,6 +225,39 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Noindex, name: noindex, widget: boolean, required: false}
 
           
+      - file: "content/pages/clients.md"
+        label: "Clients Page"
+        name: "clients-page"
+        fields:
+          - label: "Brands"
+            name: brandLogos
+            collapsed: true
+            widget: list
+            fields:
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
+          - label: "Production Companies"
+            name: productionCompanyLogos
+            collapsed: true
+            widget: list
+            fields:
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
+          - label: "Industry Leaders and Unions"
+            name: industryLogos
+            collapsed: true
+            widget: list
+            fields:
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
+          - label: "Health Organization"
+            name: healthLogos
+            collapsed: true
+            widget: list
+            fields:
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
+
 
       - file: "content/pages/home.md"
         label: "Home Page"
