@@ -75,7 +75,7 @@ export default ({ fields }) => {
       <div
         id="brands"
         className="clients-list"
-        data-aos="fade-up"
+        data-aos="fade-in"
         data-aos-delay="150"
       >
         {arrayToGrid(brandLogos)}
@@ -84,7 +84,7 @@ export default ({ fields }) => {
       <div
         id="productionCompanies"
         className="clients-list"
-        data-aos="fade-up"
+        data-aos="fade-in"
         data-aos-delay="150"
       >
         {arrayToGrid(productionCompanyLogos)}

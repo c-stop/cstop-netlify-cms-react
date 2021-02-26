@@ -1,18 +1,28 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 import './Nav.sass'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+
 export default function Nav({ handlePopupOpen }) {
   const [state] = useState({ active: false, navBarActiveClass: '' })
 
   const [menuOpen, setMenuOpen] = useState(false)
+  const [subMenu, setSubMenu] = useState(false)
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
+
+  function toggleSub(subSection) {
+    setSubMenu(!subMenu);
+    
+    !subMenu? document.getElementById(subSection).style.display = 'block' : document.getElementById(subSection).style.display = 'none';
+  }
+
   return (
     <nav className="navigation">
       <div className={`navigation-wrap`}>
@@ -34,7 +44,7 @@ export default function Nav({ handlePopupOpen }) {
 
             <div className="subnav">
               <Link to="/about" className="navigation-item">
-                About
+                About <FontAwesomeIcon icon={faCaretDown} />
               </Link>
               <div className="subnav-content">
                 <Link to="/about" className="subnav-item navigation-item">
@@ -96,20 +106,17 @@ export default function Nav({ handlePopupOpen }) {
           Services
         </Link>
 
-        {/* <div className="subnav"> */}
-          <Link
-            to="/about"
-            className="navigation-item"
-            onClick={() => toggleMenu()}
-          >
-            About
-          </Link>
+        <div>
+          <a className="navigation-item" onClick={() => toggleSub("sub-about")}>
+            About <FontAwesomeIcon icon={faCaretDown} />
+          </a>
 
-          {/* <div className="subnav-content"> */}
+          <div className="subnav-container" id="sub-about">
             <Link
               to="/about"
               className="subnav-item navigation-item"
               onClick={() => toggleMenu()}
+              id="sub-1"
             >
               About C-Stop
             </Link>
@@ -120,8 +127,8 @@ export default function Nav({ handlePopupOpen }) {
             >
               Clients
             </Link>
-          {/* </div> */}
-        {/* </div> */}
+          </div>
+        </div>
         <Link
           to="/contact"
           className="navigation-item"
