@@ -12,7 +12,8 @@ export default ({ fields }) => {
   } = fields
 
   const openTab = (event, tabName) => {
-    var i, x, tablinks
+    event.preventDefault()
+    var i, x, tablinks;
 
     x = document.getElementsByClassName('clients-list')
 
@@ -20,7 +21,7 @@ export default ({ fields }) => {
       x[i].style.display = 'none'
     }
 
-    tablinks = document.getElementsByClassName('tabLink')
+    tablinks = document.getElementsByClassName('client-nav-button')
 
     for (i = 0; i < x.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(' selected', '')
@@ -29,6 +30,7 @@ export default ({ fields }) => {
     document.getElementById(tabName).style.display = 'block'
     event.currentTarget.className += ' selected'
   }
+
 
   const arrayToGrid = (section) => {
     return (
@@ -51,24 +53,41 @@ export default ({ fields }) => {
     <div className="Clients container">
       <div className="clients-nav-container">
         <div className="clients-nav-buttons">
-          <a className="tabLink" onClick={(e) => openTab(e, 'brands')}>
+          <a
+            className="client-nav-button"
+            onClick={(e) => openTab(e, 'brands')}
+            href="#brands"
+          >
             Brands
           </a>
           <a
-            className="tabLink"
+            className="client-nav-button"
             onClick={(e) => openTab(e, 'productionCompanies')}
+            href="#productionCompanies"
           >
             Production Companies
           </a>
-          <a className="tabLink" onClick={(e) => openTab(e, 'industryLeaders')}>
+          <a
+            className="client-nav-button"
+            onClick={(e) => openTab(e, 'industryLeaders')}
+            href="#industryLeaders"
+          >
             Industry Leaders
           </a>
           <a
-            className="tabLink"
+            className="client-nav-button"
             onClick={(e) => openTab(e, 'healthOrganizations')}
+            href="#healthOrganizations"
           >
             Health Organizations
           </a>
+          {/* <a
+            className="client-nav-button"
+            onClick={(e) => openTab(e, '')}
+            href="#all"
+          >
+            All
+          </a> */}
         </div>
       </div>
 
@@ -90,17 +109,11 @@ export default ({ fields }) => {
         {arrayToGrid(productionCompanyLogos)}
       </div>
 
-      <div
-        id="industryLeaders"
-        className="clients-list"
-      >
+      <div id="industryLeaders" className="clients-list">
         {arrayToGrid(industryLogos)}
       </div>
 
-      <div
-        id="healthOrganizations"
-        className="clients-list"
-      >
+      <div id="healthOrganizations" className="clients-list">
         {arrayToGrid(healthLogos)}
       </div>
     </div>

@@ -107,11 +107,11 @@ export default function Nav({ handlePopupOpen }) {
         </Link>
 
         <div>
-          <a className="navigation-item" onClick={() => toggleSub("sub-about")}>
+          <a className="navigation-item" onClick={() => toggleSub("sub-about")} href="#subNavAbout">
             About <FontAwesomeIcon icon={faCaretDown} />
           </a>
 
-          <div className={`subnav-container ${subMenu ? 'show' : ''}`} >
+          <div className={`subnav-container ${subMenu ? 'show' : ''}`} id="subNavAbout" >
             <Link
               to="/about"
               className="subnav-item navigation-item"
