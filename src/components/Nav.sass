@@ -127,6 +127,7 @@
 	font-weight: 600
 	letter-spacing: 1px
 	text-transform: uppercase
+	cursor: pointer
 .navigation-item:hover
 	opacity: 0.9
 	font-size: 15px
@@ -145,7 +146,12 @@
 		border: 1px solid green
 	&:hover .subnav-content
 		display: block
+
+.subnav-container
+	display: none
 		
+.show 
+	display: block
 
 .subnav-content
 	display: none
@@ -154,9 +160,7 @@
 	z-index: 1
 	background-color: white
 
-#sub-about
-	display: none
-	
+
 .subnav-item
 	text-decoration: none
 	margin: 0 

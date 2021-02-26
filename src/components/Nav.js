@@ -19,8 +19,8 @@ export default function Nav({ handlePopupOpen }) {
 
   function toggleSub(subSection) {
     setSubMenu(!subMenu);
-    
-    !subMenu? document.getElementById(subSection).style.display = 'block' : document.getElementById(subSection).style.display = 'none';
+    console.log('submenu state', subMenu)
+    // !subMenu? document.getElementById(subSection).style.display = 'block' : document.getElementById(subSection).style.display = 'none';
   }
 
   return (
@@ -111,7 +111,7 @@ export default function Nav({ handlePopupOpen }) {
             About <FontAwesomeIcon icon={faCaretDown} />
           </a>
 
-          <div className="subnav-container" id="sub-about">
+          <div className={`subnav-container ${subMenu ? 'show' : ''}`} >
             <Link
               to="/about"
               className="subnav-item navigation-item"
