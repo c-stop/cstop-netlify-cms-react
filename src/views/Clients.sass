@@ -7,6 +7,16 @@
     display: flex
     flex-flow: row wrap
     margin: 0 auto
+    align-items: center
+    justify-content: flex-end
+
+    &::before
+        content: "Clients"
+        opacity: 0.6
+        font-weight: 700
+        width: 100%
+        font-size: 40px
+        
 
 .client-nav-button
     color: #222222
@@ -21,6 +31,11 @@
 .selected
     border-bottom: 3px solid #fd8d00
     font-weight: bold
+    // border-bottom-width: 0
+
+    transform: border-bottom-width(100%) 2s
+
+
 
 .client-logo-grid
     display: grid
@@ -29,7 +44,7 @@
     margin-top: 4rem
     column-gap: 10px
     row-gap: 15px
-    animation: anim
+    animation: anim .5s ease-in-out 
 
 .client-logo
     max-height: 200px
@@ -53,8 +68,8 @@
     1%
         display: block
         opacity: 0
-        transform: scale(0)
+        // transform: scale(.7)
 
     100%
         opacity: 1
-        transform: scale(1)
+        // transform: scale(1)
