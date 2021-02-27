@@ -4,7 +4,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 local_backend: true
-
+publish_mode: editorial_workflow
 display_url: https://c-stop.services # This url will display in the top-right of the CMS
 logo_url: "https://img1.wsimg.com/isteam/ip/ed5636f7-286d-4b3d-a73f-e498eaca3946/C-Stop_TM.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25"
 
@@ -225,6 +225,40 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Noindex, name: noindex, widget: boolean, required: false}
 
           
+      - file: "content/pages/clients.md"
+        label: "Clients Page"
+        name: "clients-page"
+        minimized_collapsed: true
+        fields:
+          - label: "Brands"
+            name: brandLogos
+            collapsed: true
+            widget: list
+            fields:
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
+          - label: "Production Companies"
+            name: productionCompanyLogos
+            collapsed: true
+            widget: list
+            fields:
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
+          - label: "Industry Leaders and Unions"
+            name: industryLogos
+            collapsed: true
+            widget: list
+            fields:
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
+          - label: "Health Organization"
+            name: healthLogos
+            collapsed: true
+            widget: list
+            fields:
+              - {label: Company Name, name: brandName, widget: string}
+              - {label: Company Logo, name: brandLogo, widget: image}
+
 
       - file: "content/pages/home.md"
         label: "Home Page"

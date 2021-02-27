@@ -1,34 +1,28 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import { Link } from 'react-router-dom'
 import Logo from './Logo'
 import './Nav.sass'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+
 export default function Nav({ handlePopupOpen }) {
   const [state] = useState({ active: false, navBarActiveClass: '' })
 
-  // const MenuContext = React.createContext()
-
   const [menuOpen, setMenuOpen] = useState(false)
-
-  // const menuProvider = (props) => {
-  //   return (
-  //     <MenuContext.Provider:
-  //       value={{
-  //         isMenuOpen: menuOpen,
-  //         toggleMenu: setMenuOpen(!menuOpen),
-  //         stateChangeHandler: (newState) => setMenuOpen(newState.isOpen),
-  //       }}
-  //     >
-  //       {props.children}
-  //     </MenuContext.Provider>
-  //   )
-  // }
+  const [subMenu, setSubMenu] = useState(false)
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
+
+  function toggleSub(subSection) {
+    setSubMenu(!subMenu);
+    console.log('submenu state', subMenu)
+    // !subMenu? document.getElementById(subSection).style.display = 'block' : document.getElementById(subSection).style.display = 'none';
+  }
+
   return (
     <nav className="navigation">
       <div className={`navigation-wrap`}>
@@ -49,20 +43,19 @@ export default function Nav({ handlePopupOpen }) {
             </Link>
 
             <div className="subnav">
-                <FontAwesomeIcon  icon={["fas", "coffee"]}/>
               <Link to="/about" className="navigation-item">
-                About
+                About <FontAwesomeIcon icon={faCaretDown} />
               </Link>
               <div className="subnav-content">
                 <Link to="/about" className="subnav-item navigation-item">
                   About C-Stop
                 </Link>
-                {/* <Link
+                <Link
                   to="/about/clients"
                   className="subnav-item navigation-item"
                 >
                   Clients
-                </Link> */}
+                </Link>
               </div>
             </div>
 
@@ -77,7 +70,10 @@ export default function Nav({ handlePopupOpen }) {
         </Link>
       </div>
 
+      {/*            */}
       {/* Mobile Nav */}
+      {/*            */}
+
       <Menu
         right
         className="navigation-mobile"
@@ -110,20 +106,29 @@ export default function Nav({ handlePopupOpen }) {
           Services
         </Link>
 
-        <Link
-          to="/about"
-          className="navigation-item"
-          onClick={() => toggleMenu()}
-        >
-          About <i className="fa fa-caret-down" />
-        </Link>
-        {/* <Link to="/about" className="subnav-item navigation-item">
-          About C-Stop
-        </Link>
-        <Link to="/about/clients" className="subnav-item navigation-item">
-          Clients
-        </Link> */}
+        <div>
+          <a className="navigation-item" onClick={() => toggleSub("sub-about")} href="#subNavAbout">
+            About <FontAwesomeIcon icon={faCaretDown} />
+          </a>
 
+          <div className={`subnav-container ${subMenu ? 'show' : ''}`} id="subNavAbout" >
+            <Link
+              to="/about"
+              className="subnav-item navigation-item"
+              onClick={() => toggleMenu()}
+              id="sub-1"
+            >
+              About C-Stop
+            </Link>
+            <Link
+              to="/about/clients"
+              className="subnav-item navigation-item"
+              onClick={() => toggleMenu()}
+            >
+              Clients
+            </Link>
+          </div>
+        </div>
         <Link
           to="/contact"
           className="navigation-item"
