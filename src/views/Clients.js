@@ -55,6 +55,7 @@ export default ({ fields }) => {
         {/* <div className="story-wrap" style={{"margin-bottom:"}}> */}
         {/* </div> */}
       <div className="clients-nav-container">
+        <h3>Clients</h3>
         <div className="clients-nav-buttons">
       {/* </div> */}
           <a
