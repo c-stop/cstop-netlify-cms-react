@@ -13,7 +13,7 @@ export default ({ fields }) => {
 
   const openTab = (event, tabName) => {
     event.preventDefault()
-    var i, x, tablinks;
+    var i, x, tablinks
 
     x = document.getElementsByClassName('clients-list')
 
@@ -30,7 +30,6 @@ export default ({ fields }) => {
     document.getElementById(tabName).style.display = 'block'
     event.currentTarget.className += ' selected'
   }
-
 
   const arrayToGrid = (section) => {
     return (
@@ -51,8 +50,14 @@ export default ({ fields }) => {
 
   return (
     <div className="Clients container">
+
+      {/* <div className="container"> */}
+        {/* <div className="story-wrap" style={{"margin-bottom:"}}> */}
+        {/* </div> */}
       <div className="clients-nav-container">
+        <h3>Clients</h3>
         <div className="clients-nav-buttons">
+      {/* </div> */}
           <a
             className="client-nav-button"
             onClick={(e) => openTab(e, 'brands')}
@@ -91,21 +96,11 @@ export default ({ fields }) => {
         </div>
       </div>
 
-      <div
-        id="brands"
-        className="clients-list"
-        data-aos="fade-in"
-        data-aos-delay="150"
-      >
+      <div id="brands" className="clients-list">
         {arrayToGrid(brandLogos)}
       </div>
 
-      <div
-        id="productionCompanies"
-        className="clients-list"
-        data-aos="fade-in"
-        data-aos-delay="150"
-      >
+      <div id="productionCompanies" className="clients-list">
         {arrayToGrid(productionCompanyLogos)}
       </div>
 
