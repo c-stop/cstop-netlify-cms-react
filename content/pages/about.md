@@ -174,10 +174,6 @@ teamMemberSection:
       employeeTitle: Project Manager, CCO, Partner
       employeePicture: /images/uploads/dfeb008c-072d-483c-b020-39c486828a7f.jpg
       employeeQuote: Project Manager, CCO, Partner
-    - name: Josh Saathoff
-      employeeTitle: Project Manager, CCO
-      employeeQuote: Project Manager, CCO
-      employeePicture: /images/uploads/1549480668925.jpg
     - name: Patrick Clements
       employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
