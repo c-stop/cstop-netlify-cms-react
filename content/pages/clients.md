@@ -15,14 +15,6 @@ productionCompanyLogos:
     brandName: Boy In The Castle
   - brandLogo: /images/uploads/parkpictures-logo.jpg
     brandName: Park Pictures
-industryLogos:
-  - brandLogo: /images/uploads/cbcf-logo.png
-    brandName: CBC Foundation
-  - brandLogo: /images/uploads/coverage-insurance-inc-logo.png
-    brandName: Coverage Insurance
-healthLogos:
-  - brandLogo: /images/uploads/cbcf-logo.png
-    brandName: CBC Foundation
-  - brandLogo: /images/uploads/coverage-insurance-inc-logo.png
-    brandName: Coverage Insurance
+industryLogos: []
+healthLogos: []
 ---
