@@ -194,6 +194,10 @@ teamMemberSection:
       employeeTitle: Field Testing Officer, CCO, CCM, Sani-tech
       employeeQuote: Field Testing Officer, CCO, CCM, Sani-tech
       employeePicture: /images/uploads/steve-liskiewicz.jpg
+    - name: Michael Rivera
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/jesus-rivera.jpg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
