@@ -186,6 +186,26 @@ teamMemberSection:
       employeeTitle: Medic, CCO, HSS
       employeePicture: /images/uploads/unknown.jpeg
       employeeQuote: Medic, CCO, HSS
+    - name: Josh Saathoff
+      employeeTitle: Project Manager, CCO
+      employeeQuote: Project Manager, CCO
+      employeePicture: /images/uploads/1549480668925.jpg
+    - name: Steve Liskiewicz
+      employeeTitle: Field Testing Officer, CCO, CCM, Sani-tech
+      employeeQuote: Field Testing Officer, CCO, CCM, Sani-tech
+      employeePicture: /images/uploads/steve-liskiewicz.jpg
+    - name: Michael Rivera
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/jesus-rivera.jpg
+    - name: Chris Hamilton
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/christopher-hamilton.jpeg
+    - name: Eric Stitt
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/eric-stitt.png
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
