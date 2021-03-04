@@ -190,6 +190,10 @@ teamMemberSection:
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/1549480668925.jpg
+    - name: Steve Liskiewicz
+      employeeTitle: Field Testing Officer, CCO, CCM, Sani-tech
+      employeeQuote: Field Testing Officer, CCO, CCM, Sani-tech
+      employeePicture: /images/uploads/steve-liskiewicz.jpg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
