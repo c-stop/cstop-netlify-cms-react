@@ -202,6 +202,10 @@ teamMemberSection:
       employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
       employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
       employeePicture: /images/uploads/christopher-hamilton.jpeg
+    - name: Eric Stitt
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/eric-stitt.png
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
