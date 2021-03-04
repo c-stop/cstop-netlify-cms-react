@@ -198,6 +198,10 @@ teamMemberSection:
       employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
       employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
       employeePicture: /images/uploads/jesus-rivera.jpg
+    - name: Chris Hamilton
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/christopher-hamilton.jpeg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
