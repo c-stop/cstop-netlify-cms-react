@@ -186,6 +186,10 @@ teamMemberSection:
       employeeTitle: Medic, CCO, HSS
       employeePicture: /images/uploads/unknown.jpeg
       employeeQuote: Medic, CCO, HSS
+    - name: Josh Saathoff
+      employeeTitle: Project Manager, CCO
+      employeeQuote: Project Manager, CCO
+      employeePicture: /images/uploads/1549480668925.jpg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
