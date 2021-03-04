@@ -206,6 +206,10 @@ teamMemberSection:
       employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
       employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
       employeePicture: /images/uploads/eric-stitt.png
+    - name: Michele Hill
+      employeeTitle: Field Testing Manager, CCO
+      employeeQuote: Field Testing Manager, CCO
+      employeePicture: /images/uploads/michele-hill.jpeg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
