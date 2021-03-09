@@ -65,6 +65,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/screen-shot-2021-03-09-at-3.40.55-pm.png
   - brandName: Jonas & Co.
     brandLogo: /images/uploads/screen-shot-2020-10-23-at-11.33.25-am.png
+  - brandName: JB5 Productions
+    brandLogo: /images/uploads/jb5-logo-for-light-background-small-copy.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
