@@ -19,6 +19,8 @@ productionCompanyLogos:
     brandName: Boy In The Castle
   - brandLogo: /images/uploads/parkpictures-logo.jpg
     brandName: Park Pictures
+  - brandName: Partizan
+    brandLogo: /images/uploads/partizan-logo.svg.png
 industryLogos: []
 healthLogos: []
 ---
