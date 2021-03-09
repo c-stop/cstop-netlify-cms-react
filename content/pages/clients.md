@@ -67,6 +67,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/screen-shot-2020-10-23-at-11.33.25-am.png
   - brandName: JB5 Productions
     brandLogo: /images/uploads/jb5-logo-for-light-background-small-copy.png
+  - brandName: Imposter
+    brandLogo: /images/uploads/imposter-logo.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
