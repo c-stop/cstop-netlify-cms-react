@@ -49,6 +49,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/prettybird.png
   - brandName: Pony Show Entertainment
     brandLogo: /images/uploads/pony-show-logo.png
+  - brandName: Planet Froth
+    brandLogo: /images/uploads/planet-froth-logo.png
 industryLogos: []
 healthLogos:
   - brandName: CDC
