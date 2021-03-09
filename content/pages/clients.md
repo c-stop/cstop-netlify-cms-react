@@ -12,6 +12,8 @@ brandLogos:
     brandLogo: /images/uploads/puma.png
   - brandName: NFL
     brandLogo: /images/uploads/nfl.png
+  - brandName: Spotify
+    brandLogo: /images/uploads/spotify-download-logo-30.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
@@ -19,6 +21,10 @@ productionCompanyLogos:
     brandName: Boy In The Castle
   - brandLogo: /images/uploads/parkpictures-logo.jpg
     brandName: Park Pictures
+  - brandName: Partizan
+    brandLogo: /images/uploads/partizan-logo.svg.png
+  - brandName: Freenjoy
+    brandLogo: /images/uploads/freenjoy.png
 industryLogos: []
 healthLogos: []
 ---
