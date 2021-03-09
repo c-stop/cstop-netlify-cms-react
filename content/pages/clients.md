@@ -71,6 +71,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/imposter-logo.png
   - brandName: Illuminated Media International
     brandLogo: /images/uploads/illuminated-media-international.png
+  - brandName: Hound
+    brandLogo: /images/uploads/hound-logo.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
