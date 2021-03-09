@@ -44,5 +44,5 @@ productionCompanyLogos:
 industryLogos: []
 healthLogos:
   - brandName: CDC
-    brandLogo: /images/uploads/centers-for-disease-control-and-prevention-logo-brand-cdc-font-family-logo-png-clip-art.png
+    brandLogo: /images/uploads/us-cdc-logo.png
 ---
