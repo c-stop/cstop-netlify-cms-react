@@ -35,6 +35,12 @@ productionCompanyLogos:
     brandLogo: /images/uploads/csm.png
   - brandName: Boathouse Agency x Studio
     brandLogo: /images/uploads/the_boathouse_agency_x_studio_logo.jpg
+  - brandName: Scratch Creative
+    brandLogo: /images/uploads/scratch-creative.png
+  - brandName: Scheme Engine
+    brandLogo: /images/uploads/scheme-engine.png
+  - brandName: Sanctuary
+    brandLogo: /images/uploads/sanctuary_logo_graycropped.png
 industryLogos: []
 healthLogos:
   - brandName: CDC
