@@ -23,6 +23,8 @@ productionCompanyLogos:
     brandName: Park Pictures
   - brandName: Partizan
     brandLogo: /images/uploads/partizan-logo.svg.png
+  - brandName: Freenjoy
+    brandLogo: /images/uploads/freenjoy.png
 industryLogos: []
 healthLogos: []
 ---
