@@ -75,6 +75,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/hound-logo.png
   - brandName: Guerilla Productions
     brandLogo: /images/uploads/guerilla-productions.png
+  - brandName: Good Company
+    brandLogo: /images/uploads/goodco-logo.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
