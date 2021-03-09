@@ -55,6 +55,10 @@ productionCompanyLogos:
     brandLogo: /images/uploads/planet-froth-logo.png
   - brandName: MUH-TAY-ZIK-HOF-FER
     brandLogo: /images/uploads/logo_horiz_black.png
+  - brandName: MJZ
+    brandLogo: /images/uploads/mjz_bzgm9bz.png
+  - brandName: Missing Pieces
+    brandLogo: /images/uploads/missing-pieces.jpeg
 industryLogos: []
 healthLogos:
   - brandName: CDC
