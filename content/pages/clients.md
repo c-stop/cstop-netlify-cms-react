@@ -29,6 +29,10 @@ productionCompanyLogos:
     brandLogo: /images/uploads/partizan-logo.svg.png
   - brandName: Freenjoy
     brandLogo: /images/uploads/freenjoy.png
+  - brandName: Chrome
+    brandLogo: /images/uploads/chrome-logo.png
 industryLogos: []
-healthLogos: []
+healthLogos:
+  - brandName: CDC
+    brandLogo: /images/uploads/centers-for-disease-control-and-prevention-logo-brand-cdc-font-family-logo-png-clip-art.png
 ---
