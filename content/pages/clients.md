@@ -31,6 +31,10 @@ productionCompanyLogos:
     brandLogo: /images/uploads/freenjoy.png
   - brandName: Chrome
     brandLogo: /images/uploads/chrome-logo.png
+  - brandName: CSM
+    brandLogo: /images/uploads/csm.png
+  - brandName: Boathouse Agency x Studio
+    brandLogo: /images/uploads/the_boathouse_agency_x_studio_logo.jpg
 industryLogos: []
 healthLogos:
   - brandName: CDC
