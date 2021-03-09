@@ -45,6 +45,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/samm-45350-copy.jpg
   - brandName: Reverie
     brandLogo: /images/uploads/reverie-logo.png
+  - brandName: Prettybird
+    brandLogo: /images/uploads/prettybird.png
 industryLogos: []
 healthLogos:
   - brandName: CDC
