@@ -41,6 +41,10 @@ productionCompanyLogos:
     brandLogo: /images/uploads/scheme-engine.png
   - brandName: Sanctuary
     brandLogo: /images/uploads/sanctuary_logo_graycropped.png
+  - brandName: Samm Media
+    brandLogo: /images/uploads/samm-45350-copy.jpg
+  - brandName: Reverie
+    brandLogo: /images/uploads/reverie-logo.png
 industryLogos: []
 healthLogos:
   - brandName: CDC
