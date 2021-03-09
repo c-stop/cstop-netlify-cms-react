@@ -53,6 +53,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/pony-show-logo.png
   - brandName: Planet Froth
     brandLogo: /images/uploads/planet-froth-logo.png
+  - brandName: MUH-TAY-ZIK-HOF-FER
+    brandLogo: /images/uploads/logo_horiz_black.png
 industryLogos: []
 healthLogos:
   - brandName: CDC
