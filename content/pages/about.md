@@ -210,6 +210,10 @@ teamMemberSection:
       employeeTitle: Field Testing Manager, CCO
       employeeQuote: Field Testing Manager, CCO
       employeePicture: /images/uploads/michele-hill.jpeg
+    - name: Christina Holleran
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/christina-holleran.png
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
