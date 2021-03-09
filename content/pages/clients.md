@@ -18,6 +18,8 @@ brandLogos:
     brandLogo: /images/uploads/pizza-hut-restorante-png-logo-6.png
   - brandName: Pinterest
     brandLogo: /images/uploads/580b57fcd9996e24bc43c52e.png
+  - brandName: Walmart
+    brandLogo: /images/uploads/walmart_logo_transparent_png.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
