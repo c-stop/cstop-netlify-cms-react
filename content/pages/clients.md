@@ -20,6 +20,8 @@ brandLogos:
     brandLogo: /images/uploads/580b57fcd9996e24bc43c52e.png
   - brandName: Walmart
     brandLogo: /images/uploads/walmart_logo_transparent_png.png
+  - brandName: Pluto TV
+    brandLogo: /images/uploads/pluto-logo.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
@@ -59,6 +61,10 @@ productionCompanyLogos:
     brandLogo: /images/uploads/mjz_bzgm9bz.png
   - brandName: Missing Pieces
     brandLogo: /images/uploads/missing-pieces.jpeg
+  - brandName: Kaleidoscope Productions
+    brandLogo: /images/uploads/screen-shot-2021-03-09-at-3.40.55-pm.png
+  - brandName: Jonas & Co.
+    brandLogo: /images/uploads/screen-shot-2020-10-23-at-11.33.25-am.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
