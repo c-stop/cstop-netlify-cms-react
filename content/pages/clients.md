@@ -47,6 +47,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/reverie-logo.png
   - brandName: Prettybird
     brandLogo: /images/uploads/prettybird.png
+  - brandName: Pony Show Entertainment
+    brandLogo: /images/uploads/pony-show-logo.png
 industryLogos: []
 healthLogos:
   - brandName: CDC
