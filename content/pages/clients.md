@@ -59,6 +59,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/mjz_bzgm9bz.png
   - brandName: Missing Pieces
     brandLogo: /images/uploads/missing-pieces.jpeg
+  - brandName: Kaleidoscope Productions
+    brandLogo: /images/uploads/screen-shot-2021-03-09-at-3.40.55-pm.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
