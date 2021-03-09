@@ -59,7 +59,9 @@ productionCompanyLogos:
     brandLogo: /images/uploads/mjz_bzgm9bz.png
   - brandName: Missing Pieces
     brandLogo: /images/uploads/missing-pieces.jpeg
-industryLogos: []
+industryLogos:
+  - brandName: IATSE Local 80
+    brandLogo: /images/uploads/local-80.png
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
