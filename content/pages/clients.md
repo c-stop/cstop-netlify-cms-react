@@ -20,6 +20,8 @@ brandLogos:
     brandLogo: /images/uploads/580b57fcd9996e24bc43c52e.png
   - brandName: Walmart
     brandLogo: /images/uploads/walmart_logo_transparent_png.png
+  - brandName: Pluto TV
+    brandLogo: /images/uploads/pluto-logo.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
