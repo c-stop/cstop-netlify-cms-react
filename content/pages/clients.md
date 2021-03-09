@@ -12,6 +12,8 @@ brandLogos:
     brandLogo: /images/uploads/puma.png
   - brandName: NFL
     brandLogo: /images/uploads/nfl.png
+  - brandName: Spotify
+    brandLogo: /images/uploads/spotify-download-logo-30.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
