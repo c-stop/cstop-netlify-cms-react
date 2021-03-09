@@ -14,6 +14,8 @@ brandLogos:
     brandLogo: /images/uploads/nfl.png
   - brandName: Spotify
     brandLogo: /images/uploads/spotify-download-logo-30.png
+  - brandName: Pizza Hut
+    brandLogo: /images/uploads/pizza-hut-restorante-png-logo-6.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
