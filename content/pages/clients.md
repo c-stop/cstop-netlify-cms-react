@@ -60,6 +60,8 @@ brandLogos:
     brandLogo: /images/uploads/cbcf.jpg
   - brandName: Snapchat
     brandLogo: /images/uploads/snapchat_png64.png
+  - brandName: US Cellular
+    brandLogo: /images/uploads/2020_uscc_logohorizontallockup_primaryredblue_pantone_tm.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
@@ -131,6 +133,10 @@ productionCompanyLogos:
     brandLogo: /images/uploads/not-sure.png
   - brandName: Image Locations
     brandLogo: /images/uploads/image-locations.png
+  - brandName: Squint
+    brandLogo: /images/uploads/static1.squarespace.jpg
+  - brandName: Proof
+    brandLogo: /images/uploads/proof.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
