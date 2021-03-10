@@ -159,4 +159,6 @@ healthLogos:
     brandLogo: /images/uploads/county-of-los-angeles-public-health.jpg
   - brandName: WHO
     brandLogo: /images/uploads/who.png
+  - brandName: FDA
+    brandLogo: /images/uploads/food_and_drug_administration_logo.svg.png
 ---
