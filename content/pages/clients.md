@@ -60,6 +60,8 @@ brandLogos:
     brandLogo: /images/uploads/cbcf.jpg
   - brandName: Snapchat
     brandLogo: /images/uploads/snapchat_png64.png
+  - brandName: US Cellular
+    brandLogo: /images/uploads/2020_uscc_logohorizontallockup_primaryredblue_pantone_tm.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
