@@ -48,6 +48,8 @@ brandLogos:
     brandLogo: /images/uploads/ptx-logo.jpg
   - brandName: Dick's Sporting Goods
     brandLogo: /images/uploads/dick-s-sporting-goods.png
+  - brandName: Facebook
+    brandLogo: /images/uploads/facebook-logo.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
