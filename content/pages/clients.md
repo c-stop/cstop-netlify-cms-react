@@ -62,6 +62,10 @@ brandLogos:
     brandLogo: /images/uploads/snapchat_png64.png
   - brandName: US Cellular
     brandLogo: /images/uploads/2020_uscc_logohorizontallockup_primaryredblue_pantone_tm.png
+  - brandName: Audi
+    brandLogo: /images/uploads/audi.png
+  - brandName: CBS
+    brandLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
@@ -143,6 +147,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/portfolio-one.png
   - brandName: Watch
     brandLogo: /images/uploads/watch.png
+  - brandName: Black Hand Cinema
+    brandLogo: /images/uploads/black-hand-cinema.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
