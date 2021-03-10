@@ -155,4 +155,6 @@ healthLogos:
     brandLogo: /images/uploads/us-cdc-logo.png
   - brandName: The Task Force for Global Health
     brandLogo: /images/uploads/task-force-for-global-health.png
+  - brandName: County of Los Angeles Public Health
+    brandLogo: /images/uploads/county-of-los-angeles-public-health.jpg
 ---
