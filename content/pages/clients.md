@@ -152,6 +152,8 @@ industryLogos:
     brandLogo: /images/uploads/1200px-sag-aftra_logo.svg.png
   - brandName: Film LA
     brandLogo: /images/uploads/filmla_logo_large.png
+  - brandName: AICP
+    brandLogo: /images/uploads/aicp.png
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
