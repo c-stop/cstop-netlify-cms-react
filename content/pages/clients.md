@@ -127,6 +127,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/unicorns-unicorns-logo.png
   - brandName: ??
     brandLogo: /images/uploads/ask-pepper.png
+  - brandName: Q
+    brandLogo: /images/uploads/not-sure.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
