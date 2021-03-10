@@ -44,6 +44,8 @@ brandLogos:
     brandLogo: /images/uploads/at-t.png
   - brandName: Body Armor
     brandLogo: /images/uploads/bodyarmor-vector-logo.png
+  - brandName: PTX
+    brandLogo: /images/uploads/ptx-logo.jpg
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
