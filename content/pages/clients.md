@@ -50,6 +50,8 @@ brandLogos:
     brandLogo: /images/uploads/dick-s-sporting-goods.png
   - brandName: Facebook
     brandLogo: /images/uploads/facebook-logo.png
+  - brandName: Toyota
+    brandLogo: /images/uploads/toyota.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
