@@ -26,6 +26,12 @@ brandLogos:
     brandLogo: /images/uploads/aag-logo-1-copy.png
   - brandName: FX
     brandLogo: /images/uploads/download.png
+  - brandName: Saatva
+    brandLogo: /images/uploads/saatva-logo.png
+  - brandName: Single Care
+    brandLogo: /images/uploads/singlecare-logo.png
+  - brandName: Rocket Mortgage
+    brandLogo: /images/uploads/rocket_mortgage.jpg
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
