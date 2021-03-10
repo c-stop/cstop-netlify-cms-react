@@ -52,6 +52,8 @@ brandLogos:
     brandLogo: /images/uploads/facebook-logo.png
   - brandName: Toyota
     brandLogo: /images/uploads/toyota.png
+  - brandName: Coverance Insurance Solutions
+    brandLogo: /images/uploads/coverance-2-color-1-1.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
