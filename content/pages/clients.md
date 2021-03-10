@@ -157,4 +157,6 @@ healthLogos:
     brandLogo: /images/uploads/task-force-for-global-health.png
   - brandName: County of Los Angeles Public Health
     brandLogo: /images/uploads/county-of-los-angeles-public-health.jpg
+  - brandName: WHO
+    brandLogo: /images/uploads/who.png
 ---
