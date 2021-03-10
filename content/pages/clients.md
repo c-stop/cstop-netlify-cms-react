@@ -58,6 +58,8 @@ brandLogos:
     brandLogo: /images/uploads/zen_logo_aqua_on_white.jpg
   - brandName: CBCF
     brandLogo: /images/uploads/cbcf.jpg
+  - brandName: Snapchat
+    brandLogo: /images/uploads/snapchat.jpg
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
