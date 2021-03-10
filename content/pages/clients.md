@@ -83,6 +83,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/pecubu-productions.png
   - brandName: Even Odd
     brandLogo: /images/uploads/even-odd.png
+  - brandName: The Production Factory
+    brandLogo: /images/uploads/the-prod-factory-logo.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
