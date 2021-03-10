@@ -150,6 +150,8 @@ industryLogos:
     brandLogo: /images/uploads/los-angeles-county_0.jpg
   - brandName: SAG AFTRA
     brandLogo: /images/uploads/1200px-sag-aftra_logo.svg.png
+  - brandName: Film LA
+    brandLogo: /images/uploads/filmla_logo_large.png
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
