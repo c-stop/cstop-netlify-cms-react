@@ -66,6 +66,10 @@ brandLogos:
     brandLogo: /images/uploads/audi.png
   - brandName: CBS
     brandLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
+  - brandName: VW
+    brandLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
+  - brandName: NBPA
+    brandLogo: /images/uploads/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
