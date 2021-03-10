@@ -146,6 +146,8 @@ productionCompanyLogos:
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
+  - brandName: County of Los Angeles
+    brandLogo: /images/uploads/los-angeles-county_0.jpg
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
