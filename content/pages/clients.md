@@ -153,4 +153,6 @@ industryLogos:
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
+  - brandName: The Task Force for Global Health
+    brandLogo: /images/uploads/task-force-for-global-health.png
 ---
