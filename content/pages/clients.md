@@ -42,6 +42,8 @@ brandLogos:
     brandLogo: /images/uploads/head-shoulders-logo.png
   - brandName: AT&T
     brandLogo: /images/uploads/at-t.png
+  - brandName: Body Armor
+    brandLogo: /images/uploads/bodyarmor-vector-logo.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
@@ -105,6 +107,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/the-prod-factory-logo.png
   - brandName: Black Market
     brandLogo: /images/uploads/black-market-logo.png
+  - brandName: Unicorns & Unicorns
+    brandLogo: /images/uploads/unicorns-unicorns-logo.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
