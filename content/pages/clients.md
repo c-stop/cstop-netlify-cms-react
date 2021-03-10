@@ -146,7 +146,13 @@ productionCompanyLogos:
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
+  - brandName: County of Los Angeles
+    brandLogo: /images/uploads/los-angeles-county_0.jpg
+  - brandName: SAG AFTRA
+    brandLogo: /images/uploads/1200px-sag-aftra_logo.svg.png
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
+  - brandName: The Task Force for Global Health
+    brandLogo: /images/uploads/task-force-for-global-health.png
 ---
