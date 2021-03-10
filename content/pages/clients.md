@@ -24,6 +24,8 @@ brandLogos:
     brandLogo: /images/uploads/pluto-logo.png
   - brandName: AAG
     brandLogo: /images/uploads/aag-logo-1-copy.png
+  - brandName: FX
+    brandLogo: /images/uploads/download.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
