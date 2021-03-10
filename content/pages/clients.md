@@ -139,6 +139,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/proof.png
   - brandName: Altered . LA
     brandLogo: /images/uploads/altered-la.jpg
+  - brandName: Portfolio One
+    brandLogo: /images/uploads/portfolio-one.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
