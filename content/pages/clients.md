@@ -42,6 +42,8 @@ brandLogos:
     brandLogo: /images/uploads/head-shoulders-logo.png
   - brandName: AT&T
     brandLogo: /images/uploads/at-t.png
+  - brandName: Body Armor
+    brandLogo: /images/uploads/bodyarmor-vector-logo.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
