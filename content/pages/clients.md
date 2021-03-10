@@ -56,6 +56,8 @@ brandLogos:
     brandLogo: /images/uploads/coverance-2-color-1-1.png
   - brandName: Zenni
     brandLogo: /images/uploads/zen_logo_aqua_on_white.jpg
+  - brandName: CBCF
+    brandLogo: /images/uploads/cbcf.jpg
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
