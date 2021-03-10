@@ -141,6 +141,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/altered-la.jpg
   - brandName: Portfolio One
     brandLogo: /images/uploads/portfolio-one.png
+  - brandName: Watch
+    brandLogo: /images/uploads/watch.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
