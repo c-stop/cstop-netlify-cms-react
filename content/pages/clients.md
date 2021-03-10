@@ -105,6 +105,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/the-prod-factory-logo.png
   - brandName: Black Market
     brandLogo: /images/uploads/black-market-logo.png
+  - brandName: Unicorns & Unicorns
+    brandLogo: /images/uploads/unicorns-unicorns-logo.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
