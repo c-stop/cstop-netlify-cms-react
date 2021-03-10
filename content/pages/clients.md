@@ -150,9 +150,17 @@ industryLogos:
     brandLogo: /images/uploads/los-angeles-county_0.jpg
   - brandName: SAG AFTRA
     brandLogo: /images/uploads/1200px-sag-aftra_logo.svg.png
+  - brandName: Film LA
+    brandLogo: /images/uploads/filmla_logo_large.png
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
   - brandName: The Task Force for Global Health
     brandLogo: /images/uploads/task-force-for-global-health.png
+  - brandName: County of Los Angeles Public Health
+    brandLogo: /images/uploads/county-of-los-angeles-public-health.jpg
+  - brandName: WHO
+    brandLogo: /images/uploads/who.png
+  - brandName: FDA
+    brandLogo: /images/uploads/food_and_drug_administration_logo.svg.png
 ---
