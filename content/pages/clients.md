@@ -79,6 +79,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/guerilla-productions.png
   - brandName: Good Company
     brandLogo: /images/uploads/goodco-logo.png
+  - brandName: Pecubu Productions
+    brandLogo: /images/uploads/pecubu-productions.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
