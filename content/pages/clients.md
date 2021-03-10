@@ -25,7 +25,7 @@ brandLogos:
   - brandName: AAG
     brandLogo: /images/uploads/aag-logo-1-copy.png
   - brandName: FX
-    brandLogo: /images/uploads/download.png
+    brandLogo: /images/uploads/fx-logo.png
   - brandName: Saatva
     brandLogo: /images/uploads/saatva-logo.png
   - brandName: Single Care
