@@ -34,6 +34,10 @@ brandLogos:
     brandLogo: /images/uploads/rocket_mortgage.jpg
   - brandName: Jimmy John's
     brandLogo: /images/uploads/jimmy-john-s.png
+  - brandName: VH1
+    brandLogo: /images/uploads/vh1.png
+  - brandName: Ford
+    brandLogo: /images/uploads/ford-logo-2003.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
