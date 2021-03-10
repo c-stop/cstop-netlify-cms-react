@@ -129,6 +129,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/ask-pepper.png
   - brandName: Q
     brandLogo: /images/uploads/not-sure.png
+  - brandName: Image Locations
+    brandLogo: /images/uploads/image-locations.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
