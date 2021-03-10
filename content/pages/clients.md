@@ -147,6 +147,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/portfolio-one.png
   - brandName: Watch
     brandLogo: /images/uploads/watch.png
+  - brandName: Black Hand Cinema
+    brandLogo: /images/uploads/black-hand-cinema.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
