@@ -135,6 +135,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/image-locations.png
   - brandName: Squint
     brandLogo: /images/uploads/static1.squarespace.jpg
+  - brandName: Proof
+    brandLogo: /images/uploads/proof.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
