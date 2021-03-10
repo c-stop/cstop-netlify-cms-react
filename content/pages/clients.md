@@ -59,7 +59,7 @@ brandLogos:
   - brandName: CBCF
     brandLogo: /images/uploads/cbcf.jpg
   - brandName: Snapchat
-    brandLogo: /images/uploads/snapchat.jpg
+    brandLogo: /images/uploads/snapchat_png64.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
