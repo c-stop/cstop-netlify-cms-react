@@ -24,6 +24,8 @@ brandLogos:
     brandLogo: /images/uploads/pluto-logo.png
   - brandName: AAG
     brandLogo: /images/uploads/aag-logo-1-copy.png
+  - brandName: FX
+    brandLogo: /images/uploads/download.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
@@ -85,6 +87,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/even-odd.png
   - brandName: The Production Factory
     brandLogo: /images/uploads/the-prod-factory-logo.png
+  - brandName: Black Market
+    brandLogo: /images/uploads/black-market-logo.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
