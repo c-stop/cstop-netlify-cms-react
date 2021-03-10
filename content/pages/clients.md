@@ -38,6 +38,8 @@ brandLogos:
     brandLogo: /images/uploads/vh1.png
   - brandName: Ford
     brandLogo: /images/uploads/ford-logo-2003.png
+  - brandName: Head & Shoulders
+    brandLogo: /images/uploads/head-shoulders-logo.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
