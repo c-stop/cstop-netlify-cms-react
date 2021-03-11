@@ -163,7 +163,7 @@ teamMemberSection:
       employeeQuote: Co-Founder, Field Operations, Medic, CCO
       employeePicture: /images/uploads/josh-h.jpeg
     - name: Kia Kiso
-      employeeTitle: H&S Supervisor, CCO, Partner
+      employeeTitle: H&S Supervisor, CCO
       employeeQuote: H&S Supervisor, CCO, Partner
       employeePicture: /images/uploads/kia-kiso.jpeg
     - name: Ariel Lazarus
@@ -171,9 +171,9 @@ teamMemberSection:
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/ariel-l.jpeg
     - name: Elle West
-      employeeTitle: Project Manager, CCO, Partner
+      employeeTitle: Project Manager, CCO
       employeePicture: /images/uploads/dfeb008c-072d-483c-b020-39c486828a7f.jpg
-      employeeQuote: Project Manager, CCO, Partner
+      employeeQuote: Project Manager, CCO
     - name: Patrick Clements
       employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
