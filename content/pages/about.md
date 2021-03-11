@@ -163,7 +163,7 @@ teamMemberSection:
       employeeQuote: Co-Founder, Field Operations, Medic, CCO
       employeePicture: /images/uploads/josh-h.jpeg
     - name: Kia Kiso
-      employeeTitle: H&S Supervisor, CCO, Partner
+      employeeTitle: H&S Supervisor, CCO
       employeeQuote: H&S Supervisor, CCO, Partner
       employeePicture: /images/uploads/kia-kiso.jpeg
     - name: Ariel Lazarus
@@ -171,25 +171,25 @@ teamMemberSection:
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/ariel-l.jpeg
     - name: Elle West
-      employeeTitle: Project Manager, CCO, Partner
+      employeeTitle: Project Manager, CCO
       employeePicture: /images/uploads/dfeb008c-072d-483c-b020-39c486828a7f.jpg
-      employeeQuote: Project Manager, CCO, Partner
-    - name: Patrick Clements
-      employeeTitle: Executive Assistant, CCO
-      employeePicture: /images/uploads/commercial-headshot.jpg
-      employeeQuote: Executive Assistant, CCO
+      employeeQuote: Project Manager, CCO
     - name: Ian Menzies
       employeeTitle: Administrative Coordinator, CCO
       employeeQuote: Administrative Coordinator, CCO
       employeePicture: /images/uploads/ian.jpeg
-    - name: Lori May
-      employeeTitle: Medic, CCO, HSS
-      employeePicture: /images/uploads/unknown.jpeg
-      employeeQuote: Medic, CCO, HSS
+    - name: Patrick Clements
+      employeeTitle: Executive Assistant, CCO
+      employeePicture: /images/uploads/commercial-headshot.jpg
+      employeeQuote: Executive Assistant, CCO
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/1549480668925.jpg
+    - name: Lori May
+      employeeTitle: Medic, CCO, HSS
+      employeePicture: /images/uploads/unknown.jpeg
+      employeeQuote: Medic, CCO, HSS
     - name: Steve Liskiewicz
       employeeTitle: Field Testing Officer, CCO, CCM, Sani-tech
       employeeQuote: Field Testing Officer, CCO, CCM, Sani-tech
