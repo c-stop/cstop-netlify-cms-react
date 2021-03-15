@@ -38,6 +38,14 @@ featuredClients:
       companyLogo: /images/uploads/nfl-logo.png
     - companyName: Spotify
       companyLogo: /images/uploads/spotify-download-logo-30.png
+    - companyName: Pinterest
+      companyLogo: /images/uploads/pinterest-logo.png
+    - companyName: Pizza Hut
+      companyLogo: /images/uploads/pizza-hut-restorante-png-logo-6.png
+    - companyName: Walmart
+      companyLogo: /images/uploads/walmart_logo_transparent_png.png
+    - companyName: Pluto TV
+      companyLogo: /images/uploads/pluto-logo.png
 meta:
   title: ""
 ---
