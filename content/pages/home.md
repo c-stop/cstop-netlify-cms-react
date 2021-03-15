@@ -64,6 +64,20 @@ featuredClients:
       companyLogo: /images/uploads/ford-logo-2003.png
     - companyName: Head & Shoulders
       companyLogo: /images/uploads/head-shoulders-logo.png
+    - companyName: AT&T
+      companyLogo: /images/uploads/at-t.png
+    - companyName: BodyArmor
+      companyLogo: /images/uploads/bodyarmor-vector-logo.png
+    - companyName: PTX
+      companyLogo: /images/uploads/ptx-logo.jpg
+    - companyName: Dick's Sporting Goods
+      companyLogo: /images/uploads/dick-s-sporting-goods.png
+    - companyName: Facebook
+      companyLogo: /images/uploads/facebook-logo.png
+    - companyName: Coverance
+      companyLogo: /images/uploads/coverage-insurance-inc-logo.png
+    - companyName: Zenni
+      companyLogo: /images/uploads/zen_logo_aqua_on_white.jpg
 meta:
   title: ""
 ---
