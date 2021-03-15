@@ -64,6 +64,32 @@ featuredClients:
       companyLogo: /images/uploads/ford-logo-2003.png
     - companyName: Head & Shoulders
       companyLogo: /images/uploads/head-shoulders-logo.png
+    - companyName: AT&T
+      companyLogo: /images/uploads/at-t.png
+    - companyName: BodyArmor
+      companyLogo: /images/uploads/bodyarmor-vector-logo.png
+    - companyName: PTX
+      companyLogo: /images/uploads/ptx-logo.jpg
+    - companyName: Dick's Sporting Goods
+      companyLogo: /images/uploads/dick-s-sporting-goods.png
+    - companyName: Facebook
+      companyLogo: /images/uploads/facebook-logo.png
+    - companyName: Coverance
+      companyLogo: /images/uploads/coverage-insurance-inc-logo.png
+    - companyName: Zenni
+      companyLogo: /images/uploads/zen_logo_aqua_on_white.jpg
+    - companyName: CBCF
+      companyLogo: /images/uploads/cbcf-logo.png
+    - companyName: Snapchat
+      companyLogo: /images/uploads/snapchat_png64.png
+    - companyName: US Cellular
+      companyLogo: /images/uploads/2020_uscc_logohorizontallockup_primaryredblue_pantone_tm.png
+    - companyName: Audi
+      companyLogo: /images/uploads/audi.png
+    - companyName: CBS
+      companyLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
+    - companyName: VW
+      companyLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
 meta:
   title: ""
 ---
