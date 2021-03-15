@@ -54,6 +54,16 @@ featuredClients:
       companyLogo: /images/uploads/saatva-logo.png
     - companyName: Singlecare
       companyLogo: /images/uploads/singlecare-logo.png
+    - companyName: Rocket Mortgage
+      companyLogo: /images/uploads/rocket_mortgage.jpg
+    - companyName: Jimmy John's
+      companyLogo: /images/uploads/jimmy-john-s.png
+    - companyName: VH1
+      companyLogo: /images/uploads/vh1.png
+    - companyName: Ford
+      companyLogo: /images/uploads/ford-logo-2003.png
+    - companyName: Head & Shoulders
+      companyLogo: /images/uploads/head-shoulders-logo.png
 meta:
   title: ""
 ---
