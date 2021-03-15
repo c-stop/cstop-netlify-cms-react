@@ -46,6 +46,14 @@ featuredClients:
       companyLogo: /images/uploads/walmart_logo_transparent_png.png
     - companyName: Pluto TV
       companyLogo: /images/uploads/pluto-logo.png
+    - companyName: AAG
+      companyLogo: /images/uploads/aag-logo-1-copy.png
+    - companyName: FX
+      companyLogo: /images/uploads/fx-logo.png
+    - companyName: Saatva
+      companyLogo: /images/uploads/saatva-logo.png
+    - companyName: Singlecare
+      companyLogo: /images/uploads/singlecare-logo.png
 meta:
   title: ""
 ---
