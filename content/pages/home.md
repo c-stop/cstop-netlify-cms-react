@@ -44,8 +44,8 @@ featuredClients:
       companyLogo: /images/uploads/uscellular.png
     - companyName: AAG
       companyLogo: /images/uploads/aag.png
-    - companyName: Altered LA
-      companyLogo: /images/uploads/altered-la.png
+    - companyName: US Ask Pepper
+      companyLogo: /images/uploads/us-ask-pepper.png
 meta:
   title: ""
 ---
