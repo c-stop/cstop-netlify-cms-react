@@ -40,6 +40,10 @@ featuredClients:
       companyLogo: /images/uploads/freenjoy.png
     - companyName: Dominos
       companyLogo: /images/uploads/dominos-logo.png
+    - companyName: US Cellular
+      companyLogo: /images/uploads/uscellular.png
+    - companyName: AAG
+      companyLogo: /images/uploads/aag.png
 meta:
   title: ""
 ---
