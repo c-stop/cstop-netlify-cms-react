@@ -100,20 +100,36 @@ featuredClients:
       companyLogo: /images/uploads/screen-shot-2021-03-09-at-3.40.55-pm.png
     - companyName: Head & Shoulders
       companyLogo: /images/uploads/head-shoulders-logo.png
+    - companyName: Jonas & Co
+      companyLogo: /images/uploads/screen-shot-2020-10-23-at-11.33.25-am.png
     - companyName: AT&T
       companyLogo: /images/uploads/at-t.png
+    - companyName: JB5
+      companyLogo: /images/uploads/jb5-logo-for-light-background-small-copy.png
     - companyName: BodyArmor
       companyLogo: /images/uploads/bodyarmor-vector-logo.png
+    - companyName: Imposter
+      companyLogo: /images/uploads/imposter-logo.png
     - companyName: PTX
       companyLogo: /images/uploads/ptx-logo.jpg
+    - companyName: Illuminated Media International
+      companyLogo: /images/uploads/illuminated-media-international.png
     - companyName: Dick's Sporting Goods
       companyLogo: /images/uploads/dick-s-sporting-goods.png
+    - companyName: Hound
+      companyLogo: /images/uploads/hound-logo.png
     - companyName: Facebook
       companyLogo: /images/uploads/facebook-logo.png
+    - companyName: Guerilla Productions
+      companyLogo: /images/uploads/guerilla-productions.png
     - companyName: Coverance
       companyLogo: /images/uploads/coverage-insurance-inc-logo.png
+    - companyName: Good Company
+      companyLogo: /images/uploads/goodco-logo.png
     - companyName: Zenni
       companyLogo: /images/uploads/zen_logo_aqua_on_white.jpg
+    - companyName: Pecubu Productions
+      companyLogo: /images/uploads/pecubu-productions.png
     - companyName: CBCF
       companyLogo: /images/uploads/cbcf-logo.png
     - companyName: Snapchat
