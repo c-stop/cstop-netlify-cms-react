@@ -162,10 +162,6 @@ teamMemberSection:
       employeeTitle: Co-Founder, Field Operations, Medic, CCO
       employeeQuote: Co-Founder, Field Operations, Medic, CCO
       employeePicture: /images/uploads/josh-h.jpeg
-    - name: Kia Kiso
-      employeeTitle: H&S Supervisor, CCO
-      employeeQuote: H&S Supervisor, CCO, Partner
-      employeePicture: /images/uploads/kia-kiso.jpeg
     - name: Ariel Lazarus
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
@@ -214,6 +210,10 @@ teamMemberSection:
       employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
       employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
       employeePicture: /images/uploads/christina-holleran.png
+    - name: Mark Erman
+      employeeTitle: Medic, CCO
+      employeePicture: /images/uploads/mark-erman.jpeg
+      employeeQuote: Medic, CCO
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
