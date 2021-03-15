@@ -32,6 +32,12 @@ featuredClients:
       companyName: Puma
     - companyLogo: /images/uploads/boyinthecastle_logo.jpeg
       companyName: Boy In The Castle
+    - companyName: Dominos
+      companyLogo: /images/uploads/dominos-logo.png
+    - companyName: NFL
+      companyLogo: /images/uploads/nfl-logo.png
+    - companyName: Spotify
+      companyLogo: /images/uploads/spotify-download-logo-30.png
 meta:
   title: ""
 ---
