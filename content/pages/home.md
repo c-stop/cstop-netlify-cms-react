@@ -64,22 +64,40 @@ featuredClients:
       companyLogo: /images/uploads/sanctuary_logo_graycropped.png
     - companyName: Pluto TV
       companyLogo: /images/uploads/pluto-logo.png
+    - companyName: Samm Media
+      companyLogo: /images/uploads/samm-45350-copy.jpg
     - companyName: AAG
       companyLogo: /images/uploads/aag-logo-1-copy.png
+    - companyName: Reverie
+      companyLogo: /images/uploads/reverie-logo.png
     - companyName: FX
       companyLogo: /images/uploads/fx-logo.png
+    - companyName: Pretty Bird
+      companyLogo: /images/uploads/prettybird.png
     - companyName: Saatva
       companyLogo: /images/uploads/saatva-logo.png
+    - companyName: Pony Show
+      companyLogo: /images/uploads/pony-show-logo.png
     - companyName: Singlecare
       companyLogo: /images/uploads/singlecare-logo.png
+    - companyName: Planet Froth
+      companyLogo: /images/uploads/planet-froth-logo.png
     - companyName: Rocket Mortgage
       companyLogo: /images/uploads/rocket_mortgage.jpg
+    - companyName: MUH-TAY-ZIK HOF-FER
+      companyLogo: /images/uploads/logo_horiz_black.png
     - companyName: Jimmy John's
       companyLogo: /images/uploads/jimmy-john-s.png
+    - companyName: MJZ
+      companyLogo: /images/uploads/mjz_bzgm9bz.png
     - companyName: VH1
       companyLogo: /images/uploads/vh1.png
+    - companyName: Missing Pieces
+      companyLogo: /images/uploads/missing-pieces.jpeg
     - companyName: Ford
       companyLogo: /images/uploads/ford-logo-2003.png
+    - companyName: Kaleidoscope
+      companyLogo: /images/uploads/screen-shot-2021-03-09-at-3.40.55-pm.png
     - companyName: Head & Shoulders
       companyLogo: /images/uploads/head-shoulders-logo.png
     - companyName: AT&T
