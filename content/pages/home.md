@@ -132,18 +132,42 @@ featuredClients:
       companyLogo: /images/uploads/pecubu-productions.png
     - companyName: CBCF
       companyLogo: /images/uploads/cbcf-logo.png
+    - companyName: The Production Factory
+      companyLogo: /images/uploads/the-prod-factory-logo.png
     - companyName: Snapchat
       companyLogo: /images/uploads/snapchat_png64.png
+    - companyName: Black Market
+      companyLogo: /images/uploads/black-market-logo.png
     - companyName: US Cellular
       companyLogo: /images/uploads/2020_uscc_logohorizontallockup_primaryredblue_pantone_tm.png
+    - companyName: Unicorns & Unicorns
+      companyLogo: /images/uploads/unicorns-unicorns-logo.png
     - companyName: Audi
       companyLogo: /images/uploads/audi.png
+    - companyName: US
+      companyLogo: /images/uploads/ask-pepper.png
     - companyName: CBS
       companyLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
+    - companyName: "?"
+      companyLogo: /images/uploads/not-sure.png
     - companyName: VW
       companyLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
+    - companyName: Image Locations
+      companyLogo: /images/uploads/image-locations.png
     - companyName: NBPA
       companyLogo: /images/uploads/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png
+    - companyName: Squint
+      companyLogo: /images/uploads/static1.squarespace.jpg
+    - companyName: Proof
+      companyLogo: /images/uploads/proof.png
+    - companyName: Altered LA
+      companyLogo: /images/uploads/altered-la.jpg
+    - companyName: Portfolio One
+      companyLogo: /images/uploads/portfolio-one.png
+    - companyName: Watch!
+      companyLogo: /images/uploads/watch.png
+    - companyName: Black Hand Cinema
+      companyLogo: /images/uploads/black-hand-cinema.png
 meta:
   title: ""
 ---
