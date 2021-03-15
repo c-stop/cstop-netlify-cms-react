@@ -78,6 +78,18 @@ featuredClients:
       companyLogo: /images/uploads/coverage-insurance-inc-logo.png
     - companyName: Zenni
       companyLogo: /images/uploads/zen_logo_aqua_on_white.jpg
+    - companyName: CBCF
+      companyLogo: /images/uploads/cbcf-logo.png
+    - companyName: Snapchat
+      companyLogo: /images/uploads/snapchat_png64.png
+    - companyName: US Cellular
+      companyLogo: /images/uploads/2020_uscc_logohorizontallockup_primaryredblue_pantone_tm.png
+    - companyName: Audi
+      companyLogo: /images/uploads/audi.png
+    - companyName: CBS
+      companyLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
+    - companyName: VW
+      companyLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
 meta:
   title: ""
 ---
