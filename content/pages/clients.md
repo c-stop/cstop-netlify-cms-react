@@ -70,6 +70,10 @@ brandLogos:
     brandLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
   - brandName: NBPA
     brandLogo: /images/uploads/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png
+  - brandName: Tumi
+    brandLogo: /images/uploads/tumi.png
+  - brandName: Evereve
+    brandLogo: /images/uploads/evereve.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
@@ -153,6 +157,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/watch.png
   - brandName: Black Hand Cinema
     brandLogo: /images/uploads/black-hand-cinema.png
+  - brandName: Brook Ludi
+    brandLogo: /images/uploads/brooke-ludi-.jpg
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
