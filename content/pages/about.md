@@ -214,6 +214,10 @@ teamMemberSection:
       employeeTitle: Medic, CCO
       employeePicture: /images/uploads/mark-erman.jpeg
       employeeQuote: Medic, CCO
+    - name: Joe Bravo
+      employeeTitle: Medic, CCO
+      employeePicture: /images/uploads/joe-bravo.jpeg
+      employeeQuote: Medic, CCO
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
