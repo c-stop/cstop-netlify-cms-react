@@ -216,7 +216,7 @@ teamMemberSection:
       employeeQuote: Medic, CCO
     - name: Joe Bravo
       employeeTitle: Medic, CCO
-      employeePicture: /images/uploads/joe-bravo.jpeg
+      employeePicture: /images/uploads/unknown.jpeg
       employeeQuote: Medic, CCO
 imageGallery:
   - description: Test, Not featured
