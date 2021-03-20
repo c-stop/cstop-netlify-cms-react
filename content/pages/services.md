@@ -6,7 +6,7 @@ subTitle: ""
 featuredImage: /images/uploads/blue-image-background.png
 section1:
   section1Title: Protecting your workers and families from pathogens and
-    infectious diseases including COVID-19.
+    infectious diseases including COVID-19
   section1Body: >-
     Our production experience makes us front runners for collaborating,
     developing, implementing new procedures, and/or working closely with
