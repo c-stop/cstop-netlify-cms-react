@@ -9,8 +9,9 @@ email: solutions@c-stop.services
 workHours: none
 applySection:
   applyTitle: Join the Team
-  applySubtitle: Looking to join our COVID-19 Compliance Team?
-  applyBody: Maintaining a safe workplace takes the best of the best and we want you!
+  applySubtitle: Looking to join our Compliance Team?
+  applyBody: Maintaining a safe workplace against pathogens and infectious
+    diseases, including COVID-19, takes the best of the best and we want you!
   applyButton: Apply Now
 ---
 # none
