@@ -1,6 +1,6 @@
 ---
 aboutPageHeader:
-  title: Setting New Covid-19 Standards
+  title: Setting New Compliance Standards
   featuredImage: /images/uploads/shutterstock_1715308603.jpg
   subtitle: "Family owned and operated by a Local 80 On-Set Medic, LA County: EMT,
     NREMT and an award-winning Producer/Production Manager"
@@ -226,7 +226,8 @@ imageGallery:
     image: /images/uploads/tim-marshall-155597.jpg
 aboutCallToAction:
   ctaBackgroundImage: /images/uploads/card-og.png
-  ctaTitle: Minimize the risk of Covid-19 on your projects
-  ctaBody: With our informed leaders and trained Covid-19 teams, You can minimize the risk of bringing an infection home.
+  ctaTitle: Minimize the risk of pathogens and infectious diseases, including
+    COVID-19, on your projects
+  ctaBody: With our informed leaders and trained COVID-19 teams, You can minimize the risk of bringing an infection home.
   ctaButtonText: Ask Our Team
 ---
