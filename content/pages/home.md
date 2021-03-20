@@ -9,12 +9,12 @@ paragraph: Our mission is to ensure the health and safety of our clients and
   SAG and other industry leaders and worldwide organizations. Our methods and
   protocols have proven to be successful. We adhere to all federal, state and
   local guidelines which include, but are not limited to safety plans,
-  physical distancing, hygiene protocols, Covid-19 testing (lab based PCR and
+  physical distancing, hygiene protocols, COVID-19 testing (lab based PCR and
   antigen) nationwide, staffing & operations and cleaning, sanitizing &
   disinfecting. With our informed leaders and highly trained safety compliance
   teams, we help minimize the risk of bringing an infection home.
-buttonText: Learn More About C-stop's Services
-buttonLinkTo: services
+buttonText: Learn More About C-Stop's Services
+buttonLinkTo: Services
 featuredClients:
   carouselTitle: Clients we've kept healthy....
   featuredClientsLogos:
