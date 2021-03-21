@@ -182,10 +182,6 @@ teamMemberSection:
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/1549480668925.jpg
-    - name: Lori May
-      employeeTitle: Medic, CCO, HSS
-      employeePicture: /images/uploads/unknown.jpeg
-      employeeQuote: Medic, CCO, HSS
     - name: Steve Liskiewicz
       employeeTitle: Field Testing Officer, CCO, CCM, Sani-tech
       employeeQuote: Field Testing Officer, CCO, CCM, Sani-tech
