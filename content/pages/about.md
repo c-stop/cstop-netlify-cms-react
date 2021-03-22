@@ -156,7 +156,7 @@ teamMemberSection:
   teamMembers:
     - name: Pepper Humphrey
       employeeTitle: Co-Founder, CEO, H&S Director, CCO
-      employeePicture: /images/uploads/pepper-book-photo.jpg
+      employeePicture: /images/uploads/pepper-h.jpg
       employeeQuote: Co-Founder, CEO, H&S Director, CCO
     - name: Josh Humphrey
       employeeTitle: Co-Founder, Field Operations, Medic, CCO
