@@ -42,6 +42,10 @@ featuredClients:
       companyName: Calvin Klein
     - companyLogo: /images/uploads/boyinthecastle_logo.jpeg
       companyName: Boy In The Castle
+    - companyName: Walmart
+      companyLogo: /images/uploads/walmart_logo_transparent_png.png
+    - companyName: Unicorns&Unicorns
+      companyLogo: /images/uploads/unicorns-unicorns-logo.png
     - companyLogo: /images/uploads/puma-logo.png
       companyName: Puma
     - companyName: Freenjoy
@@ -160,14 +164,10 @@ featuredClients:
       companyLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
     - companyName: Squint
       companyLogo: /images/uploads/static1.squarespace.jpg
-    - companyName: Walmart
-      companyLogo: /images/uploads/walmart_logo_transparent_png.png
     - companyName: The Production Factoyr
       companyLogo: /images/uploads/the-prod-factory-logo.png
     - companyName: Boathouse
       companyLogo: /images/uploads/the_boathouse_agency_x_studio_logo.jpg
-    - companyName: Unicorns&Unicorns
-      companyLogo: /images/uploads/unicorns-unicorns-logo.png
     - companyName: Watch!
       companyLogo: /images/uploads/watch.png
     - companyName: ZENNI
