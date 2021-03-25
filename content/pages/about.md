@@ -214,6 +214,10 @@ teamMemberSection:
       employeeTitle: Medic, CCO
       employeePicture: /images/uploads/unknown.jpeg
       employeeQuote: Medic, CCO
+    - name: Lori May
+      employeeTitle: Medic, CCO, HSS
+      employeeQuote: Medic, CCO, HSS
+      employeePicture: /images/uploads/img_0174.jpg
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
