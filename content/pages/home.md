@@ -24,16 +24,24 @@ featuredClients:
       companyName: 1820 Productions
     - companyName: Toyota
       companyLogo: /images/uploads/toyota-logo.png
-    - companyLogo: /images/uploads/boyinthecastle_logo.jpeg
-      companyName: Boy In The Castle
-    - companyLogo: /images/uploads/beats-logo.png
-      companyName: Beats Audio
-    - companyName: Park Pictures
-      companyLogo: /images/uploads/parkpictures-logo.jpg
-    - companyLogo: /images/uploads/calvinklein-logo.png
-      companyName: Calvin Klein
     - companyName: Partizan
       companyLogo: /images/uploads/partizan-logo.svg.png
+    - companyLogo: /images/uploads/beats-logo.png
+      companyName: Beats Audio
+    - companyName: MJZ
+      companyLogo: /images/uploads/mjz_bzgm9bz.png
+    - companyName: NFL
+      companyLogo: /images/uploads/nfl-logo.png
+    - companyName: Missing Pieces
+      companyLogo: /images/uploads/missing-pieces.jpeg
+    - companyName: Ford
+      companyLogo: /images/uploads/ford-logo-2003.png
+    - companyName: Hound
+      companyLogo: /images/uploads/hound-logo.png
+    - companyLogo: /images/uploads/calvinklein-logo.png
+      companyName: Calvin Klein
+    - companyLogo: /images/uploads/boyinthecastle_logo.jpeg
+      companyName: Boy In The Castle
     - companyLogo: /images/uploads/puma-logo.png
       companyName: Puma
     - companyName: Freenjoy
@@ -80,14 +88,12 @@ featuredClients:
       companyLogo: /images/uploads/guerilla-productions.png
     - companyName: Pizza Hut
       companyLogo: /images/uploads/pizza-hut-restorante-png-logo-6.png
-    - companyName: Hound
-      companyLogo: /images/uploads/hound-logo.png
+    - companyName: Park Pictures
+      companyLogo: /images/uploads/parkpictures-logo.jpg
     - companyName: Facebook
       companyLogo: /images/uploads/facebook-logo.png
     - companyName: Illuminated Media International
       companyLogo: /images/uploads/illuminated-media-international.png
-    - companyName: Ford
-      companyLogo: /images/uploads/ford-logo-2003.png
     - companyName: Image Locations
       companyLogo: /images/uploads/image-locations.png
     - companyName: FX
@@ -106,18 +112,12 @@ featuredClients:
       companyLogo: /images/uploads/logo_horiz_black.png
     - companyName: Kaleidoscope
       companyLogo: /images/uploads/screen-shot-2021-03-09-at-3.40.55-pm.png
-    - companyName: Missing Pieces
-      companyLogo: /images/uploads/missing-pieces.jpeg
-    - companyName: NBPA
-      companyLogo: /images/uploads/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png
-    - companyName: MJZ
-      companyLogo: /images/uploads/mjz_bzgm9bz.png
-    - companyName: NFL
-      companyLogo: /images/uploads/nfl-logo.png
-    - companyName: Pecubu Productions
-      companyLogo: /images/uploads/pecubu-productions.png
     - companyName: Planet Froth
       companyLogo: /images/uploads/planet-froth-logo.png
+    - companyName: NBPA
+      companyLogo: /images/uploads/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png
+    - companyName: Pecubu Productions
+      companyLogo: /images/uploads/pecubu-productions.png
 meta:
   title: ""
 ---
