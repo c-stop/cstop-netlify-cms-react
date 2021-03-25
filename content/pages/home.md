@@ -40,6 +40,26 @@ featuredClients:
       companyLogo: /images/uploads/freenjoy.png
     - companyName: Dominos
       companyLogo: /images/uploads/dominos-logo.png
+    - companyName: Altered LA
+      companyLogo: /images/uploads/altered-la.jpg
+    - companyName: US Cellular
+      companyLogo: /images/uploads/2020_uscc_logohorizontallockup_primaryredblue_pantone_tm.png
+    - companyName: Black Market
+      companyLogo: /images/uploads/black-market-logo.png
+    - companyName: AAG
+      companyLogo: /images/uploads/aag-logo-1-copy.png
+    - companyName: Black Hand Cinema
+      companyLogo: /images/uploads/black-hand-cinema.png
+    - companyName: AT&T
+      companyLogo: /images/uploads/at-t.png
+    - companyName: Brook Ludi
+      companyLogo: /images/uploads/brooke-ludi-.jpg
+    - companyName: Audi
+      companyLogo: /images/uploads/audi.png
+    - companyName: Chrome
+      companyLogo: /images/uploads/chrome-logo.png
+    - companyName: Body Armor
+      companyLogo: /images/uploads/bodyarmor-vector-logo.png
 meta:
   title: ""
 ---
