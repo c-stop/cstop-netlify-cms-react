@@ -118,6 +118,60 @@ featuredClients:
       companyLogo: /images/uploads/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png
     - companyName: Pecubu Productions
       companyLogo: /images/uploads/pecubu-productions.png
+    - companyName: Pinterest
+      companyLogo: /images/uploads/pinterest-logo.png
+    - companyName: Pony Show
+      companyLogo: /images/uploads/pony-show-logo.png
+    - companyName: Pluto TV
+      companyLogo: /images/uploads/pluto-logo.png
+    - companyName: Portfolio One
+      companyLogo: /images/uploads/portfolio-one.png
+    - companyName: PTX
+      companyLogo: /images/uploads/ptx-logo.jpg
+    - companyName: Prettybird
+      companyLogo: /images/uploads/prettybird.png
+    - companyName: Saatva
+      companyLogo: /images/uploads/saatva-logo.png
+    - companyName: Proof
+      companyLogo: /images/uploads/proof.png
+    - companyName: Single care
+      companyLogo: /images/uploads/singlecare-logo.png
+    - companyName: Reverie
+      companyLogo: /images/uploads/reverie-logo.png
+    - companyName: Rocket Mortgage
+      companyLogo: /images/uploads/rocket_mortgage.jpg
+    - companyName: Snapchat
+      companyLogo: /images/uploads/snapchat_png64.png
+    - companyName: Samm Media
+      companyLogo: /images/uploads/samm-45350-copy.jpg
+    - companyName: Spotify
+      companyLogo: /images/uploads/spotify-download-logo-30.png
+    - companyName: Sanctuary
+      companyLogo: /images/uploads/sanctuary_logo_graycropped.png
+    - companyName: Tumi
+      companyLogo: /images/uploads/tumi.png
+    - companyName: Scheme Engine
+      companyLogo: /images/uploads/scheme-engine.png
+    - companyName: VH1
+      companyLogo: /images/uploads/vh1.png
+    - companyName: Scratch
+      companyLogo: /images/uploads/scratch-creative.png
+    - companyName: VW
+      companyLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
+    - companyName: Squint
+      companyLogo: /images/uploads/static1.squarespace.jpg
+    - companyName: Walmart
+      companyLogo: /images/uploads/walmart_logo_transparent_png.png
+    - companyName: The Production Factoyr
+      companyLogo: /images/uploads/the-prod-factory-logo.png
+    - companyName: Boathouse
+      companyLogo: /images/uploads/the_boathouse_agency_x_studio_logo.jpg
+    - companyName: Unicorns&Unicorns
+      companyLogo: /images/uploads/unicorns-unicorns-logo.png
+    - companyName: Watch!
+      companyLogo: /images/uploads/watch.png
+    - companyName: ZENNI
+      companyLogo: /images/uploads/zen_logo_aqua_on_white.jpg
 meta:
   title: ""
 ---
