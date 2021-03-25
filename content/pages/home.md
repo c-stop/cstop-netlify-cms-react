@@ -60,6 +60,64 @@ featuredClients:
       companyLogo: /images/uploads/chrome-logo.png
     - companyName: Body Armor
       companyLogo: /images/uploads/bodyarmor-vector-logo.png
+    - companyName: CSM
+      companyLogo: /images/uploads/csm.png
+    - companyName: CBCF
+      companyLogo: /images/uploads/cbcf.jpg
+    - companyName: Even Odd
+      companyLogo: /images/uploads/even-odd.png
+    - companyName: CBS
+      companyLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
+    - companyName: "?"
+      companyLogo: /images/uploads/ask-pepper.png
+    - companyName: Coverance
+      companyLogo: /images/uploads/coverage-insurance-inc-logo.png
+    - companyName: Good Company
+      companyLogo: /images/uploads/goodco-logo.png
+    - companyName: Dick's Sporting Goods
+      companyLogo: /images/uploads/dick-s-sporting-goods.png
+    - companyName: Guerilla Productions
+      companyLogo: /images/uploads/guerilla-productions.png
+    - companyName: Pizza Hut
+      companyLogo: /images/uploads/pizza-hut-restorante-png-logo-6.png
+    - companyName: Hound
+      companyLogo: /images/uploads/hound-logo.png
+    - companyName: Facebook
+      companyLogo: /images/uploads/facebook-logo.png
+    - companyName: Illuminated Media International
+      companyLogo: /images/uploads/illuminated-media-international.png
+    - companyName: Ford
+      companyLogo: /images/uploads/ford-logo-2003.png
+    - companyName: Image Locations
+      companyLogo: /images/uploads/image-locations.png
+    - companyName: FX
+      companyLogo: /images/uploads/fx-logo.png
+    - companyName: Imposter
+      companyLogo: /images/uploads/imposter-logo.png
+    - companyName: JB5 Productions
+      companyLogo: /images/uploads/jb5-logo-for-light-background-small-copy.png
+    - companyName: Head & Shoulders
+      companyLogo: /images/uploads/head-shoulders-logo.png
+    - companyName: Jonas & Co.
+      companyLogo: /images/uploads/screen-shot-2020-10-23-at-11.33.25-am.png
+    - companyName: Jimmy John's
+      companyLogo: /images/uploads/jimmy-john-s.png
+    - companyName: MUH-TAY-ZIK HOF-FER
+      companyLogo: /images/uploads/logo_horiz_black.png
+    - companyName: Kaleidoscope
+      companyLogo: /images/uploads/screen-shot-2021-03-09-at-3.40.55-pm.png
+    - companyName: Missing Pieces
+      companyLogo: /images/uploads/missing-pieces.jpeg
+    - companyName: NBPA
+      companyLogo: /images/uploads/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png
+    - companyName: MJZ
+      companyLogo: /images/uploads/mjz_bzgm9bz.png
+    - companyName: NFL
+      companyLogo: /images/uploads/nfl-logo.png
+    - companyName: Pecubu Productions
+      companyLogo: /images/uploads/pecubu-productions.png
+    - companyName: Planet Froth
+      companyLogo: /images/uploads/planet-froth-logo.png
 meta:
   title: ""
 ---
