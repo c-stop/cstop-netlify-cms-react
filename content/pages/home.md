@@ -24,16 +24,28 @@ featuredClients:
       companyName: 1820 Productions
     - companyName: Toyota
       companyLogo: /images/uploads/toyota-logo.png
-    - companyLogo: /images/uploads/boyinthecastle_logo.jpeg
-      companyName: Boy In The Castle
-    - companyLogo: /images/uploads/beats-logo.png
-      companyName: Beats Audio
-    - companyName: Park Pictures
-      companyLogo: /images/uploads/parkpictures-logo.jpg
-    - companyLogo: /images/uploads/calvinklein-logo.png
-      companyName: Calvin Klein
     - companyName: Partizan
       companyLogo: /images/uploads/partizan-logo.svg.png
+    - companyLogo: /images/uploads/beats-logo.png
+      companyName: Beats Audio
+    - companyName: MJZ
+      companyLogo: /images/uploads/mjz_bzgm9bz.png
+    - companyName: NFL
+      companyLogo: /images/uploads/nfl-logo.png
+    - companyName: Missing Pieces
+      companyLogo: /images/uploads/missing-pieces.jpeg
+    - companyName: Ford
+      companyLogo: /images/uploads/ford-logo-2003.png
+    - companyName: Hound
+      companyLogo: /images/uploads/hound-logo.png
+    - companyLogo: /images/uploads/calvinklein-logo.png
+      companyName: Calvin Klein
+    - companyLogo: /images/uploads/boyinthecastle_logo.jpeg
+      companyName: Boy In The Castle
+    - companyName: Walmart
+      companyLogo: /images/uploads/walmart_logo_transparent_png.png
+    - companyName: Unicorns&Unicorns
+      companyLogo: /images/uploads/unicorns-unicorns-logo.png
     - companyLogo: /images/uploads/puma-logo.png
       companyName: Puma
     - companyName: Freenjoy
@@ -80,14 +92,12 @@ featuredClients:
       companyLogo: /images/uploads/guerilla-productions.png
     - companyName: Pizza Hut
       companyLogo: /images/uploads/pizza-hut-restorante-png-logo-6.png
-    - companyName: Hound
-      companyLogo: /images/uploads/hound-logo.png
+    - companyName: Park Pictures
+      companyLogo: /images/uploads/parkpictures-logo.jpg
     - companyName: Facebook
       companyLogo: /images/uploads/facebook-logo.png
     - companyName: Illuminated Media International
       companyLogo: /images/uploads/illuminated-media-international.png
-    - companyName: Ford
-      companyLogo: /images/uploads/ford-logo-2003.png
     - companyName: Image Locations
       companyLogo: /images/uploads/image-locations.png
     - companyName: FX
@@ -106,18 +116,62 @@ featuredClients:
       companyLogo: /images/uploads/logo_horiz_black.png
     - companyName: Kaleidoscope
       companyLogo: /images/uploads/screen-shot-2021-03-09-at-3.40.55-pm.png
-    - companyName: Missing Pieces
-      companyLogo: /images/uploads/missing-pieces.jpeg
-    - companyName: NBPA
-      companyLogo: /images/uploads/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png
-    - companyName: MJZ
-      companyLogo: /images/uploads/mjz_bzgm9bz.png
-    - companyName: NFL
-      companyLogo: /images/uploads/nfl-logo.png
-    - companyName: Pecubu Productions
-      companyLogo: /images/uploads/pecubu-productions.png
     - companyName: Planet Froth
       companyLogo: /images/uploads/planet-froth-logo.png
+    - companyName: NBPA
+      companyLogo: /images/uploads/d332de50-0b10-11ea-95fe-01afbd7f5f3b-nbpa.png
+    - companyName: Pecubu Productions
+      companyLogo: /images/uploads/pecubu-productions.png
+    - companyName: Pinterest
+      companyLogo: /images/uploads/pinterest-logo.png
+    - companyName: Pony Show
+      companyLogo: /images/uploads/pony-show-logo.png
+    - companyName: Pluto TV
+      companyLogo: /images/uploads/pluto-logo.png
+    - companyName: Portfolio One
+      companyLogo: /images/uploads/portfolio-one.png
+    - companyName: PTX
+      companyLogo: /images/uploads/ptx-logo.jpg
+    - companyName: Prettybird
+      companyLogo: /images/uploads/prettybird.png
+    - companyName: Saatva
+      companyLogo: /images/uploads/saatva-logo.png
+    - companyName: Proof
+      companyLogo: /images/uploads/proof.png
+    - companyName: Single care
+      companyLogo: /images/uploads/singlecare-logo.png
+    - companyName: Reverie
+      companyLogo: /images/uploads/reverie-logo.png
+    - companyName: Rocket Mortgage
+      companyLogo: /images/uploads/rocket_mortgage.jpg
+    - companyName: Snapchat
+      companyLogo: /images/uploads/snapchat_png64.png
+    - companyName: Samm Media
+      companyLogo: /images/uploads/samm-45350-copy.jpg
+    - companyName: Spotify
+      companyLogo: /images/uploads/spotify-download-logo-30.png
+    - companyName: Sanctuary
+      companyLogo: /images/uploads/sanctuary_logo_graycropped.png
+    - companyName: Tumi
+      companyLogo: /images/uploads/tumi.png
+    - companyName: Scheme Engine
+      companyLogo: /images/uploads/scheme-engine.png
+    - companyName: VH1
+      companyLogo: /images/uploads/vh1.png
+    - companyName: Scratch
+      companyLogo: /images/uploads/scratch-creative.png
+    - companyName: VW
+      companyLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
+    - companyName: Squint
+      companyLogo: /images/uploads/static1.squarespace.jpg
+    - companyName: The Production Factoyr
+      companyLogo: /images/uploads/the-prod-factory-logo.png
+    - companyName: Boathouse
+      companyLogo: /images/uploads/the_boathouse_agency_x_studio_logo.jpg
+    - companyName: Watch!
+      companyLogo: /images/uploads/watch.png
+    - companyName: ZENNI
+      companyLogo: /images/uploads/zen_logo_aqua_on_white.jpg
 meta:
   title: ""
 ---
