@@ -1,4 +1,6 @@
+import axios from 'axios'
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Content from '../components/Content'
 import Cta from '../components/Cta'
@@ -14,11 +16,65 @@ export default ({ fields }) => {
     // workHours,
     applySection,
     contactCallToAction,
-  } = fields;
+  } = fields
 
-  const { applyTitle, applySubtitle, applyBody, applyButton } = applySection;
-  const {ctaTitle, ctaBody, ctaButtonText, ctaBackgroundImage} = contactCallToAction?? "";
-  
+  const { applyTitle, applySubtitle, applyBody, applyButton } = applySection
+  const { ctaTitle, ctaBody, ctaButtonText, ctaBackgroundImage } =
+    contactCallToAction ?? ''
+
+  const [formData, setFormData] = useState({})
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    })
+    console.log('Handle Change: ', formData)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    sendEmail()
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    })
+  }
+
+  const sendEmail = () => {
+    console.log('Sending Email')
+
+    axios
+      .post(
+        'https://us-central1-your-app-name.cloudfunctions.net/submit',
+        formData,
+        () => {
+          console.log('posting')
+        }
+      )
+      .then((res) => {
+        console.log(res)
+        if (res.data.status === 'success') {
+          alert('Message Sent.')
+          resetForm()
+        } else if (res.data.status === 'fail') {
+          alert('Message failed to send.')
+        }
+        // db.collection('emails').add({
+        //   name: formData.name,
+        //   email: formData.email,
+        //   message: formData.message,
+        // })
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+
+  const resetForm = () => {
+    setFormData({ name: '', email: '', message: '' })
+  }
 
   return (
     <div className="Contact">
@@ -35,7 +91,8 @@ export default ({ fields }) => {
             <div className="contact-form-heading-wrap">
               <h2 className="contact-heading">Contact us</h2>
               <div className="paragraph-light">
-                We welcome your inquiries, fill out the form below or reach out to us directly.
+                We welcome your inquiries, fill out the form below or reach out
+                to us directly.
                 <a
                   href="mailto:solutions@c-stop.services"
                   target="_blank"
@@ -51,6 +108,8 @@ export default ({ fields }) => {
                 data-name="Get In Touch Form"
                 name="wf-form-Get-In-Touch-Form"
                 className="get-in-touch-form"
+                id="contactForm"
+                onSubmit={handleSubmit}
               >
                 <label htmlFor="name">Name</label>
                 <input
@@ -59,28 +118,37 @@ export default ({ fields }) => {
                   maxLength="256"
                   name="name"
                   data-name="Name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Enter your name"
-                  id="Name"
+                  id="name"
+                  required
                 />
                 <label htmlFor="Email-2">Email Address</label>
+                {/* TO DO: SWITCH BACK TO EMAIL */}
                 <input
-                  type="email"
+                  type="text"
                   className="text-field cc-contact-field input"
                   maxLength="256"
-                  name="Email"
+                  name="email"
                   data-name="Email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Enter your email"
-                  id="Email"
-                  required=""
+                  id="email"
+                  required
                 />
                 <label htmlFor="Message">Message</label>
                 <textarea
-                  id="Message"
-                  name="Message"
-                  placeholder="Hi there, I’m reaching out because I think we can collaborate…"
-                  maxLength="5000"
-                  data-name="Message"
                   className="text-field cc-textarea cc-contact-field input"
+                  maxLength="5000"
+                  name="message"
+                  data-name="Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Hi there, I’m reaching out because I think we can collaborate…"
+                  id="message"
+                  required
                 ></textarea>
                 <input
                   type="submit"
@@ -113,8 +181,12 @@ export default ({ fields }) => {
           </div>
         </div>
 
-        <Cta title={ctaTitle} body={ctaBody} buttonText={ctaButtonText} backgroundImage={ctaBackgroundImage} />
-
+        <Cta
+          title={ctaTitle}
+          body={ctaBody}
+          buttonText={ctaButtonText}
+          backgroundImage={ctaBackgroundImage}
+        />
       </div>
     </div>
   )
