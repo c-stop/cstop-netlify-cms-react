@@ -172,6 +172,8 @@ featuredClients:
       companyLogo: /images/uploads/watch.png
     - companyName: ZENNI
       companyLogo: /images/uploads/zen_logo_aqua_on_white.jpg
+    - companyName: Arts and Sciences
+      companyLogo: /images/uploads/arts-and-sciences.png
 meta:
   title: ""
 ---
