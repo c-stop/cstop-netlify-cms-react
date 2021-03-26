@@ -159,6 +159,8 @@ productionCompanyLogos:
     brandLogo: /images/uploads/black-hand-cinema.png
   - brandName: Brook Ludi
     brandLogo: /images/uploads/brooke-ludi-.jpg
+  - brandName: Arts and Sciences
+    brandLogo: /images/uploads/arts-and-sciences.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
