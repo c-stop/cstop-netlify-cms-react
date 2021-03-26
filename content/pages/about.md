@@ -45,16 +45,16 @@ clientsSection:
     - image: /images/uploads/parkpictures-logo.jpg
       companyName: Park Pictures
 section2Container:
-  section2Title: Compliance done right
+  section2Title: Compliance Done Right
   section2: We are trailblazers. Our action plans, techniques, and methodologies
     not only follow the protocols and guidelines that prevent the transmission
-    of infectious diseases including COVID-19, but hold us to a higher standard
-    that keeps your set safe beyond expectations. Our world-class team works
-    with our clients side-by-side (6’-10’ apart, of course) from tech scout to
-    wrap, which has provided us with an invaluable understanding and practical
-    application of safety standards on set. We pass this knowledge on by
-    consulting and crafting unique compliance packages to fit any project’s
-    needs.
+    of pathogens and infectious diseases including COVID-19, but hold us to a
+    higher standard that keeps your set safe beyond expectations. Our
+    world-class team works with our clients side-by-side (6’-10’ apart, of
+    course) from tech scout to wrap, which has provided us with an invaluable
+    understanding and practical application of safety standards on set. We pass
+    this knowledge on by consulting and crafting unique compliance packages to
+    fit any project’s needs.
 testimonialSection:
   testimonialTitle: Testimonials
   testimonialSubtitle: "Want a second opinion? Here are a few satisfied customers:"
