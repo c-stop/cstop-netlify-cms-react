@@ -44,8 +44,8 @@ export default ({ fields }) => {
   }
 
   const sendEmail = () => {
-    console.log('Sending Email')
     const { name, email, message } = formData
+    console.log('Sending Email', formData)
 
     const templateParams = {
       from_name: name,
@@ -53,7 +53,15 @@ export default ({ fields }) => {
       to_name: 'c-Stop',
       message_html: message,
     }
-    emailjs.send('gmail', 'cstop_contact_template', templateParams, 'user_xxx')
+    emailjs
+      .send(
+        'service_umpcy5n',
+        'cstop_contact_template',
+        templateParams,
+        'user_0Als4WUjD4qGCDjIOuF1L'
+      )
+      .then((resp) => console.log(resp))
+      .catch((err) => console.log(err));
 
     // axios
     //   .post(
