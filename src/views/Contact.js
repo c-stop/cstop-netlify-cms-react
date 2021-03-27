@@ -6,6 +6,7 @@ import Content from '../components/Content'
 import Cta from '../components/Cta'
 import PageHeader from '../components/PageHeader'
 import './Contact.sass'
+import * as emailjs from 'emailjs-com'
 
 export default ({ fields }) => {
   const {
@@ -44,32 +45,41 @@ export default ({ fields }) => {
 
   const sendEmail = () => {
     console.log('Sending Email')
+    const { name, email, message } = formData
 
-    axios
-      .post(
-        'https://us-central1-your-app-name.cloudfunctions.net/submit',
-        formData,
-        () => {
-          console.log('posting')
-        }
-      )
-      .then((res) => {
-        console.log(res)
-        if (res.data.status === 'success') {
-          alert('Message Sent.')
-          resetForm()
-        } else if (res.data.status === 'fail') {
-          alert('Message failed to send.')
-        }
-        // db.collection('emails').add({
-        //   name: formData.name,
-        //   email: formData.email,
-        //   message: formData.message,
-        // })
-      })
-      .catch((error) => {
-        console.log(error)
-      })
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: 'c-Stop',
+      message_html: message,
+    }
+    emailjs.send('gmail', 'cstop_contact_template', templateParams, 'user_xxx')
+
+    // axios
+    //   .post(
+    //     'https://us-central1-your-app-name.cloudfunctions.net/submit',
+    //     formData,
+    //     () => {
+    //       console.log('posting')
+    //     }
+    //   )
+    //   .then((res) => {
+    //     console.log(res)
+    //     if (res.data.status === 'success') {
+    //       alert('Message Sent.')
+    //       resetForm()
+    //     } else if (res.data.status === 'fail') {
+    //       alert('Message failed to send.')
+    //     }
+    //     db.collection('emails').add({
+    //       name: formData.name,
+    //       email: formData.email,
+    //       message: formData.message,
+    //     })
+    //   })
+    //   .catch((error) => {
+    //     console.log(error)
+    //   })
   }
 
   const resetForm = () => {
