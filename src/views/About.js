@@ -111,10 +111,11 @@ export default ({ fields }) => {
       </div>
 
       <div
+        id="cta-wrapper"
         className="snap Cta"
-        data-aos="fade-down"
+        data-aos="fade-up"
         data-aos-delay="200"
-        data-aos-anchor-placement="center-bottom"
+        data-aos-anchor-placement="#cta-wrapper"
       >
         <Cta title={ctaTitle} body={ctaBody} buttonText={ctaButtonText} backgroundImage={ctaBackgroundImage}/>
       </div>
