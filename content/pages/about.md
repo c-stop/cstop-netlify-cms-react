@@ -1,6 +1,6 @@
 ---
 aboutPageHeader:
-  title: Setting New Covid-19 Standards
+  title: Setting New Compliance Standards
   featuredImage: /images/uploads/shutterstock_1715308603.jpg
   subtitle: "Family owned and operated by a Local 80 On-Set Medic, LA County: EMT,
     NREMT and an award-winning Producer/Production Manager"
@@ -45,16 +45,16 @@ clientsSection:
     - image: /images/uploads/parkpictures-logo.jpg
       companyName: Park Pictures
 section2Container:
-  section2Title: Compliance done right
+  section2Title: Compliance Done Right
   section2: We are trailblazers. Our action plans, techniques, and methodologies
     not only follow the protocols and guidelines that prevent the transmission
-    of infectious diseases including COVID-19, but hold us to a higher standard
-    that keeps your set safe beyond expectations. Our world-class team works
-    with our clients side-by-side (6’-10’ apart, of course) from tech scout to
-    wrap, which has provided us with an invaluable understanding and practical
-    application of safety standards on set. We pass this knowledge on by
-    consulting and crafting unique compliance packages to fit any project’s
-    needs.
+    of pathogens and infectious diseases including COVID-19, but hold us to a
+    higher standard that keeps your set safe beyond expectations. Our
+    world-class team works with our clients side-by-side (6’-10’ apart, of
+    course) from tech scout to wrap, which has provided us with an invaluable
+    understanding and practical application of safety standards on set. We pass
+    this knowledge on by consulting and crafting unique compliance packages to
+    fit any project’s needs.
 testimonialSection:
   testimonialTitle: Testimonials
   testimonialSubtitle: "Want a second opinion? Here are a few satisfied customers:"
@@ -156,40 +156,68 @@ teamMemberSection:
   teamMembers:
     - name: Pepper Humphrey
       employeeTitle: Co-Founder, CEO, H&S Director, CCO
-      employeePicture: /images/uploads/pepper-book-photo.jpg
+      employeePicture: /images/uploads/b7ab9050-0f51-4723-aa98-92fbe7fcfb25.jpg
       employeeQuote: Co-Founder, CEO, H&S Director, CCO
     - name: Josh Humphrey
       employeeTitle: Co-Founder, Field Operations, Medic, CCO
       employeeQuote: Co-Founder, Field Operations, Medic, CCO
       employeePicture: /images/uploads/josh-h.jpeg
-    - name: Kia Kiso
-      employeeTitle: H&S Supervisor, CCO, Partner
-      employeeQuote: H&S Supervisor, CCO, Partner
-      employeePicture: /images/uploads/kia-kiso.jpeg
+    - name: Lori May
+      employeeTitle: Medic, CCO, HSS
+      employeeQuote: Medic, CCO, HSS
+      employeePicture: /images/uploads/img_0174.jpg
     - name: Ariel Lazarus
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/ariel-l.jpeg
     - name: Elle West
-      employeeTitle: Project Manager, CCO, Partner
-      employeePicture: /images/uploads/img_8382.jpg
-      employeeQuote: Project Manager, CCO, Partner
-    - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
+      employeePicture: /images/uploads/dfeb008c-072d-483c-b020-39c486828a7f.jpg
       employeeQuote: Project Manager, CCO
-      employeePicture: /images/uploads/1549480668925.jpg
-    - name: Patrick Clements
-      employeeTitle: Executive Assistant, CCO
-      employeePicture: /images/uploads/commercial-headshot.jpg
-      employeeQuote: Executive Assistant, CCO
     - name: Ian Menzies
       employeeTitle: Administrative Coordinator, CCO
       employeeQuote: Administrative Coordinator, CCO
       employeePicture: /images/uploads/ian.jpeg
-    - name: Lori May
-      employeeTitle: Medic, CCO, HSS
+    - name: Patrick Clements
+      employeeTitle: Executive Assistant, CCO
+      employeePicture: /images/uploads/commercial-headshot.jpg
+      employeeQuote: Executive Assistant, CCO
+    - name: Josh Saathoff
+      employeeTitle: Project Manager, CCO
+      employeeQuote: Project Manager, CCO
+      employeePicture: /images/uploads/1549480668925.jpg
+    - name: Steve Liskiewicz
+      employeeTitle: Field Testing Officer, CCO, CCM, Sani-tech
+      employeeQuote: Field Testing Officer, CCO, CCM, Sani-tech
+      employeePicture: /images/uploads/steve-liskiewicz.jpg
+    - name: Michael Rivera
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/jesus-rivera.jpg
+    - name: Chris Hamilton
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/christopher-hamilton.jpeg
+    - name: Eric Stitt
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/eric-stitt.png
+    - name: Michele Hill
+      employeeTitle: Field Testing Manager, CCO
+      employeeQuote: Field Testing Manager, CCO
+      employeePicture: /images/uploads/michele-hill.jpeg
+    - name: Christina Holleran
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/christina-holleran.png
+    - name: Mark Erman
+      employeeTitle: Medic, CCO
+      employeePicture: /images/uploads/mark-erman.jpeg
+      employeeQuote: Medic, CCO
+    - name: Joe Bravo
+      employeeTitle: Medic, CCO
       employeePicture: /images/uploads/unknown.jpeg
-      employeeQuote: Medic, CCO, HSS
+      employeeQuote: Medic, CCO
 imageGallery:
   - description: Test, Not featured
     image: /images/uploads/isabella juskova.jpg
@@ -198,7 +226,8 @@ imageGallery:
     image: /images/uploads/tim-marshall-155597.jpg
 aboutCallToAction:
   ctaBackgroundImage: /images/uploads/card-og.png
-  ctaTitle: Minimize the risk of Covid-19 on your projects
-  ctaBody: With our informed leaders and trained Covid-19 teams, You can minimize the risk of bringing an infection home.
+  ctaTitle: Minimize the risk of pathogens and infectious diseases, including
+    COVID-19, on your projects
+  ctaBody: With our informed leaders and trained COVID-19 teams, You can minimize the risk of bringing an infection home.
   ctaButtonText: Ask Our Team
 ---

@@ -127,7 +127,7 @@ function App() {
           <Route path="/quote/" exact component={QuotePage} />
 
           <Route path="/forms/" component={FormsPage} />
-
+	  
           {/* <Route
             path={`/forms/:id`}
             exact

@@ -2,17 +2,18 @@
 templateKey: services-page
 path: /services
 title: Valuable Services
-subTitle: Protecting your workers and families from pathogens including Covid-19
+subTitle: ""
 featuredImage: /images/uploads/blue-image-background.png
 section1:
-  section1Title: "Protecting your workers and families from Covid-19 "
+  section1Title: Protecting your workers and families from pathogens and
+    infectious diseases including COVID-19
   section1Body: >-
     Our production experience makes us front runners for collaborating,
     developing, implementing new procedures, and/or working closely with
     production to ensure safety requirements are clearly explained and properly
     executed on set. We understand that staying on budget, while
 
-    staying on schedule can be a challenge, especially with the added duty of protecting the health and safety of our crews, talent, and families from COVID-19 exposure. We approach this responsibility with reverence and respect, knowing one careless move can put us all at risk.
+    staying on schedule can be a challenge, especially with the added duty of protecting the health and safety of our crews, talent, and families from pathogens and infectious diseases including COVID-19 exposure. We approach this responsibility with reverence and respect, knowing one careless move can put us all at risk.
 
 
     Our services closely follow the guidance and recommendations published by the CDC, OSHA, DGA, SAG•AFTRA, TASK FORCE, AICP, IATSE, Local 80, and more.
@@ -55,7 +56,7 @@ section2:
         **Protect your job with a custom team including:** 
 
 
-        **On Set Union Medics** • Union Life Guards • Union Safety Divers • Dive Masters • Marine Coordinators • **Trained in Hyperbaric Medicine** • Multiple course completion certifications: Covid Compliance officers (C19CO) • Health & Safety Supervisors • Safety Monitors • Screeners • Covid-19 Compliance Officers (CCO) • Covid-19 Compliance Directors • On-Call Nurses & Doctors
+        **On Set Union Medics** • Union Life Guards • Union Safety Divers • Dive Masters • Marine Coordinators • **Trained in Hyperbaric Medicine** • Multiple course completion certifications: COVID-19 Compliance Officers (C19CO) • Health & Safety Supervisors • Safety Monitors • Screeners • COVID-19 Compliance Officers (CCO) • COVID-19 Compliance Directors • On-Call Nurses & Doctors
       serviceIconImage: /images/uploads/artboard-1.png
     - title: On Site Displays & Systems
       body: >-
@@ -92,4 +93,3 @@ section2:
 
         Our RT-PCR tests are processed at a privately-owned, high complexity, HIPAA compliant, CLIA-certified laboratory. All results are returned per LA County and CDC guidelines. Both our Rapid PCR and Antigen tests have been validated and granted their Emergency Use Authorization by the FDA.
       serviceIconImage: /images/uploads/artboard-1.png
----
