@@ -7,6 +7,8 @@ import Cta from '../components/Cta'
 import PageHeader from '../components/PageHeader'
 import './Contact.sass'
 import * as emailjs from 'emailjs-com'
+import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-google'
+import { useEffect } from 'react'
 
 export default ({ fields }) => {
   const {
@@ -24,6 +26,12 @@ export default ({ fields }) => {
     contactCallToAction ?? ''
 
   const [formData, setFormData] = useState({})
+
+  const REACT_APP_RECAPTCHA = '6LfkaZEaAAAAABPpqcGuSCmngJl7qcI0WiJ6i0EK'
+
+  useEffect(() => {
+    loadReCaptcha()
+  }, [])
 
   const handleChange = (e) => {
     setFormData({
@@ -61,7 +69,7 @@ export default ({ fields }) => {
         'user_0Als4WUjD4qGCDjIOuF1L'
       )
       .then((resp) => console.log(resp))
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err))
 
     // axios
     //   .post(
@@ -168,6 +176,15 @@ export default ({ fields }) => {
                   id="message"
                   required
                 ></textarea>
+
+                <ReCaptcha
+                // ref={(el) => {this.captchaDemo = el;}}
+                  sitekey={REACT_APP_RECAPTCHA}
+                  render="explicit"
+                  onChange={handleChange}
+                  // size="invisible"
+                />
+
                 <input
                   type="submit"
                   value="Submit"

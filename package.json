@@ -45,6 +45,8 @@
     "react-feather": "^2.0.3",
     "react-helmet": "^5.2.1",
     "react-markdown": "4.2.2",
+    "react-recaptcha": "^2.3.10",
+    "react-recaptcha-google": "^1.1.1",
     "react-router-dom": "^5.0.1",
     "react-slick": "^0.27.13",
     "react-tiger-transition": "^4.1.2",
