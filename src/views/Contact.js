@@ -1,14 +1,11 @@
-import axios from 'axios'
-import React from 'react'
-import { useState } from 'react'
+// import axios from 'axios'
+import * as emailjs from 'emailjs-com'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Content from '../components/Content'
 import Cta from '../components/Cta'
 import PageHeader from '../components/PageHeader'
 import './Contact.sass'
-import * as emailjs from 'emailjs-com'
-import { loadReCaptcha, ReCaptcha } from 'react-recaptcha-google'
-import { useEffect } from 'react'
 
 export default ({ fields }) => {
   const {
@@ -27,11 +24,11 @@ export default ({ fields }) => {
 
   const [formData, setFormData] = useState({})
 
-  const REACT_APP_RECAPTCHA = '6LfkaZEaAAAAABPpqcGuSCmngJl7qcI0WiJ6i0EK'
 
-  useEffect(() => {
-    loadReCaptcha()
-  }, [])
+
+  // useEffect(() => {
+  //   loadReCaptcha()
+  // }, [])
 
   const handleChange = (e) => {
     setFormData({
@@ -98,9 +95,9 @@ export default ({ fields }) => {
     //   })
   }
 
-  const resetForm = () => {
-    setFormData({ name: '', email: '', message: '' })
-  }
+  // const resetForm = () => {
+  //   setFormData({ name: '', email: '', message: '' })
+  // }
 
   return (
     <div className="Contact">
@@ -177,13 +174,13 @@ export default ({ fields }) => {
                   required
                 ></textarea>
 
-                <ReCaptcha
+                {/* <ReCaptcha
                 // ref={(el) => {this.captchaDemo = el;}}
                   sitekey={REACT_APP_RECAPTCHA}
                   render="explicit"
                   onChange={handleChange}
                   // size="invisible"
-                />
+                /> */}
 
                 <input
                   type="submit"
