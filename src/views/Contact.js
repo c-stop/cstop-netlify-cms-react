@@ -1,17 +1,14 @@
-import axios from 'axios'
-import React from 'react'
-import { useState } from 'react'
+import * as emailjs from 'emailjs-com'
+import React, { useEffect, useState } from 'react'
+import {
+  GoogleReCaptcha,
+  GoogleReCaptchaProvider,
+} from 'react-google-recaptcha-v3'
 import { Link } from 'react-router-dom'
 import Content from '../components/Content'
 import Cta from '../components/Cta'
 import PageHeader from '../components/PageHeader'
 import './Contact.sass'
-import * as emailjs from 'emailjs-com'
-import { useEffect } from 'react'
-import {
-  GoogleReCaptcha,
-  GoogleReCaptchaProvider,
-} from 'react-google-recaptcha-v3'
 
 export default ({ fields }) => {
   const {
@@ -38,7 +35,6 @@ export default ({ fields }) => {
       ...formData,
       [e.target.name]: e.target.value,
     })
-    console.log('Handle Change: ', formData)
   }
 
   const handleSubmit = (e) => {
@@ -53,7 +49,6 @@ export default ({ fields }) => {
 
   const sendEmail = () => {
     const { name, email, message } = formData
-    console.log('Sending Email', formData)
 
     const templateParams = {
       from_name: name,
@@ -72,12 +67,9 @@ export default ({ fields }) => {
         if (resp.status === 200) {
           alert('Message Sent.')
           resetForm()
-        } else if (resp.status === 'fail') {
-          alert('Message failed to send.')
         }
-        console.log(resp)
       })
-      .catch((err) => console.log(err))
+      .catch((err) => alert('Message failed to send.', err))
   }
 
   const resetForm = () => {
@@ -159,7 +151,7 @@ export default ({ fields }) => {
                 ></textarea>
 
                 <GoogleReCaptchaProvider reCaptchaKey={REACT_APP_RECAPTCHA}>
-                  <GoogleReCaptcha  />
+                  <GoogleReCaptcha />
                 </GoogleReCaptchaProvider>
 
                 <input
@@ -169,12 +161,6 @@ export default ({ fields }) => {
                   className="Button"
                 />
               </form>
-              {/* <div className="status-message cc-success-message w-form-done">
-                <div>Thank you! Your submission has been received!</div>
-              </div> */}
-              {/* <div className="status-message cc-error-message w-form-fail">
-                <div>Oops! Something went wrong while submitting the form.</div>
-              </div> */}
             </div>
           </div>
 
