@@ -174,14 +174,14 @@ teamMemberSection:
       employeeTitle: Project Manager, CCO
       employeePicture: /images/uploads/dfeb008c-072d-483c-b020-39c486828a7f.jpg
       employeeQuote: Project Manager, CCO
-    - name: Ian Menzies
-      employeeTitle: Administrative Coordinator, CCO
-      employeeQuote: Administrative Coordinator, CCO
-      employeePicture: /images/uploads/ian.jpeg
     - name: Patrick Clements
       employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
       employeeQuote: Executive Assistant, CCO
+    - name: Ian Menzies
+      employeeTitle: Administrative Coordinator, CCO
+      employeeQuote: Administrative Coordinator, CCO
+      employeePicture: /images/uploads/ian.jpeg
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
