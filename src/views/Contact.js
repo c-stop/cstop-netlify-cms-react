@@ -19,7 +19,6 @@ export default ({ fields }) => {
     subtitle,
     featuredImage,
     email,
-    // workHours,
     applySection,
     contactCallToAction,
   } = fields
@@ -79,32 +78,6 @@ export default ({ fields }) => {
         console.log(resp)
       })
       .catch((err) => console.log(err))
-
-    // axios
-    //   .post(
-    //     'https://us-central1-your-app-name.cloudfunctions.net/submit',
-    //     formData,
-    //     () => {
-    //       console.log('posting')
-    //     }
-    //   )
-    //   .then((res) => {
-    //     console.log(res)
-    //     if (res.data.status === 'success') {
-    //       alert('Message Sent.')
-    //       resetForm()
-    //     } else if (res.data.status === 'fail') {
-    //       alert('Message failed to send.')
-    //     }
-    //     db.collection('emails').add({
-    //       name: formData.name,
-    //       email: formData.email,
-    //       message: formData.message,
-    //     })
-    //   })
-    //   .catch((error) => {
-    //     console.log(error)
-    //   })
   }
 
   const resetForm = () => {
@@ -160,9 +133,8 @@ export default ({ fields }) => {
                   required
                 />
                 <label htmlFor="Email-2">Email Address</label>
-                {/* TO DO: SWITCH BACK TO EMAIL */}
                 <input
-                  type="text"
+                  type="email"
                   className="text-field cc-contact-field input"
                   maxLength="256"
                   name="email"
@@ -186,14 +158,6 @@ export default ({ fields }) => {
                   required
                 ></textarea>
 
-                {/* <ReCaptcha
-                  // ref={(el) => {this.captchaDemo = el;}}
-                  sitekey={REACT_APP_RECAPTCHA}
-                  render="explicit"
-                  onChange={handleChange}
-                  // size="invisible"
-                /> */}
-
                 <GoogleReCaptchaProvider reCaptchaKey={REACT_APP_RECAPTCHA}>
                   <GoogleReCaptcha  />
                 </GoogleReCaptchaProvider>
@@ -207,8 +171,8 @@ export default ({ fields }) => {
               </form>
               {/* <div className="status-message cc-success-message w-form-done">
                 <div>Thank you! Your submission has been received!</div>
-              </div>
-              <div className="status-message cc-error-message w-form-fail">
+              </div> */}
+              {/* <div className="status-message cc-error-message w-form-fail">
                 <div>Oops! Something went wrong while submitting the form.</div>
               </div> */}
             </div>
