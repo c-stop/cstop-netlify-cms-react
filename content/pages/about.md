@@ -178,38 +178,38 @@ teamMemberSection:
       employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
       employeeQuote: Executive Assistant, CCO
-    - name: Ian Menzies
-      employeeTitle: Administrative Coordinator, CCO
-      employeeQuote: Administrative Coordinator, CCO
-      employeePicture: /images/uploads/ian.jpeg
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
       employeePicture: /images/uploads/1549480668925.jpg
+    - name: Ian Menzies
+      employeeTitle: Administrative Coordinator, CCO
+      employeeQuote: Administrative Coordinator, CCO
+      employeePicture: /images/uploads/ian.jpeg
     - name: Steve Liskiewicz
       employeeTitle: Field Testing Officer, CCO, CCM, Sani-tech
       employeeQuote: Field Testing Officer, CCO, CCM, Sani-tech
       employeePicture: /images/uploads/steve-liskiewicz.jpg
-    - name: Michael Rivera
-      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
-      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
-      employeePicture: /images/uploads/jesus-rivera.jpg
-    - name: Chris Hamilton
-      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
-      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
-      employeePicture: /images/uploads/christopher-hamilton.jpeg
     - name: Eric Stitt
       employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
       employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
       employeePicture: /images/uploads/eric-stitt.png
-    - name: Michele Hill
-      employeeTitle: Field Testing Manager, CCO
-      employeeQuote: Field Testing Manager, CCO
-      employeePicture: /images/uploads/michele-hill.jpeg
     - name: Christina Holleran
       employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
       employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
       employeePicture: /images/uploads/christina-holleran.png
+    - name: Chris Hamilton
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/christopher-hamilton.jpeg
+    - name: Michael Rivera
+      employeeTitle: Safety Compliance Specialist, CCO, Sani-tech
+      employeeQuote: Safety Compliance Specialist, CCO, Sani-tech
+      employeePicture: /images/uploads/jesus-rivera.jpg
+    - name: Michele Hill
+      employeeTitle: Field Testing Manager, CCO
+      employeeQuote: Field Testing Manager, CCO
+      employeePicture: /images/uploads/michele-hill.jpeg
     - name: Mark Erman
       employeeTitle: Medic, CCO
       employeePicture: /images/uploads/mark-erman.jpeg
