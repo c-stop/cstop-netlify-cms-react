@@ -1,11 +1,17 @@
-// import axios from 'axios'
-import * as emailjs from 'emailjs-com'
-import React, { useState } from 'react'
+import axios from 'axios'
+import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Content from '../components/Content'
 import Cta from '../components/Cta'
 import PageHeader from '../components/PageHeader'
 import './Contact.sass'
+import * as emailjs from 'emailjs-com'
+import { useEffect } from 'react'
+import {
+  GoogleReCaptcha,
+  GoogleReCaptchaProvider,
+} from 'react-google-recaptcha-v3'
 
 export default ({ fields }) => {
   const {
@@ -24,11 +30,9 @@ export default ({ fields }) => {
 
   const [formData, setFormData] = useState({})
 
+  const REACT_APP_RECAPTCHA = process.env.REACT_APP_RECAPTCHA
 
-
-  // useEffect(() => {
-  //   loadReCaptcha()
-  // }, [])
+  useEffect(() => {}, [])
 
   const handleChange = (e) => {
     setFormData({
@@ -65,7 +69,15 @@ export default ({ fields }) => {
         templateParams,
         'user_0Als4WUjD4qGCDjIOuF1L'
       )
-      .then((resp) => console.log(resp))
+      .then((resp) => {
+        if (resp.status === 200) {
+          alert('Message Sent.')
+          resetForm()
+        } else if (resp.status === 'fail') {
+          alert('Message failed to send.')
+        }
+        console.log(resp)
+      })
       .catch((err) => console.log(err))
 
     // axios
@@ -95,9 +107,9 @@ export default ({ fields }) => {
     //   })
   }
 
-  // const resetForm = () => {
-  //   setFormData({ name: '', email: '', message: '' })
-  // }
+  const resetForm = () => {
+    setFormData({ name: '', email: '', message: '' })
+  }
 
   return (
     <div className="Contact">
@@ -175,12 +187,16 @@ export default ({ fields }) => {
                 ></textarea>
 
                 {/* <ReCaptcha
-                // ref={(el) => {this.captchaDemo = el;}}
+                  // ref={(el) => {this.captchaDemo = el;}}
                   sitekey={REACT_APP_RECAPTCHA}
                   render="explicit"
                   onChange={handleChange}
                   // size="invisible"
                 /> */}
+
+                <GoogleReCaptchaProvider reCaptchaKey={REACT_APP_RECAPTCHA}>
+                  <GoogleReCaptcha  />
+                </GoogleReCaptchaProvider>
 
                 <input
                   type="submit"
