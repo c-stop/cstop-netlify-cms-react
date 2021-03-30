@@ -177,7 +177,20 @@ teamMemberSection:
     - name: Patrick Clements
       employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
-      employeeQuote: Executive Assistant, CCO
+      employeeQuote: Patrick Clements is a keen-eyed problem solver with a background
+        in Arts Administration. With 6 years of experience in live event
+        planning and management, he has brought 46 events from concept to
+        completion, ranging widely from outdoor music festivals to keynote
+        speaking engagements. He has managed over 120 experiential marketing
+        activations in New York, Chicago, and Los Angeles and loves to hunt the
+        devil in the details. Described as overwhelmingly charismatic, Patrick
+        is passionate about transforming adversaries into allies and obstacles
+        into opportunities. He has worked hard to build his tool chest of
+        interpersonal skills and takes pride in creating nimble plans with
+        certainty in this time of reimagining. With compassion as his compass,
+        he enjoys waking every day with the goal of bringing the safest most
+        meaningful event and production experiences into this wild wonderful
+        world.
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
