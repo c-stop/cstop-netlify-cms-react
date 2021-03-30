@@ -172,6 +172,16 @@ industryLogos:
     brandLogo: /images/uploads/filmla_logo_large.png
   - brandName: AICP
     brandLogo: /images/uploads/aicp.png
+  - brandName: FEMA
+    brandLogo: /images/uploads/fema.png
+  - brandName: NAWBO
+    brandLogo: /images/uploads/nawbo_la_logo.jpg
+  - brandName: NSC
+    brandLogo: /images/uploads/nsc.jpg
+  - brandName: Project Management Institute
+    brandLogo: /images/uploads/project-management-institute.png
+  - brandName: Safe Sets International
+    brandLogo: /images/uploads/safe-sets-international.png
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
