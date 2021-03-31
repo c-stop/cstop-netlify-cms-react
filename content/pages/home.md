@@ -135,7 +135,7 @@ featuredClients:
     - companyName: Prettybird
       companyLogo: /images/uploads/prettybird.png
     - companyName: Saatva
-      companyLogo: /images/uploads/saatva-logo.png
+      companyLogo: /images/uploads/saatva-logo-vector.png
     - companyName: Proof
       companyLogo: /images/uploads/proof.png
     - companyName: Single care
