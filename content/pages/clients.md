@@ -12,6 +12,8 @@ brandLogos:
     brandLogo: /images/uploads/puma.png
   - brandName: NFL
     brandLogo: /images/uploads/nfl.png
+  - brandName: Amazon
+    brandLogo: /images/uploads/amazon-logo.png
   - brandName: Spotify
     brandLogo: /images/uploads/spotify-download-logo-30.png
   - brandName: Pizza Hut
@@ -86,8 +88,6 @@ brandLogos:
     brandLogo: /images/uploads/peloton-logo-1.png
   - brandName: Michelob
     brandLogo: /images/uploads/michelob.png
-  - brandName: Amazon
-    brandLogo: /images/uploads/amazon-logo.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
