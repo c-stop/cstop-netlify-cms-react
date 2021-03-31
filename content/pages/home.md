@@ -143,7 +143,7 @@ featuredClients:
     - companyName: Reverie
       companyLogo: /images/uploads/reverie-logo.png
     - companyName: Rocket Mortgage
-      companyLogo: /images/uploads/rocket_mortgage.jpg
+      companyLogo: /images/uploads/rocketmortgage-rgb-vertical-2048px.png
     - companyName: Snapchat
       companyLogo: /images/uploads/snapchat_png64.png
     - companyName: Samm Media
