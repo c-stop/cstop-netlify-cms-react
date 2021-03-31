@@ -49,7 +49,7 @@ brandLogos:
   - brandName: PTX
     brandLogo: /images/uploads/ptx-logo.jpg
   - brandName: Dick's Sporting Goods
-    brandLogo: /images/uploads/dick-s-sporting-goods.png
+    brandLogo: /images/uploads/5050718_dicks-sporting-goods-dicks-sporting-goods-logo-png.jpg
   - brandName: Facebook
     brandLogo: /images/uploads/facebook-logo.png
   - brandName: Toyota
