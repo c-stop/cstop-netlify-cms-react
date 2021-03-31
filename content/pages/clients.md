@@ -67,7 +67,7 @@ brandLogos:
   - brandName: Audi
     brandLogo: /images/uploads/audi.png
   - brandName: CBS
-    brandLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
+    brandLogo: /images/uploads/cbs-logo-2011-png-0.png
   - brandName: VW
     brandLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
   - brandName: NBPA
