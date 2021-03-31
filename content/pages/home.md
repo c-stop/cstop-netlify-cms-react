@@ -67,7 +67,7 @@ featuredClients:
     - companyName: AT&T
       companyLogo: /images/uploads/at-t.png
     - companyName: Brook Ludi
-      companyLogo: /images/uploads/brooke-ludi-.jpg
+      companyLogo: /images/uploads/brooke-ludi-production.png
     - companyName: Audi
       companyLogo: /images/uploads/audi.png
     - companyName: Chrome
