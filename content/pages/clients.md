@@ -74,6 +74,20 @@ brandLogos:
     brandLogo: /images/uploads/tumi.png
   - brandName: Evereve
     brandLogo: /images/uploads/evereve.png
+  - brandName: Ugg
+    brandLogo: /images/uploads/ugg.png
+  - brandName: Ryobi
+    brandLogo: /images/uploads/ryobi.png
+  - brandName: RuPaul's Drag Race
+    brandLogo: /images/uploads/rupaul-s-drag-race.png
+  - brandName: Reebok
+    brandLogo: /images/uploads/reebok.png
+  - brandName: Peloton
+    brandLogo: /images/uploads/peloton-logo-1.png
+  - brandName: Michelob
+    brandLogo: /images/uploads/michelob.png
+  - brandName: Amazon
+    brandLogo: /images/uploads/amazon-logo.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
