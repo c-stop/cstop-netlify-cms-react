@@ -93,7 +93,7 @@ productionCompanyLogos:
     brandName: 1820 Productions
   - brandLogo: /images/uploads/boyinthecastle_logo.jpeg
     brandName: Boy In The Castle
-  - brandLogo: /images/uploads/parkpictures-logo.jpg
+  - brandLogo: /images/uploads/park-pictures.png
     brandName: Park Pictures
   - brandName: Partizan
     brandLogo: /images/uploads/partizan-logo.svg.png
