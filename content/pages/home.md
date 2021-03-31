@@ -73,7 +73,7 @@ featuredClients:
     - companyName: Chrome
       companyLogo: /images/uploads/chrome-logo.png
     - companyName: Body Armor
-      companyLogo: /images/uploads/bodyarmor-vector-logo.png
+      companyLogo: /images/uploads/bodyarmor.png
     - companyName: CSM
       companyLogo: /images/uploads/csm.png
     - companyName: CBCF
