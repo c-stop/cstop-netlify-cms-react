@@ -171,7 +171,7 @@ featuredClients:
     - companyName: Watch!
       companyLogo: /images/uploads/watch.png
     - companyName: ZENNI
-      companyLogo: /images/uploads/zen_logo_aqua_on_white.jpg
+      companyLogo: /images/uploads/zenni.webp
     - companyName: Arts and Sciences
       companyLogo: /images/uploads/arts-and-sciences.png
 meta:
