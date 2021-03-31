@@ -158,7 +158,7 @@ productionCompanyLogos:
   - brandName: Black Hand Cinema
     brandLogo: /images/uploads/black-hand-cinema.png
   - brandName: Brook Ludi
-    brandLogo: /images/uploads/brooke-ludi-.jpg
+    brandLogo: /images/uploads/download.png
   - brandName: Arts and Sciences
     brandLogo: /images/uploads/arts-and-sciences.png
 industryLogos:
