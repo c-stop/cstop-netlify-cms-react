@@ -31,7 +31,7 @@ brandLogos:
   - brandName: Saatva
     brandLogo: /images/uploads/saatva-logo.png
   - brandName: Single Care
-    brandLogo: /images/uploads/singlecare-logo.png
+    brandLogo: /images/uploads/singlecare_logo.jpg
   - brandName: Rocket Mortgage
     brandLogo: /images/uploads/rocket_mortgage.jpg
   - brandName: Jimmy John's
