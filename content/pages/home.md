@@ -87,7 +87,7 @@ featuredClients:
     - companyName: Good Company
       companyLogo: /images/uploads/goodco-logo.png
     - companyName: Dick's Sporting Goods
-      companyLogo: /images/uploads/dick-s-sporting-goods.png
+      companyLogo: /images/uploads/5050718_dicks-sporting-goods-dicks-sporting-goods-logo-png.jpg
     - companyName: Guerilla Productions
       companyLogo: /images/uploads/guerilla-productions.png
     - companyName: Pizza Hut
