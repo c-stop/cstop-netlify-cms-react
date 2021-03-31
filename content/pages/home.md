@@ -24,6 +24,8 @@ featuredClients:
       companyName: 1820 Productions
     - companyName: Toyota
       companyLogo: /images/uploads/toyota-logo.png
+    - companyName: CBS
+      companyLogo: /images/uploads/cbs-logo-2011-png-0.png
     - companyName: Partizan
       companyLogo: /images/uploads/partizan-logo.svg.png
     - companyLogo: /images/uploads/beats-logo.png
@@ -78,8 +80,6 @@ featuredClients:
       companyLogo: /images/uploads/cbcf.jpg
     - companyName: Even Odd
       companyLogo: /images/uploads/even-odd.png
-    - companyName: CBS
-      companyLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
     - companyName: "?"
       companyLogo: /images/uploads/ask-pepper.png
     - companyName: Coverance
