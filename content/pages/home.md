@@ -77,7 +77,7 @@ featuredClients:
     - companyName: CSM
       companyLogo: /images/uploads/csm.png
     - companyName: CBCF
-      companyLogo: /images/uploads/cbcf.jpg
+      companyLogo: /images/uploads/congressional-black-caucus-foundation-logo.png
     - companyName: Even Odd
       companyLogo: /images/uploads/even-odd.png
     - companyName: "?"
