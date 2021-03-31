@@ -111,7 +111,7 @@ featuredClients:
     - companyName: Jonas & Co.
       companyLogo: /images/uploads/screen-shot-2020-10-23-at-11.33.25-am.png
     - companyName: Jimmy John's
-      companyLogo: /images/uploads/jimmy-john-s.png
+      companyLogo: /images/uploads/jimmy-johns.png
     - companyName: MUH-TAY-ZIK HOF-FER
       companyLogo: /images/uploads/logo_horiz_black.png
     - companyName: Kaleidoscope
