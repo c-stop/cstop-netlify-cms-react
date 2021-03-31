@@ -175,6 +175,10 @@ productionCompanyLogos:
     brandLogo: /images/uploads/brooke-ludi-production.png
   - brandName: Arts and Sciences
     brandLogo: /images/uploads/arts-and-sciences.png
+  - brandName: Radical Media
+    brandLogo: /images/uploads/radicalmedia_social_image_1200x630.jpg
+  - brandName: Strike Anywhere
+    brandLogo: /images/uploads/strike-anywhere-films.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
