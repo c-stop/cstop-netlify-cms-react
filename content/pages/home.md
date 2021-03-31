@@ -93,7 +93,7 @@ featuredClients:
     - companyName: Pizza Hut
       companyLogo: /images/uploads/pizza-hut-restorante-png-logo-6.png
     - companyName: Park Pictures
-      companyLogo: /images/uploads/parkpictures-logo.jpg
+      companyLogo: /images/uploads/park-pictures.png
     - companyName: Facebook
       companyLogo: /images/uploads/facebook-logo.png
     - companyName: Illuminated Media International
