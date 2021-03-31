@@ -29,7 +29,7 @@ brandLogos:
   - brandName: FX
     brandLogo: /images/uploads/fx-logo.png
   - brandName: Saatva
-    brandLogo: /images/uploads/saatva-logo.png
+    brandLogo: /images/uploads/saatva-logo-vector.png
   - brandName: Single Care
     brandLogo: /images/uploads/singlecare_logo.jpg
   - brandName: Rocket Mortgage
