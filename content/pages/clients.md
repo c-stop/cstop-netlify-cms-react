@@ -57,7 +57,7 @@ brandLogos:
   - brandName: Coverance Insurance Solutions
     brandLogo: /images/uploads/coverance-2-color-1-1.png
   - brandName: Zenni
-    brandLogo: /images/uploads/zen_logo_aqua_on_white.jpg
+    brandLogo: /images/uploads/zenni.webp
   - brandName: CBCF
     brandLogo: /images/uploads/cbcf.jpg
   - brandName: Snapchat
