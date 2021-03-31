@@ -40,7 +40,7 @@ featuredClients:
       companyLogo: /images/uploads/ford-logo-2003.png
     - companyName: Hound
       companyLogo: /images/uploads/hound-logo.png
-    - companyLogo: /images/uploads/calvinklein-logo.png
+    - companyLogo: /images/uploads/calvin-klein.png
       companyName: Calvin Klein
     - companyLogo: /images/uploads/boyinthecastle_logo.jpeg
       companyName: Boy In The Castle
