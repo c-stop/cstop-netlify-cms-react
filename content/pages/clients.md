@@ -33,7 +33,7 @@ brandLogos:
   - brandName: Single Care
     brandLogo: /images/uploads/singlecare_logo.jpg
   - brandName: Rocket Mortgage
-    brandLogo: /images/uploads/rocket_mortgage.jpg
+    brandLogo: /images/uploads/rocketmortgage-rgb-vertical-2048px.png
   - brandName: Jimmy John's
     brandLogo: /images/uploads/jimmy-john-s.png
   - brandName: VH1
