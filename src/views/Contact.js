@@ -1,6 +1,9 @@
-// import axios from 'axios'
 import * as emailjs from 'emailjs-com'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import {
+  GoogleReCaptcha,
+  GoogleReCaptchaProvider,
+} from 'react-google-recaptcha-v3'
 import { Link } from 'react-router-dom'
 import Content from '../components/Content'
 import Cta from '../components/Cta'
@@ -13,7 +16,6 @@ export default ({ fields }) => {
     subtitle,
     featuredImage,
     email,
-    // workHours,
     applySection,
     contactCallToAction,
   } = fields
@@ -24,18 +26,15 @@ export default ({ fields }) => {
 
   const [formData, setFormData] = useState({})
 
+  const REACT_APP_RECAPTCHA = process.env.REACT_APP_RECAPTCHA
 
-
-  // useEffect(() => {
-  //   loadReCaptcha()
-  // }, [])
+  useEffect(() => {}, [])
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
-    console.log('Handle Change: ', formData)
   }
 
   const handleSubmit = (e) => {
@@ -50,7 +49,6 @@ export default ({ fields }) => {
 
   const sendEmail = () => {
     const { name, email, message } = formData
-    console.log('Sending Email', formData)
 
     const templateParams = {
       from_name: name,
@@ -65,39 +63,18 @@ export default ({ fields }) => {
         templateParams,
         'user_0Als4WUjD4qGCDjIOuF1L'
       )
-      .then((resp) => console.log(resp))
-      .catch((err) => console.log(err))
-
-    // axios
-    //   .post(
-    //     'https://us-central1-your-app-name.cloudfunctions.net/submit',
-    //     formData,
-    //     () => {
-    //       console.log('posting')
-    //     }
-    //   )
-    //   .then((res) => {
-    //     console.log(res)
-    //     if (res.data.status === 'success') {
-    //       alert('Message Sent.')
-    //       resetForm()
-    //     } else if (res.data.status === 'fail') {
-    //       alert('Message failed to send.')
-    //     }
-    //     db.collection('emails').add({
-    //       name: formData.name,
-    //       email: formData.email,
-    //       message: formData.message,
-    //     })
-    //   })
-    //   .catch((error) => {
-    //     console.log(error)
-    //   })
+      .then((resp) => {
+        if (resp.status === 200) {
+          alert('Message Sent.')
+          resetForm()
+        }
+      })
+      .catch((err) => alert('Message failed to send.', err))
   }
 
-  // const resetForm = () => {
-  //   setFormData({ name: '', email: '', message: '' })
-  // }
+  const resetForm = () => {
+    setFormData({ name: '', email: '', message: '' })
+  }
 
   return (
     <div className="Contact">
@@ -148,9 +125,8 @@ export default ({ fields }) => {
                   required
                 />
                 <label htmlFor="Email-2">Email Address</label>
-                {/* TO DO: SWITCH BACK TO EMAIL */}
                 <input
-                  type="text"
+                  type="email"
                   className="text-field cc-contact-field input"
                   maxLength="256"
                   name="email"
@@ -174,13 +150,9 @@ export default ({ fields }) => {
                   required
                 ></textarea>
 
-                {/* <ReCaptcha
-                // ref={(el) => {this.captchaDemo = el;}}
-                  sitekey={REACT_APP_RECAPTCHA}
-                  render="explicit"
-                  onChange={handleChange}
-                  // size="invisible"
-                /> */}
+                <GoogleReCaptchaProvider reCaptchaKey={REACT_APP_RECAPTCHA}>
+                  <GoogleReCaptcha />
+                </GoogleReCaptchaProvider>
 
                 <input
                   type="submit"
@@ -189,12 +161,6 @@ export default ({ fields }) => {
                   className="Button"
                 />
               </form>
-              {/* <div className="status-message cc-success-message w-form-done">
-                <div>Thank you! Your submission has been received!</div>
-              </div>
-              <div className="status-message cc-error-message w-form-fail">
-                <div>Oops! Something went wrong while submitting the form.</div>
-              </div> */}
             </div>
           </div>
 
