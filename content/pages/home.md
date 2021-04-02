@@ -24,6 +24,8 @@ featuredClients:
       companyName: 1820 Productions
     - companyName: Toyota
       companyLogo: /images/uploads/toyota-logo.png
+    - companyName: CBS
+      companyLogo: /images/uploads/cbs-logo-2011-png-0.png
     - companyName: Partizan
       companyLogo: /images/uploads/partizan-logo.svg.png
     - companyLogo: /images/uploads/beats-logo.png
@@ -38,7 +40,7 @@ featuredClients:
       companyLogo: /images/uploads/ford-logo-2003.png
     - companyName: Hound
       companyLogo: /images/uploads/hound-logo.png
-    - companyLogo: /images/uploads/calvinklein-logo.png
+    - companyLogo: /images/uploads/calvin-klein.png
       companyName: Calvin Klein
     - companyLogo: /images/uploads/boyinthecastle_logo.jpeg
       companyName: Boy In The Castle
@@ -65,21 +67,19 @@ featuredClients:
     - companyName: AT&T
       companyLogo: /images/uploads/at-t.png
     - companyName: Brook Ludi
-      companyLogo: /images/uploads/brooke-ludi-.jpg
+      companyLogo: /images/uploads/brooke-ludi-production.png
     - companyName: Audi
       companyLogo: /images/uploads/audi.png
     - companyName: Chrome
       companyLogo: /images/uploads/chrome-logo.png
     - companyName: Body Armor
-      companyLogo: /images/uploads/bodyarmor-vector-logo.png
+      companyLogo: /images/uploads/bodyarmor.png
     - companyName: CSM
       companyLogo: /images/uploads/csm.png
     - companyName: CBCF
-      companyLogo: /images/uploads/cbcf.jpg
+      companyLogo: /images/uploads/congressional-black-caucus-foundation-logo.png
     - companyName: Even Odd
       companyLogo: /images/uploads/even-odd.png
-    - companyName: CBS
-      companyLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
     - companyName: "?"
       companyLogo: /images/uploads/ask-pepper.png
     - companyName: Coverance
@@ -87,13 +87,13 @@ featuredClients:
     - companyName: Good Company
       companyLogo: /images/uploads/goodco-logo.png
     - companyName: Dick's Sporting Goods
-      companyLogo: /images/uploads/dick-s-sporting-goods.png
+      companyLogo: /images/uploads/dicks-sporting-goods-logo-png-1.webp
     - companyName: Guerilla Productions
       companyLogo: /images/uploads/guerilla-productions.png
     - companyName: Pizza Hut
       companyLogo: /images/uploads/pizza-hut-restorante-png-logo-6.png
     - companyName: Park Pictures
-      companyLogo: /images/uploads/parkpictures-logo.jpg
+      companyLogo: /images/uploads/park-pictures.png
     - companyName: Facebook
       companyLogo: /images/uploads/facebook-logo.png
     - companyName: Illuminated Media International
@@ -111,7 +111,7 @@ featuredClients:
     - companyName: Jonas & Co.
       companyLogo: /images/uploads/screen-shot-2020-10-23-at-11.33.25-am.png
     - companyName: Jimmy John's
-      companyLogo: /images/uploads/jimmy-john-s.png
+      companyLogo: /images/uploads/jimmy-johns.png
     - companyName: MUH-TAY-ZIK HOF-FER
       companyLogo: /images/uploads/logo_horiz_black.png
     - companyName: Kaleidoscope
@@ -135,7 +135,7 @@ featuredClients:
     - companyName: Prettybird
       companyLogo: /images/uploads/prettybird.png
     - companyName: Saatva
-      companyLogo: /images/uploads/saatva-logo.png
+      companyLogo: /images/uploads/saatva-logo-vector.png
     - companyName: Proof
       companyLogo: /images/uploads/proof.png
     - companyName: Single care
@@ -143,7 +143,7 @@ featuredClients:
     - companyName: Reverie
       companyLogo: /images/uploads/reverie-logo.png
     - companyName: Rocket Mortgage
-      companyLogo: /images/uploads/rocket_mortgage.jpg
+      companyLogo: /images/uploads/rocketmortgage-rgb-vertical-2048px.png
     - companyName: Snapchat
       companyLogo: /images/uploads/snapchat_png64.png
     - companyName: Samm Media
@@ -171,7 +171,7 @@ featuredClients:
     - companyName: Watch!
       companyLogo: /images/uploads/watch.png
     - companyName: ZENNI
-      companyLogo: /images/uploads/zen_logo_aqua_on_white.jpg
+      companyLogo: /images/uploads/zenni.webp
     - companyName: Arts and Sciences
       companyLogo: /images/uploads/arts-and-sciences.png
 meta:
