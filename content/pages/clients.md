@@ -4,7 +4,7 @@ brandLogos:
     brandLogo: /images/uploads/apple-logo.png
   - brandName: Beats
     brandLogo: /images/uploads/beats-logo.png
-  - brandLogo: /images/uploads/calvinklein-logo.png
+  - brandLogo: /images/uploads/calvin-klein.png
     brandName: Calvin Klein
   - brandLogo: /images/uploads/dominos-logo.png
     brandName: Dominos Pizza
@@ -12,6 +12,8 @@ brandLogos:
     brandLogo: /images/uploads/puma.png
   - brandName: NFL
     brandLogo: /images/uploads/nfl.png
+  - brandName: Amazon
+    brandLogo: /images/uploads/amazon-logo.png
   - brandName: Spotify
     brandLogo: /images/uploads/spotify-download-logo-30.png
   - brandName: Pizza Hut
@@ -27,11 +29,11 @@ brandLogos:
   - brandName: FX
     brandLogo: /images/uploads/fx-logo.png
   - brandName: Saatva
-    brandLogo: /images/uploads/saatva-logo.png
+    brandLogo: /images/uploads/saatva-logo-vector.png
   - brandName: Single Care
-    brandLogo: /images/uploads/singlecare-logo.png
+    brandLogo: /images/uploads/singlecare_logo.jpg
   - brandName: Rocket Mortgage
-    brandLogo: /images/uploads/rocket_mortgage.jpg
+    brandLogo: /images/uploads/rocketmortgage-rgb-vertical-2048px.png
   - brandName: Jimmy John's
     brandLogo: /images/uploads/jimmy-john-s.png
   - brandName: VH1
@@ -47,7 +49,7 @@ brandLogos:
   - brandName: PTX
     brandLogo: /images/uploads/ptx-logo.jpg
   - brandName: Dick's Sporting Goods
-    brandLogo: /images/uploads/dick-s-sporting-goods.png
+    brandLogo: /images/uploads/dicks-sporting-goods-logo-png-1.webp
   - brandName: Facebook
     brandLogo: /images/uploads/facebook-logo.png
   - brandName: Toyota
@@ -55,7 +57,7 @@ brandLogos:
   - brandName: Coverance Insurance Solutions
     brandLogo: /images/uploads/coverance-2-color-1-1.png
   - brandName: Zenni
-    brandLogo: /images/uploads/zen_logo_aqua_on_white.jpg
+    brandLogo: /images/uploads/zenni.webp
   - brandName: CBCF
     brandLogo: /images/uploads/cbcf.jpg
   - brandName: Snapchat
@@ -65,7 +67,7 @@ brandLogos:
   - brandName: Audi
     brandLogo: /images/uploads/audi.png
   - brandName: CBS
-    brandLogo: /images/uploads/cbs_hero_midnight_logo_092220.jpg
+    brandLogo: /images/uploads/cbs-logo-2011-png-0.png
   - brandName: VW
     brandLogo: /images/uploads/volkswagen-logo-2019-1500x1500.png
   - brandName: NBPA
@@ -74,12 +76,24 @@ brandLogos:
     brandLogo: /images/uploads/tumi.png
   - brandName: Evereve
     brandLogo: /images/uploads/evereve.png
+  - brandName: Ugg
+    brandLogo: /images/uploads/ugg.png
+  - brandName: Ryobi
+    brandLogo: /images/uploads/ryobi.png
+  - brandName: RuPaul's Drag Race
+    brandLogo: /images/uploads/rupaul-s-drag-race.png
+  - brandName: Reebok
+    brandLogo: /images/uploads/reebok.png
+  - brandName: Peloton
+    brandLogo: /images/uploads/peloton-logo-1.png
+  - brandName: Michelob
+    brandLogo: /images/uploads/michelob.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
   - brandLogo: /images/uploads/boyinthecastle_logo.jpeg
     brandName: Boy In The Castle
-  - brandLogo: /images/uploads/parkpictures-logo.jpg
+  - brandLogo: /images/uploads/park-pictures.png
     brandName: Park Pictures
   - brandName: Partizan
     brandLogo: /images/uploads/partizan-logo.svg.png
@@ -157,10 +171,14 @@ productionCompanyLogos:
     brandLogo: /images/uploads/watch.png
   - brandName: Black Hand Cinema
     brandLogo: /images/uploads/black-hand-cinema.png
-  - brandName: Brook Ludi
-    brandLogo: /images/uploads/brooke-ludi-.jpg
+  - brandName: Brook Ludi + Production
+    brandLogo: /images/uploads/brooke-ludi-production.png
   - brandName: Arts and Sciences
     brandLogo: /images/uploads/arts-and-sciences.png
+  - brandName: Radical Media
+    brandLogo: /images/uploads/radicalmedia_social_image_1200x630.jpg
+  - brandName: Strike Anywhere
+    brandLogo: /images/uploads/strike-anywhere-films.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
@@ -172,6 +190,16 @@ industryLogos:
     brandLogo: /images/uploads/filmla_logo_large.png
   - brandName: AICP
     brandLogo: /images/uploads/aicp.png
+  - brandName: FEMA
+    brandLogo: /images/uploads/fema.png
+  - brandName: NAWBO
+    brandLogo: /images/uploads/nawbo_la_logo.jpg
+  - brandName: NSC
+    brandLogo: /images/uploads/nsc.jpg
+  - brandName: Project Management Institute
+    brandLogo: /images/uploads/project-management-institute.png
+  - brandName: Safe Sets International
+    brandLogo: /images/uploads/safe-sets-international.png
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
