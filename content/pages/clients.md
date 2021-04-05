@@ -88,6 +88,8 @@ brandLogos:
     brandLogo: /images/uploads/peloton-logo-1.png
   - brandName: Michelob
     brandLogo: /images/uploads/michelob.png
+  - brandName: Motortrend
+    brandLogo: /images/uploads/motor-trend.png
 productionCompanyLogos:
   - brandLogo: /images/uploads/1820-logo.png
     brandName: 1820 Productions
@@ -179,6 +181,10 @@ productionCompanyLogos:
     brandLogo: /images/uploads/radicalmedia_social_image_1200x630.jpg
   - brandName: Strike Anywhere
     brandLogo: /images/uploads/strike-anywhere-films.png
+  - brandName: Solomons Productions
+    brandLogo: /images/uploads/solomons-productions.png
+  - brandName: Agency - Ignition
+    brandLogo: /images/uploads/ignition-agency.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
