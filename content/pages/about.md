@@ -42,8 +42,30 @@ clientsSection:
       companyName: Congressional Black Caucus Foundation
     - image: /images/uploads/coverage-insurance-inc-logo.png
       companyName: Coverage Insurance Solutions
-    - image: /images/uploads/parkpictures-logo.jpg
+    - image: /images/uploads/park-pictures.png
       companyName: Park Pictures
+    - companyName: Solomons Productions
+      image: /images/uploads/solomons-productions.png
+    - companyName: FX
+      image: /images/uploads/fx-logo.png
+    - companyName: Wallmart
+      image: /images/uploads/walmart_logo_transparent_png.png
+    - companyName: Spotify
+      image: /images/uploads/spotify-download-logo-30.png
+    - companyName: Amazon
+      image: /images/uploads/amazon-logo.png
+    - companyName: Partizan
+      image: /images/uploads/partizan-logo.svg.png
+    - companyName: Freenjoy
+      image: /images/uploads/freenjoy.png
+    - companyName: MJZ
+      image: /images/uploads/mjz_bzgm9bz.png
+    - companyName: Prettybird
+      image: /images/uploads/prettybird.png
+    - companyName: VW
+      image: /images/uploads/volkswagen-logo-2019-1500x1500.png
+    - companyName: Even Odd
+      image: /images/uploads/even-odd.png
 section2Container:
   section2Title: Compliance Done Right
   section2: We are trailblazers. Our action plans, techniques, and methodologies
