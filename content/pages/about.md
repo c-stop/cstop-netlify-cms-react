@@ -179,10 +179,10 @@ teamMemberSection:
       employeePicture: /images/uploads/commercial-headshot.jpg
       employeeQuote: Patrick takes pride in creating nimble plans with certainty in
         this time of reimagining. He has brought 46 events from concept to
-        completion, ranging widely from outdoor music festivals to keynote
-        speaking engagements, has managed over 120 experiential marketing
-        activations in New York, Chicago, and Los Angeles and loves to hunt the
-        devil in the details in this wild wonderful world.
+        completion, ranging from outdoor music festivals to keynote speaking
+        engagements, managed over 120 experiential marketing activations in New
+        York, Chicago, and Los Angeles and loves to hunt the devil in the
+        details in this wild wonderful world.
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
