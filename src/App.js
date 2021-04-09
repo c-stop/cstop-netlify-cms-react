@@ -12,16 +12,14 @@ import QuotePage from './components/Quote'
 import ScrollToTop from './components/ScrollToTop'
 import ServiceWorkerNotifications from './components/ServiceWorkerNotifications'
 import data from './data.json'
-import { documentHasTerm, getCollectionTerms } from './util/collection'
-import { slugify } from './util/url'
+// import { getCollectionTerms } from './util/collection'
 import About from './views/About'
-import Blog from './views/Blog'
 import Clients from './views/Clients'
 import Contact from './views/Contact'
 import Home from './views/Home'
 import NoMatch from './views/NoMatch'
 import Services from './views/Services'
-import SinglePost from './views/SinglePost'
+// import SinglePost from './views/SinglePost'
 AOS.init()
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
@@ -40,7 +38,7 @@ function App() {
   const getDocument = (collection, name) =>
     data[collection] && data[collection].filter((page) => page.name === name)[0]
 
-  const getDocuments = (collection) => data[collection] || []
+  // const getDocuments = (collection) => data[collection] || []
 
   const globalSettings = getDocument('settings', 'global')
 
@@ -52,13 +50,13 @@ function App() {
     headerScripts,
   } = globalSettings
 
-  const posts = getDocuments('posts').filter((post) => post.status !== 'Draft')
+  // const posts = getDocuments('posts').filter((post) => post.status !== 'Draft')
 
-  const categoriesFromPosts = getCollectionTerms(posts, 'categories')
+  // const categoriesFromPosts = getCollectionTerms(posts, 'categories')
 
-  const postCategories = getDocuments('postCategories').filter(
-    (category) => categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
-  )
+  // const postCategories = getDocuments('postCategories').filter(
+  //   (category) => categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
+  // )
 
   document.getElementById('root').style.height = '100vh'
 
