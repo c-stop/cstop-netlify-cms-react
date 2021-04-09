@@ -204,8 +204,6 @@ industryLogos:
     brandLogo: /images/uploads/nsc.jpg
   - brandName: Project Management Institute
     brandLogo: /images/uploads/project-management-institute.png
-  - brandName: Safe Sets International
-    brandLogo: /images/uploads/safe-sets-international.png
 healthLogos:
   - brandName: CDC
     brandLogo: /images/uploads/us-cdc-logo.png
