@@ -138,16 +138,16 @@ function App() {
 
           <Route path="/apply/" exact component={JobPage} />
 
-          <RouteWithMeta
+          {/* <RouteWithMeta
             path="/blog/"
             exact
             component={Blog}
             fields={getDocument('pages', 'blog')}
             posts={posts}
             postCategories={postCategories}
-          />
+          /> */}
 
-          {posts.map((post, index) => {
+          {/* {posts.map((post, index) => {
             const path = slugify(`/blog/${post.title}`)
             const nextPost = posts[index - 1]
             const prevPost = posts[index + 1]
@@ -162,9 +162,9 @@ function App() {
                 prevPostURL={prevPost && slugify(`/blog/${prevPost.title}/`)}
               />
             )
-          })}
+          })} */}
 
-          {postCategories.map((postCategory) => {
+          {/* {postCategories.map((postCategory) => {
             const slug = slugify(postCategory.title)
             const path = slugify(`/blog/category/${slug}`)
             const categoryPosts = posts.filter((post) =>
@@ -181,7 +181,7 @@ function App() {
                 postCategories={postCategories}
               />
             )
-          })}
+          })} */}
           <Route render={() => <NoMatch siteUrl={siteUrl} />} />
         </Switch>
         <Footer globalSettings={globalSettings} />
