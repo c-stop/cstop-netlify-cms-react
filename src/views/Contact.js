@@ -150,9 +150,9 @@ export default ({ fields }) => {
                   required
                 ></textarea>
 
-                <GoogleReCaptchaProvider reCaptchaKey={REACT_APP_RECAPTCHA}>
+                {/* <GoogleReCaptchaProvider reCaptchaKey={REACT_APP_RECAPTCHA}>
                   <GoogleReCaptcha />
-                </GoogleReCaptchaProvider>
+                </GoogleReCaptchaProvider> */}
 
                 <input
                   type="submit"

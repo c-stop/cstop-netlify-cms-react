@@ -46,7 +46,7 @@ export default ({ fields }) => {
 
   return (
     <main className="Home" >
-      <video playsinline muted loop autoPlay id="myVideo">
+      <video playsInline muted loop autoPlay id="myVideo">
         <source src="/images/Film-set.mp4" type="video/mp4" />
       </video>
 
@@ -78,7 +78,7 @@ export default ({ fields }) => {
           >
             <div className="cc-bigger-white-light">
               <h5><Content source={subtitle} className="intro-subtitle"/></h5>
-              <p ><Content source={paragraph} className="intro-paragraph"/></p>
+              <Content source={paragraph} className="intro-paragraph"/>
               <br />
             </div>
             <Link to={buttonLinkTo} className="Button inline-block">

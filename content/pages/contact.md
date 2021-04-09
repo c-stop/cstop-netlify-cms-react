@@ -14,4 +14,3 @@ applySection:
     diseases, including COVID-19, takes the best of the best and we want you!
   applyButton: Apply Now
 ---
-# none
