@@ -202,8 +202,7 @@ teamMemberSection:
       employeeQuote: Patrick takes pride in creating nimble plans with certainty in
         this time of reimagining. He has brought 46 events from concept to
         completion, managed over 120 experiential marketing activations across
-        the country and loves to hunt the devil in the details in this wild
-        wonderful world.
+        the country and loves to hunt the devil in the details.
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
