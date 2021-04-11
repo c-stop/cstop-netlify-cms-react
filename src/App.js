@@ -19,6 +19,7 @@ import Contact from './views/Contact'
 import Home from './views/Home'
 import NoMatch from './views/NoMatch'
 import Services from './views/Services'
+import Videos from "./views/Videos"
 // import SinglePost from './views/SinglePost'
 AOS.init()
 
@@ -115,6 +116,12 @@ function App() {
             fields={getDocument('pages', 'clients')}
           />
           <RouteWithMeta
+            path="/about/videos"
+            exact
+            component={Videos}
+            fields={getDocument('pages', 'videos')}
+          />
+          <RouteWithMeta
             path="/contact/"
             exact
             component={Contact}
@@ -125,7 +132,7 @@ function App() {
           <Route path="/quote/" exact component={QuotePage} />
 
           <Route path="/forms/" component={FormsPage} />
-	  
+
           {/* <Route
             path={`/forms/:id`}
             exact
