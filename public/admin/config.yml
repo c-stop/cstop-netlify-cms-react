@@ -259,7 +259,29 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Company Name, name: brandName, widget: string}
               - {label: Company Logo, name: brandLogo, widget: image}
 
+      - file: "content/pages/videos.md"
+        label: "Clients Videos Page"
+        name: "clients-videos"
+        minimize_collapsed: true
+        widget: list
+        fields:
+          - label: "video"
+            fields:
+            - {label: Client Name, name: clientName, widget: string}
+            - {label: Video Thumbnail, name: clientVideoThumbnail, widget: string, optional: false}
+            - {label: Video Url, name: clientVideoURL, widget: string}
+          - label: "Meta"
+            collapsed: true
+            required: false
+            name: "meta"
+            widget: "object"
+            fields:
+              - {label: Title, name: title, widget: string, required: false}
+              - {label: Description, name: description, widget: text, required: false, pattern: [".{,300}", "Must not exceed 300 characters"]}
+              - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
+              - {label: Noindex, name: noindex, widget: boolean, required: false}
 
+              
       - file: "content/pages/home.md"
         label: "Home Page"
         name: "home-page"
