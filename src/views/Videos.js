@@ -1,12 +1,7 @@
-import React from "react";
+import React from 'react'
 
+export default ({ fields }) => {
+  console.log(fields)
 
-export default function Videos(){
-
-
-    return (
-        <div>
-            Test
-        </div>
-    )
+  return <div>Test</div>
 }
