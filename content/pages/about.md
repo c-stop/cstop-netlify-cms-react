@@ -184,10 +184,6 @@ teamMemberSection:
       employeeTitle: Co-Founder, Field Operations, Medic, CCO
       employeeQuote: Co-Founder, Field Operations, Medic, CCO
       employeePicture: /images/uploads/josh-h.jpeg
-    - name: Lori May
-      employeeTitle: Medic, CCO, HSS
-      employeeQuote: Medic, CCO, HSS
-      employeePicture: /images/uploads/img_0174.jpg
     - name: Ariel Lazarus
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
@@ -235,6 +231,10 @@ teamMemberSection:
       employeeTitle: Field Testing Manager, CCO
       employeeQuote: Field Testing Manager, CCO
       employeePicture: /images/uploads/michele-hill.jpeg
+    - name: Lori May
+      employeeTitle: Medic, CCO, HSS
+      employeeQuote: Medic, CCO, HSS
+      employeePicture: /images/uploads/img_0174.jpg
     - name: Mark Erman
       employeeTitle: Medic, CCO
       employeePicture: /images/uploads/mark-erman.jpeg
