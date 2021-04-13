@@ -265,9 +265,9 @@ collections: # A list of collections the CMS should be able to edit
         minimize_collapsed: true
         widget: object
         fields:
-          - label: video
+          - label: "VideoList"
             widget: list
-            name: video
+            name: videoList
             fields:
               - {label: Client Name, name: clientName, widget: string}
               - {label: Video Thumbnail, name: clientVideoThumbnail, widget: string, optional: true}
