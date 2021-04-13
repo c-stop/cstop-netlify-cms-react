@@ -270,7 +270,7 @@ collections: # A list of collections the CMS should be able to edit
             name: videoList
             fields:
               - {label: Client Name, name: clientName, widget: string}
-              - {label: Video Thumbnail, name: clientVideoThumbnail, widget: string, optional: true}
+              - {label: Video Thumbnail, name: clientVideoThumbnail, widget: image, optional: true}
               - {label: Video Url, name: clientVideoURL, widget: string}
 
       - file: "content/pages/home.md"

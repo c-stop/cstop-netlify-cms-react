@@ -2,8 +2,8 @@
 videoList:
   - clientVideoURL: https://youtu.be/5I69DCxYbBg
     clientName: Test video
-    clientVideoThumbnail: xxx
+    clientVideoThumbnail: /images/uploads/artboard-1.png
   - clientVideoURL: https://youtu.be/5I69DCxYbBg
     clientName: Test video 2
-    clientVideoThumbnail: aopifsjapgj
+    clientVideoThumbnail: /images/uploads/artboard-1.png
 ---
