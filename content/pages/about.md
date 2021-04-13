@@ -187,7 +187,10 @@ teamMemberSection:
     - name: Elle West
       employeeTitle: Project Manager, CCO
       employeePicture: /images/uploads/dfeb008c-072d-483c-b020-39c486828a7f.jpg
-      employeeQuote: Project Manager, CCO
+      employeeQuote: With a background in the talent world, Elle is known for her
+        professionalism amongst top clientele for print, editorial, commercial,
+        and TV.  Medically trained and skilled in project management, Elle leads
+        teams with efficiency and tact.
     - name: Patrick Clements
       employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
@@ -197,7 +200,10 @@ teamMemberSection:
         the country and loves to hunt the devil in the details.
     - name: Ariel Lazarus
       employeeTitle: Project Manager, CCO
-      employeeQuote: Project Manager, CCO
+      employeeQuote: Ariel boasts 13 years of experience on both sides of the camera
+        and holds a unique understanding of the production process.  She also
+        holds a master's degree in Industrial Engineering, focused on system
+        processes and project management.
       employeePicture: /images/uploads/ariel-l.jpeg
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
