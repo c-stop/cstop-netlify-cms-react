@@ -185,6 +185,10 @@ productionCompanyLogos:
     brandLogo: /images/uploads/solomons-productions.png
   - brandName: Agency - Ignition
     brandLogo: /images/uploads/ignition-agency.png
+  - brandName: Artifact Studios
+    brandLogo: /images/uploads/artifact-nonfiction.jpeg
+  - brandName: London Alley
+    brandLogo: /images/uploads/london-alley.png
 industryLogos:
   - brandName: IATSE Local 80
     brandLogo: /images/uploads/local-80.png
