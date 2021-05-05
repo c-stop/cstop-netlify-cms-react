@@ -56,6 +56,12 @@ export default function Nav({ handlePopupOpen }) {
                 >
                   Clients
                 </Link>
+                <Link
+                  to="/about/videos"
+                  className="subnav-item navigation-item"
+                >
+                  Videos
+                </Link>
               </div>
             </div>
 
@@ -126,6 +132,13 @@ export default function Nav({ handlePopupOpen }) {
               onClick={() => toggleMenu()}
             >
               Clients
+            </Link>
+            <Link
+              to="/about/videos"
+              className="subnav-item navigation-item"
+              onClick={() => toggleMenu()}
+            >
+              Videos
             </Link>
           </div>
         </div>

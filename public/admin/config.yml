@@ -259,6 +259,19 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Company Name, name: brandName, widget: string}
               - {label: Company Logo, name: brandLogo, widget: image}
 
+      - file: "content/pages/videos.md"
+        label: "Clients Videos Page"
+        name: clients-videos
+        minimize_collapsed: true
+        widget: object
+        fields:
+          - label: "VideoList"
+            widget: list
+            name: videoList
+            fields:
+              - {label: Client Name, name: clientName, widget: string}
+              - {label: Video Thumbnail, name: clientVideoThumbnail, widget: image, optional: true}
+              - {label: Video Url, name: clientVideoURL, widget: string}
 
       - file: "content/pages/home.md"
         label: "Home Page"

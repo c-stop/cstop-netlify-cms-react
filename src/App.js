@@ -3,6 +3,7 @@ import 'aos/dist/aos.css'
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import ClientVideoPage from './components/ClientVideoPage'
 import Footer from './components/Footer'
 import FormsPage from './components/FormRouter'
 import JobPage from './components/JobPage'
@@ -12,16 +13,17 @@ import QuotePage from './components/Quote'
 import ScrollToTop from './components/ScrollToTop'
 import ServiceWorkerNotifications from './components/ServiceWorkerNotifications'
 import data from './data.json'
-import { documentHasTerm, getCollectionTerms } from './util/collection'
-import { slugify } from './util/url'
+// import { getCollectionTerms } from './util/collection'
 import About from './views/About'
-import Blog from './views/Blog'
 import Clients from './views/Clients'
 import Contact from './views/Contact'
 import Home from './views/Home'
 import NoMatch from './views/NoMatch'
 import Services from './views/Services'
-import SinglePost from './views/SinglePost'
+import Videos from './views/Videos'
+// import SinglePost from './views/SinglePost'
+import { slugify } from './util/url'
+
 AOS.init()
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
@@ -52,13 +54,18 @@ function App() {
     headerScripts,
   } = globalSettings
 
-  const posts = getDocuments('posts').filter((post) => post.status !== 'Draft')
+  // const posts = getDocuments('posts').filter((post) => post.status !== 'Draft')
+  // const videos = getDocuments('pages').filter((post) => post.status !== 'Draft')
+  const videos = getDocument('pages', 'videos')
+  const videoList = videos.videoList ? videos.videoList : ['']
 
-  const categoriesFromPosts = getCollectionTerms(posts, 'categories')
+  // console.log(videoList)
 
-  const postCategories = getDocuments('postCategories').filter(
-    (category) => categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
-  )
+  // const categoriesFromPosts = getCollectionTerms(posts, 'categories')
+
+  // const postCategories = getDocuments('postCategories').filter(
+  //   (category) => categoriesFromPosts.indexOf(category.name.toLowerCase()) >= 0
+  // )
 
   document.getElementById('root').style.height = '100vh'
 
@@ -104,18 +111,58 @@ function App() {
             component={Services}
             fields={getDocument('pages', 'services')}
           />
-          <RouteWithMeta
-            path="/about/"
+
+          {/* <Route
+            path="/about/videos/:id"
             exact
-            component={About}
-            fields={getDocument('pages', 'about')}
+            render={(props) => {
+              return <ClientVideoPage {...props} />
+            }}
+          /> */}
+
+          {videoList.map((video, index) => {
+            const path = slugify(`/about/videos/${index}`)
+            console.log('Path', path)
+            const nextVideo = video[index - 1]
+            const prevVideo = video[index + 1]
+            return (
+              <RouteWithMeta
+                key={path}
+                path={path}
+                exact
+                component={ClientVideoPage}
+                fields={video}
+                nextVideoURL={
+                  nextVideo && slugify(`/videos/${nextVideo.title}/`)
+                }
+                prevVideoURL={
+                  prevVideo && slugify(`/videos/${prevVideo.title}/`)
+                }
+              />
+            )
+          })}
+
+          <RouteWithMeta
+            path="/about/videos"
+            exact
+            component={Videos}
+            fields={getDocument('pages', 'videos')}
           />
+
           <RouteWithMeta
             path="/about/clients"
             exact
             component={Clients}
             fields={getDocument('pages', 'clients')}
           />
+
+          <RouteWithMeta
+            path="/about/"
+            exact
+            component={About}
+            fields={getDocument('pages', 'about')}
+          />
+
           <RouteWithMeta
             path="/contact/"
             exact
@@ -127,7 +174,7 @@ function App() {
           <Route path="/quote/" exact component={QuotePage} />
 
           <Route path="/forms/" component={FormsPage} />
-	  
+
           {/* <Route
             path={`/forms/:id`}
             exact
@@ -138,16 +185,16 @@ function App() {
 
           <Route path="/apply/" exact component={JobPage} />
 
-          <RouteWithMeta
+          {/* <RouteWithMeta
             path="/blog/"
             exact
             component={Blog}
             fields={getDocument('pages', 'blog')}
             posts={posts}
             postCategories={postCategories}
-          />
+          /> */}
 
-          {posts.map((post, index) => {
+          {/* {posts.map((post, index) => {
             const path = slugify(`/blog/${post.title}`)
             const nextPost = posts[index - 1]
             const prevPost = posts[index + 1]
@@ -162,9 +209,9 @@ function App() {
                 prevPostURL={prevPost && slugify(`/blog/${prevPost.title}/`)}
               />
             )
-          })}
+          })} */}
 
-          {postCategories.map((postCategory) => {
+          {/* {postCategories.map((postCategory) => {
             const slug = slugify(postCategory.title)
             const path = slugify(`/blog/category/${slug}`)
             const categoryPosts = posts.filter((post) =>
@@ -181,7 +228,7 @@ function App() {
                 postCategories={postCategories}
               />
             )
-          })}
+          })} */}
           <Route render={() => <NoMatch siteUrl={siteUrl} />} />
         </Switch>
         <Footer globalSettings={globalSettings} />

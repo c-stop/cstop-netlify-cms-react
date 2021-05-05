@@ -1,9 +1,9 @@
 import * as emailjs from 'emailjs-com'
 import React, { useEffect, useState } from 'react'
-import {
-  GoogleReCaptcha,
-  GoogleReCaptchaProvider,
-} from 'react-google-recaptcha-v3'
+// import {
+//   GoogleReCaptcha,
+//   GoogleReCaptchaProvider,
+// } from 'react-google-recaptcha-v3'
 import { Link } from 'react-router-dom'
 import Content from '../components/Content'
 import Cta from '../components/Cta'
@@ -26,7 +26,7 @@ export default ({ fields }) => {
 
   const [formData, setFormData] = useState({})
 
-  const REACT_APP_RECAPTCHA = process.env.REACT_APP_RECAPTCHA
+  // const REACT_APP_RECAPTCHA = process.env.REACT_APP_RECAPTCHA
 
   useEffect(() => {}, [])
 
@@ -150,9 +150,9 @@ export default ({ fields }) => {
                   required
                 ></textarea>
 
-                <GoogleReCaptchaProvider reCaptchaKey={REACT_APP_RECAPTCHA}>
+                {/* <GoogleReCaptchaProvider reCaptchaKey={REACT_APP_RECAPTCHA}>
                   <GoogleReCaptcha />
-                </GoogleReCaptchaProvider>
+                </GoogleReCaptchaProvider> */}
 
                 <input
                   type="submit"

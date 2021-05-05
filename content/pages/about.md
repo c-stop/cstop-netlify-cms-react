@@ -42,8 +42,30 @@ clientsSection:
       companyName: Congressional Black Caucus Foundation
     - image: /images/uploads/coverage-insurance-inc-logo.png
       companyName: Coverage Insurance Solutions
-    - image: /images/uploads/parkpictures-logo.jpg
+    - image: /images/uploads/park-pictures.png
       companyName: Park Pictures
+    - companyName: Solomons Productions
+      image: /images/uploads/solomons-productions.png
+    - companyName: FX
+      image: /images/uploads/fx-logo.png
+    - companyName: Wallmart
+      image: /images/uploads/walmart_logo_transparent_png.png
+    - companyName: Spotify
+      image: /images/uploads/spotify-download-logo-30.png
+    - companyName: Amazon
+      image: /images/uploads/amazon-logo.png
+    - companyName: Partizan
+      image: /images/uploads/partizan-logo.svg.png
+    - companyName: Freenjoy
+      image: /images/uploads/freenjoy.png
+    - companyName: MJZ
+      image: /images/uploads/mjz_bzgm9bz.png
+    - companyName: Prettybird
+      image: /images/uploads/prettybird.png
+    - companyName: VW
+      image: /images/uploads/volkswagen-logo-2019-1500x1500.png
+    - companyName: Even Odd
+      image: /images/uploads/even-odd.png
 section2Container:
   section2Title: Compliance Done Right
   section2: We are trailblazers. Our action plans, techniques, and methodologies
@@ -162,22 +184,27 @@ teamMemberSection:
       employeeTitle: Co-Founder, Field Operations, Medic, CCO
       employeeQuote: Co-Founder, Field Operations, Medic, CCO
       employeePicture: /images/uploads/josh-h.jpeg
-    - name: Lori May
-      employeeTitle: Medic, CCO, HSS
-      employeeQuote: Medic, CCO, HSS
-      employeePicture: /images/uploads/img_0174.jpg
-    - name: Ariel Lazarus
-      employeeTitle: Project Manager, CCO
-      employeeQuote: Project Manager, CCO
-      employeePicture: /images/uploads/ariel-l.jpeg
     - name: Elle West
       employeeTitle: Project Manager, CCO
       employeePicture: /images/uploads/dfeb008c-072d-483c-b020-39c486828a7f.jpg
-      employeeQuote: Project Manager, CCO
+      employeeQuote: With a background in the talent world, Elle is known for her
+        professionalism amongst top clientele for print, editorial, commercial,
+        and TV.  Medically trained and skilled in project management, Elle leads
+        teams with efficiency and tact.
     - name: Patrick Clements
       employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
-      employeeQuote: Executive Assistant, CCO
+      employeeQuote: Patrick takes pride in creating nimble plans with certainty in
+        this time of reimagining. He has brought 46 events from concept to
+        completion, managed over 120 experiential marketing activations across
+        the country and loves to hunt the devil in the details.
+    - name: Ariel Lazarus
+      employeeTitle: Project Manager, CCO
+      employeeQuote: Ariel boasts 13 years of experience on both sides of the camera
+        and holds a unique understanding of the production process.  She also
+        holds a master's degree in Industrial Engineering, focused on system
+        processes and project management.
+      employeePicture: /images/uploads/ariel-l.jpeg
     - name: Josh Saathoff
       employeeTitle: Project Manager, CCO
       employeeQuote: Project Manager, CCO
@@ -210,6 +237,10 @@ teamMemberSection:
       employeeTitle: Field Testing Manager, CCO
       employeeQuote: Field Testing Manager, CCO
       employeePicture: /images/uploads/michele-hill.jpeg
+    - name: Lori May
+      employeeTitle: Medic, CCO, HSS
+      employeeQuote: Medic, CCO, HSS
+      employeePicture: /images/uploads/img_0174.jpg
     - name: Mark Erman
       employeeTitle: Medic, CCO
       employeePicture: /images/uploads/mark-erman.jpeg
