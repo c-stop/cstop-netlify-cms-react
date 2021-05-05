@@ -1,9 +1,9 @@
 ---
 videoList:
-  - clientVideoURL: https://youtu.be/5I69DCxYbBg
+  - clientVideoURL: https://www.youtube.com/watch?v=bn9F19Hi1Lk
     clientName: Test video
     clientVideoThumbnail: /images/uploads/artboard-1.png
-  - clientVideoURL: https://youtu.be/5I69DCxYbBg
+  - clientVideoURL: https://www.youtube.com/watch?v=1ZYbU82GVz4
     clientName: Test video 2
     clientVideoThumbnail: /images/uploads/artboard-1.png
   - clientName: oihasfpoihafivhspfcjvpaojpiahowivakjndnacawv

@@ -4,16 +4,24 @@ import React from 'react'
 import ClientVideoThumbnail from '../components/ClientVideoThumbnail'
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
+  root:{
+    margin:"20px auto 50px",
+    minHeight: "80vh",
+    
   },
-  icon: {
-    color: 'rgba(255, 255, 255, 0.54)',
-  },
+  gridList:{
+    marginTop:"30px"
+  }
+  // root: {
+  //   display: 'flex',
+  //   flexWrap: 'wrap',
+  //   justifyContent: 'space-around',
+  //   overflow: 'hidden',
+  //   backgroundColor: theme.palette.background.paper,
+  // },
+  // icon: {
+  //   color: 'rgba(255, 255, 255, 0.54)',
+  // },
 }))
 
 export default ({ fields }) => {
@@ -22,8 +30,8 @@ export default ({ fields }) => {
 
   return (
     <div className={classes.root}>
-      <Container maxWidth="lg">
-        <GridList cellHeight={200} spacing={40} className={classes.gridList}>
+      <Container  >
+        <Grid container spacing={4} className={classes.gridList} xs={12} alignItems="center" >
           {videoList.map((videoInfo, index) => {
             return (
               <ClientVideoThumbnail
@@ -35,7 +43,7 @@ export default ({ fields }) => {
               />
             )
           })}
-        </GridList>
+        </Grid>
       </Container>
     </div>
   )
