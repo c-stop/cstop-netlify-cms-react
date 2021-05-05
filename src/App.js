@@ -3,6 +3,7 @@ import 'aos/dist/aos.css'
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import ClientVideoPage from './components/ClientVideoPage'
 import Footer from './components/Footer'
 import FormsPage from './components/FormRouter'
 import JobPage from './components/JobPage'
@@ -19,7 +20,10 @@ import Contact from './views/Contact'
 import Home from './views/Home'
 import NoMatch from './views/NoMatch'
 import Services from './views/Services'
+import Videos from './views/Videos'
 // import SinglePost from './views/SinglePost'
+import { slugify } from './util/url'
+
 AOS.init()
 
 const RouteWithMeta = ({ component: Component, ...props }) => (
@@ -38,7 +42,7 @@ function App() {
   const getDocument = (collection, name) =>
     data[collection] && data[collection].filter((page) => page.name === name)[0]
 
-  // const getDocuments = (collection) => data[collection] || []
+  const getDocuments = (collection) => data[collection] || []
 
   const globalSettings = getDocument('settings', 'global')
 
@@ -51,6 +55,11 @@ function App() {
   } = globalSettings
 
   // const posts = getDocuments('posts').filter((post) => post.status !== 'Draft')
+  // const videos = getDocuments('pages').filter((post) => post.status !== 'Draft')
+  const videos = getDocument('pages', 'videos')
+  const videoList = videos.videoList ? videos.videoList : ['']
+
+  // console.log(videoList)
 
   // const categoriesFromPosts = getCollectionTerms(posts, 'categories')
 
@@ -102,18 +111,58 @@ function App() {
             component={Services}
             fields={getDocument('pages', 'services')}
           />
-          <RouteWithMeta
-            path="/about/"
+
+          {/* <Route
+            path="/about/videos/:id"
             exact
-            component={About}
-            fields={getDocument('pages', 'about')}
+            render={(props) => {
+              return <ClientVideoPage {...props} />
+            }}
+          /> */}
+
+          {videoList.map((video, index) => {
+            const path = slugify(`/about/videos/${index}`)
+            console.log('Path', path)
+            const nextVideo = video[index - 1]
+            const prevVideo = video[index + 1]
+            return (
+              <RouteWithMeta
+                key={path}
+                path={path}
+                exact
+                component={ClientVideoPage}
+                fields={video}
+                nextVideoURL={
+                  nextVideo && slugify(`/videos/${nextVideo.title}/`)
+                }
+                prevVideoURL={
+                  prevVideo && slugify(`/videos/${prevVideo.title}/`)
+                }
+              />
+            )
+          })}
+
+          <RouteWithMeta
+            path="/about/videos"
+            exact
+            component={Videos}
+            fields={getDocument('pages', 'videos')}
           />
+
           <RouteWithMeta
             path="/about/clients"
             exact
             component={Clients}
             fields={getDocument('pages', 'clients')}
           />
+
+          <RouteWithMeta
+            path="/about/"
+            exact
+            component={About}
+            fields={getDocument('pages', 'about')}
+          />
+
           <RouteWithMeta
             path="/contact/"
             exact
@@ -125,7 +174,7 @@ function App() {
           <Route path="/quote/" exact component={QuotePage} />
 
           <Route path="/forms/" component={FormsPage} />
-	  
+
           {/* <Route
             path={`/forms/:id`}
             exact
