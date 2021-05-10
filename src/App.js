@@ -42,7 +42,7 @@ function App() {
   const getDocument = (collection, name) =>
     data[collection] && data[collection].filter((page) => page.name === name)[0]
 
-  const getDocuments = (collection) => data[collection] || []
+  // const getDocuments = (collection) => data[collection] || []
 
   const globalSettings = getDocument('settings', 'global')
 

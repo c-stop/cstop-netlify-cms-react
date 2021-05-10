@@ -1,22 +1,14 @@
-import {
-  Card,
-  CardHeader,
-  Grid,
-  GridListTile,
-  GridListTileBar,
-  makeStyles,
-} from '@material-ui/core'
-import { min } from 'lodash'
+import { Card, CardHeader, Grid, makeStyles } from '@material-ui/core'
 import React from 'react'
 import { Link, Route, useRouteMatch } from 'react-router-dom'
 import ClientVideoPage from './ClientVideoPage'
 import './ClientVideoThumbnail.sass'
 
 const useStyles = makeStyles((theme) => ({
-  root:{ 
+  root: {
     // border:"1px solid blue",
-    width:"100%",
-    margin: "0 auto",
+    width: '100%',
+    margin: '0 auto',
   },
   videoCard: {
     // width: '360px',
@@ -33,13 +25,20 @@ const useStyles = makeStyles((theme) => ({
 
 export default (props) => {
   const classes = useStyles()
-  const { clientName, videoThumbnail, videoURL, id } = props
+  const { clientName, videoThumbnail, id } = props
   const { url, path } = useRouteMatch()
   console.log(props)
 
   return (
-    <Grid item xs={12} sm={6} md={4} alignContent="center" className={classes.root}>
-      <Link to={`${url}/${id}`} style={{border:"1px solid red"}}>
+    <Grid
+      item
+      xs={12}
+      sm={6}
+      md={4}
+      alignContent="center"
+      className={classes.root}
+    >
+      <Link to={`${url}/${id}`} >
         <Card
           style={{
             backgroundImage: `url(${videoThumbnail})`,

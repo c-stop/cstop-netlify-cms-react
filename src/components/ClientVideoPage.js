@@ -1,7 +1,6 @@
 import { Box, Container, makeStyles } from '@material-ui/core'
 import React from 'react'
 import ReactPlayer from 'react-player'
-
 import './ClientVideoPage.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -24,23 +23,22 @@ const useStyles = makeStyles((theme) => ({
   },
   playerWrapper: {
     // border: "1px solid red",
-    position:" relative",
-    paddingTop: "56.25%",
-    margin: "0 auto",
+    position: ' relative',
+    paddingTop: '56.25%',
+    margin: '0 auto',
   },
   reactPlayer: {
     // border: ' 3px solid greenyellow',
     position: 'absolute',
     margin: '0 auto',
     top: 0,
-    left: "10%",
-
+    left: '10%',
   },
 }))
 
 export default function ClientVideoPage({ fields, ...props }) {
   const classes = useStyles()
-  const { clientName, clientVideoThumbnail, clientVideoURL } = fields
+  const { clientName, clientVideoURL } = fields
 
   console.log(props)
   return (

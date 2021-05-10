@@ -1,4 +1,4 @@
-import { Container, Grid, GridList, makeStyles } from '@material-ui/core'
+import { Container, Grid, makeStyles } from '@material-ui/core'
 import { uniqueId } from 'lodash'
 import React from 'react'
 import ClientVideoThumbnail from '../components/ClientVideoThumbnail'
