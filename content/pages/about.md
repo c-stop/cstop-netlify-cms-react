@@ -194,10 +194,7 @@ teamMemberSection:
     - name: Patrick Clements
       employeeTitle: Executive Assistant, CCO
       employeePicture: /images/uploads/commercial-headshot.jpg
-      employeeQuote: Patrick takes pride in creating nimble plans with certainty in
-        this time of reimagining. He has brought 46 events from concept to
-        completion, managed over 120 experiential marketing activations across
-        the country and loves to hunt the devil in the details.
+      employeeQuote: Executive Assistant/CCO
     - name: Ariel Lazarus
       employeeTitle: Project Manager, CCO
       employeeQuote: Ariel boasts 13 years of experience on both sides of the camera
